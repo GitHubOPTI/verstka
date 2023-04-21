@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="css/simple-adaptive-slider.css"> -->
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- <script defer src="js/simple-adaptive-slider.js"></script> -->
+    <script defer src="js/uikit.min.js"></script>
+
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          // активация слайдера
+          new ItcSimpleSlider('.itcss', {
+            loop: true,
+            autoplay: true,
+            swipe: true
+          });
+        });
+      </script> -->
+
+    <title>Система отчистки стоков</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="wrapper__content">
+            <div class="block-header">
+                <header class="header">
+                    <div class="container header__container" id="header__container">
+                        <a href="#" class="geoIP">Москва</a>
+                        <a href="main.html" class="logo">
+                            <img src="img/logo.png" alt="логотип" class="logo__img">
+                        </a>
+                        <div class="forUsers">
+                            <a href="#" class="search">
+                                <img src="img/search.png" alt="кнопка поиска" class="search__img">
+                            </a>
+                            <a href="#" class="lk">
+                                <img src="img/lk.png" alt="вход в личный кабинет" class="lk__img">
+                            </a>
+                            <a href="" class="basket">
+                                <img src="img/basket.png" alt="корзина с товарами" class="basket__img">
+                            </a>
+                        </div>
+                    </div>
+                </header>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="./catalog.html" class="menu__link">Каталог</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Новости</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./cleaning.html" class="menu__link" id="link--cleaning">О системах очистки</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Сотрудничество</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">О компании</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="tooltip__cleaning" id="tooltip__cleaning">
+                    <a class="cleaning__point">Документация</a>
+                    <a class="cleaning__point">Как выбрать канализацию?</a>
+                    <a class="cleaning__point">Вопрос/Ответ</a>
+                </div>
+            </div>
+            <main class="main-content">
+                <section class="slider" id="slider">
+                    <div class="item item_1" id="item_1">
+                        <div class="slider-text">
+                            <img src="img/logoSlider.png" alt="" class="slider__logo"><br>
+                            <h1 class="slider__title">
+                                Системы очистки<br>стоков
+                            </h1><br>
+                            <h3 class="slider__subtitle">
+                                автономная станция биохимической очистки с улучшенной технологией
+                            </h3><br>
+                            <a href="#" class="catalog__button">перейти в каталог</a><br>
+                            <a href="#" class="station__button">подобрать станцию</a>
+                        </div>
+                        <div class="slider-img">
+                            <img src="img/sliderImg.png" alt="" class="slider__img">
+                        </div>
+                    </div>
+                    <!-- <div class="item item_2" id="item_2">
+                        <div class="slider-text">
+                            <img src="img/logoSlider.png" alt="" class="slider__logo"><br>
+                            <h1 class="slider__title">
+                                Системы очистки<br>стоков
+                            </h1><br>
+                            <h3 class="slider__subtitle">
+                                автономная станция биохимической очистки с улучшенной технологией
+                            </h3><br>
+                            <a href="#" class="catalog__button">перейти в каталог</a><br>
+                            <a href="#" class="station__button">подобрать станцию</a>
+                        </div>
+                        <div class="slider-img">
+                            <img src="img/sliderImg.png" alt="" class="slider__img">
+                        </div>
+                    </div>
+                    <div class="item item_3" id="item_3">
+                        <div class="slider-text">
+                            <img src="img/logoSlider.png" alt="" class="slider__logo"><br>
+                            <h1 class="slider__title">
+                                Системы очистки<br>стоков
+                            </h1><br>
+                            <h3 class="slider__subtitle">
+                                автономная станция биохимической очистки с улучшенной технологией
+                            </h3><br>
+                            <a href="#" class="catalog__button">перейти в каталог</a><br>
+                            <a href="#" class="station__button">подобрать станцию</a>
+                        </div>
+                        <div class="slider-img">
+                            <img src="img/sliderImg.png" alt="" class="slider__img">
+                        </div>
+                    </div> -->
+                </section>
+                <div class="slider-scroll">
+                    <span class="first-num">01</span>
+                    <div class="scrolling-1" id="scrolling-1">
+                        <img src="./img/Group 10.png" alt="" class="scrolling__img">
+                    </div>
+                    <span class="last-num">03</span>
+                </div>
+                <nav class="main__nav">
+                    <a href="#header__container" class="main__nav__link"></a>
+                </nav>
+                <section class="disposition">
+                    <h2 class="disposition__title">
+                        Расположите станцию в любом удобном месте
+                    </h2>
+                    <h3 class="disposition__subtitle">
+                        обслуживание без заезда на территорию, выводим сервисную трубу за пределы участка
+                    </h3>
+                    <ul class="disposition__list">
+                        <li class="disposition__item">
+                            <div class="disposition__block">
+                                <img src="img/image 5.png" alt="" class="disposition__img">
+                            </div>
+                            <h4 class="disposition__text">не продавливается плитка</h4>
+                        </li>
+                        <li class="disposition__item">
+                            <div class="disposition__block">
+                                <img src="img/image 6.png" alt="" class="disposition__img">
+                            </div>
+                            <h4 class="disposition__text">не портится газон</h4>
+                        </li>
+                        <li class="disposition__item">
+                            <div class="disposition__block">
+                                <img src="img/image 7.png" alt="" class="disposition__img">
+                            </div>
+                            <h4 class="disposition__text">не остаются масляные пятна</h4>
+                        </li>
+                    </ul>
+                </section>
+                <section class="lid">
+                    <p class="lid__title">
+                        Крышка септика может стать украшением!
+                    </p>
+                    <h3 class="lid__subtitle">
+                        у нас вы можете выбрать крышку по форме и цвету, не ограничивая себя стандартными вариантами
+                    </h3>
+                    <div class="lid__block">
+                        <h3 class="lid__block-title">
+                            Выберите дизайн крышки
+                        </h3>
+                        <h4 class="lid__list-title">Форма</h4>
+                        <form name="lid__form" class="form1">
+                            <div class="lid__form">
+                                <label class="radio-control radio-control_1" id="radio-control_1">
+                                     <input type="radio" name="lid-form" id="lid-form-1" onclick="showBorder1(this.id)"/>
+                                </label>
+                                <label class="radio-control radio-control_2" id="radio-control_2">
+                                    <input type="radio" name="lid-form" id="lid-form-2" onclick="showBorder1(this.id)"/>
+                                </label>
+                                <label class="radio-control radio-control_3" id="radio-control_3">
+                                    <input type="radio" name="lid-form" id="lid-form-3" onclick="showBorder1(this.id)"/>
+                                </label>
+                            </div>
+                        </form>
+                        <h4 class="lid__list-title">Цвета</h4>
+                        <form name="lid__color" class="form2">
+                            <div class="lid__color">
+                                <div class="helper">
+                                    <label class="radio-control-color radio-control-color_1" id="radio-control-color_1">
+                                        <input type="radio" name="lid-color" id="lid-color-1" onclick="showBorder2(this.id)"/>
+                                    </label>
+                                    <span class="helper-text">кора</span>
+                                </div>
+                                <div class="helper">
+                                    <label class="radio-control-color radio-control-color_2" id="radio-control-color_2">
+                                        <input type="radio" name="lid-color" id="lid-color-2" onclick="showBorder2(this.id)"/>
+                                    </label>
+                                    <span class="helper-text">плитка</span>
+                                </div>
+                                <div class="helper">
+                                    <label class="radio-control-color radio-control-color_3" id="radio-control-color_3">
+                                        <input type="radio" name="lid-color" id="lid-color-3" onclick="showBorder2(this.id)"/>
+                                    </label>
+                                    <span class="helper-text">газон</span>
+                                </div>
+                                <div class="helper">
+                                    <label class="radio-control-color radio-control-color_4" id="radio-control-color_4">
+                                        <input type="radio" name="lid-color" id="lid-color-4" onclick="showBorder2(this.id)"/>
+                                    </label>
+                                    <span class="helper-text">под заказ</span>
+                                </div>
+                            </div>
+                        </form>
+                        <a href="#" class="lid__button">далее →</a>
+                    </div>
+                </section>
+                <section class="advantages">
+                    <h2 class="advantages__title">Преимущества канализации</h2>
+                    <img src="img/adv_logo.png" alt="" class="advantages__logo">
+                    <div class="advantages__list">
+                        <div class="advantages__item">
+                            <div class="advantades__block">
+                                <img src="img/image 4.png" alt="" class="advantages__img">
+                            </div>  
+                            <div class="advantages__text">Сделано из композитных материалов</div>
+                        </div>
+                        <div class="advantages__item">
+                            <div class="advantades__block">
+                                <img src="img/image 4(3).png" alt="" class="advantages__img">
+                            </div>  
+                            <div class="advantages__text">Срок эксплуатации более<br>50 лет</div>
+                        </div>
+                        <div class="advantages__item">
+                            <div class="advantades__block">
+                                <img src="img/Vector.png" alt="" class="advantages__img">
+                            </div>  
+                            <div class="advantages__text">Сервис без въезда ассенизатора на участок</div>
+                        </div>
+                        <div class="advantages__item">
+                            <div class="advantades__block">
+                                <img src="img/image 4(1).png" alt="" class="advantages__img">
+                            </div>  
+                            <div class="advantages__text">Не боится отключения электричества</div>
+                        </div>
+                        <div class="advantages__item">
+                            <div class="advantades__block">
+                                <img src="img/image 4(4).png" alt="" class="advantages__img">
+                            </div>  
+                            <div class="advantages__text">Очищенной водой можно поливать</div>
+                        </div>
+                        <div class="advantages__item">
+                            <div class="advantades__block">
+                                <img src="img/image 4(6).png" alt="" class="advantages__img">
+                            </div>  
+                            <div class="advantages__text">Залповый сброс до 750 л (модели PRO)</div>
+                        </div>
+                        <div class="advantages__item">
+                            <div class="advantades__block">
+                                <img src="img/image 4(2).png" alt="" class="advantages__img">
+                            </div>  
+                            <div class="advantages__text">Сливайте любой бытовой сток, от умягчителя и котла</div>
+                        </div>
+                        <div class="advantages__item">
+                            <div class="advantades__block">
+                                <img src="img/image 4(5).png" alt="" class="advantages__img">
+                            </div>  
+                            <div class="advantages__text">Не требует добавления бактерий</div>
+                        </div>
+                    </div>
+                </section>
+                <section class="cover-body">
+                    <h2 class="cover-body__title">Корпус со сроком<br> службы <span class="cover-body__title-blue">50+ лет</span></h2>
+                    <h4 class="cover-body__subtitle">Станция Goldrye изготовлена из композитного материала
+                        — стеклопластика, который прочнее и легче стали.<br>
+                        Он не пропускает влагу, выдерживает высокое давление<br>
+                        и не разрушается под землёй.
+                    </h4>
+                    <ul class="cover-body__list">
+                        <li class="cover-body__item">
+                            <div class="cover-body__block">
+                                <img src="img/cb_img.png" alt="" class="cover-body__img">
+                            </div>
+                            <h4 class="cover-body__text">монолитный бесшовный корпус</h4>
+                        </li>
+                        <li class="cover-body__item">
+                            <div class="cover-body__block">
+                                <img src="img/cb_img2.png" alt="" class="cover-body__img">
+                            </div>
+                            <h4 class="cover-body__text">толщина стенок 6 – 8 мм</h4>
+                        </li>
+                        <li class="cover-body__item">
+                            <div class="cover-body__block">
+                                <img src="img/cb_img3.png" alt="" class="cover-body__img">
+                            </div>
+                            <h4 class="cover-body__text">гарантия на корпус 25 лет</h4>
+                        </li>
+                    </ul>
+                    <a href="#" class="cover-body__button">подробнее о системах очистки</a>
+                </section>
+                <section class="projects">
+                    <h2 class="projects__title">Наши проекты и отзывы</h2>
+                    <div uk-slider>
+                        <div class="uk-position-relative">
+                            <div class="uk-slider-container uk-light">
+                                
+                                <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+                                    <li>
+                                        <div class="itcss__video">
+                                            <video id="titleVideo-1" class="video" src="video/sample-10s.webm" type="video/webm" onclick="pauseVideo(this.id)" preload="none"></video>
+                                            <img src="img/poster1.png" alt="poster" class="video__img" id="video__img-1">
+                                            <button class="Button_play" id="playButton-1" onclick="playVideo(this.id)"></button>
+                                            <img src="img/Polygon 1.png" alt="" class="img__play" id="img__play-1" onclick="playVideo(this.id)">
+                                            <h3 class="video__author">Алексей Иванов</h3>
+                                            <h4 class="video__product">Приобрели Goldrye 6 Pro</h4>
+                                            <span class="video__review">«Заказывал станцию очистки и установку, отлично все сделали. Привезли, установили, подключили, даже инструкцию оставили.»</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="itcss__video">
+                                            <video id="titleVideo-3" class="video" src="video/sample-10s.webm" type="video/webm" onclick="pauseVideo(this.id)" preload="none"></video>
+                                            <img src="img/poster2.png" alt="poster" class="video__img" id="video__img-3">
+                                            <button class="Button_play" id="playButton-3" onclick="playVideo(this.id)"></button>
+                                            <img src="img/Polygon 1.png" alt="" class="img__play" id="img__play-2" onclick="playVideo(this.id)">
+                                            <h3 class="video__author">Дмитрий Елисеев</h3>
+                                            <h4 class="video__product">Приобрели Goldrye 7</h4>
+                                            <span class="video__review">«Установили станцию, очень удобно при очитке без заезда ассенизатора на участок. У знакомых испортили весь газон, у меня все целое и грязи нет.»</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="itcss__video">
+                                            <video id="titleVideo-2" class="video" src="video/sample-10s.webm" type="video/webm" onclick="pauseVideo(this.id)" preload="none"></video>
+                                            <img src="img/poster3.png" alt="poster" class="video__img" id="video__img-2">
+                                            <button class="Button_play" id="playButton-2" onclick="playVideo(this.id)"></button>
+                                            <img src="img/Polygon 1.png" alt="" class="img__play" id="img__play-3" onclick="playVideo(this.id)">
+                                            <h3 class="video__author">Сергей Кулешов</h3>
+                                            <h4 class="video__product">Прораб ООО «Ваш Дом»</h4>
+                                            <span class="video__review">«Всегда рекомендуем нашим заказчикам станции очистки Goldrye, удобно устанавливать и обслуживать. Слышим только положительные отзывы»</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="itcss__video">
+                                            <video id="titleVideo-1" class="video" src="video/sample-10s.webm" type="video/webm" onclick="pauseVideo(this.id)" preload="none"></video>
+                                            <img src="img/poster1.png" alt="poster" class="video__img" id="video__img-1">
+                                            <button class="Button_play" id="playButton-1" onclick="playVideo(this.id)"></button>
+                                            <img src="img/Polygon 1.png" alt="" class="img__play" id="img__play-1" onclick="playVideo(this.id)">
+                                            <h3 class="video__author">Алексей Иванов</h3>
+                                            <h4 class="video__product">Приобрели Goldrye 6 Pro</h4>
+                                            <span class="video__review">«Заказывал станцию очистки и установку, отлично все сделали. Привезли, установили, подключили, даже инструкцию оставили.»</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="itcss__video">
+                                            <video id="titleVideo-3" class="video" src="video/sample-10s.webm" type="video/webm" onclick="pauseVideo(this.id)" preload="none"></video>
+                                            <img src="img/poster2.png" alt="poster" class="video__img" id="video__img-3">
+                                            <button class="Button_play" id="playButton-3" onclick="playVideo(this.id)"></button>
+                                            <img src="img/Polygon 1.png" alt="" class="img__play" id="img__play-2" onclick="playVideo(this.id)">
+                                            <h3 class="video__author">Дмитрий Елисеев</h3>
+                                            <h4 class="video__product">Приобрели Goldrye 7</h4>
+                                            <span class="video__review">«Установили станцию, очень удобно при очитке без заезда ассенизатора на участок. У знакомых испортили весь газон, у меня все целое и грязи нет.»</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="itcss__video">
+                                            <video id="titleVideo-2" class="video" src="video/sample-10s.webm" type="video/webm" onclick="pauseVideo(this.id)" preload="none"></video>
+                                            <img src="img/poster3.png" alt="poster" class="video__img" id="video__img-2">
+                                            <button class="Button_play" id="playButton-2" onclick="playVideo(this.id)"></button>
+                                            <img src="img/Polygon 1.png" alt="" class="img__play" id="img__play-3" onclick="playVideo(this.id)">
+                                            <h3 class="video__author">Сергей Кулешов</h3>
+                                            <h4 class="video__product">Прораб ООО «Ваш Дом»</h4>
+                                            <span class="video__review">«Всегда рекомендуем нашим заказчикам станции очистки Goldrye, удобно устанавливать и обслуживать. Слышим только положительные отзывы»</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                            <div class="uk-hidden@s uk-light">
+                                <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                                <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                            </div>
+                            <div class="uk-visible@s">
+                                <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                                <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                            </div>
+                        </div>
+                        <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                    </div>
+                </section>
+                <section class="action">
+                    <div class="action__container">
+                        <h2 class="action__title">Водоотвод без забот!</h2>
+                        <h4 class="action__subtitle">Скидка, акции и другие выгодные предложения</h4>
+                        <a href="#" class="action__button">перейти в каталог</a>
+                    </div>
+                </section>
+                <section class="map">
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A2540de69b414cd87d63e289289689f3b57157fead3be337dc630c31c0e4aa358&amp;source=constructor"  frameborder="0"></iframe>
+                </section>
+            </main>
+        </div>
+        <footer class="footer">
+            <nav class="footer-menu">
+                <ul class="footer-menu__list">
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">Вакансии</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">Сотрудничество</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">Карта сайта</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">Политика обработки персональных данных</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="main.html" class="logo-footer">
+                <img src="img/logo.png" alt="" class="logo-footer__img">
+            </a>
+            <div class="footer-info">
+                <a href="tel:+73512448356" class="footer-phone">+7 (351) 244 83 56</a><br>
+                <a href="mailto:goldrye@mail.ru" class="footer-email">goldrye@mail.ru</a><br><br>
+                <span>
+                    ПРОИЗВОДСТВО<br>
+                    Челябинская область, г. Коркино,<br>ул. 1 Мая, д. 71<br><br>
+                    ВЫСТАВОЧНЫЙ ЗАЛ<br>
+                    г. Челябинск, ул. Рабоче-Колхозная, 55
+                </span>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

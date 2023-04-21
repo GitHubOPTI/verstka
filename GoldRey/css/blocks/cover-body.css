@@ -1,0 +1,96 @@
+.cover-body{
+    width: 1290px;
+    height: 780px;
+    display: flex;
+    flex-direction: column;
+
+    background-image: url("../img/stock.png"), url("../img/Схема.png");
+    background-position-x: 770px, 697px;
+    background-position-y: 1px, 170.13px;
+    background-size: 520px 756.32px, 468px 488.21px;
+    background-repeat: no-repeat;
+
+    margin-top: 150px;
+}
+.cover-body__title{
+    width: 845px;
+    height: 110px;
+    color: #1C2A4D;
+}
+.cover-body__title-blue{
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 55px;
+
+    /* or 122% */
+
+    /* Color_01 */
+    color: #008ED6;
+}
+.cover-body__subtitle{
+    width: 789px;
+    height: 110px;
+
+    color: #008ED6;
+    margin-top: 30px;
+}
+ul.cover-body__list{
+    margin-top: 50px;
+}
+li.cover-body__item{
+    list-style-type: none;
+    margin-bottom: 30px;
+    display: flex;
+
+    align-items: center;
+}
+.cover-body__block{
+    width: 70px;
+    height: 70px;
+    background: #1C2A4D;
+
+    /* Тень для кнопок */
+    box-shadow: -84.8448px 61.8576px 80px rgba(0, 0, 0, 0.0285938), -62.8129px 45.7949px 53.9219px rgba(0, 0, 0, 0.04875), -44.9475px 32.7698px 34.875px rgba(0, 0, 0, 0.0632813), -30.8699px 22.5062px 21.6406px rgba(0, 0, 0, 0.075), -20.2011px 14.728px 13px rgba(0, 0, 0, 0.0867188), -12.5626px 9.15897px 7.73438px rgba(0, 0, 0, 0.10125), -7.57543px 5.523px 4.625px rgba(0, 0, 0, 0.121406), -4.8609px 3.54392px 2.45312px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+a.cover-body__button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 15px;
+    gap: 5px;
+    
+    width: 265px;
+    height: 30px;
+
+    text-decoration: none;
+    width: 235px;
+    height: 20px;
+    
+    /* Шрифт кнопок */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 143%;
+    
+    /* Color_01 */
+    color: #1C2A4D;
+    border: 4px solid #008ED6;
+    border-radius: 10px;
+}
+a.cover-body__button:hover{
+    border: 4px solid #246CE2;
+    border-radius: 10px;
+}
+a.cover-body__button:active{
+    border: 4px solid #1C2A4D;
+    border-radius: 10px;
+}

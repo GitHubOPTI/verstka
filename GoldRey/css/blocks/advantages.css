@@ -1,0 +1,53 @@
+.advantages{
+    width: 1290px;
+    height: 570px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 150.5px;
+}
+.advantages__title{
+    color: #1C2A4D;
+}
+.advantages__list{
+    display: grid;
+    grid-template-columns: repeat(3, 375px); 
+    row-gap: 30px;
+    margin-top: 80px;
+}
+.advantages__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+    height: 70px;
+}
+.advantades__block{
+    width: 70px;
+    height: 70px;
+    background: #1C2A4D;
+
+    /* Тень для кнопок */
+    box-shadow: -84.8448px 61.8576px 80px rgba(0, 0, 0, 0.0285938), -62.8129px 45.7949px 53.9219px rgba(0, 0, 0, 0.04875), -44.9475px 32.7698px 34.875px rgba(0, 0, 0, 0.0632813), -30.8699px 22.5062px 21.6406px rgba(0, 0, 0, 0.075), -20.2011px 14.728px 13px rgba(0, 0, 0, 0.0867188), -12.5626px 9.15897px 7.73438px rgba(0, 0, 0, 0.10125), -7.57543px 5.523px 4.625px rgba(0, 0, 0, 0.121406), -4.8609px 3.54392px 2.45312px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+.advantages__text{
+    width: 255px;
+    height: 44px;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    
+    /* or 122% */
+    
+    /* Color_01 */
+    color: #1C2A4D;
+}

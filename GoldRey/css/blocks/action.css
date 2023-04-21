@@ -1,0 +1,64 @@
+.action{
+    margin-top: 185px;
+    margin-bottom: 150px;
+    width: 1290px;
+    height: 391px;
+    
+    /* Фон карточек */
+    background-color: #FFFBF5;
+    
+    /* Обводка */
+    border: 1px solid #D7D3CD;
+    
+    /* Тень для окон и карточек */
+    box-shadow: -63.3888px 84.958px 80px rgba(0, 0, 0, 0.02768), -38.7987px 52.0007px 41.728px rgba(0, 0, 0, 0.04384), -21.6718px 29.046px 19.584px rgba(0, 0, 0, 0.05616), -10.8598px 14.5551px 8.576px rgba(0, 0, 0, 0.07232), -5.21463px 6.989px 3.712px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    background-image: url("../../img/action\ \(1\).png"), url("../../img/action\ \(2\).png"), url("../../img/action\ \(3\).png"), url("../../img/action\ \(4\).png");
+    background-repeat: no-repeat;
+    background-position-x: 33px, 821px, 482px, 197px;
+    background-position-y: 0, 0, 0, 247px;
+}
+.action__container{
+    padding-top: 60px;
+    padding-left: 109px;
+}
+.action__title{
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 1.22em;
+
+    color: #1C2A4D;
+    margin-bottom: 12px;
+}
+.action__subtitle{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.25em;
+
+    color: #008ED6;
+    margin-bottom: 118px;
+}
+a.action__button{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 143%;
+
+    color: #FFFBF5;
+    background: #008ED6;
+    width: 179px;
+    border-radius: 10px;
+    padding: 5px 15px;
+    text-decoration: none;
+}
+a.action__button:hover{
+    background: #246CE2;
+}
+a.action__button:active{
+    background: #1C2A4D;
+}

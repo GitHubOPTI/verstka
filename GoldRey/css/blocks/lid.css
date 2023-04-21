@@ -1,0 +1,219 @@
+.lid{
+    width: 1070px;
+    height: 788px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.lid__title{
+    width: 640px;
+    height: 100px;
+
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 111%;
+
+    text-align: center;
+
+    /* Color_01 */
+    color: #1C2A4D;
+}
+.lid__subtitle{
+    width: 841px;
+    height: 60px;
+    text-align: center;
+    
+    /* Color_02 */
+    color: #008ED6;
+    margin-top: 26px;
+}
+.lid__block{
+    width: 1070px;
+    height: 540px;
+
+    /* Фон карточек */
+    background-color: #FFFBF5;
+    
+    /* Обводка */
+    border: 1px solid #E1DDD7;
+    
+    /* Light shadow */
+    box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    margin-top: 61.5px;
+
+    background-image: url("../img/lidbg1.png"), url("../img/lidbg2.png");
+    background-position-x: 0, 605px;
+    background-position-y: 326.75px, 0;
+    background-repeat: no-repeat;
+}
+.lid__block-title{
+    width: 401px;
+    height: 30px;
+    
+    /* Второй синий */
+    color: #3A486B;
+
+    margin-top: 49.75px;
+    margin-left: 110px;
+}
+.lid__list-title{
+    width: 74px;
+    height: 25px;
+    
+    /* Color_02 */
+    color: #008ED6;
+    margin-top: 30px;
+    margin-left: 110px;
+}
+/* блок с формами крышек */
+.lid__form{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 110px;
+}
+.lid__form .radio-control {
+    width: 263px;
+    height: 130px;
+    display: block;
+    border-radius: 10px;
+}
+.radio-control_1{
+    background-image: url("../img/Rectangle.png");
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: center;
+}
+.radio-control_2{
+    background-image: url("../img/lid-form2.png");
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: center;
+
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.radio-control_3{
+    background-image: url("../img/lid-form3.png");
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: center;
+}
+.lid__form .radio-control input {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    margin-left: 229px;
+    width: 24px;
+    height: 24px;
+}
+.lid__form .radio-control:hover{
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2), 0 6px 12px rgba(0,0,0,0.2);
+    border: 3px solid #008ED6;
+    border-radius: 10px;
+}
+/* блок с цветами крышек */
+.lid__color{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 110px;
+}
+.helper{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+.radio-control-color{
+    width: 190px;
+    height: 44px;
+    border-radius: 10px;
+}
+.radio-control-color_1{
+    background-image: url("../img/cora.png");
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: center;
+}
+.radio-control-color_2{
+    background-image: url("../img/plitka.png");
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: center;
+}
+.radio-control-color_3{
+    background-image: url("../img/grass.png");
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: center;
+}
+.radio-control-color_4{
+    background-image: url("../img/designer.png");
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: center;
+}
+.lid__color .radio-control-color input {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    margin-left: 156px;
+    margin-top: 10px;
+    width: 24px;
+    height: 24px;
+}
+.lid__color .radio-control-color:hover{
+    border: 3px solid #008ED6;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2), 0 6px 12px rgba(0,0,0,0.2);
+}
+.helper-text{
+    /* Text */
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+
+
+    /* Color_01 */
+    color: #1C2A4D;
+}
+a.lid__button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+
+    width: 88px;
+    height: 34px;
+    /* Color_02 */
+    background: #008ED6;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 143%;
+
+    /* grey1 */
+    color: #FFFBF5;   
+    margin-left: 872px;
+    margin-top: 30px;
+}
+a.lid__button:hover{
+    background: #246CE2;
+}
+a.lid__button:active{
+    background: #1C2A4D;
+}

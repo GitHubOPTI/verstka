@@ -1,0 +1,8 @@
+.main__nav__link{
+    background-image: url("../../img/Вверх.png");
+    position: fixed;
+    left: 1631px;
+    top: 846px;
+    width: 45px;
+    height: 45px;
+}

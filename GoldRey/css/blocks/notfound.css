@@ -1,0 +1,71 @@
+.main__notfound{
+    width: 100%;
+    height: 780px;
+    background-color: #F5F5F5;
+    background-image: url("../../img/notfoundImg\ \(1\).png"), url("../../img/notfoundImg\ \(2\).png"), url("../../img/notfoundImg\ \(3\).png");
+    background-position-x: 118px, 996px, 219px;
+    background-position-y: 0, 0, 454px;
+    background-repeat: no-repeat;
+}
+.notfound__content{
+    padding-top: 189px;
+    /* padding-left: 827px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.notfound__title{
+    width: 268px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 130px;
+    line-height: 100%;
+
+    text-align: center;
+
+    color: #008ED6;
+}
+.notfound__subtitle{
+    width: 459px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+
+    text-align: center;
+
+    color: #1C2A4D;
+}
+a.notfound__button{
+    padding: 5px 15px;
+    gap: 5px;
+
+    width: 183px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 66px;
+
+    /* Color_02 */
+    background: #008ED6;
+    border-radius: 10px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.43em;
+
+    /* grey1 */
+    color: #FFFBF5;
+}
+a.notfound__button:hover{
+    background: #246CE2;
+}
+a.notfound__button:active{
+    background: #1C2A4D;
+}

@@ -1,0 +1,160 @@
+.main__catalog{
+    width: 100%;
+    height: auto;
+}
+.catalog__content{
+    display: flex;
+}
+.catalog__title{
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 1.22em;
+
+    /* Color_01 */
+    color: #1C2A4D;
+    margin-top: 30px;
+    margin-left: 315px;
+}
+.catalog__leftBlock{
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 40px 20px 25px;
+    gap: 15px;
+    
+    width: 221px;
+    height: 178px;
+    margin-top: 32px;
+    margin-left: 315px;
+
+    /* Обводка */
+    border: 1px solid #D7D3CD;
+    border-radius: 10px;  
+}
+.catalog__leftBlock__title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    
+    /* identical to box height, or 125% */
+    
+    /* Color_01 */
+    color: #1C2A4D;
+    margin-bottom: 15px;
+}
+.category__item{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    
+    /* identical to box height */
+    
+    /* Второй синий */
+    color: #3A486B;
+    margin-bottom: 10px;
+}
+.category__item:last-child{
+    margin-bottom: 0;
+}
+.category__detail__systemClean{
+    display: block;
+}
+.catalog__rightBlock{
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    margin-left: 109px;
+}
+.category__buttonBasket{
+    border: none;
+    width: 57px;
+    height: 36px;
+    margin-top: 13px;
+}
+.category__detail__items{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+}
+.category__detail__item{
+    width: 300px;
+    height: 373px;
+}
+.category__img{
+    width: 300px;
+    height: 260px;
+}
+.category__desc{
+    display: flex;
+    flex-direction: row;
+    margin-left: 28px;
+}
+.category__text{
+    display: flex;
+    flex-direction: column;
+    margin-right: 51px;
+}
+.category__detail__title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 30px;
+    
+    /* identical to box height, or 107% */
+    
+    /* Color_02 */
+    color: #008ED6;
+    margin-top: 30px;
+}
+.category__text--title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    
+    /* identical to box height, or 122% */
+    
+    /* Color_02 */
+    color: #008ED6;
+}
+.category__text-price{
+    display: flex;
+    margin-top: 10px;
+}
+.new-price{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    
+    /* identical to box height, or 122% */
+    
+    /* Второй синий */
+    color: #3A486B;
+    margin-right: 10px;
+}
+.old-price{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 22px;
+    
+    /* identical to box height, or 122% */
+    text-decoration-line: line-through;
+    
+    /* Второй синий */
+    color: #3A486B;
+    
+}

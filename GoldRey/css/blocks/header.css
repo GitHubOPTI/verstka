@@ -1,0 +1,142 @@
+.block-header{
+    width: 1902px;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #FFFBF5;
+}
+.header__container{
+    height: 85px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.header__container a{
+    text-decoration: none;
+}
+.geoIP{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+
+    text-align: center;
+
+    color: #1C2A4D;
+
+}
+.logo__img{
+    width: 130px;
+    height: 30px;
+    margin-left: 490px;
+    margin-right: 466px;
+}
+.geoIP::before{
+    content: url(../img/geo.png);
+}
+.lk__img{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.menu{
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul.menu__list{
+    display: flex;
+    list-style-type: none;
+}
+.menu__link{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+
+    text-align: center;
+
+    color: #3A486B;
+    text-decoration: none;
+
+    margin-right: 30px;
+}
+.menu__link:active{
+    text-decoration-line: underline;
+
+    /* Color_02 */
+    color: #008ED6;
+}
+.tooltip__cleaning{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px 20px 15px;
+    gap: 10px;
+
+    position: absolute;
+    width: 261px;
+    height: 110px;
+    left: 728px;
+    top: 150px;
+
+    /* Фон карточек */
+    background: #FFFBF5;
+    border-radius: 0px 0px 10px 10px;
+    z-index: 1;
+    display: none;
+}
+.cleaning__point{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    /* identical to box height */
+
+    /* Color_01 */
+    color: #1C2A4D;
+}
+.cleaning__point:hover{
+    color: #246CE2;
+}
+.link--active{
+    text-decoration-line: underline;
+    color: #008ED6;
+}
+.dop__menu{
+    margin-top: 50px;
+    margin-left: 315px;
+    display: flex;
+}
+a.dop__menu-home{
+    background-image: url("../../img/home.png");
+    background-repeat: no-repeat;
+    background-size: 15px, 13px;
+    width: 15px;
+    height: 13px;
+}
+a.dop__menu-home::after{
+    content: url("../../img/arrowMenu.png");
+    padding-left: 17px;
+}
+.dop-menu--chapter{
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+
+    color: #3A486B;
+    padding-left: 14px;
+    margin-top: -4px;
+    text-decoration: none;
+}

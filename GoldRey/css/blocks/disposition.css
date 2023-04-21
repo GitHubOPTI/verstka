@@ -1,0 +1,80 @@
+.disposition{
+    width: 1290px;
+    height: 520px;
+
+    margin-top: 250px;
+    margin-bottom: 250px;
+    
+    /* Тень для окон и карточек */
+    box-shadow: -63.3888px 84.958px 80px rgba(0, 0, 0, 0.02768), -38.7987px 52.0007px 41.728px rgba(0, 0, 0, 0.04384), -21.6718px 29.046px 19.584px rgba(0, 0, 0, 0.05616), -10.8598px 14.5551px 8.576px rgba(0, 0, 0, 0.07232), -5.21463px 6.989px 3.712px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+
+    background-image: url("../img/dis1.png"), url("../img/dis2.png"), url("../img/dis3.png");
+    background-position-x: 0, 625px, 834px;
+    background-position-y: 0, 220px, 0;
+    background-repeat: no-repeat;
+}
+.disposition__title{
+    width: 633px;
+    height: 110px;
+
+    text-align: center;
+
+    /* Color_01 */
+    color: #1C2A4D;
+
+    margin-top: 59px;
+    margin-left: 328px;
+}
+.disposition__subtitle{
+    width: 797px;
+    height: 60px;
+
+    text-align: center;
+
+    /* Color_02 */
+    color: #008ED6;
+
+    margin-top: 28px;
+    margin-left: 246px;
+}
+ul.disposition__list{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 70px;
+    
+    width: 935px;
+    height: 125px;
+
+    margin-top: 77.5px;
+    margin-left: 177.5px;
+}
+li.disposition__item{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
+    
+}
+.disposition__block{
+    width: 70px;
+    height: 70px;
+
+    /* Color_01 */
+    background: #1C2A4D;
+
+    /* Тень */
+    box-shadow: -90.0271px 71.5551px 80px rgba(38, 38, 38, 0.0266875), -67.6151px 53.7417px 53.9219px rgba(38, 38, 38, 0.0455), -49.4415px 39.297px 34.875px rgba(38, 38, 38, 0.0590625), -35.1209px 27.9147px 21.6406px rgba(38, 38, 38, 0.07), -24.2682px 19.2888px 13px rgba(38, 38, 38, 0.0809375), -16.4978px 13.1128px 7.73438px rgba(38, 38, 38, 0.0945), -11.4246px 9.08049px 4.625px rgba(38, 38, 38, 0.113312), -8.66327px 6.88572px 2.45312px rgba(38, 38, 38, 0.14);
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.disposition__text{
+    color: #1C2A4D;
+}

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="css/simple-adaptive-slider.css"> -->
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- <script defer src="js/simple-adaptive-slider.js"></script> -->
+    <script defer src="js/uikit.min.js"></script>
+
+    <title>Система отчистки стоков</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="wrapper__content">
+            <div class="block-header">
+                <header class="header">
+                    <div class="container header__container" id="header__container">
+                        <a href="#" class="geoIP">Москва</a>
+                        <a href="./main.html" class="logo">
+                            <img src="img/logo.png" alt="логотип" class="logo__img">
+                        </a>
+                        <div class="forUsers">
+                            <a href="#" class="search">
+                                <img src="img/search.png" alt="кнопка поиска" class="search__img">
+                            </a>
+                            <a href="#" class="lk">
+                                <img src="img/lk.png" alt="вход в личный кабинет" class="lk__img">
+                            </a>
+                            <a href="" class="basket">
+                                <img src="img/basket.png" alt="корзина с товарами" class="basket__img">
+                            </a>
+                        </div>
+                    </div>
+                </header>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="/catalog.html" class="menu__link link--active">Каталог</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Новости</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="/cleaning.html" class="menu__link link--cleaning" id="link--cleaning">О системах очистки</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Сотрудничество</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">О компании</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="tooltip__cleaning" id="tooltip__cleaning">
+                    <a class="cleaning__point">Документация</a>
+                    <a class="cleaning__point">Как выбрать канализацию?</a>
+                    <a class="cleaning__point">Вопрос/Ответ</a>
+                </div>
+            </div>
+            <main class="main-content">
+                <section class="main__catalog">
+                    <nav class="dop__menu">
+                        <a href="./main.html" class="dop__menu-home"></a>
+                        <a href="catalog.html" class="dop-menu--chapter">Каталог</a>
+                    </nav>
+                    <p class="catalog__title">Каталог</p>
+                    <div class="catalog__content">
+                        <div class="catalog__leftBlock">
+                            <form action="" class="category__form">
+                                <p class="catalog__leftBlock__title">Категории</p>
+                                <div class="category__item">
+                                    <input type="checkbox" id="systemClean" name="category" value="systemClean" onclick="chooseCategory(this)"/>
+                                    <label for="systemClean">Системы очистки</label>
+                                </div>
+                                <div class="category__item">
+                                    <input type="checkbox" id="machine" name="category" value="machine" />
+                                    <label for="machine">Оборудование</label>
+                                </div>
+                                <div class="category__item">
+                                    <input type="checkbox" id="lid" name="category" value="lid" />
+                                    <label for="lid">Крышки</label>
+                                </div>
+                                <div class="category__item">
+                                    <input type="checkbox" id="service" name="category" value="service" />
+                                    <label for="service">Услуги</label>
+                                </div> 
+                            </form>
+                        </div>
+                        <div class="catalog__rightBlock">
+                            <div class="catalog__filter">
+                                <img src="./img/filterImg.png" alt="" class="filter__catalog__img">
+                                <span class="catalog__filter--text">по возрастанию цены</span>
+                            </div>
+                            <div class="category__detail">
+                                <div class="category__detail__systemClean" id="detail-systemClean">
+                                    <p class="category__detail__title">Системы очистки стоков Голдрай</p>
+                                    <div class="category__detail__items">
+                                        <div class="category__detail__item">
+                                            <img src="./img/categorImg.png" alt="" class="category__img">
+                                            <div class="category__desc">
+                                                <div class="category__text">
+                                                    <span class="category__text--title">GoldRye 5</span>
+                                                    <div class="category__text-price">
+                                                        <div class="new-price">150 000 ₽</div>
+                                                        <div class="old-price">150 000 ₽</div>
+                                                    </div>
+                                                    <button class="category__buttonBasket" onclick="addToBasket()">
+                                                        <img src="./img/categoryBaskey.png" alt="" class="basketCat__img">
+                                                    </button>
+                                                </div>
+                                                <div class="category__people">
+                                                    <img src="./img/Пользователи.png" alt="" class="usersImgCategory">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="category__detail__item">
+                                            <img src="./img/categorImg.png" alt="" class="category__img">
+                                            <div class="category__desc">
+                                                <div class="category__text">
+                                                    <span class="category__text--title">GoldRye 5</span>
+                                                    <div class="category__text-price">
+                                                        <div class="new-price">150 000 ₽</div>
+                                                        <div class="old-price">150 000 ₽</div>
+                                                    </div>
+                                                    <button class="category__buttonBasket" onclick="addToBasket()">
+                                                        <img src="./img/categoryBaskey.png" alt="" class="basketCat__img">
+                                                    </button>
+                                                </div>
+                                                <div class="category__people">
+                                                    <img src="./img/Пользователи.png" alt="" class="usersImgCategory">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="category__detail__item">
+                                            <img src="./img/categorImg.png" alt="" class="category__img">
+                                            <div class="category__desc">
+                                                <div class="category__text">
+                                                    <span class="category__text--title">GoldRye 5</span>
+                                                    <div class="category__text-price">
+                                                        <div class="new-price">150 000 ₽</div>
+                                                        <div class="old-price">150 000 ₽</div>
+                                                    </div>
+                                                    <button class="category__buttonBasket" onclick="addToBasket()">
+                                                        <img src="./img/categoryBaskey.png" alt="" class="basketCat__img">
+                                                    </button>
+                                                </div>
+                                                <div class="category__people">
+                                                    <img src="./img/Пользователи.png" alt="" class="usersImgCategory">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="category__detail__item">
+                                            <img src="./img/categorImg.png" alt="" class="category__img">
+                                            <div class="category__desc">
+                                                <div class="category__text">
+                                                    <span class="category__text--title">GoldRye 5</span>
+                                                    <div class="category__text-price">
+                                                        <div class="new-price">150 000 ₽</div>
+                                                        <div class="old-price">150 000 ₽</div>
+                                                    </div>
+                                                    <button class="category__buttonBasket" onclick="addToBasket()">
+                                                        <img src="./img/categoryBaskey.png" alt="" class="basketCat__img">
+                                                    </button>
+                                                </div>
+                                                <div class="category__people">
+                                                    <img src="./img/Пользователи.png" alt="" class="usersImgCategory">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="category__detail__item">
+                                            <img src="./img/categorImg.png" alt="" class="category__img">
+                                            <div class="category__desc">
+                                                <div class="category__text">
+                                                    <span class="category__text--title">GoldRye 5</span>
+                                                    <div class="category__text-price">
+                                                        <div class="new-price">150 000 ₽</div>
+                                                        <div class="old-price">150 000 ₽</div>
+                                                    </div>
+                                                    <button class="category__buttonBasket" onclick="addToBasket()">
+                                                        <img src="./img/categoryBaskey.png" alt="" class="basketCat__img">
+                                                    </button>
+                                                </div>
+                                                <div class="category__people">
+                                                    <img src="./img/Пользователи.png" alt="" class="usersImgCategory">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="category__detail__item">
+                                            <img src="./img/categorImg.png" alt="" class="category__img">
+                                            <div class="category__desc">
+                                                <div class="category__text">
+                                                    <span class="category__text--title">GoldRye 5</span>
+                                                    <div class="category__text-price">
+                                                        <div class="new-price">150 000 ₽</div>
+                                                        <div class="old-price">150 000 ₽</div>
+                                                    </div>
+                                                    <button class="category__buttonBasket" onclick="addToBasket()">
+                                                        <img src="./img/categoryBaskey.png" alt="" class="basketCat__img">
+                                                    </button>
+                                                </div>
+                                                <div class="category__people">
+                                                    <img src="./img/Пользователи.png" alt="" class="usersImgCategory">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="category__detail__item">
+                                            <img src="./img/categorImg.png" alt="" class="category__img">
+                                            <div class="category__desc">
+                                                <div class="category__text">
+                                                    <span class="category__text--title">GoldRye 5</span>
+                                                    <div class="category__text-price">
+                                                        <div class="new-price">150 000 ₽</div>
+                                                        <div class="old-price">150 000 ₽</div>
+                                                    </div>
+                                                    <button class="category__buttonBasket" onclick="addToBasket()">
+                                                        <img src="./img/categoryBaskey.png" alt="" class="basketCat__img">
+                                                    </button>
+                                                </div>
+                                                <div class="category__people">
+                                                    <img src="./img/Пользователи.png" alt="" class="usersImgCategory">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="category__detail__item">
+                                            <img src="./img/categorImg.png" alt="" class="category__img">
+                                            <div class="category__desc">
+                                                <div class="category__text">
+                                                    <span class="category__text--title">GoldRye 5</span>
+                                                    <div class="category__text-price">
+                                                        <div class="new-price">150 000 ₽</div>
+                                                        <div class="old-price">150 000 ₽</div>
+                                                    </div>
+                                                    <button class="category__buttonBasket" onclick="addToBasket()">
+                                                        <img src="./img/categoryBaskey.png" alt="" class="basketCat__img">
+                                                    </button>
+                                                </div>
+                                                <div class="category__people">
+                                                    <img src="./img/Пользователи.png" alt="" class="usersImgCategory">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <footer class="footer">
+            <nav class="footer-menu">
+                <ul class="footer-menu__list">
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">Вакансии</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">Сотрудничество</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">Карта сайта</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">Политика обработки персональных данных</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="./main.html" class="logo-footer">
+                <img src="img/logo.png" alt="" class="logo-footer__img">
+            </a>
+            <div class="footer-info">
+                <a href="tel:+73512448356" class="footer-phone">+7 (351) 244 83 56</a><br>
+                <a href="mailto:goldrye@mail.ru" class="footer-email">goldrye@mail.ru</a><br><br>
+                <span>
+                    ПРОИЗВОДСТВО<br>
+                    Челябинская область, г. Коркино,<br>ул. 1 Мая, д. 71<br><br>
+                    ВЫСТАВОЧНЫЙ ЗАЛ<br>
+                    г. Челябинск, ул. Рабоче-Колхозная, 55
+                </span>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

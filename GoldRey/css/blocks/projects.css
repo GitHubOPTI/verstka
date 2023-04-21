@@ -1,0 +1,80 @@
+.projects{
+    width: 1290px;
+    height: 670px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projects__title{
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 1.22em;
+
+    color: #1C2A4D;
+    margin-bottom: 65px;
+}
+video.video{
+    width: 410px;
+    height: 270px;
+    position: absolute;
+    display: none;
+}
+img.video__img{
+    border-radius: 20px;
+    visibility: visible;
+    width: 410px;
+}
+.Button_play{
+    border-radius: 50%;
+    background-color: #EEEEEE;
+    opacity: 0.5;
+    width: 91px;
+    height: 91px;
+    border: none;
+    position: absolute;
+    left: 164px;
+    top: 76px;
+    visibility: visible;
+}
+.img__play{
+    position: absolute;
+    top: 104px;
+    left: 199px;
+    visibility: visible;
+}
+.itcss__video{
+    position: relative;
+    border-radius: 20px;
+    width: 410px;
+    height: 495px;
+}
+.video__author{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.07em;
+
+    color: #1C2A4D;
+    margin-top: 32px;
+    margin-bottom: 4px;
+}
+.video__product{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.25em;
+
+    color: #008ED6;
+    margin-top: 4px;
+}
+.video__review{
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 500;
+    line-height: 130%;
+
+    color: #3A486B;  
+    width: 402px; 
+}
