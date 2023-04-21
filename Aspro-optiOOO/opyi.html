@@ -1,0 +1,609 @@
+<head>
+    <link rel="stylesheet" href="css/style.css"><!--стили-->
+    <link rel="stylesheet" href="css/twentytwenty.css" type="text/css" media="screen" /><!--плагин для слайдера-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"><!--шрифт Open Sans-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"><!--шрифт Roboto-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/jquery.js" type="text/javascript"></script><!--подключение jquery-->
+    <script src="js/jquery.event.move.js" type="text/javascript"></script>
+    <script src="js/jquery.twentytwenty.js" type="text/javascript"></script><!--подключение плагина twentytwenty-->
+    <script src="js/script.js"></script><!--основной скрипт-->
+    <script src="js/slider.js"></script><!--скрипт слайдера-->
+    <script src="https://kit.fontawesome.com/830293ef9d.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=600px">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="EI=edge">
+</head>
+<body>
+
+    <!--шапка-->
+    <div class="header">
+        <a href="#"><img class="header_logo" src="img/logo.png"></a>
+        <a class="header_buttons space disappear" href="#scoupWork">Состав работы</a>
+        <a class="header_buttons disappear" href="#certi">Сертификаты</a>
+        <a class="header_buttons special_button disappear" href="#1C">Консультация</a>
+        <div class="burger_button" onclick="myFunction()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <div class="bar4"></div>
+        </div>
+    </div>
+    <!--lock on top-->
+        <!--открывающееся окно-->
+    <div class="popUpMenu hidden" id="popUp">
+        <div class="popUpContent">
+            <p><a href="#scoupWork" onclick="myFunction()">Состав работы</a></p>
+            <p><a href="#certi" onclick="myFunction()">Сертификаты</a></p>
+            <p><a href="#1C" onclick="myFunction()">Консультация</a></p>
+        </div>
+    </div>
+    <!--Lock scrol-->
+    <!--переезд на 1C-->
+    <div class="textBlok" id="1C">
+        <div class="firstBlok_textContent">
+            <h1 class="firstBlok_h1">ПЕРЕЕЗД САЙТА НА 1С:БИТРИКС - АСПРО</h1>
+            <p class="firstBlok_p">Запуск за 2 недели, базовая SEO оптимизация, самые важные интеграции, настройка приема платежей.</p>
+        </div>
+        <img src="img/img_1.svg" class="img_1">
+    </div>
+
+    <!--текстовый контент плюсы С1 битрикс-->
+    <div class="textBlok">
+        <div class="box2_L">
+            <h2 class="box2_textContent_h2">Плюсы 1С Битрикс</h2>
+            <p class="box2_textContent_underh2">1С Битрикс: Управление сайтом</p>
+            <p class="box2_textContent_p">Сайт должен иметь хорошую платформу для управления контентом. <b>Для высоконагруженных сайтов</b> с огромным количеством позиций и товарных предложений - рекомендуем только 1С Битрикс Управление сайтом.</p>
+        </div>
+        <div class="box2_R">
+            <p class="box2_textContent_p"><b>Хорошая защита сайта и тех поддержка</b> со стороны 1С:Битрикс - только в плюс для вашей компании. Команда разработчиков развивает продукт чтобы вы как пользователь получали обновления и рабочий продукт.</p>
+            <p class="box2_textContent_p">Ещё одна хорошая особенность, это <b>хорошие настройки и инструменты для SEO</b> оптимизации сайта. Есть опыт когда сайт занимал топовые позиции просто наполнившись товарами из 1С. Дальше оптимизация только дорабатывалась.</p>
+        </div>
+    </div>
+
+    <!--плюсы АСПРО-->
+    <div class="underTextBlok">
+        <div class="textBlok">
+            <div class="box2_L">
+                <h2 class="box2_textContent_h2">Плюсы АСПРО</h2>
+                <p class="box2_textContent_underh2">Решение АСПРО для 1С:Битрикс Управление сайтом</p>
+                <p class="box2_textContent_p">Мы уже 4ый год занимаемся сайтами и в том числе готовыми решениями на 1С:Битрикс Управление сайтом. За это время у нас накопился опыт и сформировался определенный топ решений, которые мы используем в своих проектах и рекомендуем клиентам. <b>АСПРО занимает одно из первых позиций нашего внутреннего топа.</b></p>
+            </div>
+            <div class="box2_R">
+                <p class="box2_textContent_p">Решение АСПРО по нашим параметрам лучшее в плане организации внутренней работы. По сравнению с другими решениями в нем <b>меньше проблем вёрстки и программирования.</b></p>
+                <p class="box2_textContent_p">Одним из плюсов мы считаем современный дизайн решения и самое главное адаптивная вёрстка шаблона. Она прекрасно устанавливается на контент сайта и не вызывает сложностей с доработкой</p>
+            </div>
+        </div>
+    </div>
+<!--товары АСПРО-->
+    <div class="textBlok">
+        <div class="textBlok">
+            <div class="upper_groceryBox">
+                <div class="groceryBox">
+                    <a>
+                        <div class="mark">ХИТ</div>
+                        <img src="img/monitor_1.jpg">
+                        <h4>Аспро: Максимум</h4>
+                        <p>Аспро: Максимум — универсальный интернет-магазин для любых товаров. Готовые варианты сайта, маркетинговые инструменты и темная тема.</p>
+                    </a>
+                </div>
+                <button class="groceryBox_button">Узнать цену</button>
+            </div>
+            <div class="upper_groceryBox">
+                <div class="groceryBox">
+                    <a>
+                        <div class="mark">ХИТ</div>
+                        <img src="img/monitor_2.jpg">
+                        <h4>Аспро: Next</h4>
+                        <p>Аспро: Next – это универсальный интернет-магазин для товаров любой тематики с мультирегиональностью и конструктором посадочных страниц.</p>
+                    </a>
+                </div>
+                <button class="groceryBox_button">Узнать цену</button>
+            </div>
+        </div>
+        <div class="textBlok">   
+            <div class="upper_groceryBox">
+                <div class="groceryBox">
+                    <a>
+                        <div class="mark">НОВИНКА</div>
+                        <img src="img/monitor_3.jpg">
+                        <h4>Аспро: Корпоративный сайт 3.0</h4>
+                        <p>Аспро: Корпоративный сайт 3.0 — технологически продвинутая платформа Аспро для создания веб-сайта.</p>
+                    </a>
+                </div>
+                <button class="groceryBox_button">Узнать цену</button>
+            </div>
+            <div class="upper_groceryBox">
+                <div class="groceryBox">
+                    <a>
+                        <div class="mark" style="visibility:hidden;">ХИТ</div>
+                        <img src="img/monitor_4.jpg">
+                        <h4>Аспро: Корпоративный сайт 2.0</h4>
+                        <p>Готовое решение для создания сайта компании с мультирегиональностью, конструктором посадочных страниц и простой интеграцией с популярными CRM-системами.</p>
+                    </a>
+                </div>
+                <button class="groceryBox_button">Узнать цену</button>
+            </div>
+        </div>     
+    </div>
+<!--Какой АСПРО выбрать?-->
+
+    <div class="underTextBlok">
+        <a href="" style="text-decoration: none;">
+            <div class="aspro">
+                <h2>Какаой АСПРО выбрать?</h2>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>      
+        </a>  
+    </div>
+
+    <!--виды АСПРО-->
+    <div class="backgroundGray">
+        <div class="textBlok">
+            <div class="blok">
+                <img src="img/table.png" class="blok_img">
+                <div class="blok_div">
+                    <h4>Готовые решения</h4>
+                    <p>Работаем со всеми решениями в том числе АСПРО и Интек (магазины, корпоративные сайты). Настроим нужные для работы модули.</p>
+                </div>
+            </div>
+        </div>
+        <div class="textBlok">    
+            <div class="blok1"><!--что-то не так-->
+                <div class="blok1_div">
+                    <h4>SEO сайта</h4>
+                    <p>Умеем оптимизировать сайты для повышения посещаемости. Базовая настройка SEO уже включена в список задач.</p>
+                </div>
+                <img src="img/pfone.png" class="blok_img">
+            </div>
+        </div>
+        <div class="textBlok"> 
+            <div class="blok">
+                <img src="img/noteBook.png" class="blok_img">
+                <div class="blok_div">
+                    <h4>Настройка интеграций</h4>
+                    <p>Сделаем так, чтобы складской учёт не позволял приобретать то, что закончилось на складе и позволим оформить подписку на товар.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!--слайдеры-->
+
+    <div class="ouerProj">
+        <div class="titlSlider">
+            <h2>Наши работы</h2>
+            <p>Передвиньте ползунок,<br>чтобы увидеть сайт "ДО и ПОСЛЕ"</p>
+        </div>
+
+        <div><!--1-->
+            <div class="cont_slider">
+                <div class="slider">
+                    <img src="img/Table_1var.png" alt="">
+                    <img src="img/Table_2var.png" alt="">
+                </div> 
+            </div>
+            <div class="textBlok_slider">
+                <p class="textBlok_slider_l">Компания: <b>Кубанское Поле</b><br>Город: <b>Краснодар</b></p>
+                <p class="textBlok_slider_l"><b>"ПОСЛЕ РАБОТ" сайт на 1С:Битрикс Управление сайтом с решением АСПРО Максимум. Перенесены все товары на новое решение. Настроена интеграция с CRM.</b></p>
+                <p class="textBlok_slider_s">"ДО" Сайт Кубанское Поле на Opencart. Проблемы с UX UI, со складскими остатками и отображением скидок в ЛК</p>
+            </div>
+            
+            <div class="line">
+                <div></div>
+                <i class="fa-solid fa-angles-right"></i>
+                <div></div>
+            </div>
+        </div>
+
+        <div><!--2-->
+            <div class="cont_slider">
+                <div class="slider">
+                    <img src="img/Table_1var.png" alt="">
+                    <img src="img/Table_2var.png" alt="">
+                </div> 
+            </div>
+            <div class="textBlok_slider">
+                <p class="textBlok_slider_l">Компания: <b>Кухонка на дому</b><br>Город: <b>Санкт-Петербург</b></p>
+                <p class="textBlok_slider_l"><b>"ПОСЛЕ РАБОТ" сайт на 1С:Битрикс Управление сайтом на готовом решении. Верстка уникальных блоков сайта.</b></p>
+                <p class="textBlok_slider_s">"Кухонка на дому "ДО" - сайт на тильде с неорганизованной структурой.</p>
+            </div>
+            
+            <div class="line">
+                <div></div>
+                <i class="fa-solid fa-angles-left"></i>
+                <div></div>
+            </div>
+        </div>    
+        
+        <div><!--3-->
+            <div class="cont_slider">
+                <div class="slider">
+                    <img src="img/Table_1var.png" alt="">
+                    <img src="img/Table_2var.png" alt="">
+                </div> 
+            </div>
+            <div class="textBlok_slider">
+                <p class="textBlok_slider_l">Компания: <b>ЧАМЗ</b><br>Город: <b>Челябинск</b></p>
+                <p class="textBlok_slider_l"><b>Новый сайт ЧАМЗ на 1С:Битрикс Управление сайтом на готовом решении АСПРО. Верстка уникальных блоков сайта. Наполнение контентом.</b></p>
+                <p class="textBlok_slider_s">Сайт конкурентов ЧАМЗ - Сборка сайта 2012 года.</p>
+            </div>
+            
+            <div class="line">
+                <div></div>
+                <i class="fa-solid fa-angles-right"></i>
+                <div></div>
+            </div>  
+        </div>
+
+        <div><!--4-->
+            <div class="cont_slider">
+                <div class="slider">
+                    <img src="img/Table_1var.png" alt="">
+                    <img src="img/Table_2var.png" alt="">
+                </div> 
+            </div>
+            <div class="textBlok_slider">
+                <p class="textBlok_slider_l">Компания: <b>Зипфейр</b><br>Город: <b>Челябинск</b></p>
+                <p class="textBlok_slider_l"><b>Новый сайт Zipfair на 1С:Битрикс Управление сайтом на готовом решении. Наполнение контентом, создание новых страниц, интеграция с 1С. Настройка SEO и рекламы.</b></p>
+                <p class="textBlok_slider_s">"ДО" у компании была только лицензия и некоторые планы по сайту.</p>
+            </div>
+            
+            <div class="line">
+                <div></div>
+                <i class="fa-solid fa-angles-left"></i>
+                <div></div>
+            </div>
+        </div>
+        
+        <div><!--5-->
+            <div class="cont_slider">
+                <div class="slider">
+                    <img src="img/Table_1var.png" alt="">
+                    <img src="img/Table_2var.png" alt="">
+                </div> 
+            </div>
+            <div class="textBlok_slider">
+                <p class="textBlok_slider_l">Компания: <b>Verno кухни</b><br>Город: <b>Челябинск</b></p>
+                <p class="textBlok_slider_l"><b>Новый сайт Verno на 1С:Битрикс Управление сайтом на готовом решении. Наполнение контентом, интеграции, верстка новых страниц.</b></p>
+                <p class="textBlok_slider_s">"ДО" у компании было несколько сайтов на конструкторах.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--получить все кейсы-->
+    <div class="underTextBlok">
+        <a href="" style="text-decoration: none;">
+            <div class="aspro">
+                <h2>Получить все кейсы</h2>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>      
+        </a>
+    </div>
+
+    <!--этапы переноса сайта-->
+    <div class="Stage">
+        <h2>Этапы переноса сайта</h2>
+        <div class="forStage">
+            <div class="Stage1">
+                <div class="Numiration">
+                    <p class="stageNumber">1</p>
+                    <div class="stageLine"></div>
+                </div>
+                <div class="StageTextContent">
+                    <h4>Составление Тех Задания</h4>
+                    <p>Пишем техническое задание чтобы не упустить ни одно пожелание</p>
+                </div>
+            </div>
+            <div class="Stage1">
+                <div class="Numiration">
+                    <p class="stageNumber">2</p>
+                    <div class="stageLine"></div>
+                </div>
+                <div class="StageTextContent">
+                    <h4>Приобретение решений</h4>
+                    <p>Подбираем нужный инструмент и приобретаем под проект</p>
+                </div>
+            </div>
+            <div class="Stage1">
+                <div class="Numiration">
+                    <p class="stageNumber">3</p>
+                    <div class="stageLine"></div>
+                </div>
+                <div class="StageTextContent">
+                    <h4>Технические работы</h4>
+                    <p>Проводим работы по техническому заданию с учетом всех моментов</p>
+                </div>
+            </div>
+            <div class="Stage1">
+                <div class="Numiration">
+                    <p class="stageNumber" style="width: 37px;">4</p>
+                </div>
+                <div class="StageTextContent">
+                    <h4>Базовое SEO</h4>
+                    <p>Настроим базовую поисковую оптимизацию сайта</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--закажите перенос-->
+    <div class="Eror_title">
+        <h2>Закажите перенос сайта если у вас:</h2>
+        <p>Данные проблемы не единственные, но самые<br>популярные</p>
+    </div>
+    <div class="ErorBlok">
+        <div class="ErorLine">
+            <div class="Eror1">
+                <img src="img/eror1.png" alt="">
+                <h4>Ошибки интеграции</h4>
+                <p>Ошибка интеграции с 1С, "Мой Склад" или другими программами учета.</p>
+            </div>
+            <div class="Eror1">
+                <img src="img/eror2.png" alt="">
+                <h4>Ошибки интеграции</h4>
+                <p>Ошибка интеграции с 1С, "Мой Склад" или другими программами учета.</p>
+            </div>
+            <div class="Eror1">
+                <img src="img/eror3.png" alt="">
+                <h4>Ошибки интеграции</h4>
+                <p>Ошибка интеграции с 1С, "Мой Склад" или другими программами учета.</p>
+            </div>
+        </div>
+        <div class="ErorLine">
+            <div class="Eror1">
+                <img src="img/eror4.png" alt="">
+                <h4>Ошибки интеграции</h4>
+                <p>Ошибка интеграции с 1С, "Мой Склад" или другими программами учета.</p>
+            </div>
+            <div class="Eror1">
+                <img src="img/eror5.png" alt="">
+                <h4>Ошибки интеграции</h4>
+                <p>Ошибка интеграции с 1С, "Мой Склад" или другими программами учета.</p>
+            </div>
+            <div class="Eror1">
+                <img src="img/eror6.png" alt="">
+                <h4>Ошибки интеграции</h4>
+                <p>Ошибка интеграции с 1С, "Мой Склад" или другими программами учета.</p>
+            </div>
+        </div>
+    </div>
+    <!--что вы хотите в состав работы-->
+    <div class="job_back" id="scoupWork">
+        <div class="jobTitle">
+            <h2>Что входит в состав работ?</h2>
+            <p>для запуска рабочей версии сайта, мы настроим:</p>
+        </div>
+        <div class="cards">
+            <div class="cardsLine">
+                <div class="card1">
+                    <img src="img/card1.svg" alt="">
+                    <div>
+                        <h4>Наполнение</h4>
+                         <p class="card1_p">Интеграция с 1С<br>Интеграция с МойСклад<br>Интеграция с Бизнес.Ру<br>Выгрузка из прайсов<br>Ручное наполнение</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <img src="img/card2.svg" alt="">
+                    <div>
+                        <h4>Наполнение</h4>
+                        <p class="card1_p">Интеграция с ЯКасса <br>Интеграция с банками <br>И другие эквайринги</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <img src="img/card3.svg" alt="">
+                    <div>
+                        <h4>Доставка</h4>
+                         <p class="card1_p">Подключение к СДЭК <br>Подключение к ПЭК <br>Подключение к Boxberry <br>И другие доставки</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cardsLine">
+                <div class="card1">
+                    <img src="img/card4.svg" alt="">
+                    <div>
+                        <h4>Дизайн</h4>
+                         <p class="card1_p">Разработка баннеров <br>Разработка тизеров <br>Разработка логотипов</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <img src="img/card5.svg" alt="">
+                    <div>
+                        <h4>Продвижение</h4>
+                         <p class="card1_p">SEO оптимизация <br>Написание текстов <br>Работа со ссылками <br>        Подключение https</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <img src="img/card6.svg" alt="">
+                    <div>
+                        <h4>Реклама</h4>
+                         <p class="card1_p">Реклама в Яндекс <br>Реклама в Google <br>Реклама в соц. сетях</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--сертификаты-->
+    <div class="certificate" id="certi">
+        <div class="certi_title">
+            <h2>Сертификаты</h2>
+            <p>У нас есть компетенции которые помогут в<br>решении задачи.</p>
+        </div>
+        <div class="certi_cards">
+            <div class="certi_card1">
+                <div class="cardImg">
+                    <img src="img/certi1.png" alt="">
+                </div>
+                <h4>1С:Битрикс Управление сайтом</h4>
+                <p>Контент-менеджер, Администратор. Базовый, Администратор. Модули, Администратор. Бизнес, Разработчик Bitrix Framework, Технология Композитный сайт</p>
+                <a href="#start"><button>Получить консультацию</button></a>
+            </div>
+            <div class="certi_card1">
+                <div class="cardImg">
+                    <img src="img/certi2.png" alt="">
+                </div>
+                <h4>Решения АСПРО</h4>
+                <p>Есть примеры работ. Оставляйте заявку и мы отправим вам коммерческое предложение.</p>
+                <a href="#start"><button>Получить консультацию</button></a>
+            </div>
+        </div>
+    </div>
+
+    <!--коменты-->
+    <div class="comentTitle">
+        <h2></h2>
+    </div>
+    <div class="buttonSider">
+    </div>
+
+    <!--слайдер-->
+    <div class="comentSlider">
+        <button class="Left" onclick="tapLeft()">
+            <svg width="18" height="30" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                <defs>
+                    <filter id="svg_1_blur">
+                        <feGaussianBlur stdDeviation="0.4"/>
+                    </filter>
+                </defs>
+                <g class="layer" filter="url(#svg_1_blur)" id="svg_1">
+                    <title>right</title>
+                    <line fill="none" id="svg_3" stroke="#000000" stroke-linejoin="round" stroke-width="2" transform="null" x1="0.06818" x2="17.70454" y1="14.97121" y2="0.47121"/>
+                    <line fill="none" id="svg_4" stroke="#000000" stroke-linejoin="round" stroke-width="2" x1="0.34091" x2="17.93182" y1="14.60758" y2="29.51667"/>
+                </g>
+           </svg>
+        </button>
+        <div class="sliderBox">
+            <div class="sliderCont1">
+                <h4 class="sliderTitle">Добрый день, отличная работа менеджера и всей команды. Рекомендую к сотрудничеству.</h4>
+                <img src="img/Coment1.png" alt="" class="imgComent">
+                <p class="sliderText"><b>Александр</b><br>Маркетолог <a href="">Wellside</a></p>
+            </div>
+            <div class="sliderCont1 hidden">
+                <h4 class="sliderTitle">Оценка работы менеджера проекта 5.<br>Круто!</h4>
+                <img src="img/Coment2.png" alt="" class="imgComent">
+                <p class="sliderText"> <b>Георгий Головин</b><br>АКБ Сервис</p>
+            </div>
+            <div class="sliderCont1 hidden">
+                <h4 class="sliderTitle">Оценка 10 Порекомендовали бы нас? Точно да
+                    Комментарий: Спасибо за заботу!</h4>
+                <img src="img/Coment3.jpg" alt="" class="imgComent">
+                <p class="sliderText"><b>Василий</b><br>ООО Е-Транс</p>
+            </div>
+        </div>
+        <button class="Left" onclick="tapRight()">
+            <svg width="18" height="30" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                <defs>
+                    <filter id="svg_1_blur">
+                        <feGaussianBlur stdDeviation="0.4"/>
+                    </filter>
+                </defs>
+                <g class="layer" filter="url(#svg_1_blur)" id="svg_1">
+                    <title>right</title>
+                    <g id="svg_2" transform="rotate(180 9 14.9939)">
+                        <line fill="none" id="svg_3" stroke="#000000" stroke-linejoin="round" stroke-width="2" x1="0.06818" x2="17.70454" y1="14.97121" y2="0.47121"/>
+                        <line fill="none" id="svg_4" stroke="#000000" stroke-linejoin="round" stroke-width="2" x1="0.34091" x2="17.93182" y1="14.60758" y2="29.51667"/>
+                    </g>
+                </g>
+               </svg>
+        </button>
+    </div>
+    <!--для чего нужны-->
+    <div class="forWhat">
+        <div class="forWhat_title">
+            <h2>Для чего мы Вам нужны? (другие вопросы)</h2>
+            <p>Ситуации в которых мы будем максимально вам<br>полезны:</p>
+        </div>
+        <div class="forWhat_list">
+            <div class="underTitl_farWatList">
+                <h4>Только собираетесь запустить</h4>
+                <div class="plus" id="plus1" onclick="list1(this)">
+                    <div class="plusVert"></div>
+                    <div class="plusHoriz"></div>
+                </div>
+            </div>
+            <div class="liList1 pushIn" id="plus1text">
+                <li>Полностью возьмем на себя подбор решения, установку, запуск до готового продукта и продвижение.</li>
+            </div>
+            <div class="underTitl_farWatList">
+                <h4>Есть чистое купленное решение</h4>
+                <div class="plus" id="plus2" onclick="list1(this)">
+                    <div class="plusVert"></div>
+                    <div class="plusHoriz"></div>
+                </div>
+            </div>
+            <div class="liList1 pushIn" id="plus2text">
+                <li>Обозначим все актуальные задачи, предложим то, что нужно выполнить исходя из опыта и доведем проект до конца.</li>
+            </div>
+            <div class="underTitl_farWatList">
+                <h4>Уже есть сайт на Аспро, но нет рук на поддержку</h4>
+                <div class="plus" id="plus3" onclick="list1(this)">
+                    <div class="plusVert"></div>
+                    <div class="plusHoriz"></div>
+                </div>
+            </div>
+            <div class="liList1 pushIn" id="plus3text">
+                <li>Возьмем полное ведение сайта и другие источники привлечения траффика.</li>
+            </div>
+        </div>
+    </div>
+    <!--запусти сайт-->
+    <div class="startBackgound" id="start">
+        <div class="startContent">
+            <img src="img/EndLeft.svg" alt="" class="dieImg_L">
+            <div class="textContent">
+                <h2>Запустить сайт с выгодой до 40%<br>за 2-3 недели</h2>
+                <p>Свяжитесь с нами. Вместе мы подберем наиболее эффективное решение по разумной цене.</p>
+            </div>
+            <img src="img/EndRight.svg" alt="" class="dieImg_R">
+        </div>
+    </div>
+    <!--концовка-->
+    <div class="EndBackground">
+        <div class="EndContayner">
+            <div class="EndList">
+                <div class="EndList2">
+                    <div class="list1">
+                        <h4>Продукты</h4>
+                        <p><a href="https://opti.ooo">CRM системы</a></p>
+                        <p><a href="#">1С:Битрикс Управление сайтом</a></p>
+                        <p><a href="#">Готовые решения</a></p>
+                        <p><a href="#">Готовые сайты</a></p>
+                    </div>
+                    <div class="list1">
+                        <h4>Услуги</h4>
+                        <p><a href="#">Разрабатываем</a></p>
+                        <p><a href="#">Продвигаем</a></p>
+                        <p><a href="#">Повышаем эффективность</a></p>
+                        <p><a href="#">Автоматизация продаж</a></p>
+                        <p><a href="#">Обучение</a></p>
+                        <p><a href="#">Сайты и разработка</a></p>
+                    </div>
+                </div>
+                <div class="EndList1">
+                    <div class="list1">
+                        <h4>Проекты</h4>
+                        <p><a href="#">Внедрение CRM</a></p>
+                        <p><a href="#">Корпоративные сайты</a></p>
+                        <p><a href="#">Базовое SEO</a></p>
+                        <p><a href="#">Автоматизация продаж</a></p>
+                        <p><a href="#">ЧАТ-боты</a></p>
+                    </div>
+                    <div class="list2">
+                        <h4>Наши контакты</h4>
+                        <p class="Number"><a href="tel.88002016216">8 800 2016 216</a></p>
+                        <p><a href="mailto:info@opti.ooo" class="maill">site@opti.ooo</a></p>
+                        <p>Челябинск,<br>ул. Воровского 11, 2этаж</p>
+                    </div>
+                </div>
+            </div>
+
+           <div class="Line1_contayner">
+                <div class="Line1"></div>
+                <p>ООО ГК "ОПТИ" 2022</p>
+            </div>
+        </div>
+    </div>
+</body>

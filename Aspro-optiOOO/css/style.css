@@ -1,0 +1,1008 @@
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    margin: 0 auto;
+}
+* {
+    box-sizing: border-box;
+}
+h1, h2, i {
+    font-size: 42;
+    line-height: 1.35;
+    font-weight: 600;
+}
+h4 {
+    font-size: 24;
+    line-height: 1.23;
+    font-weight: 600;
+}
+p {
+    font-size: 20;
+    font-weight: 300;
+    line-height: 1.55;
+}
+a, button{
+    cursor: pointer;
+}
+@media all and (min-width: 1200px){
+    .burger_button{
+        visibility: hidden;
+    }
+}
+@media all and (max-width: 1199px) {
+    h1, h2, i {
+        font-size: 38 !important;
+    }
+    h4 {
+        font-size: 22;
+        line-height: 1.23;
+        font-weight: 600;
+    }
+    p {
+        font-size: 18 !important;
+    }
+    .burger_button{
+        visibility: hidden;
+    }
+    .img_1{
+        transform: scale(0.8);
+    }
+    /*.firstBlok_textContent{
+        width: 390px;
+    }*/
+    .firstBlok_h1{
+        text-align: center;
+    }
+    .firstBlok_p{
+        text-align: center;
+    }
+    .box2_L{
+        /*width: 460px !important;*/
+        margin: 0 auto;
+    }
+    .box2_R{
+       /* width: 460px !important;*/
+        margin: 0 auto;
+    }
+    .blok_img{
+        transform: scale(0.8);
+        margin: 0 auto !important;
+    }
+    .blok_div,
+    .blok1_div {
+       /* width: 450px !important;*/
+        margin: 0 auto !important;
+    }
+    .titlSlider p {
+        font-size: 22px !important;
+    }
+    .cont_slider{
+       /* width: 780px !important;*/
+    }
+    .Eror1 img {
+       /* width: 300px !important;*/
+    }
+    .groceryBox h4 {
+        font-size: 20px;
+    }
+
+    .groceryBox p,
+    .card1 p {
+        font-size: 14 !important;
+    }
+    .certi_card1 p {
+        font-size: 14px !important;
+    }
+    .certi_card1 button {
+        margin-bottom: 20px;
+    }
+    .liList1 {
+        font-size: 16px !important;
+    }
+    .dieImg_L {
+        transform: scale(0.77);
+    }
+    .dieImg_R {
+        transform: scale(0.77);
+    }
+}
+@media all and (max-width: 979px) {
+    .burger_button{
+        visibility: visible;
+        transform: scale(1.4);
+    }
+    .disappear {
+        visibility: hidden;
+    }
+    .header{
+        height: 153px !important;
+    }
+    .header_logo{
+        transform: scale(1.2);
+        margin: 43px 0 !important;
+    }
+    .textBlok{
+        flex-wrap: wrap !important;
+        width: 979px !important;
+    }
+    .underTextBlok{
+        width: 979px !important;
+    }
+    .backgroundGray{
+        width: 979px !important;
+    }
+    .firstBlok_textContent{
+        margin-left: auto;
+    }
+    .box2_L{
+        margin-left: auto;
+    }
+    .blok {
+        flex-wrap: wrap;
+    }
+    .blok1 {
+        flex-wrap: wrap-reverse;
+    }
+    .cont_slider{
+        transform: scale(0.77);
+    }
+    .aspro{
+        transform: scale(0.7);
+    }
+    .dieImg_L {
+        left: -50% !important;
+    }
+    .dieImg_R {
+        right: -50% !important;
+    }
+    .card1 {
+        width: 600px !important;
+        margin: 15px auto !important;
+    }
+    .ouerProj{
+        width: 979px !important;
+    }
+    .Stage {
+        width: 979px !important;
+    }
+    .forStage {
+        display:contents !important;
+    }
+    .Stage1 {
+        width: auto !important;
+        height: 87px !important;
+        display: flex;
+        justify-content: left;
+        margin: 0 40px;
+    }
+    .Stage1 h4 {
+        margin-top: 0 !important;
+    }
+    .stageLine {
+        width: 2px !important;
+        height: 100% !important;
+        border-left: 2px solid #e6e6e6;
+        margin: 0 auto;
+    }
+    .stageNumber {
+        padding-top: 8.5px;
+        height: 37px;
+        width: 37px !important;
+        text-align: center;
+        font-size: 12px !important;
+        line-height: 1.35;
+        font-weight: 600;
+        margin: 0 ;
+    }
+    .Numiration {
+        display: block !important;
+        margin-right: 40px;
+    }
+    .Eror_title,
+    .comentSlider,
+    .forWhat,
+    .ErorBlok,
+    .job_back,
+    .certificate,
+    .startBackgound,
+    .EndBackground {
+        width: 979px !important;
+    }
+    .header {
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    .StageTextContent {
+        width: 100% !important;
+    }
+    .blok1_div {
+        margin-left: auto !important;
+    }
+}
+/*шапка страницы*/
+.header{
+    width: 100%;
+    max-width: 1200px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    background-color: #fff;
+    z-index: 15;
+}
+.header_logo{
+    width: 80px;
+    height: 53px;
+    margin-top: 14.5px;
+    margin-bottom: 14.5px;
+    float: left;
+}
+.space{
+    margin-left: auto;
+}
+.header_buttons{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #000000;
+    white-space: nowrap;
+    vertical-align: middle;
+    padding: 11px 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+.header_buttons:hover {
+    background-color: #005fee17;
+    font-size: 16px;
+}
+.special_button{
+    border:2px solid #0056d3;
+    margin: 18px 0 18px 3.3%;
+    padding: 11px 30px;
+}
+/*всплывающее меню*/
+.popUpMenu {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 100px;
+    background-color: #fff;
+    z-index: 10;
+    display: flex;
+}
+.popUpContent{
+    width: 460px;
+    margin:    auto;
+    text-align: center;
+}
+.popUpContent a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.17;
+}
+.popUpContent p {
+    margin: 60px 0;
+    padding: 15px 0;
+}
+/*анимированая кнопка меню*/
+.burger_button{
+    position: absolute;
+    top: 62px;
+    right: 45px;
+    display: inline-block;
+    cursor: pointer;
+}
+.bar1, .bar2, .bar3, .bar4 {
+    width: 28px;
+    height: 3px;
+    background-color: #333;
+    margin: 2.5px 0;
+    transition: 0.2s;
+}
+.bar3{
+    margin-top: -5px;
+}
+.change .bar1{
+    opacity: 0;
+}
+.change .bar2{
+    transform: translate(0, 0.5px) rotate(-45deg);
+} 
+.change .bar3{
+    transform: translate(0, -0.5px) rotate(45deg);
+}
+.change .bar4{
+    opacity: 0;
+}
+/*переезд на 1C*/
+.textBlok{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Open Sans',Arial,sans-serif;
+    padding: 60px 0;
+}
+.firstBlok_textContent{
+    width: 490px;
+    margin-right: auto;
+    
+}
+.img_1{
+    width: 600px;
+}
+.firstBlok_h1{
+    color: #000000;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    margin-top: 120px;
+}
+.firstBlok_p{
+    color: #000000;
+    line-height: 1.5;
+    font-weight: 400;
+    opacity: 0.45;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+}
+/*текстовый контент плюсы С1 битрикс*/
+.box2_L{
+    width: 560px;
+    margin-right: auto;
+}
+.box2_R{
+    width: 560px;
+}
+.box2_textContent_underh2{
+    opacity: 0.50; 
+}
+/*плюсы АСПРО*/
+.underTextBlok{
+    background-color: #0056d3;
+    width: 100%;
+    color: #fff;
+}
+/*товары АСПРО*/
+.upper_groceryBox{
+    height: 472px;
+    margin: 20px auto;
+    position: relative;
+}
+.groceryBox{
+    width: 260px;
+    height: 408px;
+    margin: 0 auto;
+}
+.mark{
+    font-weight: normal;
+    font-size: 12px;
+    font-family: 'Roboto',Arial,sans-serif;
+    display: table-cell;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50px;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 0px 10px;
+    background-color: #ff5959;
+    position: relative;
+    top: 25px;
+    left: 10px;
+}
+.groceryBox h4 {
+    font-size: 20px;
+}
+.groceryBox a img{
+    width: 260px;
+}
+.groceryBox a p{
+    margin-top: 8px;
+    opacity: 0.7;
+}
+.groceryBox_button{
+    color: #fff;
+    background: #0056d3;
+    border: 0px;
+    border-radius: 5px;
+    width: 145px;
+    height: 41px;
+    padding: 0 30px;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 19px;
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.groceryBox_button:hover {
+    transform: scale(1.05) translate(-47%, 0);
+    background-color: #024ec0;
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+}
+/*Какой АСПРО выбрать?*/
+.aspro{
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    vertical-align: middle;
+}
+.aspro i {
+    color: #fff;
+    height: 56px;
+    width: 40px;
+    margin: 40px 0 0 10px;
+}
+.arrow{
+    width: 26px;
+    height: 26px;
+    padding: 62.5px 0 62.5px 0;
+    margin-left: 15px;
+}
+/*виды АСПРО*/
+.backgroundGray {
+    width: 100%;
+    background-color: #dedede;
+    padding: 60px 0 0 0;
+}
+.blok,
+.blok1 {
+    display: flex;
+    width: 100%;
+}
+.blok img {
+    width: 550px;
+    margin-right: auto;
+    vertical-align: middle;
+}
+.blok1 img {
+    height: 436px;
+    vertical-align: middle;
+    margin-left: auto;
+}
+.blok1_div {
+    width: 560px;
+    margin-right: auto;
+    height: 300px;
+    margin-left: 20px;
+}
+.blok_div {
+    height: 300px;
+    width: 560px;
+    margin-left: auto;
+}
+.blok div h4,
+.blok1 div h4 {
+    font-size: 36px;
+    font-weight: 500;
+}
+.blok div p,
+.blok1 div p {
+    width: 450px;
+}
+
+/*слайдер*/
+.cont_slider {
+    margin: 100px auto 0 auto;
+    width: 960px;
+}
+.cont_slider img {
+    width: 100%;
+}
+.titlSlider{
+    max-width: 760px;
+    margin: 60px auto 90px auto;
+    text-align: center;
+}
+.textBlok_slider{
+    max-width: 760px;
+    margin: 30px auto 60px auto;
+    padding: 60px 0;
+}
+.textBlok_slider_l {
+    margin-bottom: 40px;
+}
+.titlSlider h2 {
+    text-align: center;
+}
+.titlSlider p{
+    text-align: center;
+}
+.line{
+    width: 1000px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-bottom: 50px;
+}
+.line i {
+    margin: 12px 10px 0 10px;
+}
+.line div {
+    width: 470px;
+    height: 35px;
+    border-bottom: 2px solid #000000;
+}
+.line p {
+    text-align: center;
+    border-radius: 50%;
+    font-size: 60px;
+    font-family: "Georgia";
+    background-color: #fff;
+    margin: 0 auto;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 60px;
+    z-index: 2;
+    position: relative;
+}
+/*этапы переноса сайта*/
+.Stage h2 {
+    margin: 150px auto 120px;
+    text-align: center;
+}
+.forStage {
+    display: flex;
+    justify-content: center;
+}
+.Stage1 {
+    width: 350px;
+    height: 250px;
+}
+.stageLine {
+    width: 100%;
+    height: 20px;
+    border-bottom: 2px solid #e6e6e6;
+}
+.stageNumber {
+    padding-top: 8.5px;
+    height: 37px;
+    width: 43px;
+    background: #000000;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.35;
+    font-weight: 600;
+    font-family: 'Roboto',Arial,sans-serif;
+    margin: 0;
+}
+.Numiration {
+    display: flex;
+    justify-content: left;
+}
+.StageTextContent {
+    width: 300px;
+}
+.StageTextContent h4 {
+    margin: 20px 10px 0 0;
+}
+.StageTextContent p {
+    opacity: 0.7;
+    margin: 10px 10px 0 0;
+}
+/*закажите перенос*/
+.Eror_title {
+    text-align: center;
+    font-family: 'Roboto',Arial,sans-serif;
+    color: #000000;
+    margin-bottom: 90px;
+    margin-top: 200px;
+}
+.ErorBlok {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.ErorLine {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+.Eror1 {
+    width: 360px;
+    margin: 0 auto;
+    text-align: center;
+}
+.Eror1 img {
+    width: 100%;
+}
+.Eror1 p {
+    margin-top: 8px;
+}
+/*что вы хотите в состав работы*/
+.job_back {
+    width: 100%;
+    background-color: #0056d3;
+    padding-top: 135px;
+    padding-bottom: 165px;
+}
+.jobTitle {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.jobTitle h2 {
+    line-height: 1.23;
+    font-weight: 500;
+}
+.jobTitle p {
+    line-height: 1.5;
+    font-weight: 300;
+}
+.cards {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.cardsLine {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card1 {
+    background-color: #fff;
+    color: #000000;
+    width: 360px;
+    height: 375px;
+    border: 0px;
+    border-radius: 10px;
+    padding: 30px 30px 40px;
+    margin: 30px auto;
+}
+.card1 img {
+    width: 60px;
+    margin-bottom: 30px;
+}
+.groceryBox p,
+.card1 p {
+    font-size: 16;
+    opacity: 0.7;
+}
+
+/*<!--сертификаты-->*/
+.certificate {
+    margin: 150px 0;
+}
+.certi_title {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.certi_cards {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.certi_card1 {
+    width: 560px;
+    height: 520px;
+    margin: 30px auto;
+    position: relative;
+}
+.cardImg {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.certi_card1 img {
+    width: 100%;
+    vertical-align: middle;
+}
+.certi_card1 h4 {
+    margin-bottom: 12px;
+    margin-top: 27px;
+}
+.certi_card1 p {
+    opacity: 0.7;
+}
+.certi_card1 button {
+    color: #fff;
+    background: #0056d3;
+    border: 0px;
+    border-radius: 5px;
+    width: 170px;
+    height: 50px;
+    padding: 0 30px;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 19px;
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: all 0.2s;
+}
+.certi_card1 button:hover {
+    transform: scale(1.05) translate(-47%, 0);
+    background-color: #024ec0;
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+}
+/*слайер*/
+.comentSlider {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.sliderBox {
+    width: 1200px;
+    height: 300px;
+    background-color: #fff;
+    position: relative;
+    margin: 0 auto;
+}
+.sliderBox img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.sliderCont1 {
+    width: 660px;
+    height: 254px;
+    background-color: #fff;
+    margin: 0 auto;
+    position: relative;
+}
+.imgComent {
+    margin: 0 auto;
+    position: absolute;
+    top:50%; 
+    left:50%; 
+    transform:translate(-50%, -50%);
+}
+
+.sliderTitle {
+    text-align: center;
+    margin-bottom: 36px;
+}
+.sliderText {
+    text-align: center;
+    line-height: 1.55;
+    margin-bottom: 36px;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.Left {
+    background: none;
+    border: none;
+}
+.hidden {
+    display: none;
+    transition: display 2s;
+}
+
+/*<!--для чего нужны-->*/
+.forWhat {
+    width: 100%;
+    max-width: 1200px;
+    margin: 150px auto
+}
+.forWhat_title h2,
+.forWhat_title p {
+    text-align: center;
+    font-family: 'Roboto',Arial,sans-serif;
+    color: #000000;
+}
+.forWhat_title h2 {
+    font-size: 42px;
+    line-height: 1.23;
+    font-weight: 600;
+}
+.forWhat_title p {
+    font-size: 24px;
+    line-height: 1.50;
+    font-weight: 300;
+}
+.forWhat_list {
+    border-bottom: 1px solid #6766669c;
+    width: 90%;
+    margin: 0 auto;
+}
+.underTitl_farWatList {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    max-width: 1160px;
+    width: 100%;
+    height: 86px;
+    margin: 0px auto;
+    border-top: 1px solid #6766669c;
+}
+.underTitl_farWatList h4 {
+    font-weight: bold;
+    height: auto;
+    margin: 31px 0;
+}
+.liList1 {
+    font-size: 18px;
+    line-height: 1.50;
+    font-weight: 300;
+    margin: 5px 0 20px 0;
+    transition: 0.4s;
+    height: auto;
+    overflow: hidden;
+}
+.pushIn {
+    height: 0;
+    margin: 0;
+}
+.plus   {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    background: #fff;
+    border: 0;
+    border-radius: 50%;
+    margin: auto 15px auto auto;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.plusVert {
+    width: 2px;
+    height: 24px;
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    left: 11px;
+}
+.plusHoriz {
+    width: 24px;
+    height: 2px;
+    background-color: #000000;
+    position: absolute;
+    left: 0;
+    top: 11px;
+}
+.plusRoll {
+    transform: rotate(-45deg);
+}
+.appear {
+    display: contents !important;
+}
+/*запуск сайта*/
+.startBackgound {
+    background-color: #f4f7f9;
+    height: 640px;
+    width: 100%;
+}
+.startContent{
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    position: relative;
+}
+.dieImg_L {
+    width: 343px;
+    height: 427px;
+    position: absolute;
+    top: 50%;
+    transform:translate(0, -50%);
+    left: -10%
+}
+.dieImg_R {
+    width: 343px;
+    height: 427px;
+    position: absolute;
+    top: 50%;
+    transform:translate(0, -50%);
+    right: -10%
+}
+.textContent {
+    width: 740px;
+    margin: 200px auto;
+    color: #000000;
+    font-family: 'Open Sans',Arial,sans-serif;
+}
+/*концовка сайта*/
+.EndBackground {
+    background-color: #2e2e2f;
+    width: 100%;
+}
+.EndContayner {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #fff;
+}
+.EndList {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.EndList1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+}
+.EndList2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.list1 {
+    margin: 50px 80px 20px 0;
+}
+.list1 a {
+    color:#fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Roboto',Arial,sans-serif;
+    font-weight: 400;
+    opacity: 0.7;
+}
+.list2 {
+    margin: 50px 80px 20px 0;
+}
+.Number a {
+    color: #00bff3;
+    font-size: 28px;
+    text-decoration: none;
+    line-height: 1.55;
+}
+.maill {
+    color: #fff;
+    text-decoration: none;
+}
+.Line1_contayner {
+    width: 100%;
+    max-width: 1160px;
+    margin: 0 auto;
+    
+}
+.Line1 {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    margin: 80px auto 30px auto;
+    opacity: 0.5;
+}
+.Line1_contayner p {
+    opacity: 0.7;
+}
