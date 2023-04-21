@@ -1,0 +1,3438 @@
+body{
+    margin: auto;
+    width: 1920px;
+    height: auto;
+    overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a, button{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+/*Шапка страницы*/
+.block1{
+    z-index: 9;
+    margin-top: -435px;
+}
+
+header{  
+    width: 1920px;
+    height: 80px; 
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.logoImg{
+    height: 68px;
+    width: 136px;
+}
+.headerMenu{
+    display: flex;
+    flex-direction: row;
+}
+.headerMenu a{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #333333;
+    margin-left: 25px;
+    margin-right: 25px; 
+}
+.logo, .phone{
+    margin-left: 154px;
+    margin-right: 154px;
+}
+a.phoneNumber{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+
+    color: #212121;
+}
+a.phoneText {
+    width: 120px;
+    height: 16px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    float: right;
+    text-decoration-line: underline;
+
+    color: #1F9F8E;
+}
+/*Блок под шапкой*/
+.underHeaderBlock{
+    width: 1920px;
+    height: 550px;
+
+    display: flex;
+    flex-direction: column;
+}
+.baseFon{
+    margin-bottom: -800px;
+    margin-left: 600px;
+    z-index: 1;
+}
+.treeFon{
+    height: 810px;
+    z-index: 2;
+    margin-bottom: -780px;
+    margin-left: 1634px;
+    margin-top: -65px;
+}
+.cloud{
+    z-index: 2;
+    height: 400px;
+    margin-top: -15px;
+    margin-right: 650px;
+}
+.upCloud{
+    z-index: 3;
+    height: 400px;
+    margin-top: -300px;
+    margin-right: 600px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.upCloud2{
+    z-index: 3;
+    height: 400px;
+    margin-top: -350px;
+    margin-bottom: -250px;
+    margin-right: 600px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.underUpCloud{
+    z-index: 4;
+    margin-top: -250px;
+    margin-right: 300px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.underUpCloud2{
+    z-index: 5;
+    margin-right: 920px;
+    margin-top: -400px;
+}
+.lastCloud{
+    z-index: 6;
+    margin-top: -215px;
+    margin-right: 180px;
+    margin-bottom: 10px;
+}
+.lastCloud2{
+    z-index: 7;
+    margin-right: 1100px;
+    margin-top: -500px;
+}
+.owl{
+    z-index: 4;
+    width: 238px;
+    height: 122px;
+
+    margin-top: -400px;
+    margin-left: 100px;
+}
+.nameCompany{
+    width: 829px;
+    height: 163px;
+    margin-top: 130px;
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 234px;
+}
+.titleBlock1{
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 97px;
+    text-transform: uppercase;
+
+    color: #333333;
+}
+.title2Block1{
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 61px;
+    text-transform: uppercase;
+
+    color: #333333;
+    
+}
+.cashbackButton2{
+    display: flex;
+    flex-direction: row;
+
+    width: 377px;
+    height: 110px;
+    margin-left: 234px;
+    margin-top: 40px;
+
+    border: 2px solid #F6F6F6;
+    border-radius: 30px;
+}
+.cashbackDefinition{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+
+    color: #333333;   
+}
+.cashbackButton{
+
+    width: 110px;
+    height: 110px;
+    left: -0.5%;
+    top: -0.5%;
+
+    background: linear-gradient(133.94deg, #D0D0D0 0%, #F6F6F6 98.22%);
+    border: 2px solid #F6F6F6;
+    box-shadow: 0px 20px 25px -15px rgba(174, 174, 174, 0.64);
+    border-radius: 30px;
+}
+p.cashback{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+
+    color: #1F9F8E;
+}
+p.cashbackNumber{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 41px;
+    text-align: center;
+
+    color: #1F9F8E;
+    margin-top: -6%;
+}
+.cashbackCard{
+    font-family: 'Raleway';
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+
+    color: #333333;
+}
+.consultationButton{
+    margin-left: 234px;
+    margin-top: 60px;
+}
+.consult{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 1px 0px #1B8577;
+    background: linear-gradient(180deg, #1F9F8E 0%, #24B6A2 100%);
+    box-shadow: 0px 30px 35px -30px #1F9F8E, 0px 3px 0px #1B8577, inset 0px -2px 8px rgba(151, 249, 236, 0.25);
+    border-radius: 5px;
+    width: 348px;
+    height: 75px;
+    border: none;
+}
+.arka{
+    z-index: 9;
+    position: relative;
+    margin-top: -10px;
+}
+/*Путёвки*/
+.tours{
+    width: 1920px;
+    height: 1287px;
+
+    margin-top: -1100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: #FAFBFB; 
+    z-index: 10; 
+}
+
+.mainTitle{
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 85px;
+
+    text-align: center;
+
+    color: #333333;
+}
+.underTitle{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+
+    text-align: center;
+    color: #333333;
+    margin-top: -3%;
+
+}
+.underTitleBold{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+
+    text-align: center;
+
+    color: #333333;
+    margin-top: -1%;
+}
+/*СЛАЙДЕР*/
+.room-slider{ 
+    max-width: 600px;
+    margin: 20px auto;
+}
+.slider__wrapper {
+    overflow: hidden;
+  }
+.slider__item {
+    flex: 0 0 33% !important;
+    max-width: 33% !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+}
+.roomImg{
+    width: 330px;
+    height: 188px;
+}
+.roomBorder{
+    box-sizing: border-box;
+    width: 350px;
+    height: 542px;
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    border-radius: 5px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content:first baseline;
+    align-items: center;
+}
+.roomButton{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 1px 0px #1B8577;
+    background: linear-gradient(180deg, #1F9F8E 0%, #24B6A2 100%);
+    box-shadow: 0px 15px 15px -15px #1F9F8E, 0px 2px 0px #1B8577, inset 0px -2px 8px rgba(151, 249, 236, 0.25);
+    border-radius: 5px;
+    width: 161px;
+    height: 40px;
+    border: none;
+}
+.room-title{
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 26px;
+    text-align: justify;
+    margin-left: 2%;
+    margin-right: 2%;
+
+    color: #333333;
+}
+/*Стоимость проживания*/
+.baggage{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    box-sizing: border-box;
+    width: 770px;
+    height: 210px;
+
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    box-shadow: 0px 6px 15px -10px rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+
+    margin-top: -110px;
+    z-index: 13;
+    
+}
+.secondTheme{
+    box-sizing: border-box;
+
+    width: 750px;
+    height: 210px;
+
+    background: linear-gradient(180deg, #E6B674 0.01%, #EECC9C 100%);
+    box-shadow: 0px 12px 15px -10px rgba(0, 0, 0, 0.18);
+    border-radius: 5px;
+
+    position: relative;
+
+    z-index: 11;
+
+    margin-top: -200px;
+    margin-left: 10px;
+}
+.baggageText{
+    position: relative;
+    width: 480px;
+    height: 56px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+
+    text-align: justify;
+
+    color: #333333;
+    margin-bottom: 35px;
+    margin-left: 18%;
+    z-index: 3;
+}
+.baggageButton{
+    width: 272px;
+    height: 64px;
+
+    background: linear-gradient(180deg, #E6B674 0.01%, #EECC9C 100%);
+    box-shadow: 0px 20px 25px -20px #E6B674, 0px 3px 0px #C4995F, inset 0px -2px 8px rgba(252, 234, 210, 0.56);
+    border-radius: 5px;
+    border: none;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    text-shadow: 0px 1px 0px #BA9158;
+    margin-left: 18%;
+    margin-bottom: 35px;
+    z-index: 2;
+}
+.baggageImage{
+    margin-right: 50px;
+    margin-bottom: 35px;
+    z-index: 2;
+}
+/*Преимущества*/
+.advantages{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 1920px;
+    height: 780px;
+}
+.advantagesText{
+    width: 680px;
+    height: 140px;
+    
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 70px;
+  
+    text-align: center;
+   
+    color: #333333;   
+}
+.advantagesExample{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.advantagesImg{
+    width: 180px;
+    height: 154px;
+    margin-left: 9%;
+}
+.advantagesExample2 {
+    margin-top: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.advantagesExample4{
+    margin-top: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.advantagesExampleText{
+    width: 300px;
+    height: 28px;
+
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 28px;
+    /* identical to box height, or 108% */
+    
+    text-align: center;
+    
+    /* Чёрный */
+    
+    color: #333333;
+    
+}
+.advantagesExampleTextDescription{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+   
+    text-align: center;
+   
+    color: #858585;
+    
+    width: 300px;
+    height: 72px;
+}
+/*Менеджеры*/
+.helpBlock{
+    margin-top: 50px;
+    width: 1920px;
+}
+.managerBlock{
+    margin-top: -1900px;
+    z-index:13;
+}
+.managerFon{
+    z-index: 2;
+    height: 820px;
+    width: 1000px;
+    margin-right: 400px;
+}
+.managerFon2{
+    z-index: 1;
+    height: 820px;
+    width: 920px;
+    margin-left: 1000px;
+    margin-top: -900px;
+    margin-bottom: 18px;
+}
+.model2{
+    z-index: 3;
+    margin-left: 650px;
+    margin-top: -790px;
+    margin-bottom: 100px;
+}
+.model1{
+    z-index: 4;
+    margin-left: -650px;
+    margin-top: -790px;
+    margin-bottom: 100px;
+}
+.managerCloud1{
+    z-index: 3;
+    width: 900px;
+    height: 548px;
+    margin-top: -1750px;
+    margin-left: 1025px;
+    margin-bottom: 1190px;
+}
+.managerCloud2{
+    z-index: 4;
+    width: 1000px;
+    height: 548px;
+    margin-top: -2050px;
+    margin-left: 925px;
+    margin-bottom: 1350px;
+}
+.managerCloud3{
+    z-index: 5;
+    margin-top: -750px;
+    margin-left: 1460px;
+    margin-bottom: 950px;
+}
+.managerCloud4{
+    z-index: 6;
+    margin-top: -1550px;
+    margin-left: 1065px;
+    margin-bottom: 900px;
+}
+.managerCloud5{
+    z-index: 7;
+    margin-top: -1350px;
+    margin-left: 950px;
+    margin-bottom: 900px;
+}
+.managerCloud6{
+    z-index: 8;
+    margin-top: -1550px;
+    margin-left: 1377px;
+    margin-bottom: 900px;
+}
+.managerCloud7{
+    z-index: 9;
+    margin-top: -1550px;
+    margin-bottom: 800px;
+}
+.managerCloud8{
+    z-index: 8;
+    margin-top: -1650px;
+    margin-bottom: 850px;
+    margin-left: 850px;
+}
+.managerCloud9{
+    z-index: 9;
+    margin-top: -1650px;
+    margin-bottom: 750px;
+    margin-left: 900px;
+}
+.managerCloud10{
+    z-index: 10;
+    margin-top: -1650px;
+    margin-bottom: 750px;
+    margin-left: 600px;
+}
+.manager1{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    width: 250px;
+    height: 176px;
+    margin-left: 450px;
+    margin-top: 400px;
+    margin-bottom: -140px;
+    z-index: 12;
+}
+.manager1Border1{
+    z-index: 10;
+    width: 270px;
+    height: 224px;
+    margin-left: 420px;
+    margin-top: -1220px;
+    margin-bottom: 72px;
+}
+.manager1Border2{
+    z-index: 11;
+    width: 250px;
+    height: 204px;
+    margin-left: -618px;
+    margin-top: -1290px;
+    margin-bottom: 80px;
+}
+.manager2Border1{
+    z-index: 10;
+    width: 270px;
+    height: 196px;
+    margin-top: -1200px;
+    margin-left: 80px;
+    margin-bottom: 70px;
+}
+.manager2Border2{
+    z-index: 11;
+    width: 250px;
+    height: 176px;
+    margin-left: 100px;
+    margin-top: -1265px;
+    margin-bottom: 78px;
+}
+.manager2{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    width: 250px;
+    height: 176px;
+    margin-left: 800px;
+    margin-top: -110px;
+    margin-bottom: 38px;
+    z-index: 12;
+}
+.managerQuestion{
+    display: flex;
+    flex-direction: column;
+    margin-left: 800px;
+    margin-top: -500px;
+
+}
+.managerName{
+    width: 200px;
+    height: 56px;
+    
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 28px;
+    
+    color: #333333;
+    
+}
+.managerText{
+    width: 200px;
+    height: 88px;
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    
+    color: #858585;  
+}
+.manager2 .managerText{
+    margin-top: -10px;
+}
+.managerQuestion{
+    display: flex;
+    flex-direction: column;
+}
+.managerQuestionTitle{
+    width: 491px;
+    height: 244px;
+
+    margin-left: 350px;
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 61px;
+    
+    text-align: right;
+    
+    color: #333333;  
+}
+.managerButton{
+    width: 348px;
+    height: 75px;
+    margin-left: 495px;
+    margin-top: 70px;
+    
+    background: linear-gradient(180deg, #1F9F8E 0%, #24B6A2 100%);
+    box-shadow: 0px 30px 35px -30px #1F9F8E, 0px 3px 0px #1B8577, inset 0px -2px 8px rgba(151, 249, 236, 0.25);
+    border-radius: 5px;
+    border: none;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+    
+    text-shadow: 0px 1px 0px #1B8577;
+}
+/*отзывы*/
+.reviews{
+   width: 100%;
+    margin-top: 400px;
+}
+.reviewImg{
+    width: 110%;
+    height: 80%;
+}
+.reviewInfo{
+    display: flex;
+    flex-direction: column;
+    
+    margin-top: -500px;
+    margin-bottom: 100px;
+    margin-left: 15px;
+}
+.stars{
+    width: 150px;
+    margin-top: -35px;
+}
+.phoneImg{
+    position: relative;
+    margin-left: 48.5%;
+    margin-top: -44.5%;
+    width: 32%;
+    height: 32%;
+    z-index: 10;
+}
+.reviewerName{
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #333333;
+}
+.reviewerText{
+    width: 215px;
+    height: 400px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 10px;
+
+    color: #333333;
+}
+div.whiteFon{
+    background-color: white;
+    opacity: 0.6;
+    width: 1000px;
+    height: 610px;
+    border-radius: 7px;
+    margin-top: -40.8%;
+}
+div.whiteFon2{
+    background-color: white;
+    opacity: 0.6;
+    margin-top: -31.8%;
+    margin-left: 68%;
+    width: 800px;
+    height: 610px;
+}
+p.reviewsTitle{
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 70px;
+    width: 563px;
+    height: 210px;
+    margin-bottom: -1150px;
+    margin-top: 480px;
+    margin-left: -500px;
+    z-index: 20;
+}
+img.reviewCloud1{
+    width: 653px;
+    height: 329px;
+    position: relative;
+    margin-left: 1300px;
+    z-index: 21;
+
+}
+img.reviewCloud2{
+    width: 653px;
+    height: 329px;
+    position: relative;
+    z-index: 22;
+    margin-bottom: 200px;
+    margin-top: -350px;
+    margin-left: 750px;
+}
+img.reviewCloud3{
+    width: 1088px;
+    height: 559px;
+    opacity: 0.95;
+    z-index: 23;
+    position: relative;
+    margin-top: -450px;
+    margin-left: 850px;
+}
+/*СЛАЙДЕР*/
+.review-slider{
+    margin-top: 600px;
+    z-index: 2;
+}
+.reviewBorder{
+    margin-left: 54.5px;
+}
+.slider__wrapper {
+    overflow: hidden;
+}
+.slider2 .slider__item {
+    flex: 0 0 16.5% !important;
+    max-width: 16.6% !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.treeBlock{
+    margin-left: 1570px;
+    margin-top: -500px;
+    z-index: 24;
+}
+/*<!--для чего нужны-->*/
+.faq {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: -600px;
+}
+.faqTitle, .faqTitleText {
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 70px;
+    /* identical to box height, or 100% */
+    
+    text-align: center;
+    
+    /* Чёрный */
+    
+    color: #333333;
+    
+}
+.faq_list {
+    border-bottom: 1px solid #F0F0F0;
+    width: 90%;
+    margin: 0 auto;
+}
+.faqQuestion{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    max-width: 1160px;
+    width: 100%;
+    height: 86px;
+    margin: 0px auto;
+    border-top: 1px solid #F0F0F0;
+}
+.faqQuestion h4 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 26px;
+    
+    color: #333333;
+    margin: 31px 0;
+}
+.liList1 {
+    font-size: 18px;
+    line-height: 1.50;
+    font-weight: 300;
+    margin: 5px 0 20px 0;
+    transition: 0.4s;
+    height: auto;
+    overflow: hidden;
+}
+
+.liList1 li{
+    list-style-type: none;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    
+    color: #333333;   
+}
+.pushIn {
+    height: 0;
+    margin: 0;
+}
+.plus   {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    background: linear-gradient(180deg, #1F9F8E 0%, #24B6A2 100%);
+    color: #fff;
+    border: 0;
+    border-radius: 50%;
+    margin: auto 15px auto auto;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.plusVert {
+    width: 2px;
+    height: 24px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 11px;
+}
+.plusHoriz {
+    width: 24px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 11px;
+}
+.plusRoll {
+    transform: rotate(-45deg);
+    background: linear-gradient(180deg, #E6B674 0.01%, #EECC9C 100%);
+}
+.appear {
+    display: contents !important;
+}
+.consultationButtonFaq{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 50px;
+}
+.consultFaq{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 1px 0px #1B8577;
+    background: linear-gradient(180deg, #1F9F8E 0%, #24B6A2 100%);
+    box-shadow: 0px 30px 35px -30px #1F9F8E, 0px 3px 0px #1B8577, inset 0px -2px 8px rgba(151, 249, 236, 0.25);
+    border-radius: 5px;
+    width: 348px;
+    height: 75px;
+    border: none;   
+}
+.question{
+    margin-top: 130px;
+}
+.questionTitle{
+    width: 1098px;
+    height: 140px;
+
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 70px;
+    text-align: center;
+
+    color: #333333;
+    z-index: 0;
+}
+.questionImg{
+    width: 244px;
+    height: 261px;
+    z-index: 1;
+    margin-top: -200px;
+    margin-left: 1500px;
+    margin-right: 52px!important;
+}
+/*карта*/
+.map{
+    z-index: 0;
+    width: 1920px;
+}
+/*контакты на карте*/
+.mapContacts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: -500px;
+    margin-left: -800px;
+}
+.mapContact{
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 46px;
+    line-height: 28px;
+    text-align: center;
+
+    color: #333333;
+    margin-left: 150px;
+    margin-top: -490px;
+}
+.mapDescription{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #858585;
+    margin-bottom: 10px;
+    margin-left: 150px;
+}
+.mapPhone{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+
+    color: #333333;
+    margin-bottom: 25px;
+    margin-left: 150px;
+}
+.mapAdress{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+
+    color: #333333;
+    margin-bottom: 25px;
+    margin-left: 150px;
+}
+.mapWorkTime{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+
+    color: #333333;
+    margin-bottom: 25px;
+    margin-left: 150px;
+}
+.society{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 150px;
+}
+.mapFacebook{
+    margin-left: 20px;
+}
+.mapInstagram{
+    margin-left: 20px;
+}
+.mapVk{
+    margin-left: 20px;
+}
+.mapButton{
+    margin-top: 40px;
+    margin-left: 150px;
+    width: 179px;
+    height: 40px;
+
+    background: linear-gradient(180deg, #1F9F8E 0%, #24B6A2 100%);
+    box-shadow: 0px 15px 15px -15px #1F9F8E, 0px 2px 0px #1B8577, inset 0px -2px 8px rgba(151, 249, 236, 0.25);
+    border-radius: 5px;
+    border: none;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 1px 0px #1B8577;
+}
+.mapTree{
+    width: 450px;
+    height: 598px;
+    margin-left: 350px;
+    margin-top: -150px;
+}
+.mapTree2{
+    width: 382px;
+    height: 522px;
+    margin-top: -550px;
+}
+.mapBorder1{
+    width: 370px;
+    height: 564px;
+    margin-top: -530px;
+    margin-left: 150px;
+}
+.mapBorder2{
+    width: 350px;
+    height: 544px;
+    margin-top: -555px;
+    margin-left: 150px;
+}
+footer{
+    width: 1920px;
+    height: 215px;
+    margin-top: 100px;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logoFooter{
+    display: flex;
+    flex-direction: column;
+    margin-left: 300px;
+    margin-right: 79px;
+}
+.underLogo{
+    width: 191px;
+    height: 28px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #333333;
+    margin-top: 10px;
+}
+.footerMenu{
+    display: flex;
+    flex-direction: column;
+    margin-right: 75px;
+}
+.footerInfo{
+    display: flex;
+    flex-direction: column;
+    margin-right: 75px;
+}
+.footerDetail{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+
+    color: #333333;
+}
+.footerButton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 300px;
+    margin-left: 75px;
+}
+.footerBut{
+    width: 328px;
+    height: 75px;
+
+    background: linear-gradient(180deg, #E6B674 0.01%, #EECC9C 100%);
+    box-shadow: 0px 20px 35px -20px #E6B674, 0px 3px 0px #C4995F, inset 0px -2px 8px rgba(252, 234, 210, 0.56);
+    border-radius: 5px;
+    border: none;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 1px 0px #BA9158;
+}
+.societyFooter{
+    margin-top: 30px;
+}
+
+
+/*Адаптивность*/
+@media screen and (max-width: 1800px) and (min-width: 1680px){
+    body{
+        margin: auto;
+        width: auto;
+        height: auto;
+        overflow-x: hidden;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    header{  
+        width: 100%;
+        height: 60px; 
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    
+    }
+    .logoImg{
+        height: 48px;
+        width: 96px;
+    }
+    .headerMenu a{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+    
+        color: #333333;
+
+    }
+    .logo, .phone{
+        margin-left: 100px;
+    }
+    a.phoneNumber{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: right;
+    
+        color: #212121;
+    }
+    a.phoneText {
+        width: 115px;
+        height: 20px;
+    
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+        float: right;
+        text-decoration-line: underline;
+    
+        color: #1F9F8E;
+    }
+    /*Блок под шапкой*/
+    .underHeaderBlock{
+        width: auto;
+        max-height: 550px;
+    
+        display: flex;
+        flex-direction: column;
+    }
+    .baseFon{
+        margin-bottom: -800px;
+        margin-left: 400px;
+        z-index: 1;
+    }
+    .treeFon{
+        height: 810px;
+        z-index: 2;
+        margin-bottom: -780px;
+        margin-left: 1434px;
+        margin-top: -65px;
+    }
+    .cloud{
+        z-index: 2;
+        height: 400px;
+        margin-top: -15px;
+        margin-right: 650px;
+    }
+    .upCloud{
+        z-index: 3;
+        height: 400px;
+        margin-top: -300px;
+        margin-right: 600px;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+    .upCloud2{
+        z-index: 3;
+        height: 400px;
+        margin-top: -350px;
+        margin-bottom: -250px;
+        margin-right: 600px;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+    .underUpCloud{
+        z-index: 4;
+        margin-top: -250px;
+        margin-right: 300px;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+    .underUpCloud2{
+        z-index: 5;
+        margin-right: 920px;
+        margin-top: -400px;
+    }
+    .lastCloud{
+        z-index: 6;
+        margin-top: -215px;
+        margin-right: 180px;
+        margin-bottom: 10px;
+    }
+    .lastCloud2{
+        z-index: 7;
+        margin-right: 1100px;
+        margin-top: -500px;
+    }
+    .owl{
+        z-index: 4;
+        width: 238px;
+        height: 122px;
+    
+        margin-top: -400px;
+        margin-left: 100px;
+    }
+    .nameCompany{
+        width: 829px;
+        height: 163px;
+        margin-top: 130px;
+    
+        display: flex;
+        flex-direction: column;
+        margin-left: 100px;
+    }
+    .titleBlock1{
+        font-family: 'Cormorant';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 70px;
+        line-height: 87px;
+        text-transform: uppercase;
+    
+        color: #333333;
+    }
+    .title2Block1{
+        font-family: 'Cormorant';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 51px;
+        text-transform: uppercase;
+    
+        color: #333333;
+        
+    }
+    .cashbackButton2{
+        display: flex;
+        flex-direction: row;
+    
+        width: 377px;
+        height: 110px;
+        margin-left: 100px;
+        margin-top: 40px;
+    
+        border: 2px solid #F6F6F6;
+        border-radius: 30px;
+    }
+    .cashbackDefinition{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+    
+        color: #333333;   
+    }
+    .cashbackButton{
+    
+        width: 110px;
+        height: 110px;
+        left: -0.5%;
+        top: -0.5%;
+    
+        background: linear-gradient(133.94deg, #D0D0D0 0%, #F6F6F6 98.22%);
+        border: 2px solid #F6F6F6;
+        box-shadow: 0px 20px 25px -15px rgba(174, 174, 174, 0.64);
+        border-radius: 30px;
+    }
+    p.cashback{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+    
+        color: #1F9F8E;
+    }
+    p.cashbackNumber{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 41px;
+        text-align: center;
+    
+        color: #1F9F8E;
+        margin-top: -6%;
+    }
+    .cashbackCard{
+        font-family: 'Raleway';
+    
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+    
+        color: #333333;
+    }
+    .consultationButton{
+        margin-left: 100px;
+        margin-top: 60px;
+    }
+    .consult{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+    
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    
+        color: #FFFFFF;
+    
+        text-shadow: 0px 1px 0px #1B8577;
+        background: linear-gradient(180deg, #1F9F8E 0%, #24B6A2 100%);
+        box-shadow: 0px 30px 35px -30px #1F9F8E, 0px 3px 0px #1B8577, inset 0px -2px 8px rgba(151, 249, 236, 0.25);
+        border-radius: 5px;
+        width: 348px;
+        height: 75px;
+        border: none;
+    }
+    .arka{
+        z-index: 9;
+        position: relative;
+        margin-top: -10px;
+    }
+    /*Путёвки*/
+    .tours{
+        width: auto;
+        height: auto;
+    
+        margin-top: -1100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background: #FAFBFB; 
+        z-index: 10; 
+    }
+    
+    .mainTitle{
+        font-family: 'Cormorant';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 60px;
+        line-height: 75px;
+    
+        text-align: center;
+    
+        color: #333333;
+    }
+    .underTitle{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+    
+        text-align: center;
+        color: #333333;
+        margin-top: -3%;
+    
+    }
+    .underTitleBold{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 28px;
+    
+        text-align: center;
+    
+        color: #333333;
+        margin-top: -1%;
+    }
+    /*СЛАЙДЕР*/
+    .room-slider{ 
+        max-width: 500px;
+        margin: 20px auto;
+    }
+    .slider__wrapper {
+        overflow: hidden;
+      }
+    .slider__item {
+        flex: 0 0 32.966666% !important;
+        max-width: 32.966666% !important;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+    }
+    .roomImg{
+        width: 260px;
+        height: 150px;
+        margin-top: 5px;
+    }
+    .roomBorder{
+        box-sizing: border-box;
+        width: 280px;
+        height: 442px;
+        background: #FFFFFF;
+        border: 1px solid #F0F0F0;
+        border-radius: 5px;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content:first baseline;
+        align-items: center;
+    }
+    .roomButton{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+    
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    
+        color: #FFFFFF;
+    
+        text-shadow: 0px 1px 0px #1B8577;
+        background: linear-gradient(180deg, #1F9F8E 0%, #24B6A2 100%);
+        box-shadow: 0px 15px 15px -15px #1F9F8E, 0px 2px 0px #1B8577, inset 0px -2px 8px rgba(151, 249, 236, 0.25);
+        border-radius: 5px;
+        width: 131px;
+        height: 40px;
+        border: none;
+    }
+    .room-title{
+        font-family: 'Cormorant';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: justify;
+        margin-left: 2%;
+        margin-right: 2%;
+    
+        color: #333333;
+    }
+    /*Стоимость проживания*/
+    .baggage{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    
+        box-sizing: border-box;
+        width: 770px;
+        height: 210px;
+    
+        background: #FFFFFF;
+        border: 1px solid #E5E5E5;
+        box-shadow: 0px 6px 15px -10px rgba(0, 0, 0, 0.8);
+        border-radius: 5px;
+    
+        margin-top: 234px;
+        z-index: 13;
+        
+    }
+    .secondTheme{
+        box-sizing: border-box;
+    
+        width: 750px;
+        height: 210px;
+    
+        background: linear-gradient(180deg, #E6B674 0.01%, #EECC9C 100%);
+        box-shadow: 0px 12px 15px -10px rgba(0, 0, 0, 0.18);
+        border-radius: 5px;
+    
+        position: relative;
+    
+        z-index: 11;
+    
+        margin-top: -200px;
+        margin-left: 10px;
+    }
+    .baggageText{
+        position: relative;
+        width: 480px;
+        height: 56px;
+    
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+    
+        text-align: justify;
+    
+        color: #333333;
+        margin-bottom: 35px;
+        margin-left: 18%;
+        z-index: 3;
+    }
+    .baggageButton{
+        width: 272px;
+        height: 64px;
+    
+        background: linear-gradient(180deg, #E6B674 0.01%, #EECC9C 100%);
+        box-shadow: 0px 20px 25px -20px #E6B674, 0px 3px 0px #C4995F, inset 0px -2px 8px rgba(252, 234, 210, 0.56);
+        border-radius: 5px;
+        border: none;
+    
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    
+        text-shadow: 0px 1px 0px #BA9158;
+        margin-left: 18%;
+        margin-bottom: 35px;
+        z-index: 2;
+    }
+    .baggageImage{
+        margin-right: 50px;
+        margin-bottom: 35px;
+        z-index: 2;
+    }
+    /*Преимущества*/
+    .advantages{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        width: 1920px;
+        height: 780px;
+    }
+    .advantagesText{
+        width: 680px;
+        height: 140px;
+        
+        font-family: 'Cormorant';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 70px;
+        line-height: 70px;
+      
+        text-align: center;
+       
+        color: #333333;   
+    }
+    .advantagesExample{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .advantagesImg{
+        width: 180px;
+        height: 154px;
+        margin-left: 9%;
+    }
+    .advantagesExample2 {
+        margin-top: 5%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .advantagesExample4{
+        margin-top: 5%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .advantagesExampleText{
+        width: 300px;
+        height: 28px;
+    
+        font-family: 'Cormorant';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 28px;
+        /* identical to box height, or 108% */
+        
+        text-align: center;
+        
+        /* Чёрный */
+        
+        color: #333333;
+        
+    }
+    .advantagesExampleTextDescription{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+       
+        text-align: center;
+       
+        color: #858585;
+        
+        width: 300px;
+        height: 72px;
+    }
+    /*Менеджеры*/
+    .helpBlock{
+        margin-top: 50px;
+        width: 1920px;
+    }
+    .managerBlock{
+        margin-top: -1900px;
+        z-index:13;
+    }
+    .managerFon{
+        z-index: 2;
+        height: 820px;
+        width: 1000px;
+        margin-right: 400px;
+    }
+    .managerFon2{
+        z-index: 1;
+        height: 820px;
+        width: 920px;
+        margin-left: 1000px;
+        margin-top: -900px;
+        margin-bottom: 18px;
+    }
+    .model2{
+        z-index: 3;
+        margin-left: 650px;
+        margin-top: -790px;
+        margin-bottom: 100px;
+    }
+    .model1{
+        z-index: 4;
+        margin-left: -650px;
+        margin-top: -790px;
+        margin-bottom: 100px;
+    }
+    .managerCloud1{
+        z-index: 3;
+        width: 900px;
+        height: 548px;
+        margin-top: -1750px;
+        margin-left: 1025px;
+        margin-bottom: 1190px;
+    }
+    .managerCloud2{
+        z-index: 4;
+        width: 1000px;
+        height: 548px;
+        margin-top: -2050px;
+        margin-left: 925px;
+        margin-bottom: 1350px;
+    }
+    .managerCloud3{
+        z-index: 5;
+        margin-top: -750px;
+        margin-left: 1460px;
+        margin-bottom: 950px;
+    }
+    .managerCloud4{
+        z-index: 6;
+        margin-top: -1550px;
+        margin-left: 1065px;
+        margin-bottom: 900px;
+    }
+    .managerCloud5{
+        z-index: 7;
+        margin-top: -1350px;
+        margin-left: 950px;
+        margin-bottom: 900px;
+    }
+    .managerCloud6{
+        z-index: 8;
+        margin-top: -1550px;
+        margin-left: 1377px;
+        margin-bottom: 900px;
+    }
+    .managerCloud7{
+        z-index: 9;
+        margin-top: -1550px;
+        margin-bottom: 800px;
+    }
+    .managerCloud8{
+        z-index: 8;
+        margin-top: -1650px;
+        margin-bottom: 850px;
+        margin-left: 850px;
+    }
+    .managerCloud9{
+        z-index: 9;
+        margin-top: -1650px;
+        margin-bottom: 750px;
+        margin-left: 900px;
+    }
+    .managerCloud10{
+        z-index: 10;
+        margin-top: -1650px;
+        margin-bottom: 750px;
+        margin-left: 600px;
+    }
+    .manager1{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    
+        width: 250px;
+        height: 176px;
+        margin-left: 450px;
+        margin-top: 400px;
+        margin-bottom: -140px;
+        z-index: 12;
+    }
+    .manager1Border1{
+        z-index: 10;
+        width: 270px;
+        height: 224px;
+        margin-left: 420px;
+        margin-top: -1220px;
+        margin-bottom: 72px;
+    }
+    .manager1Border2{
+        z-index: 11;
+        width: 250px;
+        height: 204px;
+        margin-left: -618px;
+        margin-top: -1290px;
+        margin-bottom: 80px;
+    }
+    .manager2Border1{
+        z-index: 10;
+        width: 270px;
+        height: 196px;
+        margin-top: -1200px;
+        margin-left: 80px;
+        margin-bottom: 70px;
+    }
+    .manager2Border2{
+        z-index: 11;
+        width: 250px;
+        height: 176px;
+        margin-left: 100px;
+        margin-top: -1265px;
+        margin-bottom: 78px;
+    }
+    .manager2{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    
+        width: 250px;
+        height: 176px;
+        margin-left: 800px;
+        margin-top: -110px;
+        margin-bottom: 38px;
+        z-index: 12;
+    }
+    .managerQuestion{
+        display: flex;
+        flex-direction: column;
+        margin-left: 800px;
+        margin-top: -500px;
+    
+    }
+    .managerName{
+        width: 200px;
+        height: 56px;
+        
+        font-family: 'Cormorant';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 28px;
+        
+        color: #333333;
+        
+    }
+    .managerText{
+        width: 200px;
+        height: 88px;
+        
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        
+        color: #858585;  
+    }
+    .manager2 .managerText{
+        margin-top: -10px;
+    }
+    .managerQuestion{
+        display: flex;
+        flex-direction: column;
+    }
+    .managerQuestionTitle{
+        width: 491px;
+        height: 244px;
+    
+        margin-left: 350px;
+        font-family: 'Cormorant';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 56px;
+        line-height: 61px;
+        
+        text-align: right;
+        
+        color: #333333;  
+    }
+    .managerButton{
+        width: 348px;
+        height: 75px;
+        margin-left: 495px;
+        margin-top: 70px;
+        
+        background: linear-gradient(180deg, #1F9F8E 0%, #24B6A2 100%);
+        box-shadow: 0px 30px 35px -30px #1F9F8E, 0px 3px 0px #1B8577, inset 0px -2px 8px rgba(151, 249, 236, 0.25);
+        border-radius: 5px;
+        border: none;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        
+        color: #FFFFFF;
+        
+        text-shadow: 0px 1px 0px #1B8577;
+    }
+    /*отзывы*/
+.reviews{
+    width: 100%;
+     margin-top: 400px;
+ }
+ .reviewImg{
+     width: 104%;
+     height: 70%;
+ }
+ .reviewInfo{
+     display: flex;
+     flex-direction: column;
+     
+     margin-top: -440px;
+     margin-bottom: 100px;
+     margin-left: 15px;
+ }
+ .stars{
+     width: 150px;
+     margin-top: -35px;
+ }
+ .phoneImg{
+     position: relative;
+     margin-left: 49.9%;
+     margin-top: -48%;
+     width: 32%;
+     height: 32%;
+     z-index: 10;
+ }
+ .reviewerName{
+     font-family: 'Cormorant';
+     font-style: normal;
+     font-weight: 600;
+     font-size: 24px;
+     line-height: 28px;
+ 
+     color: #333333;
+ }
+ .reviewerText{
+     width: 215px;
+     height: 400px;
+ 
+     font-family: 'Raleway';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 12px;
+     line-height: 18px;
+     margin-top: 10px;
+ 
+     color: #333333;
+ }
+ div.whiteFon{
+     background-color: white;
+     opacity: 0.6;
+     width: 900px;
+     height: 610px;
+     border-radius: 7px;
+     margin-top: -40.8%;
+ }
+ div.whiteFon2{
+     background-color: white;
+     opacity: 0.6;
+     margin-top: -38%;
+     margin-left: 68%;
+     width: 800px;
+     height: 610px;
+ }
+ p.reviewsTitle{
+     font-family: 'Cormorant';
+     font-style: normal;
+     font-weight: 600;
+     font-size: 70px;
+     line-height: 70px;
+     width: 563px;
+     height: 210px;
+     margin-bottom: -1150px;
+     margin-top: 480px;
+     margin-left: -500px;
+     z-index: 20;
+ }
+ img.reviewCloud1{
+     width: 653px;
+     height: 329px;
+     position: relative;
+     margin-left: 1200px;
+     z-index: 21;
+ 
+ }
+ img.reviewCloud2{
+     width: 653px;
+     height: 329px;
+     position: relative;
+     z-index: 22;
+     margin-bottom: 200px;
+     margin-top: -350px;
+     margin-left: 650px;
+ }
+ img.reviewCloud3{
+     width: 1088px;
+     height: 559px;
+     opacity: 0.95;
+     z-index: 23;
+     position: relative;
+     margin-top: -550px;
+     margin-left: 850px;
+ }
+ /*СЛАЙДЕР*/
+ .review-slider{
+     margin-top: 600px;
+     z-index: 2;
+ }
+ .reviewBorder{
+     margin-left: 54.5px;
+ }
+ .slider__wrapper {
+     overflow: hidden;
+ }
+ .slider2 .slider__item {
+     flex: 0 0 17% !important;
+     max-width: 17% !important;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .treeBlock{
+     margin-left: 1370px;
+     margin-top: -500px;
+     z-index: 24;
+ }
+ /*<!--для чего нужны-->*/
+ .faq {
+     width: 100%;
+     max-width: 1200px;
+     margin-top: -600px;
+ }
+ .faqTitle, .faqTitleText {
+     font-family: 'Cormorant';
+     font-style: normal;
+     font-weight: 600;
+     font-size: 70px;
+     line-height: 70px;
+     /* identical to box height, or 100% */
+     
+     text-align: center;
+     
+     /* Чёрный */
+     
+     color: #333333;
+     
+ }
+ .faq_list {
+     border-bottom: 1px solid #F0F0F0;
+     width: 90%;
+     margin: 0 auto;
+ }
+ .faqQuestion{
+     display: flex;
+     justify-content: center;
+     flex-wrap: nowrap;
+     max-width: 1160px;
+     width: 100%;
+     height: 86px;
+     margin: 0px auto;
+     border-top: 1px solid #F0F0F0;
+ }
+ .faqQuestion h4 {
+     font-family: 'Raleway';
+     font-style: normal;
+     font-weight: 500;
+     font-size: 24px;
+     line-height: 26px;
+     
+     color: #333333;
+     margin: 31px 0;
+ }
+ .liList1 {
+     font-size: 18px;
+     line-height: 1.50;
+     font-weight: 300;
+     margin: 5px 0 20px 0;
+     transition: 0.4s;
+     height: auto;
+     overflow: hidden;
+ }
+ 
+ .liList1 li{
+     list-style-type: none;
+     font-family: 'Raleway';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 24px;
+     
+     color: #333333;   
+ }
+ .pushIn {
+     height: 0;
+     margin: 0;
+ }
+ .plus   {
+     width: 24px;
+     height: 24px;
+     position: relative;
+     background: linear-gradient(180deg, #1F9F8E 0%, #24B6A2 100%);
+     color: #fff;
+     border: 0;
+     border-radius: 50%;
+     margin: auto 15px auto auto;
+     cursor: pointer;
+     transition: 0.4s;
+ }
+ .plusVert {
+     width: 2px;
+     height: 24px;
+     background-color: #fff;
+     position: absolute;
+     top: 0;
+     left: 11px;
+ }
+ .plusHoriz {
+     width: 24px;
+     height: 2px;
+     background-color: #fff;
+     position: absolute;
+     left: 0;
+     top: 11px;
+ }
+ .plusRoll {
+     transform: rotate(-45deg);
+     background: linear-gradient(180deg, #E6B674 0.01%, #EECC9C 100%);
+ }
+ .appear {
+     display: contents !important;
+ }
+ .consultationButtonFaq{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ 
+     margin-top: 50px;
+ }
+ .consultFaq{
+     font-family: 'Raleway';
+     font-style: normal;
+     font-weight: 600;
+     font-size: 16px;
+     line-height: 19px;
+ 
+     text-align: center;
+     letter-spacing: 0.05em;
+     text-transform: uppercase;
+ 
+     color: #FFFFFF;
+ 
+     text-shadow: 0px 1px 0px #1B8577;
+     background: linear-gradient(180deg, #1F9F8E 0%, #24B6A2 100%);
+     box-shadow: 0px 30px 35px -30px #1F9F8E, 0px 3px 0px #1B8577, inset 0px -2px 8px rgba(151, 249, 236, 0.25);
+     border-radius: 5px;
+     width: 348px;
+     height: 75px;
+     border: none;   
+ }
+ .question{
+     margin-top: 130px;
+ }
+ .questionTitle{
+     width: 1098px;
+     height: 140px;
+ 
+     font-family: 'Cormorant';
+     font-style: normal;
+     font-weight: 600;
+     font-size: 60px;
+     line-height: 60px;
+     text-align: center;
+ 
+     color: #333333;
+     z-index: 0;
+ }
+ .questionImg{
+     width: 244px;
+     height: 261px;
+     z-index: 1;
+     margin-top: -200px;
+     margin-left: 1400px;
+     margin-right: 52px!important;
+ }
+ .map{
+    z-index: 0;
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 1600px) and (min-width: 1290px){
+    body{
+        margin: auto;
+        width: 100%;
+        height: auto;
+        overflow-x: hidden;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    header{  
+        width: 100%;
+        height: 60px; 
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    
+    }
+    .logoImg{
+        height: 48px;
+        width: 96px;
+    }
+    .headerMenu a{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+    
+        color: #333333;
+
+    }
+    .logo, .phone{
+        margin-left: 100px;
+    }
+    a.phoneNumber{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: right;
+    
+        color: #212121;
+    }
+    a.phoneText {
+        width: 115px;
+        height: 20px;
+    
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+        float: right;
+        text-decoration-line: underline;
+    
+        color: #1F9F8E;
+    }
+    /*Блок под шапкой*/
+    .underHeaderBlock{
+        width: auto;
+        max-height: 550px;
+    
+        display: flex;
+        flex-direction: column;
+    }
+    .baseFon{
+        margin-bottom: -800px;
+        margin-left: 400px;
+        z-index: 1;
+    }
+    .treeFon{
+        height: 810px;
+        z-index: 2;
+        margin-bottom: -780px;
+        margin-left: 1434px;
+        margin-top: -65px;
+    }
+    .cloud{
+        z-index: 2;
+        height: 400px;
+        margin-top: -15px;
+        margin-right: 650px;
+    }
+    .upCloud{
+        z-index: 3;
+        height: 400px;
+        margin-top: -300px;
+        margin-right: 600px;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+    .upCloud2{
+        z-index: 3;
+        height: 400px;
+        margin-top: -350px;
+        margin-bottom: -250px;
+        margin-right: 600px;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+    .underUpCloud{
+        z-index: 4;
+        margin-top: -250px;
+        margin-right: 300px;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+    .underUpCloud2{
+        z-index: 5;
+        margin-right: 920px;
+        margin-top: -400px;
+    }
+    .lastCloud{
+        z-index: 6;
+        margin-top: -215px;
+        margin-right: 180px;
+        margin-bottom: 10px;
+    }
+    .lastCloud2{
+        z-index: 7;
+        margin-right: 1100px;
+        margin-top: -500px;
+    }
+    .owl{
+        z-index: 4;
+        width: 238px;
+        height: 122px;
+    
+        margin-top: -400px;
+        margin-left: 100px;
+    }
+    .nameCompany{
+        width: 829px;
+        height: 163px;
+        margin-top: 130px;
+    
+        display: flex;
+        flex-direction: column;
+        margin-left: 100px;
+    }
+    .titleBlock1{
+        font-family: 'Cormorant';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 70px;
+        line-height: 87px;
+        text-transform: uppercase;
+    
+        color: #333333;
+    }
+    .title2Block1{
+        font-family: 'Cormorant';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 51px;
+        text-transform: uppercase;
+    
+        color: #333333;
+        
+    }
+    .cashbackButton2{
+        display: flex;
+        flex-direction: row;
+    
+        width: 377px;
+        height: 110px;
+        margin-left: 100px;
+        margin-top: 40px;
+    
+        border: 2px solid #F6F6F6;
+        border-radius: 30px;
+    }
+    .cashbackDefinition{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+    
+        color: #333333;   
+    }
+    .cashbackButton{
+    
+        width: 110px;
+        height: 110px;
+        left: -0.5%;
+        top: -0.5%;
+    
+        background: linear-gradient(133.94deg, #D0D0D0 0%, #F6F6F6 98.22%);
+        border: 2px solid #F6F6F6;
+        box-shadow: 0px 20px 25px -15px rgba(174, 174, 174, 0.64);
+        border-radius: 30px;
+    }
+    p.cashback{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+    
+        color: #1F9F8E;
+    }
+    p.cashbackNumber{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 41px;
+        text-align: center;
+    
+        color: #1F9F8E;
+        margin-top: -6%;
+    }
+    .cashbackCard{
+        font-family: 'Raleway';
+    
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+    
+        color: #333333;
+    }
+    .consultationButton{
+        margin-left: 100px;
+        margin-top: 60px;
+    }
+    .consult{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+    
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    
+        color: #FFFFFF;
+    
+        text-shadow: 0px 1px 0px #1B8577;
+        background: linear-gradient(180deg, #1F9F8E 0%, #24B6A2 100%);
+        box-shadow: 0px 30px 35px -30px #1F9F8E, 0px 3px 0px #1B8577, inset 0px -2px 8px rgba(151, 249, 236, 0.25);
+        border-radius: 5px;
+        width: 348px;
+        height: 75px;
+        border: none;
+    }
+    .arka{
+        z-index: 9;
+        position: relative;
+        margin-top: -10px;
+    }
+    .tours{
+        width: auto;
+        height: auto;
+    
+        margin-top: -1100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background: #FAFBFB; 
+        z-index: 10; 
+    }
+    
+    .mainTitle{
+        font-family: 'Cormorant';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 60px;
+        line-height: 75px;
+    
+        text-align: center;
+    
+        color: #333333;
+    }
+    .underTitle{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+    
+        text-align: center;
+        color: #333333;
+        margin-top: -3%;
+    
+    }
+    .underTitleBold{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 28px;
+    
+        text-align: center;
+    
+        color: #333333;
+        margin-top: -1%;
+    }
+    /*СЛАЙДЕР*/
+    .room-slider{ 
+        max-width: 500px;
+        margin: 20px auto;
+    }
+    .slider__wrapper {
+        overflow: hidden;
+      }
+    .slider__item {
+        flex: 0 0 32.966666% !important;
+        max-width: 32.966666% !important;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+    }
+    .roomImg{
+        width: 260px;
+        height: 150px;
+        margin-top: 5px;
+    }
+    .roomBorder{
+        box-sizing: border-box;
+        width: 280px;
+        height: 442px;
+        background: #FFFFFF;
+        border: 1px solid #F0F0F0;
+        border-radius: 5px;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content:first baseline;
+        align-items: center;
+    }
+    .roomButton{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+    
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    
+        color: #FFFFFF;
+    
+        text-shadow: 0px 1px 0px #1B8577;
+        background: linear-gradient(180deg, #1F9F8E 0%, #24B6A2 100%);
+        box-shadow: 0px 15px 15px -15px #1F9F8E, 0px 2px 0px #1B8577, inset 0px -2px 8px rgba(151, 249, 236, 0.25);
+        border-radius: 5px;
+        width: 131px;
+        height: 40px;
+        border: none;
+    }
+    .room-title{
+        font-family: 'Cormorant';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: justify;
+        margin-left: 2%;
+        margin-right: 2%;
+    
+        color: #333333;
+    }
+    /*Стоимость проживания*/
+    .baggage{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    
+        box-sizing: border-box;
+        width: 770px;
+        height: 210px;
+    
+        background: #FFFFFF;
+        border: 1px solid #E5E5E5;
+        box-shadow: 0px 6px 15px -10px rgba(0, 0, 0, 0.8);
+        border-radius: 5px;
+    
+        margin-top: 234px;
+        z-index: 13;
+        
+    }
+    .secondTheme{
+        box-sizing: border-box;
+    
+        width: 750px;
+        height: 210px;
+    
+        background: linear-gradient(180deg, #E6B674 0.01%, #EECC9C 100%);
+        box-shadow: 0px 12px 15px -10px rgba(0, 0, 0, 0.18);
+        border-radius: 5px;
+    
+        position: relative;
+    
+        z-index: 11;
+    
+        margin-top: -200px;
+        margin-left: 10px;
+    }
+    .baggageText{
+        position: relative;
+        width: 480px;
+        height: 56px;
+    
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+    
+        text-align: justify;
+    
+        color: #333333;
+        margin-bottom: 35px;
+        margin-left: 18%;
+        z-index: 3;
+    }
+    .baggageButton{
+        width: 272px;
+        height: 64px;
+    
+        background: linear-gradient(180deg, #E6B674 0.01%, #EECC9C 100%);
+        box-shadow: 0px 20px 25px -20px #E6B674, 0px 3px 0px #C4995F, inset 0px -2px 8px rgba(252, 234, 210, 0.56);
+        border-radius: 5px;
+        border: none;
+    
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    
+        text-shadow: 0px 1px 0px #BA9158;
+        margin-left: 18%;
+        margin-bottom: 35px;
+        z-index: 2;
+    }
+    .baggageImage{
+        margin-right: 50px;
+        margin-bottom: 35px;
+        z-index: 2;
+    }
+    /*Преимущества*/
+    .advantages{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        width: 1920px;
+        height: 780px;
+    }
+    .advantagesText{
+        width: 680px;
+        height: 140px;
+        
+        font-family: 'Cormorant';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 70px;
+        line-height: 70px;
+      
+        text-align: center;
+       
+        color: #333333;   
+    }
+    .advantagesExample{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .advantagesImg{
+        width: 180px;
+        height: 154px;
+        margin-left: 9%;
+    }
+    .advantagesExample2 {
+        margin-top: 5%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .advantagesExample4{
+        margin-top: 5%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .advantagesExampleText{
+        width: 300px;
+        height: 28px;
+    
+        font-family: 'Cormorant';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 28px;
+        /* identical to box height, or 108% */
+        
+        text-align: center;
+        
+        /* Чёрный */
+        
+        color: #333333;
+        
+    }
+    .advantagesExampleTextDescription{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+       
+        text-align: center;
+       
+        color: #858585;
+        
+        width: 300px;
+        height: 72px;
+    }
+    /*Менеджеры*/
+    .helpBlock{
+        margin-top: 50px;
+        width: 1920px;
+    }
+    .managerBlock{
+        margin-top: -1900px;
+        z-index:13;
+    }
+    .managerFon{
+        z-index: 2;
+        height: 820px;
+        width: 1000px;
+        margin-right: 400px;
+    }
+    .managerFon2{
+        z-index: 1;
+        height: 820px;
+        width: 920px;
+        margin-left: 1000px;
+        margin-top: -900px;
+        margin-bottom: 18px;
+    }
+    .model2{
+        z-index: 3;
+        margin-left: 650px;
+        margin-top: -790px;
+        margin-bottom: 100px;
+    }
+    .model1{
+        z-index: 4;
+        margin-left: -650px;
+        margin-top: -790px;
+        margin-bottom: 100px;
+    }
+    .managerCloud1{
+        z-index: 3;
+        width: 900px;
+        height: 548px;
+        margin-top: -1750px;
+        margin-left: 1025px;
+        margin-bottom: 1190px;
+    }
+    .managerCloud2{
+        z-index: 4;
+        width: 1000px;
+        height: 548px;
+        margin-top: -2050px;
+        margin-left: 925px;
+        margin-bottom: 1350px;
+    }
+    .managerCloud3{
+        z-index: 5;
+        margin-top: -750px;
+        margin-left: 1460px;
+        margin-bottom: 950px;
+    }
+    .managerCloud4{
+        z-index: 6;
+        margin-top: -1550px;
+        margin-left: 1065px;
+        margin-bottom: 900px;
+    }
+    .managerCloud5{
+        z-index: 7;
+        margin-top: -1350px;
+        margin-left: 950px;
+        margin-bottom: 900px;
+    }
+    .managerCloud6{
+        z-index: 8;
+        margin-top: -1550px;
+        margin-left: 1377px;
+        margin-bottom: 900px;
+    }
+    .managerCloud7{
+        z-index: 9;
+        margin-top: -1550px;
+        margin-bottom: 800px;
+    }
+    .managerCloud8{
+        z-index: 8;
+        margin-top: -1650px;
+        margin-bottom: 850px;
+        margin-left: 850px;
+    }
+    .managerCloud9{
+        z-index: 9;
+        margin-top: -1650px;
+        margin-bottom: 750px;
+        margin-left: 900px;
+    }
+    .managerCloud10{
+        z-index: 10;
+        margin-top: -1650px;
+        margin-bottom: 750px;
+        margin-left: 600px;
+    }
+    .manager1{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    
+        width: 250px;
+        height: 176px;
+        margin-left: 450px;
+        margin-top: 400px;
+        margin-bottom: -140px;
+        z-index: 12;
+    }
+    .manager1Border1{
+        z-index: 10;
+        width: 270px;
+        height: 224px;
+        margin-left: 420px;
+        margin-top: -1220px;
+        margin-bottom: 72px;
+    }
+    .manager1Border2{
+        z-index: 11;
+        width: 250px;
+        height: 204px;
+        margin-left: -618px;
+        margin-top: -1290px;
+        margin-bottom: 80px;
+    }
+    .manager2Border1{
+        z-index: 10;
+        width: 270px;
+        height: 196px;
+        margin-top: -1200px;
+        margin-left: 80px;
+        margin-bottom: 70px;
+    }
+    .manager2Border2{
+        z-index: 11;
+        width: 250px;
+        height: 176px;
+        margin-left: 100px;
+        margin-top: -1265px;
+        margin-bottom: 78px;
+    }
+    .manager2{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    
+        width: 250px;
+        height: 176px;
+        margin-left: 800px;
+        margin-top: -110px;
+        margin-bottom: 38px;
+        z-index: 12;
+    }
+    .managerQuestion{
+        display: flex;
+        flex-direction: column;
+        margin-left: 800px;
+        margin-top: -500px;
+    
+    }
+    .managerName{
+        width: 200px;
+        height: 56px;
+        
+        font-family: 'Cormorant';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 28px;
+        
+        color: #333333;
+        
+    }
+    .managerText{
+        width: 200px;
+        height: 88px;
+        
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        
+        color: #858585;  
+    }
+    .manager2 .managerText{
+        margin-top: -10px;
+    }
+    .managerQuestion{
+        display: flex;
+        flex-direction: column;
+    }
+    .managerQuestionTitle{
+        width: 491px;
+        height: 244px;
+    
+        margin-left: 350px;
+        font-family: 'Cormorant';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 56px;
+        line-height: 61px;
+        
+        text-align: right;
+        
+        color: #333333;  
+    }
+    .managerButton{
+        width: 348px;
+        height: 75px;
+        margin-left: 495px;
+        margin-top: 70px;
+        
+        background: linear-gradient(180deg, #1F9F8E 0%, #24B6A2 100%);
+        box-shadow: 0px 30px 35px -30px #1F9F8E, 0px 3px 0px #1B8577, inset 0px -2px 8px rgba(151, 249, 236, 0.25);
+        border-radius: 5px;
+        border: none;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        
+        color: #FFFFFF;
+        
+        text-shadow: 0px 1px 0px #1B8577;
+    }
+    /*отзывы*/
+.reviews{
+    width: 100%;
+     margin-top: 400px;
+ }
+ .reviewImg{
+     width: 104%;
+     height: 70%;
+ }
+ .reviewInfo{
+     display: flex;
+     flex-direction: column;
+     
+     margin-top: -440px;
+     margin-bottom: 100px;
+     margin-left: 15px;
+ }
+ .stars{
+     width: 150px;
+     margin-top: -35px;
+ }
+ .phoneImg{
+     position: relative;
+     margin-left: 49.9%;
+     margin-top: -50%;
+     width: 33%;
+     height: 35%;
+     z-index: 10;
+ }
+ .reviewerName{
+     font-family: 'Cormorant';
+     font-style: normal;
+     font-weight: 600;
+     font-size: 24px;
+     line-height: 28px;
+ 
+     color: #333333;
+ }
+ .reviewerText{
+     width: 215px;
+     height: 400px;
+ 
+     font-family: 'Raleway';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 12px;
+     line-height: 18px;
+     margin-top: 10px;
+ 
+     color: #333333;
+ }
+ div.whiteFon{
+     background-color: white;
+     opacity: 0.6;
+     width: 850px;
+     height: 610px;
+     border-radius: 7px;
+     margin-top: -43%;
+ }
+ div.whiteFon2{
+     background-color: white;
+     opacity: 0.6;
+     margin-top: -38%;
+     margin-left: 70%;
+     width: 800px;
+     height: 610px;
+ }
+ p.reviewsTitle{
+     font-family: 'Cormorant';
+     font-style: normal;
+     font-weight: 600;
+     font-size: 70px;
+     line-height: 70px;
+     width: 563px;
+     height: 210px;
+     margin-bottom: -1150px;
+     margin-top: 480px;
+     margin-left: -500px;
+     z-index: 20;
+ }
+ img.reviewCloud1{
+     width: 653px;
+     height: 329px;
+     position: relative;
+     margin-left: 1200px;
+     z-index: 21;
+ 
+ }
+ img.reviewCloud2{
+     width: 653px;
+     height: 329px;
+     position: relative;
+     z-index: 22;
+     margin-bottom: 200px;
+     margin-top: -350px;
+     margin-left: 650px;
+ }
+ img.reviewCloud3{
+     width: 1088px;
+     height: 559px;
+     opacity: 0.95;
+     z-index: 23;
+     position: relative;
+     margin-top: -550px;
+     margin-left: 850px;
+ }
+ /*СЛАЙДЕР*/
+ .review-slider{
+     margin-top: 600px;
+     z-index: 2;
+ }
+ .reviewBorder{
+     margin-left: 54.5px;
+ }
+ .slider__wrapper {
+     overflow: hidden;
+ }
+ .slider2 .slider__item {
+     flex: 0 0 17% !important;
+     max-width: 17% !important;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+ }
+ .slider__control_r[data-slide="prev"] {
+    z-index: 15;
+    margin-left: 20px;
+    margin-top: -20px;
+  }
+ .slider__control_r[data-slide="next"] {
+    z-index: 15;
+    margin-top: -20px;
+    margin-right: -17px;
+  }
+ .treeBlock{
+     margin-left: 1370px;
+     margin-top: -500px;
+     z-index: 24;
+ }
+ /*<!--для чего нужны-->*/
+ .faq {
+     width: 100%;
+     max-width: 1000px;
+     margin-top: -600px;
+ }
+ .faqTitle, .faqTitleText {
+     font-family: 'Cormorant';
+     font-style: normal;
+     font-weight: 600;
+     font-size: 60px;
+     line-height: 60px;
+     /* identical to box height, or 100% */
+     
+     text-align: center;
+     
+     /* Чёрный */
+     
+     color: #333333;
+     
+ }
+ .faq_list {
+     border-bottom: 1px solid #F0F0F0;
+     width: 90%;
+     margin: 0 auto;
+ }
+ .faqQuestion{
+     display: flex;
+     justify-content: center;
+     flex-wrap: nowrap;
+     max-width: 1160px;
+     width: 100%;
+     height: 86px;
+     margin: 0px auto;
+     border-top: 1px solid #F0F0F0;
+ }
+ .faqQuestion h4 {
+     font-family: 'Raleway';
+     font-style: normal;
+     font-weight: 500;
+     font-size: 22px;
+     line-height: 24px;
+     
+     color: #333333;
+     margin: 31px 0;
+ }
+ .liList1 {
+     font-size: 18px;
+     line-height: 1.50;
+     font-weight: 300;
+     margin: 5px 0 20px 0;
+     transition: 0.4s;
+     height: auto;
+     overflow: hidden;
+ }
+ 
+ .liList1 li{
+     list-style-type: none;
+     font-family: 'Raleway';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 24px;
+     
+     color: #333333;   
+ }
+ .pushIn {
+     height: 0;
+     margin: 0;
+ }
+ .plus   {
+     width: 24px;
+     height: 24px;
+     position: relative;
+     background: linear-gradient(180deg, #1F9F8E 0%, #24B6A2 100%);
+     color: #fff;
+     border: 0;
+     border-radius: 50%;
+     margin: auto 15px auto auto;
+     cursor: pointer;
+     transition: 0.4s;
+ }
+ .plusVert {
+     width: 2px;
+     height: 24px;
+     background-color: #fff;
+     position: absolute;
+     top: 0;
+     left: 11px;
+ }
+ .plusHoriz {
+     width: 24px;
+     height: 2px;
+     background-color: #fff;
+     position: absolute;
+     left: 0;
+     top: 11px;
+ }
+ .plusRoll {
+     transform: rotate(-45deg);
+     background: linear-gradient(180deg, #E6B674 0.01%, #EECC9C 100%);
+ }
+ .appear {
+     display: contents !important;
+ }
+ .consultationButtonFaq{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ 
+     margin-top: 50px;
+ }
+ .consultFaq{
+     font-family: 'Raleway';
+     font-style: normal;
+     font-weight: 600;
+     font-size: 16px;
+     line-height: 19px;
+ 
+     text-align: center;
+     letter-spacing: 0.05em;
+     text-transform: uppercase;
+ 
+     color: #FFFFFF;
+ 
+     text-shadow: 0px 1px 0px #1B8577;
+     background: linear-gradient(180deg, #1F9F8E 0%, #24B6A2 100%);
+     box-shadow: 0px 30px 35px -30px #1F9F8E, 0px 3px 0px #1B8577, inset 0px -2px 8px rgba(151, 249, 236, 0.25);
+     border-radius: 5px;
+     width: 348px;
+     height: 75px;
+     border: none;   
+ }
+ .question{
+     margin-top: 130px;
+ }
+ .questionTitle{
+     width: 1098px;
+     height: 140px;
+ 
+     font-family: 'Cormorant';
+     font-style: normal;
+     font-weight: 600;
+     font-size: 54px;
+     line-height: 54px;
+     text-align: center;
+ 
+     color: #333333;
+     z-index: 0;
+ }
+ .questionImg{
+     width: 244px;
+     height: 261px;
+     z-index: 1;
+     margin-top: -200px;
+     margin-left: 1300px;
+     margin-right: 52px!important;
+ }
+ .map{
+    z-index: 0;
+    width: 100%;
+}
+}
