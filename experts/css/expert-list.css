@@ -1,0 +1,136 @@
+/*СЛАЙДЕР*/
+.expert-slider{
+    position: relative;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+.slider__wrapper {
+    overflow: hidden;
+  }
+  .slider__item {
+    flex: 0 0 33.3333333333% !important;
+    max-width: 33.3333333333% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+/*эксперты*/
+.expert{
+    position: relative;
+    width: 380px;
+    height: 447px;
+    margin-top: 20px;
+    background: #FFFFFF;
+    border: 1px solid #E0E0EB;
+    border-radius: 20px;
+}
+.expert-img{
+    position: relative;
+    width: 180px;
+    margin: 30px auto 0px auto;
+}
+.expert-avatar{
+    width: 180px;
+    border-radius: 20px;
+}
+.expert-comp{
+    position: absolute;
+    top: 50px;
+    right: -35px;
+    display: flex;
+    flex-direction: column;
+}
+.expert-comp-item{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.expert-comp-img{
+    width: 32px;
+    height: 32px;
+    border-radius: 20px;
+    background: #F4F4F8;
+}
+.expert-comp-img img{
+    width: 23px;
+    margin-top: 5px;
+    margin-left: 4px;
+    background: #F4F4F8;
+}
+.expert-comp-text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #1C2027;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.expert-title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #1C2027;
+    margin:20px auto;
+    width: 200px;
+    text-align: center;
+}
+.expert-city{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 200px;
+    margin: 10px auto;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #8D8DA2;
+}
+.expert-city img{
+    height: 20px;
+    margin-right: 10px;
+}
+.expert-btn{
+    margin: 20px auto;
+    width: 373px;
+    height: 50px;
+}
+.expert-btn button{
+    width: 373px;
+    height: 50px;
+    background: #01142F;
+    border-radius: 100px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-align: center;
+}
+.expert-social{
+    margin: 20px auto;
+    width:180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.expert-social a{
+    width:45px;
+    height: 45px;
+    background: #01142F;
+    border-radius: 100px;
+    text-align: center;
+}
+.expert-social img{
+    height: 25px;
+    max-width: 35;
+    margin-top: 10px;
+}

@@ -1,0 +1,134 @@
+/*СТАТЬИ И КЕЙСЫ*/
+.content{
+    position: relative;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    width:100%;
+}
+.text-content{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    width: 350px;
+}
+.title{
+    font-family: 'Amiko';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 40px;
+    color: #1C2027;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.expert-news{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+}
+.all-news{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+}
+.new{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    border-bottom: 2px solid;
+    border-color: #E0E0EB;
+    margin-top: 5px;
+}
+.info{
+    position: relative;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #8D8DA2;
+}
+.new-title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #1C2027;
+    max-width: 350px;
+    margin-top: 5px;
+    margin-bottom: 20px;;
+}
+
+.cases{
+    width:800px;
+    margin-left: 25px;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+}
+.cases-grid{
+    display:grid;
+    grid-template-columns: 400px 400px;
+    grid-column-gap: 20px;
+    grid-row-gap: 1em;
+}
+.case{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    width:400px;
+    height: 380px;
+    background: #FFFFFF;
+    border: 1px solid #E0E0EB;
+    border-radius: 20px;
+}
+.case img{
+    margin:15px;
+    border-radius: 10px;
+}
+.case-autor{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1C2027;
+    margin-left: 15px;
+}
+.case-title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #1C2027;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.case-date{
+    position: absolute;
+    bottom: 40px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1C2027;
+    margin-left: 15px;
+}
+.case-city{
+    position: absolute;
+    bottom: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #8D8DA2;
+    margin-left: 15px;
+}

@@ -1,0 +1,110 @@
+.conteiner{
+    background: #E5E5E5;
+    padding-bottom: 40px;
+    margin:0;
+    width: 100%;
+    height: 100%;
+}
+.block{
+    z-index: 90;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.grid{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (558px)[3];
+    grid-template-columns: repeat(3, 558px);
+    -webkit-column-gap: 20px;
+    column-gap: 20px;
+    margin: auto;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.elem{
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height:250px;
+    width: 558px;
+    max-width: 558px;
+    margin-top: 40px;;
+    background: white;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: solid 1px white;
+    border-radius: 28px;
+    -webkit-transition: #B9BFC5;
+    transition:#B9BFC5;
+    overflow: hidden;
+}
+
+.opacity{
+    background:  rgba(255, 255, 255, 0.8);
+    width:100%;
+    height:100%;
+    text-align: center;
+   
+}
+
+.title{
+    color: #5CA7AA;
+    font-weight: 800;
+font-size: 34px;
+line-height: 32px;
+font: 34px/38px "OpenSans-Light",Helvetica,Arial,sans-serif;
+margin-top: 100px;
+
+}
+
+.nav{
+   padding-top: 20px;
+   margin-left: 10px;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+
+}
+.nav-elem{
+    height: 30px;
+    width: 250px;
+    margin-left: 10px;
+    background: white;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: solid 1px white;
+    border-radius: 28px;
+    -webkit-transition: #B9BFC5;
+    transition:#B9BFC5;
+    overflow: hidden;
+    text-align: center;
+}
+.subtitle{
+    margin-top: 5px;;
+    color: #5CA7AA;
+    font: 18px/20px "OpenSans-Light",Helvetica,Arial,sans-serif;
+}
+
+a{
+    text-decoration: none;
+}

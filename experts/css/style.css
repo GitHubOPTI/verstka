@@ -1,0 +1,119 @@
+a{
+    text-decoration: none;
+}
+
+.container{
+    padding: 0;
+    margin:0;
+    width: 100%;
+    background: #f5f5f5;
+    padding-bottom: 40px;
+}
+
+/*МЕНЮ*/
+.menu{
+    position: relative;
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70px;
+    justify-content: center;
+    background: #FFFFFF;
+}
+.navigation{
+    position: relative;
+    display:flex;
+    flex-direction: row;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+}
+.navigation a{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-decoration: none;
+    color: black;
+    margin-left: 40px;
+    margin-top: 15px;
+}
+.active{
+    border-bottom: 2px solid;
+    border-color: #01142F;
+}
+
+.buttons{
+    position: relative;
+    display:flex;
+    flex-direction: row;
+    margin-left: 180px;
+}
+.edit-button{
+    width: 197px;
+    height: 40px;
+    background: #EF7E2C;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+    border-radius: 100px;
+    margin-top: 15px;
+    border-color: #EF7E2C;
+}
+.exit-button{
+    width: 88px;
+    height: 40px;
+    background: #FFFFFF;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    color: #01142F;
+    border: 2px solid;
+    border-color: #01142F;
+    border-radius: 100px;
+    margin-top: 15px;
+    margin-left: 40px;
+}
+.reg-button{
+    width: 197px;
+    height: 40px;
+    background: #01142F;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+    border-radius: 100px;
+    margin-top: 15px;
+    border-color: #01142F;
+}
+/*Навигация*/
+.nav-tree{
+    margin:30px auto;
+    width: 1200px;
+    text-align: left;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #1C2027;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+.nav-tree img{
+    height: 13px;
+    margin-left: 5px;
+    margin-right: 15px;
+    margin-top: 5px;
+}
