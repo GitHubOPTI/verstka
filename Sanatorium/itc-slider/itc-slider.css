@@ -1,0 +1,178 @@
+/*!
+* ItcSlider
+*   site: https://itchief.ru/javascript/slider
+*   github: https://github.com/itchief/ui-components
+*
+* Copyright 2018-2022 Alexander Maltsev
+* Licensed under MIT (https://github.com/itchief/ui-components/blob/master/LICENSE)
+*/
+
+.slider {
+  position: relative;
+}
+
+.slider__container {
+  overflow: hidden;
+}
+
+.slider__wrapper {
+  /* overflow: hidden; */
+}
+
+.slider__items {
+  display: flex;
+  transition: transform 0.5s ease;
+  will-change: transform;
+}
+
+.slider_disable-transition {
+  transition: none;
+}
+
+.slider__item {
+  flex: 0 0 100%;
+  max-width: 100%;
+  user-select: none;
+  will-change: transform;
+}
+
+/* кнопки влево и вправо */
+
+.slider__control {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  text-align: center;
+  border-radius: 100px;
+  background: linear-gradient(180deg, #F9F9F9 0%, #F0F0F0 100%);
+  border: 1px solid #F0F0F0;
+  box-shadow: 0px 8px 8px -5px rgba(0, 0, 0, 0.12);
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.slider__control_r {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 250px;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(180deg, #1F9F8E 0%, #24B6A2 100%);;
+  border: none;
+  border-radius: 100px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.slider__control_hide {
+  display: none;
+}
+
+.slider__control[data-slide="prev"] { 
+  left: 10px;
+  z-index: 15;
+}
+
+.slider__control[data-slide="next"] {
+  right: 25px;
+  z-index: 15;
+}
+
+.slider__control_r[data-slide="prev"] {
+  z-index: 15;
+  left: 49%;
+}
+.slider__control_r[data-slide="next"] {
+  z-index: 15;
+  right: 28%;
+}
+.slider__control:hover,
+.slider__control:focus {
+  color: #fff;
+  text-decoration: none;
+  background: #F0F0F0;
+  outline: 0;
+}
+.slider__control::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.slider__control_r:hover,
+.slider__control_r:focus {
+  color: #fff;
+  text-decoration: none;
+  background: linear-gradient(180deg, #1F9F8E 0%, #24B6A2 100%);;
+  outline: 0;
+}
+.slider__control_r::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+.slider__control[data-slide="prev"]::before {
+  background-image: url("img/VectorL.png");
+  background-size: 20px 9.69px;
+}
+.slider__control[data-slide="next"]::before {
+  background-image: url("img/VectorR.png");
+  background-size: 20px 9.69px;
+}
+
+.slider__control_r[data-slide="prev"]::before {
+  background-image: url("img/prev.png");
+  background-size: 20px 9.69px;
+}
+.slider__control_r[data-slide="next"]::before {
+  background-image: url("img/next.png");
+  background-size: 20px 9.69px;
+}
+
+/* индикаторы */
+
+.slider__indicators {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  margin: 0 15%;
+  padding-left: 0;
+  list-style: none;
+}
+
+.slider__indicators li {
+  flex: 0 1 auto;
+  box-sizing: content-box;
+  width: 30px;
+  height: 5px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  background-color: rgb(255 255 255 / 50%);
+  background-clip: padding-box;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  cursor: pointer;
+}
+
+.slider__indicators li.active {
+  background-color: rgb(255 255 255 / 90%);
+}
