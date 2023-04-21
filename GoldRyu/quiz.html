@@ -1,0 +1,2168 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+	<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<meta name="theme-color" content="#111111" />
+	<title>GoldRye</title>
+	<link
+		rel="preload"
+		href="fonts/MontserratAlternates-Bold.woff2"
+		as="font"
+		type="font/woff2"
+		crossorigin
+	/>
+	<link
+		rel="preload"
+		href="fonts/MontserratAlternates-SemiBold.woff2"
+		as="font"
+		type="font/woff2"
+		crossorigin
+	/>
+	<link
+		rel="preload"
+		href="fonts/Montserrat-SemiBold.woff2"
+		as="font"
+		type="font/woff2"
+		crossorigin
+	/>
+	<link
+		rel="preload"
+		href="fonts/Montserrat-Medium.woff2"
+		as="font"
+		type="font/woff2"
+		crossorigin
+	/>
+	<link
+		rel="preload"
+		href="fonts/NunitoSans-Regular.woff2"
+		as="font"
+		type="font/woff2"
+		crossorigin
+	/>
+	<link rel="stylesheet" href="css/vendor.css" />
+	<link rel="stylesheet" href="css/main.css" />
+	<script
+		src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=4b27804e-320a-42f2-9edb-7580ad2846a5"
+		type="text/javascript"
+	></script>
+	<script defer src="js/main.js"></script>
+</head>
+
+	<body class="page__body quiz__body">
+		<div class="site-container">
+			<main class="main">
+				<section class="quiz">
+					<div class="container quiz__container">
+						<div class="quiz__slider-container">
+							<a
+								href="./main.html"
+								class="btn-reset quiz__button-close"
+							>
+								<img
+									loading="lazy"
+									src="./img/close-icon.svg"
+									class="image quiz__icon-close"
+									width="15"
+									height="15"
+									alt="Иконка закрыть"
+								/>
+							</a>
+							<div class="swiper quiz__slider">
+								<div class="swiper-wrapper quiz__wrapper">
+									<div class="swiper-slide quiz__slide">
+										<img
+											loading="lazy"
+											src="./img/logo480.svg"
+											class="image quiz__logo quiz__logo-first"
+											width="157"
+											height="43"
+											alt="Логотип"
+										/>
+										<h3
+											class="quiz__title quiz__title-main title__h3"
+										>
+											Подберем систему очистки под ваши
+											критерии
+										</h3>
+										<p
+											class="quiz__text quiz__text-main title__text"
+										>
+											Ответьте на 7 вопросов <br />
+											и мы подберем лучший вариант для Вас
+										</p>
+										<button
+											class="btn-reset button button__primary quiz__button"
+											id="startTestBtn"
+										>
+											пройти тест
+										</button>
+									</div>
+									<div class="swiper-slide quiz__slide">
+										<div class="quiz__header">
+											<img
+												loading="lazy"
+												src="./img/logo480.svg"
+												class="image quiz__logo"
+												width="111"
+												height="31"
+												alt="Логотип"
+											/>
+											<p
+												class="quiz__text quiz__text-header title__text"
+											>
+												Подберем систему очистки стоков
+												под ваши критерии
+											</p>
+										</div>
+										<form
+											id="form"
+											enctype="multipart/form-data"
+										>
+											<div
+												class="swiper quiz__slider-inner"
+											>
+												<div
+													class="swiper-wrapper quiz__wrapper-inner"
+												>
+													<div
+														class="swiper-slide quiz__slide-inner"
+													>
+														<h3
+															class="quiz__title quiz__title-inner title__h3"
+														>
+															Количество постоянно
+															проживающих
+														</h3>
+														<ul
+															class="quiz__list-base list-reset"
+														>
+															<li
+																class="quiz__item-count"
+															>
+																<label
+																	class="quiz__label"
+																	for="count1"
+																>
+																	<input
+																		type="radio"
+																		name="count"
+																		id="count1"
+																		class="quiz__input-radio"
+																		value="1-6"
+																	/>
+																	<span
+																		class="quiz__checkmark"
+																	></span>
+																	<span
+																		class="quiz__text-inner"
+																		>от 1 до
+																		6
+																		человек</span
+																	>
+																</label>
+															</li>
+															<li
+																class="quiz__item-count"
+															>
+																<label
+																	class="quiz__label"
+																	for="count2"
+																>
+																	<input
+																		type="radio"
+																		name="count"
+																		id="count2"
+																		class="quiz__input-radio"
+																		value="3-8"
+																		checked
+																	/>
+																	<span
+																		class="quiz__checkmark"
+																	></span>
+																	<span
+																		class="quiz__text-inner"
+																		>от 3 до
+																		8
+																		человек</span
+																	>
+																</label>
+															</li>
+															<li
+																class="quiz__item-count"
+															>
+																<label
+																	class="quiz__label"
+																	for="count3"
+																>
+																	<input
+																		type="radio"
+																		name="count"
+																		id="count3"
+																		class="quiz__input-radio"
+																		value="8+"
+																	/>
+																	<span
+																		class="quiz__checkmark"
+																	></span>
+																	<span
+																		class="quiz__text-inner"
+																		>более 8
+																		человек</span
+																	>
+																</label>
+															</li>
+														</ul>
+													</div>
+													<div
+														class="swiper-slide quiz__slide-inner"
+													>
+														<h3
+															class="quiz__title quiz__title-inner title__h3"
+														>
+															Постоянное или
+															сезонное проживание?
+														</h3>
+														<ul
+															class="quiz__list-base quiz__list-time list-reset"
+														>
+															<li
+																class="quiz__item-time"
+															>
+																<label
+																	class="quiz__label quiz__label-time"
+																	for="time1"
+																>
+																	<input
+																		type="radio"
+																		name="time"
+																		id="time1"
+																		class="quiz__input-radio"
+																		value="1-6"
+																		checked
+																	/>
+																	<span
+																		class="quiz__checkmark"
+																	></span>
+																	<span
+																		class="quiz__text-inner"
+																	>
+																		живем в
+																		доме
+																		постоянно
+																	</span>
+																</label>
+															</li>
+															<li
+																class="quiz__item-time"
+															>
+																<label
+																	class="quiz__label quiz__label-time"
+																	for="time2"
+																>
+																	<input
+																		type="radio"
+																		name="time"
+																		id="time2"
+																		class="quiz__input-radio"
+																		value="3-8"
+																	/>
+																	<span
+																		class="quiz__checkmark"
+																	></span>
+																	<span
+																		class="quiz__text-inner"
+																	>
+																		приезжаем
+																		на
+																		выходные
+																		в
+																		течение
+																		всего
+																		года
+																	</span>
+																</label>
+															</li>
+															<li
+																class="quiz__item-time"
+															>
+																<label
+																	class="quiz__label quiz__label-time"
+																	for="time3"
+																>
+																	<input
+																		type="radio"
+																		name="time"
+																		id="time3"
+																		class="quiz__input-radio"
+																		value="8+"
+																	/>
+																	<span
+																		class="quiz__checkmark"
+																	></span>
+																	<span
+																		class="quiz__text-inner"
+																	>
+																		живем
+																		только
+																		летом
+																	</span>
+																</label>
+															</li>
+														</ul>
+													</div>
+													<div
+														class="swiper-slide quiz__slide-inner"
+													>
+														<h3
+															class="quiz__title quiz__title-quantity quiz__title-inner title__h3"
+														>
+															Постоянное или
+															сезонное проживание?
+														</h3>
+														<ul
+															class="quiz__list-quantity list-reset"
+														>
+															<li
+																class="quiz__item-quantity"
+															>
+																<div
+																	class="quiz__container-quantity"
+																>
+																	<img
+																		loading="lazy"
+																		src="./img/shower.svg"
+																		class="image quiz__icon-list"
+																		width="41"
+																		height="44"
+																		alt="Иконка душа"
+																	/>
+																	<span
+																		class="quiz__text-inner quiz__text-inner-quantity"
+																	>
+																		Душ
+																	</span>
+																</div>
+																<ul
+																	class="list-reset quiz__list-inputs"
+																>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity0"
+																			id="quantity0"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="0"
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity0"
+																		>
+																			0
+																		</label>
+																	</li>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity0"
+																			id="quantity1"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="1"
+																			checked
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity1"
+																		>
+																			1
+																		</label>
+																	</li>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity0"
+																			id="quantity2"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="2"
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity2"
+																		>
+																			2
+																		</label>
+																	</li>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity0"
+																			id="quantity3"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="3"
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity3"
+																		>
+																			3
+																		</label>
+																	</li>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity0"
+																			id="quantity4"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="4"
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity4"
+																		>
+																			4
+																		</label>
+																	</li>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity0"
+																			id="quantity5"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="5"
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity5"
+																		>
+																			5
+																		</label>
+																	</li>
+																</ul>
+															</li>
+															<li
+																class="quiz__item-quantity"
+															>
+																<div
+																	class="quiz__container-quantity"
+																>
+																	<img
+																		loading="lazy"
+																		src="./img/posuda-washer.svg"
+																		class="image quiz__icon-list"
+																		width="34"
+																		height="43"
+																		alt="Иконка посудомойки"
+																	/>
+																	<span
+																		class="quiz__text-inner quiz__text-inner-quantity"
+																	>
+																		Посудомоечная
+																		машина
+																	</span>
+																</div>
+																<ul
+																	class="list-reset quiz__list-inputs"
+																>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity1"
+																			id="quantity6"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="0"
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity6"
+																		>
+																			0
+																		</label>
+																	</li>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity1"
+																			id="quantity7"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="1"
+																			checked
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity7"
+																		>
+																			1
+																		</label>
+																	</li>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity1"
+																			id="quantity8"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="2"
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity8"
+																		>
+																			2
+																		</label>
+																	</li>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity1"
+																			id="quantity9"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="3"
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity9"
+																		>
+																			3
+																		</label>
+																	</li>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity1"
+																			id="quantity10"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="4"
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity10"
+																		>
+																			4
+																		</label>
+																	</li>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity1"
+																			id="quantity11"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="5"
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity11"
+																		>
+																			5
+																		</label>
+																	</li>
+																</ul>
+															</li>
+															<li
+																class="quiz__item-quantity"
+															>
+																<div
+																	class="quiz__container-quantity"
+																>
+																	<img
+																		loading="lazy"
+																		src="./img/bath.svg"
+																		class="image quiz__icon-list"
+																		width="40"
+																		height="40"
+																		alt="Иконка ванны"
+																	/>
+																	<span
+																		class="quiz__text-inner quiz__text-inner-quantity"
+																	>
+																		Ванна
+																	</span>
+																</div>
+																<ul
+																	class="list-reset quiz__list-inputs"
+																>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity2"
+																			id="quantity12"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="0"
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity12"
+																		>
+																			0
+																		</label>
+																	</li>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity2"
+																			id="quantity13"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="1"
+																			checked
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity13"
+																		>
+																			1
+																		</label>
+																	</li>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity2"
+																			id="quantity14"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="2"
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity14"
+																		>
+																			2
+																		</label>
+																	</li>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity2"
+																			id="quantity15"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="3"
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity15"
+																		>
+																			3
+																		</label>
+																	</li>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity2"
+																			id="quantity16"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="4"
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity16"
+																		>
+																			4
+																		</label>
+																	</li>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity2"
+																			id="quantity17"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="5"
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity17"
+																		>
+																			5
+																		</label>
+																	</li>
+																</ul>
+															</li>
+															<li
+																class="quiz__item-quantity"
+															>
+																<div
+																	class="quiz__container-quantity"
+																>
+																	<img
+																		loading="lazy"
+																		src="./img/jakuzi.svg"
+																		class="image quiz__icon-list"
+																		width="42"
+																		height="30"
+																		alt="Иконка джакузи"
+																	/>
+																	<span
+																		class="quiz__text-inner quiz__text-inner-quantity"
+																	>
+																		Джакузи
+																	</span>
+																</div>
+																<ul
+																	class="list-reset quiz__list-inputs"
+																>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity3"
+																			id="quantity18"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="0"
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity18"
+																		>
+																			0
+																		</label>
+																	</li>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity3"
+																			id="quantity19"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="1"
+																			checked
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity19"
+																		>
+																			1
+																		</label>
+																	</li>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity3"
+																			id="quantity20"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="2"
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity20"
+																		>
+																			2
+																		</label>
+																	</li>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity3"
+																			id="quantity21"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="3"
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity21"
+																		>
+																			3
+																		</label>
+																	</li>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity3"
+																			id="quantity22"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="4"
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity22"
+																		>
+																			4
+																		</label>
+																	</li>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity3"
+																			id="quantity23"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="5"
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity23"
+																		>
+																			5
+																		</label>
+																	</li>
+																</ul>
+															</li>
+															<li
+																class="quiz__item-quantity"
+															>
+																<div
+																	class="quiz__container-quantity"
+																>
+																	<img
+																		loading="lazy"
+																		src="./img/toilet.svg"
+																		class="image quiz__icon-list"
+																		width="40"
+																		height="40"
+																		alt="Иконка туалета"
+																	/>
+																	<span
+																		class="quiz__text-inner quiz__text-inner-quantity"
+																	>
+																		Туалет
+																	</span>
+																</div>
+																<ul
+																	class="list-reset quiz__list-inputs"
+																>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity4"
+																			id="quantity24"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="0"
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity24"
+																		>
+																			0
+																		</label>
+																	</li>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity4"
+																			id="quantity25"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="1"
+																			checked
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity25"
+																		>
+																			1
+																		</label>
+																	</li>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity4"
+																			id="quantity26"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="2"
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity26"
+																		>
+																			2
+																		</label>
+																	</li>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity4"
+																			id="quantity27"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="3"
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity27"
+																		>
+																			3
+																		</label>
+																	</li>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity4"
+																			id="quantity28"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="4"
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity28"
+																		>
+																			4
+																		</label>
+																	</li>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity4"
+																			id="quantity29"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="5"
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity29"
+																		>
+																			5
+																		</label>
+																	</li>
+																</ul>
+															</li>
+															<li
+																class="quiz__item-quantity"
+															>
+																<div
+																	class="quiz__container-quantity"
+																>
+																	<img
+																		loading="lazy"
+																		src="./img/ghost-catcher.svg"
+																		class="image quiz__icon-list"
+																		width="41"
+																		height="41"
+																		alt="Иконка очистки воды"
+																	/>
+																	<span
+																		class="quiz__text-inner quiz__text-inner-quantity"
+																	>
+																		Система
+																		очистки
+																		воды
+																	</span>
+																</div>
+																<ul
+																	class="list-reset quiz__list-inputs"
+																>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity5"
+																			id="quantity30"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="0"
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity30"
+																		>
+																			0
+																		</label>
+																	</li>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity5"
+																			id="quantity31"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="1"
+																			checked
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity31"
+																		>
+																			1
+																		</label>
+																	</li>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity5"
+																			id="quantity32"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="2"
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity32"
+																		>
+																			2
+																		</label>
+																	</li>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity5"
+																			id="quantity33"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="3"
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity33"
+																		>
+																			3
+																		</label>
+																	</li>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity5"
+																			id="quantity34"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="4"
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity34"
+																		>
+																			4
+																		</label>
+																	</li>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity5"
+																			id="quantity35"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="5"
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity35"
+																		>
+																			5
+																		</label>
+																	</li>
+																</ul>
+															</li>
+															<li
+																class="quiz__item-quantity"
+															>
+																<div
+																	class="quiz__container-quantity"
+																>
+																	<img
+																		loading="lazy"
+																		src="./img/stiralka.svg"
+																		class="image quiz__icon-list"
+																		width="32"
+																		height="41"
+																		alt="Стиральная машина"
+																	/>
+																	<span
+																		class="quiz__text-inner quiz__text-inner-quantity"
+																	>
+																		Стиральная
+																		машина
+																	</span>
+																</div>
+																<ul
+																	class="list-reset quiz__list-inputs"
+																>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity6"
+																			id="quantity36"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="0"
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity36"
+																		>
+																			0
+																		</label>
+																	</li>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity6"
+																			id="quantity37"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="1"
+																			checked
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity37"
+																		>
+																			1
+																		</label>
+																	</li>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity6"
+																			id="quantity38"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="2"
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity38"
+																		>
+																			2
+																		</label>
+																	</li>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity6"
+																			id="quantity39"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="3"
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity39"
+																		>
+																			3
+																		</label>
+																	</li>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity6"
+																			id="quantity40"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="4"
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity40"
+																		>
+																			4
+																		</label>
+																	</li>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity6"
+																			id="quantity41"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="5"
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity41"
+																		>
+																			5
+																		</label>
+																	</li>
+																</ul>
+															</li>
+															<li
+																class="quiz__item-quantity"
+															>
+																<div
+																	class="quiz__container-quantity"
+																>
+																	<img
+																		loading="lazy"
+																		src="./img/shredder.svg"
+																		class="image quiz__icon-list"
+																		width="36"
+																		height="39"
+																		alt="Измельчитель мусора"
+																	/>
+																	<span
+																		class="quiz__text-inner quiz__text-inner-quantity"
+																	>
+																		Измельчитель
+																		мусора
+																	</span>
+																</div>
+																<ul
+																	class="list-reset quiz__list-inputs"
+																>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity7"
+																			id="quantity42"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="0"
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity42"
+																		>
+																			0
+																		</label>
+																	</li>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity7"
+																			id="quantity43"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="1"
+																			checked
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity43"
+																		>
+																			1
+																		</label>
+																	</li>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity7"
+																			id="quantity44"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="2"
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity44"
+																		>
+																			2
+																		</label>
+																	</li>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity7"
+																			id="quantity45"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="3"
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity45"
+																		>
+																			3
+																		</label>
+																	</li>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity7"
+																			id="quantity46"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="4"
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity46"
+																		>
+																			4
+																		</label>
+																	</li>
+																	<li
+																		class="quiz__item-input"
+																	>
+																		<input
+																			type="radio"
+																			name="quantity7"
+																			id="quantity47"
+																			class="quiz__input-radio quiz__input-quantity"
+																			value="5"
+																		/>
+																		<label
+																			class="quiz__label-quantity"
+																			for="quantity47"
+																		>
+																			5
+																		</label>
+																	</li>
+																</ul>
+															</li>
+														</ul>
+													</div>
+													<div
+														class="swiper-slide quiz__slide-inner"
+													>
+														<h3
+															class="quiz__title quiz__title-inner title__h3"
+														>
+															Вам необходим
+															монтаж?
+														</h3>
+														<ul
+															class="quiz__list-base list-reset"
+														>
+															<li
+																class="quiz__item-count"
+															>
+																<label
+																	class="quiz__label quiz__label-montazh"
+																	for="montazh1"
+																>
+																	<input
+																		type="radio"
+																		name="montazh"
+																		id="montazh1"
+																		class="quiz__input-radio"
+																		value="yes"
+																	/>
+																	<span
+																		class="quiz__checkmark"
+																	></span>
+																	<span
+																		class="quiz__text-inner"
+																		>Да</span
+																	>
+																</label>
+															</li>
+															<li
+																class="quiz__item-count"
+															>
+																<label
+																	class="quiz__label quiz__label-montazh"
+																	for="montazh2"
+																>
+																	<input
+																		type="radio"
+																		name="montazh"
+																		id="montazh2"
+																		class="quiz__input-radio"
+																		value="self"
+																		checked
+																	/>
+																	<span
+																		class="quiz__checkmark"
+																	></span>
+																	<span
+																		class="quiz__text-inner"
+																		>Смонтирую
+																		сам</span
+																	>
+																</label>
+															</li>
+															<li
+																class="quiz__item-count"
+															>
+																<label
+																	class="quiz__label quiz__label-montazh"
+																	for="montazh3"
+																>
+																	<input
+																		type="radio"
+																		name="montazh"
+																		id="montazh3"
+																		class="quiz__input-radio"
+																		value="consult"
+																	/>
+																	<span
+																		class="quiz__checkmark"
+																	></span>
+																	<span
+																		class="quiz__text-inner"
+																		>Нужна
+																		консультация</span
+																	>
+																</label>
+															</li>
+														</ul>
+													</div>
+													<div
+														class="swiper-slide quiz__slide-inner"
+													>
+														<div
+															class="main-design__frame"
+														>
+															<form
+																class="main-design__form"
+																enctype="multipart/form-data"
+															>
+																<h3
+																	class="main-design__subtitle-frame title__h3"
+																>
+																	Выберите
+																	дизайн
+																	крышки
+																</h3>
+																<div
+																	class="main-design__container-row"
+																>
+																	<h4
+																		class="main-design__subtitle-row title__h4"
+																	>
+																		Форма
+																	</h4>
+																	<label
+																		class="main-design__label"
+																		for="radio1"
+																	>
+																		<input
+																			class="main-design__input"
+																			type="radio"
+																			value="shape1"
+																			name="shape"
+																			id="radio1"
+																		/>
+																		<span
+																			class="main-design__radio quiz__radio-design"
+																		></span>
+																		<picture>
+																			<source
+																				srcset="
+																					./img/shape1.webp
+																				"
+																				type="image/webp"
+																			/>
+																			<img
+																				src="./img/shape1.png"
+																				class="image main-design__image"
+																				width="227"
+																				height="69"
+																				alt="Изображение формы крышки"
+																			/>
+																		</picture>
+																	</label>
+																	<label
+																		class="main-design__label main-design__label-active"
+																		for="radio2"
+																	>
+																		<input
+																			class="main-design__input"
+																			type="radio"
+																			value="shape2"
+																			name="shape"
+																			id="radio2"
+																			checked
+																		/>
+																		<span
+																			class="main-design__radio quiz__radio-design"
+																		></span>
+																		<picture>
+																			<source
+																				srcset="
+																					./img/shape2.webp
+																				"
+																				type="image/webp"
+																			/>
+																			<img
+																				src="./img/shape2.png"
+																				class="image main-design__image"
+																				width="227"
+																				height="69"
+																				alt="Изображение формы крышки"
+																			/>
+																		</picture>
+																	</label>
+																	<label
+																		class="main-design__label"
+																		for="radio3"
+																	>
+																		<input
+																			class="main-design__input"
+																			type="radio"
+																			value="shape3"
+																			name="shape"
+																			id="radio3"
+																		/>
+																		<span
+																			class="main-design__radio quiz__radio-design"
+																		></span>
+																		<picture>
+																			<source
+																				srcset="
+																					./img/shape3.webp
+																				"
+																				type="image/webp"
+																			/>
+																			<img
+																				src="./img/shape3.png"
+																				class="image main-design__image"
+																				width="227"
+																				height="69"
+																				alt="Изображение формы крышки"
+																			/>
+																		</picture>
+																	</label>
+																</div>
+																<div
+																	class="main-design__container-row"
+																>
+																	<h4
+																		class="main-design__subtitle-row title__h4"
+																	>
+																		Цвет
+																	</h4>
+																	<label
+																		class="main-design__label main-design__label-color"
+																		for="radio4"
+																	>
+																		<input
+																			class="main-design__input"
+																			type="radio"
+																			value="color1"
+																			name="color"
+																			id="radio4"
+																		/>
+																		<span
+																			class="main-design__radio main-design__radio-color"
+																		></span>
+																		<picture
+																			class="main-design__picture-bot"
+																		>
+																			<source
+																				srcset="
+																					./img/color-1.webp
+																				"
+																				type="image/webp"
+																			/>
+																			<img
+																				src="./img/color-1.png"
+																				class="image main-design__image main-design__image-color"
+																				width="190"
+																				height="44"
+																				alt="Изображение цвета крышки"
+																			/>
+																		</picture>
+																		<span
+																			class="main-design__text title__text"
+																			>кора</span
+																		>
+																	</label>
+																	<label
+																		class="main-design__label main-design__label-color"
+																		for="radio5"
+																	>
+																		<input
+																			class="main-design__input"
+																			type="radio"
+																			value="color2"
+																			name="color"
+																			id="radio5"
+																		/>
+																		<span
+																			class="main-design__radio main-design__radio-color"
+																		></span>
+																		<picture
+																			class="main-design__picture-bot"
+																		>
+																			<source
+																				srcset="
+																					./img/color-2.webp
+																				"
+																				type="image/webp"
+																			/>
+																			<img
+																				src="./img/color-2.png"
+																				class="image main-design__image main-design__image-color"
+																				width="190"
+																				height="44"
+																				alt="Изображение цвета крышки"
+																			/>
+																		</picture>
+																		<span
+																			class="main-design__text title__text"
+																		>
+																			плитка
+																		</span>
+																	</label>
+																	<label
+																		class="main-design__label main-design__label-color"
+																		for="radio6"
+																	>
+																		<input
+																			class="main-design__input"
+																			type="radio"
+																			value="color3"
+																			name="color"
+																			id="radio6"
+																		/>
+																		<span
+																			class="main-design__radio main-design__radio-color"
+																		></span>
+																		<picture
+																			class="main-design__picture-bot"
+																		>
+																			<source
+																				srcset="
+																					./img/color-3.webp
+																				"
+																				type="image/webp"
+																			/>
+																			<img
+																				src="./img/color-3.png"
+																				class="image main-design__image main-design__image-color"
+																				width="190"
+																				height="44"
+																				alt="Изображение цвета крышки"
+																			/>
+																		</picture>
+																		<span
+																			class="main-design__text title__text"
+																		>
+																			газон
+																		</span>
+																	</label>
+																	<label
+																		class="main-design__label main-design__label-color"
+																		for="radio8"
+																	>
+																		<input
+																			class="main-design__input"
+																			type="radio"
+																			value="color4"
+																			name="color"
+																			id="radio8"
+																		/>
+																		<span
+																			class="main-design__radio main-design__radio-color"
+																		></span>
+																		<picture
+																			class="main-design__picture-bot"
+																		>
+																			<source
+																				srcset="
+																					./img/color-4.webp
+																				"
+																				type="image/webp"
+																			/>
+																			<img
+																				src="./img/color-4.png"
+																				class="image main-design__image main-design__image-color"
+																				width="190"
+																				height="44"
+																				alt="Изображение цвета крышки"
+																			/>
+																		</picture>
+																		<span
+																			class="main-design__text title__text"
+																		>
+																			под
+																			заказ
+																		</span>
+																	</label>
+																</div>
+															</form>
+														</div>
+													</div>
+													<div
+														class="swiper-slide quiz__slide-inner"
+													>
+														<h3
+															class="quiz__title quiz__title-inner title__h3"
+														>
+															Вам нужны
+															дополнительные
+															услуги?
+														</h3>
+														<ul
+															class="quiz__list-base quiz__list-wrap list-reset"
+														>
+															<li
+																class="quiz__item-count"
+															>
+																<label
+																	class="quiz__label quiz__label-montazh"
+																	for="other1"
+																>
+																	<input
+																		type="checkbox"
+																		name="other"
+																		id="other1"
+																		class="quiz__input-radio"
+																		value="heating"
+																	/>
+																	<span
+																		class="quiz__checkmark"
+																	></span>
+																	<span
+																		class="quiz__text-inner"
+																		>Отопление
+																		дома</span
+																	>
+																</label>
+															</li>
+															<li
+																class="quiz__item-count"
+															>
+																<label
+																	class="quiz__label quiz__label-montazh"
+																	for="other2"
+																>
+																	<input
+																		type="checkbox"
+																		name="other"
+																		id="other2"
+																		class="quiz__input-radio"
+																		value="analysis"
+																		checked
+																	/>
+																	<span
+																		class="quiz__checkmark"
+																	></span>
+																	<span
+																		class="quiz__text-inner"
+																		>Анализ
+																		питьевой
+																		воды</span
+																	>
+																</label>
+															</li>
+															<li
+																class="quiz__item-count"
+															>
+																<label
+																	class="quiz__label quiz__label-montazh"
+																	for="other3"
+																>
+																	<input
+																		type="checkbox"
+																		name="other"
+																		id="other3"
+																		class="quiz__input-radio"
+																		value="watering"
+																	/>
+																	<span
+																		class="quiz__checkmark"
+																	></span>
+																	<span
+																		class="quiz__text-inner"
+																		>Автоматический
+																		полив</span
+																	>
+																</label>
+															</li>
+															<li
+																class="quiz__item-count"
+															>
+																<label
+																	class="quiz__label quiz__label-montazh"
+																	for="other4"
+																>
+																	<input
+																		type="checkbox"
+																		name="other"
+																		id="other4"
+																		class="quiz__input-radio"
+																		value="cleaning"
+																	/>
+																	<span
+																		class="quiz__checkmark"
+																	></span>
+																	<span
+																		class="quiz__text-inner"
+																		>Очистка
+																		воды из
+																		скважины</span
+																	>
+																</label>
+															</li>
+															<li
+																class="quiz__item-count"
+															>
+																<label
+																	class="quiz__label quiz__label-montazh"
+																	for="other5"
+																>
+																	<input
+																		type="checkbox"
+																		name="other"
+																		id="other5"
+																		class="quiz__input-radio"
+																		value="water-source"
+																	/>
+																	<span
+																		class="quiz__checkmark"
+																	></span>
+																	<span
+																		class="quiz__text-inner"
+																		>Дренажный
+																		колодец</span
+																	>
+																</label>
+															</li>
+															<li
+																class="quiz__item-count"
+															>
+																<label
+																	class="quiz__label quiz__label-montazh"
+																	for="other6"
+																>
+																	<input
+																		type="checkbox"
+																		name="other"
+																		id="other6"
+																		class="quiz__input-radio"
+																		value="underground"
+																	/>
+																	<span
+																		class="quiz__checkmark"
+																	></span>
+																	<span
+																		class="quiz__text-inner"
+																		>Погреб</span
+																	>
+																</label>
+															</li>
+														</ul>
+													</div>
+													<div
+														class="swiper-slide quiz__slide-inner"
+													>
+														<h3
+															class="quiz__title quiz__title-inner title__h3"
+														>
+															Выберите свой
+															подарок
+														</h3>
+														<ul
+															class="quiz__list-base quiz__list-gift list-reset"
+														>
+															<li
+																class="quiz__item-count"
+															>
+																<label
+																	class="quiz__label quiz__label-montazh"
+																	for="gitf1"
+																>
+																	<input
+																		type="radio"
+																		name="gitf"
+																		id="gitf1"
+																		class="quiz__input-radio"
+																		value="yes"
+																	/>
+																	<span
+																		class="quiz__checkmark"
+																	></span>
+																	<span
+																		class="quiz__text-inner"
+																		>Скидка
+																		5% на
+																		станцию</span
+																	>
+																</label>
+															</li>
+															<li
+																class="quiz__item-count"
+															>
+																<label
+																	class="quiz__label quiz__label-montazh"
+																	for="gitf2"
+																>
+																	<input
+																		type="radio"
+																		name="gitf"
+																		id="gitf2"
+																		class="quiz__input-radio"
+																		value="self"
+																		checked
+																	/>
+																	<span
+																		class="quiz__checkmark"
+																	></span>
+																	<span
+																		class="quiz__text-inner"
+																		>Первый
+																		сервис
+																		бесплатно</span
+																	>
+																</label>
+															</li>
+															<li
+																class="quiz__item-count"
+															>
+																<label
+																	class="quiz__label quiz__label-montazh"
+																	for="gitf3"
+																>
+																	<input
+																		type="radio"
+																		name="gitf"
+																		id="gitf3"
+																		class="quiz__input-radio"
+																		value="consult"
+																	/>
+																	<span
+																		class="quiz__checkmark"
+																	></span>
+																	<span
+																		class="quiz__text-inner"
+																		>Дополнительная
+																		гарантия</span
+																	>
+																</label>
+															</li>
+														</ul>
+													</div>
+												</div>
+												<div
+													class="quiz__container-control"
+												>
+													<div>
+														<h4
+															class="quiz__title-pagination title__h4"
+														>
+															вопрос
+															<span
+																class="quiz__title-current"
+																>1</span
+															>
+															из
+															<span
+																class="quiz__title-all"
+															></span>
+														</h4>
+														<div
+															class="quiz__pagination"
+														></div>
+													</div>
+													<div
+														class="quiz__container-buttons"
+													>
+														<button
+															class="btn-reset button button__secondary quiz__button-control quiz__button-prev"
+														>
+															назад
+														</button>
+														<button
+															class="btn-reset button button__primary quiz__button-control quiz__button-next"
+														>
+															далее →
+														</button>
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+									<div
+										class="swiper-slide quiz__slide quiz__slide-last"
+									>
+										<div
+											class="quiz__header quiz__header-last"
+										>
+											<img
+												loading="lazy"
+												src="./img/logo480.svg"
+												class="image quiz__logo"
+												width="111"
+												height="31"
+												alt="Логотип"
+											/>
+											<p
+												class="quiz__text quiz__text-header title__text"
+											>
+												Подберем систему очистки стоков
+												под ваши критерии
+											</p>
+										</div>
+										<h4
+											class="quiz__title quiz__title-inner quiz__title-last title__h4"
+										>
+											1. Заполните контактные данные
+										</h4>
+										<div
+											class="quiz__container-text-inputs"
+										>
+											<input
+												class="quiz__input-text"
+												type="text"
+												name="name"
+												id="name"
+												placeholder="Имя"
+											/>
+											<input
+												class="quiz__input-text"
+												type="text"
+												name="tel"
+												id="tel"
+												placeholder="Телефон"
+											/>
+										</div>
+										<h4
+											class="quiz__title quiz__title-inner quiz__title-last title__h4"
+										>
+											2. Выберите куда отправить расчеты и
+											сертификат на подарок
+										</h4>
+										<div
+											class="quiz__tabs"
+											data-tabs="quizTab"
+										>
+											<ul
+												class="quiz__list-tabs list-reset"
+											>
+												<li class="quiz__item-tabs">
+													<button
+														class="quiz__btn btn-reset title__h4"
+														type="button"
+													>
+														<img
+															loading="lazy"
+															src="./img/mail-icon.svg"
+															class="image quiz__icon-tabs"
+															width="20"
+															height="15"
+															alt="Иконка письма"
+														/>
+														Почта
+													</button>
+												</li>
+												<li class="quiz__item-tabs">
+													<button
+														class="quiz__btn quiz__btn-active btn-reset title__h4"
+														type="button"
+													>
+														<img
+															loading="lazy"
+															src="./img/tg-icon.svg"
+															class="image quiz__icon-tabs"
+															width="20"
+															height="20"
+															alt="Иконка telegram"
+														/>
+														Telegram
+													</button>
+												</li>
+												<li class="quiz__item-tabs">
+													<button
+														class="quiz__btn btn-reset title__h4"
+														type="button"
+													>
+														<img
+															loading="lazy"
+															src="./img/whatsup-icon.svg"
+															class="image quiz__icon-tabs"
+															width="20"
+															height="20"
+															alt="Иконка telegram"
+														/>
+														WhatsApp
+													</button>
+												</li>
+											</ul>
+											<form
+												class="quiz__content"
+												enctype="multipart/form-data"
+											>
+												<div class="quiz__panel">
+													<input
+														class="quiz__input-text quiz__input-tab quiz__input-tab-mail"
+														type="text"
+														name="mailInput"
+														id="mailInput"
+														placeholder="адрес элеткронной потчы"
+													/>
+												</div>
+												<div
+													class="quiz__panel quiz__panel-active"
+												>
+													<input
+														class="quiz__input-text quiz__input-tab quiz__input-tab-tg"
+														type="text"
+														name="tgInput"
+														id="tgInput"
+														placeholder="имя пользователя или номер телефона"
+													/>
+												</div>
+												<div class="quiz__panel">
+													<input
+														class="quiz__input-text quiz__input-tab quiz__input-tab-wa"
+														type="text"
+														name="waInput"
+														id="waInput"
+														placeholder="номер телефона"
+													/>
+												</div>
+												<button
+													class="btn-reset button button__primary quiz__button-submit"
+													type="submit"
+												>
+													отправить заявку
+												</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+		</div>
+	</body>
+</html>

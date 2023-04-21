@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+	<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<meta name="theme-color" content="#111111" />
+	<title>GoldRye</title>
+	<link
+		rel="preload"
+		href="fonts/MontserratAlternates-Bold.woff2"
+		as="font"
+		type="font/woff2"
+		crossorigin
+	/>
+	<link
+		rel="preload"
+		href="fonts/MontserratAlternates-SemiBold.woff2"
+		as="font"
+		type="font/woff2"
+		crossorigin
+	/>
+	<link
+		rel="preload"
+		href="fonts/Montserrat-SemiBold.woff2"
+		as="font"
+		type="font/woff2"
+		crossorigin
+	/>
+	<link
+		rel="preload"
+		href="fonts/Montserrat-Medium.woff2"
+		as="font"
+		type="font/woff2"
+		crossorigin
+	/>
+	<link
+		rel="preload"
+		href="fonts/NunitoSans-Regular.woff2"
+		as="font"
+		type="font/woff2"
+		crossorigin
+	/>
+	<link rel="stylesheet" href="css/vendor.css" />
+	<link rel="stylesheet" href="css/main.css" />
+	<script
+		src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=4b27804e-320a-42f2-9edb-7580ad2846a5"
+		type="text/javascript"
+	></script>
+	<script defer src="js/main.js"></script>
+</head>
+
+	<body class="page__body">
+		<div class="site-container">
+			<header class="header">
+	<div class="container header__container">
+		<div class="header__location">
+			<img
+				src="./img/location-icon.svg"
+				class="image"
+				width="10"
+				height="10"
+				alt="Иконка локации"
+			/>
+			<span class="header__city">Москва</span>
+		</div>
+		<div class="header__container-logo">
+			<a href="./main.html">
+				<picture>
+					<img
+						loading="lazy"
+						src="./img/logo480.svg"
+						class="image"
+						width="130"
+						height="30"
+						alt="Логотип"
+					/>
+				</picture>
+			</a>
+		</div>
+		<ul class="header__list list-reset">
+			<li class="header__item">
+				<img
+					src="./img/search-icon.svg"
+					class="image header__icon search-icon"
+					width="19"
+					height="19"
+					alt="Иконка поиска"
+				/>
+			</li>
+			<li class="header__item">
+				<button class="menu__link btn-reset open-form-btn">
+					<img
+						src="./img/user-icon.svg"
+						class="image header__icon"
+						width="21"
+						height="21"
+						alt="Иконка пользователя"
+					/>
+				</button>
+			</li>
+			<li class="header__item">
+				<a
+					href="./basket.html"
+					class="header__link header__link-basket"
+				>
+					<div class="header__counter header__counter-hidden">
+						<span class="header__number">1</span>
+					</div>
+					<img
+						src="./img/basket-icon.svg"
+						class="image header__icon"
+						width="24"
+						height="22"
+						alt="Иконка корзины"
+					/>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<nav class="nav" title="Навигационная панель">
+		<div class="container nav__container">
+			<ul class="nav__list list-reset">
+				<li class="nav__item">
+					<a href="./catalog.html" class="nav__link">Каталог</a>
+				</li>
+				<li class="nav__item">
+					<a href="./discount.html" class="nav__link">
+						Скидки и акции
+					</a>
+				</li>
+				<li class="nav__item">
+					<a href="./news.html" class="nav__link">Новости</a>
+				</li>
+				<li class="nav__item">
+					<a
+						href="./cleaning.html"
+						class="nav__link nav__link-active nav__link-cleaning"
+					>
+						О системах очистки
+					</a>
+					<ul class="nav__list-inner list-reset">
+						<li class="nav__item-inner">
+							<a href="./docs.html" class="nav__link-inner">
+								Документация
+							</a>
+						</li>
+						<li class="nav__item-inner">
+							<a href="./choose.html" class="nav__link-inner">
+								Как выбрать канализацию
+							</a>
+						</li>
+						<li class="nav__item-inner">
+							<a href="./faq.html" class="nav__link-inner">
+								Вопрос / Ответ
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nav__item">
+					<a href="./cooperation.html" class="nav__link">
+						Сотрудничество
+					</a>
+				</li>
+				<li class="nav__item">
+					<a href="./about.html" class="nav__link">О компании</a>
+				</li>
+				<li class="nav__item">
+					<a href="./contacts.html" class="nav__link">Контакты</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</header>
+
+			<main class="main">
+				<section class="path">
+	<div class="container path__container">
+		<ul class="path__list list-reset">
+			<li class="path__item">
+				<a href="./main.html" class="path__link">
+					<img
+						loading="lazy"
+						src="./img/home.svg"
+						class="image"
+						width="15"
+						height="13"
+						alt="Иконка Home"
+					/>
+				</a>
+			</li>
+			<li class="path__item">
+				<a href="./cleaning.html" class="path__link">
+					О системах очистки
+				</a>
+			</li>
+		</ul>
+	</div>
+</section>
+
+				<section class="policy-hero">
+	<div class="container policy-hero__container">
+		<h2 class="title__h2 policy-hero__title">
+			Политика в области обработки персональных данных
+		</h2>
+	</div>
+</section>
+
+				<section class="search">
+	<div class="container search__container">
+		<div class="search__content">
+			<div class="search__container-input">
+				<img
+					loading="lazy"
+					src="./img/search-icon.svg"
+					class="image search__icon"
+					width="19"
+					height="19"
+					alt="Иконка поиска"
+				/>
+				<input
+					type="text"
+					name="search-text"
+					id="search-text"
+					class="search__input-text"
+					placeholder="Поисковой запрос"
+				/>
+			</div>
+			<ul class="list-reset search__list">
+				<li class="search__item title__text">Предложение похожих</li>
+				<li class="search__item title__text">Предложение похожих</li>
+				<li class="search__item title__text">Предложение похожих</li>
+			</ul>
+		</div>
+	</div>
+</section>
+ <section class="menu">
+	<div class="menu__container">
+		<ul class="list-reset menu__list">
+			<li class="menu__item">
+				<a href="./main.html" class="menu__link">
+					<img
+						loading="lazy"
+						src="./img/home.svg"
+						class="image"
+						width="25"
+						height="21"
+						alt="Иконка домой"
+					/>
+				</a>
+			</li>
+			<li class="menu__item">
+				<button class="btn-reset">
+					<img
+						loading="lazy"
+						src="./img/search-icon-2.svg"
+						class="image search-icon"
+						width="25"
+						height="21"
+						alt="Иконка поиска"
+					/>
+				</button>
+			</li>
+			<li class="menu__item">
+				<button
+					class="burger menu__burger"
+					aria-label="Открыть меню"
+					aria-expanded="false"
+					id="burger"
+				>
+					<span class="burger__line"></span>
+				</button>
+			</li>
+			<li class="header__item menu__item">
+				<a href="./basket.html" class="menu__link header__link-basket">
+					<div class="header__counter header__counter-hidden">
+						<span class="header__number">1</span>
+					</div>
+					<img
+						src="./img/basket-icon.svg"
+						class="image header__icon"
+						width="24"
+						height="22"
+						alt="Иконка корзины"
+					/>
+				</a>
+			</li>
+			<li class="header__item menu__item">
+				<button class="menu__link btn-reset open-form-btn">
+					<img
+						src="./img/user-icon.svg"
+						class="image header__icon"
+						width="21"
+						height="21"
+						alt="Иконка пользователя"
+					/>
+				</button>
+			</li>
+		</ul>
+	</div>
+	<div class="menu__bg">
+		<ul class="list-reset menu__content">
+			<li class="nav__item menu__item">
+				<a href="./catalog.html" class="nav__link menu__link-nav">
+					Каталог
+				</a>
+			</li>
+			<li class="nav__item menu__item">
+				<a href="./discount.html" class="nav__link menu__link-nav">
+					Скидки и акции
+				</a>
+			</li>
+			<li class="nav__item menu__item">
+				<a href="./news.html" class="nav__link menu__link-nav">
+					Новости
+				</a>
+			</li>
+			<li class="nav__item menu__item">
+				<a href="./cleaning.html" class="nav__link menu__link-nav">
+					О системах очистки
+				</a>
+			</li>
+			<li class="nav__item menu__item">
+				<a href="./cooperation.html" class="nav__link menu__link-nav">
+					Сотрудничество
+				</a>
+			</li>
+			<li class="nav__item menu__item">
+				<a href="./about.html" class="nav__link menu__link-nav"
+					>О компании</a
+				>
+			</li>
+			<li class="nav__item menu__item">
+				<a href="./contacts.html" class="nav__link menu__link-nav"
+					>Контакты</a
+				>
+			</li>
+		</ul>
+	</div>
+</section>
+
+				<section class="forms">
+	<div class="container forms__container">
+		<div class="forms__container-inner" id="main-form-container">
+			<div class="forms__container-header">
+				<button
+					class="forms__button-back forms__button-back-hidden btn-reset"
+				>
+					<img
+						loading="lazy"
+						src="./img/back-arrow.svg"
+						class="image"
+						width="8"
+						height="13"
+						alt="Стрелка назад"
+					/>
+					<span class="forms__text forms__text-back">назад</span>
+				</button>
+				<img
+					loading="lazy"
+					src="./img/logo480.svg"
+					class="image forms__logo"
+					width="93"
+					height="25"
+					alt="Логотип"
+				/>
+				<div class="forms__container-button-close">
+					<button class="btn-reset forms__button-close">
+						<img
+							loading="lazy"
+							src="./img/close.svg"
+							class="image"
+							width="12"
+							height="12"
+							alt="Кнопка закрыть"
+						/>
+					</button>
+				</div>
+			</div>
+			<div class="forms__content">
+				<div class="forms__content-top">
+					<h4 class="title__h4 forms__title">Регистрация</h4>
+					<ul class="list-reset forms__list">
+						<li class="forms__item forms__item-email">
+							<img
+								loading="lazy"
+								src="./img/dark-mail.svg"
+								class="image forms__icon-button"
+								width="20"
+								height="15"
+								alt="Иконка письма"
+							/>
+							<span class="forms__text forms__text-back">
+								Почта
+							</span>
+						</li>
+						<li class="forms__item">
+							<img
+								loading="lazy"
+								src="./img/vk.svg"
+								class="image forms__icon-button"
+								width="20"
+								height="20"
+								alt="Иконка VK"
+							/>
+							<span class="forms__text forms__text-back"
+								>Вконтакте</span
+							>
+						</li>
+						<li class="forms__item">
+							<img
+								loading="lazy"
+								src="./img/google.svg"
+								class="image forms__icon-button"
+								width="20"
+								height="20"
+								alt="Иконка Google"
+							/>
+							<span class="forms__text forms__text-back"
+								>Google</span
+							>
+						</li>
+						<li class="forms__item">
+							<img
+								loading="lazy"
+								src="./img/apple.svg"
+								class="image forms__icon-button"
+								width="17"
+								height="20"
+								alt="Иконка Apple"
+							/>
+							<span class="forms__text forms__text-back"
+								>Apple</span
+							>
+						</li>
+					</ul>
+					<p class="forms__text forms__text-enter">
+						Есть аккаунт?
+						<button
+							class="btn-reset forms__text forms__text-blue login-form-btn"
+						>
+							Войти
+						</button>
+					</p>
+				</div>
+				<a href="./policy.html" class="forms__text forms__text-blue">
+					Политика конфиденциальности
+				</a>
+			</div>
+		</div>
+		<div
+			class="forms__container-inner forms__container-inner-hidden"
+			id="loginFormContainer"
+		>
+			<div class="forms__container-header">
+				<button class="forms__button-back btn-reset main-form-fack-btn">
+					<img
+						loading="lazy"
+						src="./img/back-arrow.svg"
+						class="image"
+						width="8"
+						height="13"
+						alt="Стрелка назад"
+					/>
+					<span class="forms__text forms__text-back">назад</span>
+				</button>
+				<img
+					loading="lazy"
+					src="./img/logo480.svg"
+					class="image forms__logo"
+					width="93"
+					height="25"
+					alt="Логотип"
+				/>
+				<div class="forms__container-button-close">
+					<button class="btn-reset forms__button-close">
+						<img
+							loading="lazy"
+							src="./img/close.svg"
+							class="image"
+							width="12"
+							height="12"
+							alt="Кнопка закрыть"
+						/>
+					</button>
+				</div>
+			</div>
+			<div class="forms__content">
+				<div class="forms__content-top">
+					<h4 class="title__h4 forms__title">Вход в аккаунт</h4>
+					<form class="forms__form" enctype="multipart/form-data">
+						<ul class="list-reset forms__list forms__list-inputs">
+							<li class="forms__item forms__item-input">
+								<input
+									type="text"
+									name="email1"
+									id="email1"
+									class="forms__input forms__input-text input-reset"
+									placeholder="Почта"
+								/>
+							</li>
+							<li class="forms__item forms__item-input">
+								<input
+									type="text"
+									name="pass1"
+									id="pass1"
+									class="forms__input forms__input-text input-reset"
+									placeholder="Пароль"
+								/>
+							</li>
+						</ul>
+						<button
+							class="btn-reset button button__primary forms__button forms__button-enter"
+							type="submit"
+						>
+							войти
+						</button>
+					</form>
+					<button
+						class="btn-reset forms__button-recover forms__text forms__text-blue"
+					>
+						Забыли пароль?
+					</button>
+					<button
+						class="btn-reset forms__text forms__text-blue forms__button-reg"
+					>
+						Регистрация
+					</button>
+				</div>
+			</div>
+		</div>
+		<div
+			class="forms__container-inner forms__container-inner-hidden"
+			id="emailRegContainer"
+		>
+			<div class="forms__container-header">
+				<button class="forms__button-back btn-reset main-form-fack-btn">
+					<img
+						loading="lazy"
+						src="./img/back-arrow.svg"
+						class="image"
+						width="8"
+						height="13"
+						alt="Стрелка назад"
+					/>
+					<span class="forms__text forms__text-back">назад</span>
+				</button>
+				<img
+					loading="lazy"
+					src="./img/logo480.svg"
+					class="image forms__logo"
+					width="93"
+					height="25"
+					alt="Логотип"
+				/>
+				<div class="forms__container-button-close">
+					<button class="btn-reset forms__button-close">
+						<img
+							loading="lazy"
+							src="./img/close.svg"
+							class="image"
+							width="12"
+							height="12"
+							alt="Кнопка закрыть"
+						/>
+					</button>
+				</div>
+			</div>
+			<div class="forms__content">
+				<div class="forms__content-top">
+					<h4 class="title__h4 forms__title">Регистрация</h4>
+					<form class="forms__form" enctype="multipart/form-data">
+						<ul class="list-reset forms__list forms__list-inputs">
+							<li class="forms__item forms__item-input">
+								<input
+									type="text"
+									name="fio"
+									id="fio"
+									class="forms__input forms__input-text input-reset"
+									placeholder="Имя и фамилия"
+								/>
+							</li>
+							<li class="forms__item forms__item-input">
+								<input
+									type="text"
+									name="email"
+									id="email"
+									class="forms__input forms__input-text input-reset"
+									placeholder="Почта"
+								/>
+							</li>
+							<li class="forms__item forms__item-input">
+								<input
+									type="text"
+									name="pass"
+									id="pass"
+									class="forms__input forms__input-text input-reset"
+									placeholder="Пароль"
+								/>
+							</li>
+						</ul>
+						<button
+							class="btn-reset button button__primary forms__button forms__button-enter"
+							type="submit"
+						>
+							зарегистрироваться
+						</button>
+					</form>
+					<p class="forms__text forms__text-enter">
+						Есть аккаунт?
+						<button
+							class="btn-reset forms__text forms__text-blue login-form-btn"
+						>
+							Войти
+						</button>
+					</p>
+				</div>
+				<a href="./policy.html" class="forms__text forms__text-blue">
+					Политика конфиденциальности
+				</a>
+			</div>
+		</div>
+		<div
+			class="forms__container-inner forms__container-inner-hidden"
+			id="recoverFormContainer"
+		>
+			<div class="forms__container-header">
+				<button
+					class="forms__button-back btn-reset"
+					id="login-form-back-btn"
+				>
+					<img
+						loading="lazy"
+						src="./img/back-arrow.svg"
+						class="image"
+						width="8"
+						height="13"
+						alt="Стрелка назад"
+					/>
+					<span class="forms__text forms__text-back">назад</span>
+				</button>
+				<img
+					loading="lazy"
+					src="./img/logo480.svg"
+					class="image forms__logo"
+					width="93"
+					height="25"
+					alt="Логотип"
+				/>
+				<div class="forms__container-button-close">
+					<button class="btn-reset forms__button-close">
+						<img
+							loading="lazy"
+							src="./img/close.svg"
+							class="image"
+							width="12"
+							height="12"
+							alt="Кнопка закрыть"
+						/>
+					</button>
+				</div>
+			</div>
+			<div class="forms__content">
+				<div class="forms__content-top">
+					<h4 class="title__h4 forms__title">Восстановить пароль</h4>
+					<form class="forms__form" enctype="multipart/form-data">
+						<ul class="list-reset forms__list forms__list-inputs">
+							<li class="forms__item forms__item-input">
+								<input
+									type="text"
+									name="email"
+									id="email"
+									class="forms__input forms__input-text input-reset"
+									placeholder="Почта"
+								/>
+							</li>
+						</ul>
+						<button
+							class="btn-reset button button__primary forms__button forms__button-enter"
+							type="submit"
+						>
+							отправить
+						</button>
+					</form>
+					<button
+						class="btn-reset forms__text forms__text-blue forms__button-reg"
+					>
+						Регистрация
+					</button>
+				</div>
+				<a href="./policy.html" class="forms__text forms__text-blue">
+					Политика конфиденциальности
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+			</main>
+			<footer class="footer">
+	<div class="container footer__container">
+		<ul class="footer__list list-reset">
+			<li class="footer__item footer__item-right">
+				<a href="./about.html#vacancy" class="footer__link">Вакансии</a>
+			</li>
+			<li class="footer__item footer__item-right">
+				<a href="./cooperation.html" class="footer__link"
+					>Сотрудничество</a
+				>
+			</li>
+			<li class="footer__item footer__item-right">
+				<a href="#" class="footer__link">Карта сайта</a>
+			</li>
+			<li class="footer__item footer__item-right">
+				<a href="./policy-hero.html" class="footer__link">
+					Политика обработки персональных данных
+				</a>
+			</li>
+		</ul>
+		<div class="footer__container-logo">
+			<img
+				loading="lazy"
+				src="./img/logo768.svg"
+				class="image footer__logo"
+				width="201"
+				height="48"
+				alt="Логотип"
+			/>
+		</div>
+		<ul class="footer__list list-reset">
+			<li class="footer__item footer__item-left">
+				<a href="#" class="footer__link">
+					+7 (351) 244 83 56 <br />
+					goldrye@mail.ru
+				</a>
+			</li>
+			<li class="footer__item footer__item-left">
+				<a href="#" class="footer__link">
+					ПРОИЗВОДСТВО <br />
+					Челябинская область, г. Коркино, ул. 1 Мая, д. 71
+				</a>
+			</li>
+			<li class="footer__item footer__item-left">
+				<a href="#" class="footer__link">
+					ВЫСТАВОЧНЫЙ ЗАЛ <br />
+					г. Челябинск, ул. Рабоче-Колхозная, 55</a
+				>
+			</li>
+		</ul>
+	</div>
+</footer>
+
+		</div>
+	</body>
+</html>
