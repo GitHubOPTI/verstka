@@ -119,16 +119,14 @@
 			</li>
 		</ul>
 	</div>
-	<nav class="nav" title="Навигационная панель">
+	<nav class="nav nav-open" title="Навигационная панель">
 		<div class="container nav__container">
 			<ul class="nav__list list-reset">
 				<li class="nav__item">
 					<a href="./catalog.html" class="nav__link">Каталог</a>
 				</li>
 				<li class="nav__item">
-					<a href="./discount.html" class="nav__link">
-						Скидки и акции
-					</a>
+					<a href="./discount.html" class="nav__link"> Акции </a>
 				</li>
 				<li class="nav__item">
 					<a href="./news.html" class="nav__link">Новости</a>
@@ -258,7 +256,7 @@
 				<li class="catalog-hero__item-category">
 					<div
 						class="catalog-hero__container-image"
-						data-category="caps"
+						data-category="headings"
 					>
 						<picture class="catalog-hero__picture">
 							<source
@@ -328,6 +326,67 @@
 			</button>
 		</div>
 		<div class="container catalog-hero__container">
+			<div class="catalog-hero__filters">
+				<ul class="catalog-hero__list list-reset">
+					<li class="catalog-hero__item catalog-hero__item-title">
+						<h4 class="catalog-hero__title-list title__h4">
+							Категория
+						</h4>
+					</li>
+					<li class="catalog-hero__item">
+						<label class="catalog-hero__label">
+							<input
+								type="checkbox"
+								class="catalog-hero__input"
+								checked="checked"
+								data-category-filter="systems"
+							/>
+							<span class="catalog-hero__checkmark"></span>
+							<div class="catalog-hero__label-text">
+								Системы очистки
+							</div>
+						</label>
+					</li>
+					<li class="catalog-hero__item">
+						<label class="catalog-hero__label">
+							<input
+								type="checkbox"
+								class="catalog-hero__input"
+								checked="checked"
+								data-category-filter="stuff"
+							/>
+							<span class="catalog-hero__checkmark"></span>
+							<div class="catalog-hero__label-text">
+								Оборудование
+							</div>
+						</label>
+					</li>
+					<li class="catalog-hero__item">
+						<label class="catalog-hero__label">
+							<input
+								type="checkbox"
+								class="catalog-hero__input"
+								checked="checked"
+								data-category-filter="headings"
+							/>
+							<span class="catalog-hero__checkmark"></span>
+							<div class="catalog-hero__label-text">Крышки</div>
+						</label>
+					</li>
+					<li class="catalog-hero__item">
+						<label class="catalog-hero__label">
+							<input
+								type="checkbox"
+								class="catalog-hero__input"
+								checked="checked"
+								data-category-filter="service"
+							/>
+							<span class="catalog-hero__checkmark"></span>
+							<div class="catalog-hero__label-text">Услуги</div>
+						</label>
+					</li>
+				</ul>
+			</div>
 			<div class="catalog-hero__content">
 				<div class="catalog-hero__container-category" id="systems">
 					<h3 class="catalog-hero__title-category title__h3">
@@ -337,20 +396,21 @@
 						<li class="catalog-hero__item-category">
 							<div class="catalog-hero__container-inner">
 								<div class="catalog-hero__container-image">
-									<picture class="catalog-hero__picture">
-										<source
-											srcset="./img/catalog-1.webp"
-											type="image/webp"
-										/>
-										<img
-											loading="lazy"
-											src="./img/catalog-1.png"
-											class="image catalog-hero__image"
-											width="300"
-											height="260"
-											alt="Фото товара"
-										/>
-									</picture>
+									<a href="./catalog-item.html"
+										><picture class="catalog-hero__picture">
+											<source
+												srcset="./img/catalog-1.webp"
+												type="image/webp"
+											/>
+											<img
+												loading="lazy"
+												src="./img/catalog-1.png"
+												class="image catalog-hero__image"
+												width="300"
+												height="260"
+												alt="Фото товара"
+											/> </picture
+									></a>
 									<div class="catalog-hero__discount">
 										-10%
 									</div>
@@ -433,20 +493,21 @@
 						<li class="catalog-hero__item-category">
 							<div class="catalog-hero__container-inner">
 								<div class="catalog-hero__container-image">
-									<picture class="catalog-hero__picture">
-										<source
-											srcset="./img/catalog-2.webp"
-											type="image/webp"
-										/>
-										<img
-											loading="lazy"
-											src="./img/catalog-2.png"
-											class="image catalog-hero__image"
-											width="300"
-											height="260"
-											alt="Фото товара"
-										/>
-									</picture>
+									<a href="./catalog-item.html"
+										><picture class="catalog-hero__picture">
+											<source
+												srcset="./img/catalog-2.webp"
+												type="image/webp"
+											/>
+											<img
+												loading="lazy"
+												src="./img/catalog-2.png"
+												class="image catalog-hero__image"
+												width="300"
+												height="260"
+												alt="Фото товара"
+											/> </picture
+									></a>
 									<div
 										class="catalog-hero__discount catalog-hero__discount-hidden"
 									>
@@ -531,20 +592,21 @@
 						<li class="catalog-hero__item-category">
 							<div class="catalog-hero__container-inner">
 								<div class="catalog-hero__container-image">
-									<picture class="catalog-hero__picture">
-										<source
-											srcset="./img/catalog-3.webp"
-											type="image/webp"
-										/>
-										<img
-											loading="lazy"
-											src="./img/catalog-3.png"
-											class="image catalog-hero__image"
-											width="300"
-											height="260"
-											alt="Фото товара"
-										/>
-									</picture>
+									<a href="./catalog-item.html"
+										><picture class="catalog-hero__picture">
+											<source
+												srcset="./img/catalog-3.webp"
+												type="image/webp"
+											/>
+											<img
+												loading="lazy"
+												src="./img/catalog-3.png"
+												class="image catalog-hero__image"
+												width="300"
+												height="260"
+												alt="Фото товара"
+											/> </picture
+									></a>
 									<div
 										class="catalog-hero__discount catalog-hero__discount-hidden"
 									>
@@ -629,20 +691,21 @@
 						<li class="catalog-hero__item-category">
 							<div class="catalog-hero__container-inner">
 								<div class="catalog-hero__container-image">
-									<picture class="catalog-hero__picture">
-										<source
-											srcset="./img/catalog-4.webp"
-											type="image/webp"
-										/>
-										<img
-											loading="lazy"
-											src="./img/catalog-4.png"
-											class="image catalog-hero__image"
-											width="300"
-											height="260"
-											alt="Фото товара"
-										/>
-									</picture>
+									<a href="./catalog-item.html"
+										><picture class="catalog-hero__picture">
+											<source
+												srcset="./img/catalog-4.webp"
+												type="image/webp"
+											/>
+											<img
+												loading="lazy"
+												src="./img/catalog-4.png"
+												class="image catalog-hero__image"
+												width="300"
+												height="260"
+												alt="Фото товара"
+											/> </picture
+									></a>
 									<div class="catalog-hero__discount">
 										-10%
 									</div>
@@ -723,20 +786,21 @@
 						<li class="catalog-hero__item-category">
 							<div class="catalog-hero__container-inner">
 								<div class="catalog-hero__container-image">
-									<picture class="catalog-hero__picture">
-										<source
-											srcset="./img/catalog-5.webp"
-											type="image/webp"
-										/>
-										<img
-											loading="lazy"
-											src="./img/catalog-5.png"
-											class="image catalog-hero__image"
-											width="300"
-											height="260"
-											alt="Фото товара"
-										/>
-									</picture>
+									<a href="./catalog-item.html"
+										><picture class="catalog-hero__picture">
+											<source
+												srcset="./img/catalog-5.webp"
+												type="image/webp"
+											/>
+											<img
+												loading="lazy"
+												src="./img/catalog-5.png"
+												class="image catalog-hero__image"
+												width="300"
+												height="260"
+												alt="Фото товара"
+											/> </picture
+									></a>
 									<div class="catalog-hero__discount">
 										-10%
 									</div>
@@ -817,20 +881,21 @@
 						<li class="catalog-hero__item-category">
 							<div class="catalog-hero__container-inner">
 								<div class="catalog-hero__container-image">
-									<picture class="catalog-hero__picture">
-										<source
-											srcset="./img/catalog-6.webp"
-											type="image/webp"
-										/>
-										<img
-											loading="lazy"
-											src="./img/catalog-6.png"
-											class="image catalog-hero__image"
-											width="300"
-											height="260"
-											alt="Фото товара"
-										/>
-									</picture>
+									<a href="./catalog-item.html"
+										><picture class="catalog-hero__picture">
+											<source
+												srcset="./img/catalog-6.webp"
+												type="image/webp"
+											/>
+											<img
+												loading="lazy"
+												src="./img/catalog-6.png"
+												class="image catalog-hero__image"
+												width="300"
+												height="260"
+												alt="Фото товара"
+											/> </picture
+									></a>
 									<div class="catalog-hero__discount">
 										-10%
 									</div>
@@ -911,20 +976,21 @@
 						<li class="catalog-hero__item-category">
 							<div class="catalog-hero__container-inner">
 								<div class="catalog-hero__container-image">
-									<picture class="catalog-hero__picture">
-										<source
-											srcset="./img/catalog-7.webp"
-											type="image/webp"
-										/>
-										<img
-											loading="lazy"
-											src="./img/catalog-7.png"
-											class="image catalog-hero__image"
-											width="300"
-											height="260"
-											alt="Фото товара"
-										/>
-									</picture>
+									<a href="./catalog-item.html"
+										><picture class="catalog-hero__picture">
+											<source
+												srcset="./img/catalog-7.webp"
+												type="image/webp"
+											/>
+											<img
+												loading="lazy"
+												src="./img/catalog-7.png"
+												class="image catalog-hero__image"
+												width="300"
+												height="260"
+												alt="Фото товара"
+											/> </picture
+									></a>
 									<div
 										class="catalog-hero__discount catalog-hero__discount-hidden"
 									>
@@ -1007,20 +1073,21 @@
 						<li class="catalog-hero__item-category">
 							<div class="catalog-hero__container-inner">
 								<div class="catalog-hero__container-image">
-									<picture class="catalog-hero__picture">
-										<source
-											srcset="./img/catalog-8.webp"
-											type="image/webp"
-										/>
-										<img
-											loading="lazy"
-											src="./img/catalog-8.png"
-											class="image catalog-hero__image"
-											width="300"
-											height="260"
-											alt="Фото товара"
-										/>
-									</picture>
+									<a href="./catalog-item.html"
+										><picture class="catalog-hero__picture">
+											<source
+												srcset="./img/catalog-8.webp"
+												type="image/webp"
+											/>
+											<img
+												loading="lazy"
+												src="./img/catalog-8.png"
+												class="image catalog-hero__image"
+												width="300"
+												height="260"
+												alt="Фото товара"
+											/> </picture
+									></a>
 									<div
 										class="catalog-hero__discount catalog-hero__discount-hidden"
 									>
@@ -1112,20 +1179,21 @@
 						<li class="catalog-hero__item-category">
 							<div class="catalog-hero__container-inner">
 								<div class="catalog-hero__container-image">
-									<picture class="catalog-hero__picture">
-										<source
-											srcset="./img/catalog-9.webp"
-											type="image/webp"
-										/>
-										<img
-											loading="lazy"
-											src="./img/catalog-9.png"
-											class="image catalog-hero__image"
-											width="300"
-											height="260"
-											alt="Фото товара"
-										/>
-									</picture>
+									<a href="./catalog-item.html"
+										><picture class="catalog-hero__picture">
+											<source
+												srcset="./img/catalog-9.webp"
+												type="image/webp"
+											/>
+											<img
+												loading="lazy"
+												src="./img/catalog-9.png"
+												class="image catalog-hero__image"
+												width="300"
+												height="260"
+												alt="Фото товара"
+											/> </picture
+									></a>
 									<div class="catalog-hero__discount">
 										-10%
 									</div>
@@ -1192,20 +1260,21 @@
 						<li class="catalog-hero__item-category">
 							<div class="catalog-hero__container-inner">
 								<div class="catalog-hero__container-image">
-									<picture class="catalog-hero__picture">
-										<source
-											srcset="./img/catalog-10.webp"
-											type="image/webp"
-										/>
-										<img
-											loading="lazy"
-											src="./img/catalog-10.png"
-											class="image catalog-hero__image"
-											width="300"
-											height="260"
-											alt="Фото товара"
-										/>
-									</picture>
+									<a href="./catalog-item.html"
+										><picture class="catalog-hero__picture">
+											<source
+												srcset="./img/catalog-10.webp"
+												type="image/webp"
+											/>
+											<img
+												loading="lazy"
+												src="./img/catalog-10.png"
+												class="image catalog-hero__image"
+												width="300"
+												height="260"
+												alt="Фото товара"
+											/> </picture
+									></a>
 									<div
 										class="catalog-hero__discount catalog-hero__discount-hidden"
 									>
@@ -1269,20 +1338,21 @@
 						<li class="catalog-hero__item-category">
 							<div class="catalog-hero__container-inner">
 								<div class="catalog-hero__container-image">
-									<picture class="catalog-hero__picture">
-										<source
-											srcset="./img/catalog-11.webp"
-											type="image/webp"
-										/>
-										<img
-											loading="lazy"
-											src="./img/catalog-11.png"
-											class="image catalog-hero__image"
-											width="300"
-											height="260"
-											alt="Фото товара"
-										/>
-									</picture>
+									<a href="./catalog-item.html"
+										><picture class="catalog-hero__picture">
+											<source
+												srcset="./img/catalog-11.webp"
+												type="image/webp"
+											/>
+											<img
+												loading="lazy"
+												src="./img/catalog-11.png"
+												class="image catalog-hero__image"
+												width="300"
+												height="260"
+												alt="Фото товара"
+											/> </picture
+									></a>
 									<div
 										class="catalog-hero__discount catalog-hero__discount-hidden"
 									>
@@ -1346,20 +1416,21 @@
 						<li class="catalog-hero__item-category">
 							<div class="catalog-hero__container-inner">
 								<div class="catalog-hero__container-image">
-									<picture class="catalog-hero__picture">
-										<source
-											srcset="./img/catalog-12.webp"
-											type="image/webp"
-										/>
-										<img
-											loading="lazy"
-											src="./img/catalog-12.png"
-											class="image catalog-hero__image"
-											width="300"
-											height="260"
-											alt="Фото товара"
-										/>
-									</picture>
+									<a href="./catalog-item.html"
+										><picture class="catalog-hero__picture">
+											<source
+												srcset="./img/catalog-12.webp"
+												type="image/webp"
+											/>
+											<img
+												loading="lazy"
+												src="./img/catalog-12.png"
+												class="image catalog-hero__image"
+												width="300"
+												height="260"
+												alt="Фото товара"
+											/> </picture
+									></a>
 									<div
 										class="catalog-hero__discount catalog-hero__discount-hidden"
 									>
@@ -1422,7 +1493,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="catalog-hero__container-category" id="caps">
+				<div class="catalog-hero__container-category" id="headings">
 					<h3 class="catalog-hero__title-category title__h3">
 						Крышки
 					</h3>
@@ -1430,20 +1501,21 @@
 						<li class="catalog-hero__item-category">
 							<div class="catalog-hero__container-inner">
 								<div class="catalog-hero__container-image">
-									<picture class="catalog-hero__picture">
-										<source
-											srcset="./img/catalog-13.webp"
-											type="image/webp"
-										/>
-										<img
-											loading="lazy"
-											src="./img/catalog-13.png"
-											class="image catalog-hero__image"
-											width="300"
-											height="260"
-											alt="Фото товара"
-										/>
-									</picture>
+									<a href="./catalog-item.html"
+										><picture class="catalog-hero__picture">
+											<source
+												srcset="./img/catalog-13.webp"
+												type="image/webp"
+											/>
+											<img
+												loading="lazy"
+												src="./img/catalog-13.png"
+												class="image catalog-hero__image"
+												width="300"
+												height="260"
+												alt="Фото товара"
+											/> </picture
+									></a>
 									<div
 										class="catalog-hero__discount catalog-hero__discount-hidden"
 									>
@@ -1518,20 +1590,21 @@
 						<li class="catalog-hero__item-category">
 							<div class="catalog-hero__container-inner">
 								<div class="catalog-hero__container-image">
-									<picture class="catalog-hero__picture">
-										<source
-											srcset="./img/catalog-14.webp"
-											type="image/webp"
-										/>
-										<img
-											loading="lazy"
-											src="./img/catalog-14.png"
-											class="image catalog-hero__image"
-											width="300"
-											height="260"
-											alt="Фото товара"
-										/>
-									</picture>
+									<a href="./catalog-item.html"
+										><picture class="catalog-hero__picture">
+											<source
+												srcset="./img/catalog-14.webp"
+												type="image/webp"
+											/>
+											<img
+												loading="lazy"
+												src="./img/catalog-14.png"
+												class="image catalog-hero__image"
+												width="300"
+												height="260"
+												alt="Фото товара"
+											/> </picture
+									></a>
 									<div
 										class="catalog-hero__discount catalog-hero__discount-hidden"
 									>
@@ -1596,20 +1669,21 @@
 						<li class="catalog-hero__item-category">
 							<div class="catalog-hero__container-inner">
 								<div class="catalog-hero__container-image">
-									<picture class="catalog-hero__picture">
-										<source
-											srcset="./img/catalog-15.webp"
-											type="image/webp"
-										/>
-										<img
-											loading="lazy"
-											src="./img/catalog-15.png"
-											class="image catalog-hero__image"
-											width="300"
-											height="260"
-											alt="Фото товара"
-										/>
-									</picture>
+									<a href="./catalog-item.html"
+										><picture class="catalog-hero__picture">
+											<source
+												srcset="./img/catalog-15.webp"
+												type="image/webp"
+											/>
+											<img
+												loading="lazy"
+												src="./img/catalog-15.png"
+												class="image catalog-hero__image"
+												width="300"
+												height="260"
+												alt="Фото товара"
+											/> </picture
+									></a>
 									<div
 										class="catalog-hero__discount catalog-hero__discount-hidden"
 									>
@@ -1674,20 +1748,21 @@
 						<li class="catalog-hero__item-category">
 							<div class="catalog-hero__container-inner">
 								<div class="catalog-hero__container-image">
-									<picture class="catalog-hero__picture">
-										<source
-											srcset="./img/catalog-16.webp"
-											type="image/webp"
-										/>
-										<img
-											loading="lazy"
-											src="./img/catalog-16.png"
-											class="image catalog-hero__image"
-											width="300"
-											height="260"
-											alt="Фото товара"
-										/>
-									</picture>
+									<a href="./catalog-item.html"
+										><picture class="catalog-hero__picture">
+											<source
+												srcset="./img/catalog-16.webp"
+												type="image/webp"
+											/>
+											<img
+												loading="lazy"
+												src="./img/catalog-16.png"
+												class="image catalog-hero__image"
+												width="300"
+												height="260"
+												alt="Фото товара"
+											/> </picture
+									></a>
 									<div
 										class="catalog-hero__discount catalog-hero__discount-hidden"
 									>
@@ -1759,20 +1834,21 @@
 						<li class="catalog-hero__item-category">
 							<div class="catalog-hero__container-inner">
 								<div class="catalog-hero__container-image">
-									<picture class="catalog-hero__picture">
-										<source
-											srcset="./img/catalog-17.webp"
-											type="image/webp"
-										/>
-										<img
-											loading="lazy"
-											src="./img/catalog-17.png"
-											class="image catalog-hero__image"
-											width="300"
-											height="260"
-											alt="Фото товара"
-										/>
-									</picture>
+									<a href="./catalog-item.html"
+										><picture class="catalog-hero__picture">
+											<source
+												srcset="./img/catalog-17.webp"
+												type="image/webp"
+											/>
+											<img
+												loading="lazy"
+												src="./img/catalog-17.png"
+												class="image catalog-hero__image"
+												width="300"
+												height="260"
+												alt="Фото товара"
+											/> </picture
+									></a>
 									<div
 										class="catalog-hero__discount catalog-hero__discount-hidden"
 									>
@@ -1837,20 +1913,21 @@
 						<li class="catalog-hero__item-category">
 							<div class="catalog-hero__container-inner">
 								<div class="catalog-hero__container-image">
-									<picture class="catalog-hero__picture">
-										<source
-											srcset="./img/catalog-18.webp"
-											type="image/webp"
-										/>
-										<img
-											loading="lazy"
-											src="./img/catalog-18.png"
-											class="image catalog-hero__image"
-											width="300"
-											height="260"
-											alt="Фото товара"
-										/>
-									</picture>
+									<a href="./catalog-item.html"
+										><picture class="catalog-hero__picture">
+											<source
+												srcset="./img/catalog-18.webp"
+												type="image/webp"
+											/>
+											<img
+												loading="lazy"
+												src="./img/catalog-18.png"
+												class="image catalog-hero__image"
+												width="300"
+												height="260"
+												alt="Фото товара"
+											/> </picture
+									></a>
 									<div
 										class="catalog-hero__discount catalog-hero__discount-hidden"
 									>
@@ -1915,20 +1992,21 @@
 						<li class="catalog-hero__item-category">
 							<div class="catalog-hero__container-inner">
 								<div class="catalog-hero__container-image">
-									<picture class="catalog-hero__picture">
-										<source
-											srcset="./img/catalog-19.webp"
-											type="image/webp"
-										/>
-										<img
-											loading="lazy"
-											src="./img/catalog-19.png"
-											class="image catalog-hero__image"
-											width="300"
-											height="260"
-											alt="Фото товара"
-										/>
-									</picture>
+									<a href="./catalog-item.html"
+										><picture class="catalog-hero__picture">
+											<source
+												srcset="./img/catalog-19.webp"
+												type="image/webp"
+											/>
+											<img
+												loading="lazy"
+												src="./img/catalog-19.png"
+												class="image catalog-hero__image"
+												width="300"
+												height="260"
+												alt="Фото товара"
+											/> </picture
+									></a>
 									<div
 										class="catalog-hero__discount catalog-hero__discount-hidden"
 									>
@@ -2004,20 +2082,21 @@
 						<li class="catalog-hero__item-category">
 							<div class="catalog-hero__container-inner">
 								<div class="catalog-hero__container-image">
-									<picture class="catalog-hero__picture">
-										<source
-											srcset="./img/catalog-20.webp"
-											type="image/webp"
-										/>
-										<img
-											loading="lazy"
-											src="./img/catalog-20.png"
-											class="image catalog-hero__image"
-											width="300"
-											height="260"
-											alt="Фото товара"
-										/>
-									</picture>
+									<a href="./catalog-item.html"
+										><picture class="catalog-hero__picture">
+											<source
+												srcset="./img/catalog-20.webp"
+												type="image/webp"
+											/>
+											<img
+												loading="lazy"
+												src="./img/catalog-20.png"
+												class="image catalog-hero__image"
+												width="300"
+												height="260"
+												alt="Фото товара"
+											/> </picture
+									></a>
 									<div
 										class="catalog-hero__discount catalog-hero__discount-hidden"
 									>
@@ -2187,7 +2266,7 @@
 			</li>
 			<li class="nav__item menu__item">
 				<a href="./discount.html" class="nav__link menu__link-nav">
-					Скидки и акции
+					Акции
 				</a>
 			</li>
 			<li class="nav__item menu__item">

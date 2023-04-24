@@ -119,16 +119,14 @@
 			</li>
 		</ul>
 	</div>
-	<nav class="nav" title="Навигационная панель">
+	<nav class="nav nav-open" title="Навигационная панель">
 		<div class="container nav__container">
 			<ul class="nav__list list-reset">
 				<li class="nav__item">
 					<a href="./catalog.html" class="nav__link">Каталог</a>
 				</li>
 				<li class="nav__item">
-					<a href="./discount.html" class="nav__link">
-						Скидки и акции
-					</a>
+					<a href="./discount.html" class="nav__link"> Акции </a>
 				</li>
 				<li class="nav__item">
 					<a href="./news.html" class="nav__link">Новости</a>
@@ -533,13 +531,15 @@
 				</li>
 				<li class="catalog-item-tabs__item">
 					<button
-						class="catalog-item-tabs__btn catalog-item-tabs__btn-active btn-reset title__h4"
+						class="catalog-item-tabs__btn btn-reset title__h4"
 						type="button"
 					>
 						Преимущества
 					</button>
 				</li>
-				<li class="catalog-item-tabs__item">
+				<li
+					class="catalog-item-tabs__item catalog-item-tabs__btn-active"
+				>
 					<button
 						class="catalog-item-tabs__btn btn-reset title__h4"
 						type="button"
@@ -566,87 +566,277 @@
 			</ul>
 			<div class="catalog-item-tabs__content">
 				<div class="catalog-item-tabs__panel">
-					<ul class="catalog-item-tabs__list-adv list-reset">
-						<li class="catalog-item-tabs__item-adv">
-							<img
-								loading="lazy"
-								src="./img/adv-1.svg"
-								class="image catalog-item-tabs__icon-adv"
-								width="70"
-								height="70"
-								alt="Иконка преимущества"
-							/>
+					<ul class="catalog-item-tabs__list-specif list-reset">
+						<li class="catalog-item-tabs__item-spec">
 							<span
-								class="catalog-item-tabs__text catalog-item-tabs__text-main title__text"
+								class="title__text catalog-item-tabs__text-spec"
 							>
-								Сделано из композитных материалов
+								Душ
+							</span>
+							<span
+								class="title__text catalog-item-tabs__text-spec"
+							>
+								Значение
 							</span>
 						</li>
-						<li class="catalog-item-tabs__item-adv">
-							<img
-								loading="lazy"
-								src="./img/adv-2.svg"
-								class="image catalog-item-tabs__icon-adv"
-								width="70"
-								height="70"
-								alt="Иконка преимущества"
-							/>
+						<li class="catalog-item-tabs__item-spec">
 							<span
-								class="catalog-item-tabs__text catalog-item-tabs__text-main title__text"
+								class="title__text catalog-item-tabs__text-spec"
 							>
-								Срок эксплуатации более 50 лет
+								Ванна
+							</span>
+							<span
+								class="title__text catalog-item-tabs__text-spec"
+							>
+								Значение
 							</span>
 						</li>
-						<li class="catalog-item-tabs__item-adv">
-							<img
-								loading="lazy"
-								src="./img/adv-3.svg"
-								class="image catalog-item-tabs__icon-adv"
-								width="70"
-								height="70"
-								alt="Иконка преимущества"
-							/>
+						<li class="catalog-item-tabs__item-spec">
 							<span
-								class="catalog-item-tabs__text catalog-item-tabs__text-main title__text"
+								class="title__text catalog-item-tabs__text-spec"
 							>
-								Сервис без въезда ассенизатора на участок
+								Душ
+							</span>
+							<span
+								class="title__text catalog-item-tabs__text-spec"
+							>
+								Значение
 							</span>
 						</li>
-						<li class="catalog-item-tabs__item-adv">
-							<img
-								loading="lazy"
-								src="./img/adv-4.svg"
-								class="image catalog-item-tabs__icon-adv"
-								width="70"
-								height="70"
-								alt="Иконка преимущества"
-							/>
+						<li class="catalog-item-tabs__item-spec">
 							<span
-								class="catalog-item-tabs__text catalog-item-tabs__text-main title__text"
+								class="title__text catalog-item-tabs__text-spec"
 							>
-								Не боится отключения электричества
+								Посудомоечная машина
+							</span>
+							<span
+								class="title__text catalog-item-tabs__text-spec"
+							>
+								Значение
 							</span>
 						</li>
-						<li class="catalog-item-tabs__item-adv">
-							<img
-								loading="lazy"
-								src="./img/adv-5.svg"
-								class="image catalog-item-tabs__icon-adv"
-								width="70"
-								height="70"
-								alt="Иконка преимущества"
-							/>
+						<li class="catalog-item-tabs__item-spec">
 							<span
-								class="catalog-item-tabs__text catalog-item-tabs__text-main title__text"
+								class="title__text catalog-item-tabs__text-spec"
 							>
-								Очищенной водой можно поливать
+								Стиральная машина
+							</span>
+							<span
+								class="title__text catalog-item-tabs__text-spec"
+							>
+								Значение
+							</span>
+						</li>
+						<li class="catalog-item-tabs__item-spec">
+							<span
+								class="title__text catalog-item-tabs__text-spec"
+							>
+								Производительность
+							</span>
+							<span
+								class="title__text catalog-item-tabs__text-spec"
+							>
+								Значение
+							</span>
+						</li>
+						<li class="catalog-item-tabs__item-spec">
+							<span
+								class="title__text catalog-item-tabs__text-spec"
+							>
+								Душ
+							</span>
+							<span
+								class="title__text catalog-item-tabs__text-spec"
+							>
+								Значение
+							</span>
+						</li>
+						<li class="catalog-item-tabs__item-spec">
+							<span
+								class="title__text catalog-item-tabs__text-spec"
+							>
+								Объем залпового сброса, л/час
+							</span>
+							<span
+								class="title__text catalog-item-tabs__text-spec"
+							>
+								Значение
+							</span>
+						</li>
+						<li class="catalog-item-tabs__item-spec">
+							<span
+								class="title__text catalog-item-tabs__text-spec"
+							>
+								Количество пользователей, чел
+							</span>
+							<span
+								class="title__text catalog-item-tabs__text-spec"
+							>
+								Значение
+							</span>
+						</li>
+						<li class="catalog-item-tabs__item-spec">
+							<span
+								class="title__text catalog-item-tabs__text-spec"
+							>
+								Возможность заглубления подводящего
+								трубопровода, мм
+							</span>
+							<span
+								class="title__text catalog-item-tabs__text-spec"
+							>
+								Значение
+							</span>
+						</li>
+						<li class="catalog-item-tabs__item-spec">
+							<span
+								class="title__text catalog-item-tabs__text-spec"
+							>
+								Глубина подводящего трубопровода, мм
+							</span>
+							<span
+								class="title__text catalog-item-tabs__text-spec"
+							>
+								Значение
+							</span>
+						</li>
+						<li class="catalog-item-tabs__item-spec">
+							<span
+								class="title__text catalog-item-tabs__text-spec"
+							>
+								Размеры (ширина/глубина/высота), мм
+							</span>
+							<span
+								class="title__text catalog-item-tabs__text-spec"
+							>
+								Значение
+							</span>
+						</li>
+						<li class="catalog-item-tabs__item-spec">
+							<span
+								class="title__text catalog-item-tabs__text-spec"
+							>
+								Количество блоков (емкостей) в станции, шт
+							</span>
+							<span
+								class="title__text catalog-item-tabs__text-spec"
+							>
+								Значение
+							</span>
+						</li>
+						<li class="catalog-item-tabs__item-spec">
+							<span
+								class="title__text catalog-item-tabs__text-spec"
+							>
+								Энергопотребление, кВт/сут
+							</span>
+							<span
+								class="title__text catalog-item-tabs__text-spec"
+							>
+								Значение
+							</span>
+						</li>
+						<li class="catalog-item-tabs__item-spec">
+							<span
+								class="title__text catalog-item-tabs__text-spec"
+							>
+								Масса, кг
+							</span>
+							<span
+								class="title__text catalog-item-tabs__text-spec"
+							>
+								Значение
+							</span>
+						</li>
+						<li class="catalog-item-tabs__item-spec">
+							<span
+								class="title__text catalog-item-tabs__text-spec"
+							>
+								Кухонный сток
+							</span>
+							<span
+								class="title__text catalog-item-tabs__text-spec"
+							>
+								Туалет
+							</span>
+						</li>
+						<li class="catalog-item-tabs__item-spec">
+							<span
+								class="title__text catalog-item-tabs__text-spec"
+							>
+								Измельчитель бытовых отходов
+							</span>
+							<span
+								class="title__text catalog-item-tabs__text-spec"
+							>
+								Значение
+							</span>
+						</li>
+						<li class="catalog-item-tabs__item-spec">
+							<span
+								class="title__text catalog-item-tabs__text-spec"
+							>
+								Ванная средняя 170см на 60 см
+							</span>
+							<span
+								class="title__text catalog-item-tabs__text-spec"
+							>
+								Значение
+							</span>
+						</li>
+						<li class="catalog-item-tabs__item-spec">
+							<span
+								class="title__text catalog-item-tabs__text-spec"
+							>
+								Джакузи, большая ванная (более 180 см и шире 60
+								см)
+							</span>
+							<span
+								class="title__text catalog-item-tabs__text-spec"
+							>
+								Значение
+							</span>
+						</li>
+						<li class="catalog-item-tabs__item-spec">
+							<span
+								class="title__text catalog-item-tabs__text-spec"
+							>
+								Сток от промывных вод водоподготовки, не
+								содержащей хлора (марганца)
+							</span>
+							<span
+								class="title__text catalog-item-tabs__text-spec"
+							>
+								Значение
+							</span>
+						</li>
+						<li class="catalog-item-tabs__item-spec">
+							<span
+								class="title__text catalog-item-tabs__text-spec"
+							>
+								Испортившиеся продукты
+							</span>
+							<span
+								class="title__text catalog-item-tabs__text-spec"
+							>
+								Значение
+							</span>
+						</li>
+						<li class="catalog-item-tabs__item-spec">
+							<span
+								class="title__text catalog-item-tabs__text-spec"
+							>
+								Сток от конденсатного котла
+							</span>
+							<span
+								class="title__text catalog-item-tabs__text-spec"
+							>
+								Значение
 							</span>
 						</li>
 					</ul>
 				</div>
-				<div
-					class="catalog-item-tabs__panel catalog-item-tabs__panel-active"
-				>
+				<div class="catalog-item-tabs__panel">
 					<ul class="catalog-item-tabs__list-adv list-reset">
 						<li class="catalog-item-tabs__item-adv">
 							<img
@@ -770,8 +960,90 @@
 							</span>
 						</li>
 					</ul>
+					<div class="catalog-item-tabs__container-adv">
+						<h3 class="catalog-item-tabs__title title__h3">
+							Преимущества композитного материала
+						</h3>
+						<ul
+							class="catalog-item-tabs__list-adv catalog-item-tabs__list-adv-bottom list-reset"
+						>
+							<li
+								class="catalog-item-tabs__item-adv catalog-item-tabs__item-adv-bottom"
+							>
+								<img
+									loading="lazy"
+									src="./img/adv-9.svg"
+									class="image catalog-item-tabs__icon-adv"
+									width="70"
+									height="70"
+									alt="Иконка преимущества"
+								/>
+								<span
+									class="catalog-item-tabs__text title__text"
+								>
+									Прочность сопоставима с показателями
+									прочности стали
+								</span>
+							</li>
+							<li
+								class="catalog-item-tabs__item-adv catalog-item-tabs__item-adv-bottom"
+							>
+								<img
+									loading="lazy"
+									src="./img/adv-10.svg"
+									class="image catalog-item-tabs__icon-adv"
+									width="70"
+									height="70"
+									alt="Иконка преимущества"
+								/>
+								<span
+									class="catalog-item-tabs__text title__text"
+								>
+									Малый вес при высокой прочности
+								</span>
+							</li>
+							<li
+								class="catalog-item-tabs__item-adv catalog-item-tabs__item-adv-bottom"
+							>
+								<img
+									loading="lazy"
+									src="./img/adv-11.svg"
+									class="image catalog-item-tabs__icon-adv"
+									width="70"
+									height="70"
+									alt="Иконка преимущества"
+								/>
+								<span
+									class="catalog-item-tabs__text title__text"
+								>
+									Конструкция без швов минимизирует возможные
+									поломки
+								</span>
+							</li>
+							<li
+								class="catalog-item-tabs__item-adv catalog-item-tabs__item-adv-bottom"
+							>
+								<img
+									loading="lazy"
+									src="./img/adv-12.svg"
+									class="image catalog-item-tabs__icon-adv"
+									width="70"
+									height="70"
+									alt="Иконка преимущества"
+								/>
+								<span
+									class="catalog-item-tabs__text title__text"
+								>
+									Устойчивость к внешним воздействиям и
+									перепадам температуры
+								</span>
+							</li>
+						</ul>
+					</div>
 				</div>
-				<div class="catalog-item-tabs__panel">
+				<div
+					class="catalog-item-tabs__panel catalog-item-tabs__panel-active"
+				>
 					<ul class="list-reset docs-hero__list">
 						<li class="accordion docs-hero__item accordion-open">
 							<div
@@ -1093,204 +1365,248 @@
 					</ul>
 				</div>
 				<div class="catalog-item-tabs__panel">
-					<ul class="catalog-item-tabs__list-adv list-reset">
-						<li class="catalog-item-tabs__item-adv">
-							<img
-								loading="lazy"
-								src="./img/adv-1.svg"
-								class="image catalog-item-tabs__icon-adv"
-								width="70"
-								height="70"
-								alt="Иконка преимущества"
-							/>
-							<span
-								class="catalog-item-tabs__text catalog-item-tabs__text-main title__text"
+					<ul class="list-reset catalog-hero__list-category">
+						<li class="catalog-hero__item-category">
+							<div class="catalog-hero__container-image">
+								<picture class="catalog-hero__picture">
+									<source
+										srcset="./img/catalog-17.webp"
+										type="image/webp"
+									/>
+									<img
+										loading="lazy"
+										src="./img/catalog-17.png"
+										class="image catalog-hero__image"
+										width="300"
+										height="260"
+										alt="Фото товара"
+									/>
+								</picture>
+							</div>
+							<div class="catalog-hero__container-card">
+								<div>
+									<h5 class="catalog-hero__title-product">
+										<a
+											href="./catalog-item.html"
+											class="catalog-hero__link"
+										>
+											Монтаж
+										</a>
+									</h5>
+									<p class="catalog-hero__descr">
+										Наши специалисты используют весь свой
+										опыт и навыки, чтобы сделать все быстро
+										и качественно
+									</p>
+									<div class="catalog-hero__container-price">
+										<span
+											class="catalog-hero__price catalog-hero__price-real"
+										>
+											9990 ₽
+										</span>
+									</div>
+								</div>
+							</div>
+							<button
+								class="btn-reset button button__secondary catalog-hero__button-more"
 							>
-								Сделано из композитных материалов
-							</span>
+								подробнее
+							</button>
 						</li>
-						<li class="catalog-item-tabs__item-adv">
-							<img
-								loading="lazy"
-								src="./img/adv-7.svg"
-								class="image catalog-item-tabs__icon-adv"
-								width="70"
-								height="70"
-								alt="Иконка преимущества"
-							/>
-							<span
-								class="catalog-item-tabs__text catalog-item-tabs__text-main title__text"
+						<li class="catalog-hero__item-category">
+							<div class="catalog-hero__container-image">
+								<picture class="catalog-hero__picture">
+									<source
+										srcset="./img/catalog-18.webp"
+										type="image/webp"
+									/>
+									<img
+										loading="lazy"
+										src="./img/catalog-18.png"
+										class="image catalog-hero__image"
+										width="300"
+										height="260"
+										alt="Фото товара"
+									/>
+								</picture>
+							</div>
+							<div class="catalog-hero__container-card">
+								<div>
+									<h5 class="catalog-hero__title-product">
+										<a
+											href="./catalog-item.html"
+											class="catalog-hero__link"
+										>
+											Шеф монтаж
+										</a>
+									</h5>
+									<p class="catalog-hero__descr">
+										Наши специалисты используют весь свой
+										опыт и навыки, чтобы сделать все быстро
+										и качественно
+									</p>
+									<div class="catalog-hero__container-price">
+										<span
+											class="catalog-hero__price catalog-hero__price-real"
+										>
+											14 990 ₽
+										</span>
+									</div>
+								</div>
+							</div>
+							<button
+								class="btn-reset button button__secondary catalog-hero__button-more"
 							>
-								Сливайте любой бытовой сток, от умягчителя и
-								котла
-							</span>
+								подробнее
+							</button>
 						</li>
-						<li class="catalog-item-tabs__item-adv">
-							<img
-								loading="lazy"
-								src="./img/adv-8.svg"
-								class="image catalog-item-tabs__icon-adv"
-								width="70"
-								height="70"
-								alt="Иконка преимущества"
-							/>
-							<span
-								class="catalog-item-tabs__text catalog-item-tabs__text-main title__text"
+						<li class="catalog-hero__item-category">
+							<div class="catalog-hero__container-image">
+								<picture class="catalog-hero__picture">
+									<source
+										srcset="./img/catalog-19.webp"
+										type="image/webp"
+									/>
+									<img
+										loading="lazy"
+										src="./img/catalog-19.png"
+										class="image catalog-hero__image"
+										width="300"
+										height="260"
+										alt="Фото товара"
+									/>
+								</picture>
+
+								<div
+									class="catalog-hero__discount catalog-hero__discount"
+								>
+									-10%
+								</div>
+							</div>
+							<div class="catalog-hero__container-card">
+								<div>
+									<h5 class="catalog-hero__title-product">
+										<a
+											href="./catalog-item.html"
+											class="catalog-hero__link"
+										>
+											Сервис
+										</a>
+									</h5>
+									<p class="catalog-hero__descr">
+										Наши специалисты используют весь свой
+										опыт и навыки, чтобы сделать все быстро
+										и качественно
+									</p>
+									<div class="catalog-hero__container-price">
+										<span
+											class="catalog-hero__price catalog-hero__price-real"
+										>
+											10 500 ₽
+										</span>
+										<span
+											class="catalog-hero__price catalog-hero__price-old"
+										>
+											14 000 ₽
+										</span>
+									</div>
+								</div>
+							</div>
+							<button
+								class="btn-reset button button__secondary catalog-hero__button-more"
 							>
-								Не требует добавления бактерий
-							</span>
+								подробнее
+							</button>
+						</li>
+						<li class="catalog-hero__item-category">
+							<div class="catalog-hero__container-image">
+								<picture class="catalog-hero__picture">
+									<source
+										srcset="./img/catalog-20.webp"
+										type="image/webp"
+									/>
+									<img
+										loading="lazy"
+										src="./img/catalog-20.png"
+										class="image catalog-hero__image"
+										width="300"
+										height="260"
+										alt="Фото товара"
+									/>
+								</picture>
+							</div>
+							<div class="catalog-hero__container-card">
+								<div>
+									<h5 class="catalog-hero__title-product">
+										<a
+											href="./catalog-item.html"
+											class="catalog-hero__link"
+										>
+											Доставка
+										</a>
+									</h5>
+									<p class="catalog-hero__descr">
+										Наши специалисты используют весь свой
+										опыт и навыки, чтобы сделать все быстро
+										и качественно
+									</p>
+									<div class="catalog-hero__container-price">
+										<span
+											class="catalog-hero__price catalog-hero__price-real"
+										>
+											4390 ₽
+										</span>
+									</div>
+								</div>
+							</div>
+							<button
+								class="btn-reset button button__secondary catalog-hero__button-more"
+							>
+								подробнее
+							</button>
 						</li>
 					</ul>
 				</div>
 				<div class="catalog-item-tabs__panel">
 					<ul class="catalog-item-tabs__list-adv list-reset">
-						<li class="catalog-item-tabs__item-adv">
+						<li
+							class="catalog-item-tabs__item-adv catalog-item-tabs__item-delivery"
+						>
 							<img
 								loading="lazy"
-								src="./img/adv-2.svg"
-								class="image catalog-item-tabs__icon-adv"
-								width="70"
-								height="70"
-								alt="Иконка преимущества"
+								src="./img/delivery.svg"
+								class="image catalog-item-tabs__icon-adv catalog-item-tabs__icon-shadow"
+								width="64"
+								height="64"
+								alt="Иконка доставки"
 							/>
-							<span
-								class="catalog-item-tabs__text catalog-item-tabs__text-main title__text"
+							<h3
+								class="title__h3 catalog-item-tabs__title-delivery"
 							>
-								Срок эксплуатации более 50&nbsp;лет
-							</span>
+								бесплатная доставка в пределах города Челябинска
+							</h3>
 						</li>
-						<li class="catalog-item-tabs__item-adv">
+						<li
+							class="catalog-item-tabs__item-adv catalog-item-tabs__item-delivery"
+						>
 							<img
 								loading="lazy"
-								src="./img/adv-4.svg"
-								class="image catalog-item-tabs__icon-adv"
-								width="70"
-								height="70"
-								alt="Иконка преимущества"
+								src="./img/wallet.svg"
+								class="image catalog-item-tabs__icon-adv catalog-item-tabs__icon-shadow"
+								width="64"
+								height="64"
+								alt="Иконка доставки"
 							/>
-							<span
-								class="catalog-item-tabs__text catalog-item-tabs__text-main title__text"
+							<h3
+								class="title__h3 catalog-item-tabs__title-delivery"
 							>
-								Не боится отключения электричества
-							</span>
-						</li>
-						<li class="catalog-item-tabs__item-adv">
-							<img
-								loading="lazy"
-								src="./img/adv-5.svg"
-								class="image catalog-item-tabs__icon-adv"
-								width="70"
-								height="70"
-								alt="Иконка преимущества"
-							/>
-							<span
-								class="catalog-item-tabs__text catalog-item-tabs__text-main title__text"
-							>
-								Очищенной водой можно поливать
-							</span>
-						</li>
-						<li class="catalog-item-tabs__item-adv">
-							<img
-								loading="lazy"
-								src="./img/adv-7.svg"
-								class="image catalog-item-tabs__icon-adv"
-								width="70"
-								height="70"
-								alt="Иконка преимущества"
-							/>
-							<span
-								class="catalog-item-tabs__text catalog-item-tabs__text-main title__text"
-							>
-								Сливайте любой бытовой сток, от умягчителя и
-								котла
-							</span>
-						</li>
-						<li class="catalog-item-tabs__item-adv">
-							<img
-								loading="lazy"
-								src="./img/adv-8.svg"
-								class="image catalog-item-tabs__icon-adv"
-								width="70"
-								height="70"
-								alt="Иконка преимущества"
-							/>
-							<span
-								class="catalog-item-tabs__text catalog-item-tabs__text-main title__text"
-							>
-								Не требует добавления бактерий
-							</span>
+								принимаем любые способы оплаты
+							</h3>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</div>
-		<h3 class="catalog-item-tabs__title title__h3">
-			Преимущества композитного материала
-		</h3>
-		<ul
-			class="catalog-item-tabs__list-adv catalog-item-tabs__list-adv-bottom list-reset"
-		>
-			<li
-				class="catalog-item-tabs__item-adv catalog-item-tabs__item-adv-bottom"
-			>
-				<img
-					loading="lazy"
-					src="./img/adv-9.svg"
-					class="image catalog-item-tabs__icon-adv"
-					width="70"
-					height="70"
-					alt="Иконка преимущества"
-				/>
-				<span class="catalog-item-tabs__text title__text">
-					Прочность сопоставима с показателями прочности стали
-				</span>
-			</li>
-			<li
-				class="catalog-item-tabs__item-adv catalog-item-tabs__item-adv-bottom"
-			>
-				<img
-					loading="lazy"
-					src="./img/adv-10.svg"
-					class="image catalog-item-tabs__icon-adv"
-					width="70"
-					height="70"
-					alt="Иконка преимущества"
-				/>
-				<span class="catalog-item-tabs__text title__text">
-					Малый вес при высокой прочности
-				</span>
-			</li>
-			<li
-				class="catalog-item-tabs__item-adv catalog-item-tabs__item-adv-bottom"
-			>
-				<img
-					loading="lazy"
-					src="./img/adv-11.svg"
-					class="image catalog-item-tabs__icon-adv"
-					width="70"
-					height="70"
-					alt="Иконка преимущества"
-				/>
-				<span class="catalog-item-tabs__text title__text">
-					Конструкция без швов минимизирует возможные поломки
-				</span>
-			</li>
-			<li
-				class="catalog-item-tabs__item-adv catalog-item-tabs__item-adv-bottom"
-			>
-				<img
-					loading="lazy"
-					src="./img/adv-12.svg"
-					class="image catalog-item-tabs__icon-adv"
-					width="70"
-					height="70"
-					alt="Иконка преимущества"
-				/>
-				<span class="catalog-item-tabs__text title__text">
-					Устойчивость к внешним воздействиям и перепадам температуры
-				</span>
-			</li>
-		</ul>
 	</div>
 </section>
 
@@ -1869,208 +2185,7 @@
 	</div>
 </section>
 
-				<section class="catalog-item-other">
-	<div class="container catalog-item-other__container">
-		<h3 class="catalog-hero__title-category title__h3">
-			Дополнительные услуги
-		</h3>
-		<ul class="list-reset catalog-hero__list-category">
-			<li class="catalog-hero__item-category">
-				<div class="catalog-hero__container-image">
-					<picture class="catalog-hero__picture">
-						<source
-							srcset="./img/catalog-17.webp"
-							type="image/webp"
-						/>
-						<img
-							loading="lazy"
-							src="./img/catalog-17.png"
-							class="image catalog-hero__image"
-							width="300"
-							height="260"
-							alt="Фото товара"
-						/>
-					</picture>
-				</div>
-				<div class="catalog-hero__container-card">
-					<div>
-						<h5 class="catalog-hero__title-product">
-							<a
-								href="./catalog-item.html"
-								class="catalog-hero__link"
-							>
-								Монтаж
-							</a>
-						</h5>
-						<p class="catalog-hero__descr">
-							Наши специалисты используют весь свой опыт и навыки,
-							чтобы сделать все быстро и качественно
-						</p>
-						<div class="catalog-hero__container-price">
-							<span
-								class="catalog-hero__price catalog-hero__price-real"
-							>
-								9990 ₽
-							</span>
-						</div>
-					</div>
-				</div>
-				<button
-					class="btn-reset button button__secondary catalog-hero__button-more"
-				>
-					подробнее
-				</button>
-			</li>
-			<li class="catalog-hero__item-category">
-				<div class="catalog-hero__container-image">
-					<picture class="catalog-hero__picture">
-						<source
-							srcset="./img/catalog-18.webp"
-							type="image/webp"
-						/>
-						<img
-							loading="lazy"
-							src="./img/catalog-18.png"
-							class="image catalog-hero__image"
-							width="300"
-							height="260"
-							alt="Фото товара"
-						/>
-					</picture>
-				</div>
-				<div class="catalog-hero__container-card">
-					<div>
-						<h5 class="catalog-hero__title-product">
-							<a
-								href="./catalog-item.html"
-								class="catalog-hero__link"
-							>
-								Шеф монтаж
-							</a>
-						</h5>
-						<p class="catalog-hero__descr">
-							Наши специалисты используют весь свой опыт и навыки,
-							чтобы сделать все быстро и качественно
-						</p>
-						<div class="catalog-hero__container-price">
-							<span
-								class="catalog-hero__price catalog-hero__price-real"
-							>
-								14 990 ₽
-							</span>
-						</div>
-					</div>
-				</div>
-				<button
-					class="btn-reset button button__secondary catalog-hero__button-more"
-				>
-					подробнее
-				</button>
-			</li>
-			<li class="catalog-hero__item-category">
-				<div class="catalog-hero__container-image">
-					<picture class="catalog-hero__picture">
-						<source
-							srcset="./img/catalog-19.webp"
-							type="image/webp"
-						/>
-						<img
-							loading="lazy"
-							src="./img/catalog-19.png"
-							class="image catalog-hero__image"
-							width="300"
-							height="260"
-							alt="Фото товара"
-						/>
-					</picture>
-
-					<div class="catalog-hero__discount catalog-hero__discount">
-						-10%
-					</div>
-				</div>
-				<div class="catalog-hero__container-card">
-					<div>
-						<h5 class="catalog-hero__title-product">
-							<a
-								href="./catalog-item.html"
-								class="catalog-hero__link"
-							>
-								Сервис
-							</a>
-						</h5>
-						<p class="catalog-hero__descr">
-							Наши специалисты используют весь свой опыт и навыки,
-							чтобы сделать все быстро и качественно
-						</p>
-						<div class="catalog-hero__container-price">
-							<span
-								class="catalog-hero__price catalog-hero__price-real"
-							>
-								10 500 ₽
-							</span>
-							<span
-								class="catalog-hero__price catalog-hero__price-old"
-							>
-								14 000 ₽
-							</span>
-						</div>
-					</div>
-				</div>
-				<button
-					class="btn-reset button button__secondary catalog-hero__button-more"
-				>
-					подробнее
-				</button>
-			</li>
-			<li class="catalog-hero__item-category">
-				<div class="catalog-hero__container-image">
-					<picture class="catalog-hero__picture">
-						<source
-							srcset="./img/catalog-20.webp"
-							type="image/webp"
-						/>
-						<img
-							loading="lazy"
-							src="./img/catalog-20.png"
-							class="image catalog-hero__image"
-							width="300"
-							height="260"
-							alt="Фото товара"
-						/>
-					</picture>
-				</div>
-				<div class="catalog-hero__container-card">
-					<div>
-						<h5 class="catalog-hero__title-product">
-							<a
-								href="./catalog-item.html"
-								class="catalog-hero__link"
-							>
-								Доставка
-							</a>
-						</h5>
-						<p class="catalog-hero__descr">
-							Наши специалисты используют весь свой опыт и навыки,
-							чтобы сделать все быстро и качественно
-						</p>
-						<div class="catalog-hero__container-price">
-							<span
-								class="catalog-hero__price catalog-hero__price-real"
-							>
-								4390 ₽
-							</span>
-						</div>
-					</div>
-				</div>
-				<button
-					class="btn-reset button button__secondary catalog-hero__button-more"
-				>
-					подробнее
-				</button>
-			</li>
-		</ul>
-	</div>
-</section>
+				
 
 				<section class="search">
 	<div class="container search__container">
@@ -2173,7 +2288,7 @@
 			</li>
 			<li class="nav__item menu__item">
 				<a href="./discount.html" class="nav__link menu__link-nav">
-					Скидки и акции
+					Акции
 				</a>
 			</li>
 			<li class="nav__item menu__item">
