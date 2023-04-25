@@ -164,7 +164,7 @@ a.phoneText {
     font-family: 'Cormorant';
     font-style: normal;
     font-weight: 600;
-    font-size: 80px;
+    font-size: 71px;
     line-height: 97px;
     text-transform: uppercase;
 
@@ -807,9 +807,9 @@ p.cashbackNumber{
 .phoneImg{
     position: relative;
     margin-left: 48.5%;
-    margin-top: -44.5%;
+    margin-top: -44.6%;
     width: 32%;
-    height: 32%;
+    height: 54%;
     z-index: 10;
 }
 .reviewerName{
@@ -1050,6 +1050,7 @@ img.reviewCloud3{
 }
 .question{
     margin-top: 130px;
+    margin-bottom: 26px;
 }
 .questionTitle{
     width: 1098px;
@@ -1099,6 +1100,7 @@ img.reviewCloud3{
     color: #333333;
     margin-left: 150px;
     margin-top: -490px;
+    margin-bottom: 36px;
 }
 .mapDescription{
     font-family: 'Raleway';
