@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+	<g>
+		<g fill-rule="evenodd">
+			<path d="M10.724 12.66c-3.123-.038-6.254.699-9.095 2.21-.541.287-.88.85-.88 1.463v3.675c0 .967.784 1.75 1.75 1.75H13A3 3 0 0 1 10.5 18.8v-5c0-.404.08-.79.224-1.14zM10.656.75a5.25 5.25 0 1 0 0 10.5 5.25 5.25 0 0 0 0-10.5z" fill="#142647" data-original="#000000" class=""></path>
+			<path d="M11.75 13.8c0-.967.783-1.75 1.75-1.75h8c.967 0 1.75.783 1.75 1.75v5a1.75 1.75 0 0 1-1.75 1.75h-8a1.75 1.75 0 0 1-1.75-1.75zm1.75-.25a.25.25 0 0 0-.25.25v5c0 .138.112.25.25.25h8a.25.25 0 0 0 .25-.25v-5a.25.25 0 0 0-.25-.25z" fill="#142647" data-original="#000000" class=""></path>
+			<path d="M17.5 19.05a.75.75 0 0 1 .75.75v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 .75-.75z" fill="#142647" data-original="#000000" class=""></path>
+			<path d="M19.75 22.8a.75.75 0 0 1-.75.75h-3a.75.75 0 0 1 0-1.5h3a.75.75 0 0 1 .75.75z" fill="#142647" data-original="#000000" class=""></path>
+		</g>
+	</g>
+</svg>
