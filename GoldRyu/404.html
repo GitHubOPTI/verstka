@@ -645,7 +645,11 @@
 			<div class="forms__content">
 				<div class="forms__content-top">
 					<h4 class="title__h4 forms__title">Восстановить пароль</h4>
-					<form class="forms__form" enctype="multipart/form-data">
+					<form
+						class="forms__form"
+						enctype="multipart/form-data"
+						id="newPasswordForm"
+					>
 						<ul class="list-reset forms__list forms__list-inputs">
 							<li class="forms__item forms__item-input">
 								<input
@@ -660,6 +664,7 @@
 						<button
 							class="btn-reset button button__primary forms__button forms__button-enter"
 							type="submit"
+							id="newPasswordFormBtn"
 						>
 							отправить
 						</button>
@@ -669,6 +674,108 @@
 					>
 						Регистрация
 					</button>
+				</div>
+				<a href="./policy.html" class="forms__text forms__text-blue">
+					Политика конфиденциальности
+				</a>
+			</div>
+		</div>
+		<div
+			class="forms__container-inner forms__container-inner-hidden"
+			id="newPasswordFormContainer"
+		>
+			<div class="forms__container-header">
+				<button
+					class="forms__button-back btn-reset"
+					id="recover-form-back-btn"
+				>
+					<img
+						loading="lazy"
+						src="./img/back-arrow.svg"
+						class="image"
+						width="8"
+						height="13"
+						alt="Стрелка назад"
+					/>
+					<span class="forms__text forms__text-back">назад</span>
+				</button>
+				<img
+					loading="lazy"
+					src="./img/logo480.svg"
+					class="image forms__logo"
+					width="93"
+					height="25"
+					alt="Логотип"
+				/>
+				<div class="forms__container-button-close">
+					<button class="btn-reset forms__button-close">
+						<img
+							loading="lazy"
+							src="./img/close.svg"
+							class="image"
+							width="12"
+							height="12"
+							alt="Кнопка закрыть"
+						/>
+					</button>
+				</div>
+			</div>
+			<div class="forms__content">
+				<div class="forms__content-top">
+					<h4 class="title__h4 forms__title forms__title-code">
+						Восстановление пароля
+					</h4>
+					<form class="forms__form" enctype="multipart/form-data">
+						<h4 class="title__h4 forms__text-code">
+							На указанную вами почту отправлено письмо с кодовым
+							словом, введите его в поле ниже.
+						</h4>
+						<ul class="list-reset forms__list forms__list-inputs">
+							<li class="forms__item forms__item-input">
+								<input
+									type="text"
+									name="code"
+									id="code"
+									class="forms__input forms__input-text input-reset"
+									placeholder="Кодовое слово"
+								/>
+							</li>
+							<li class="forms__item forms__item-input">
+								<input
+									type="text"
+									name="email3"
+									id="email3"
+									class="forms__input forms__input-text input-reset"
+									placeholder="Почта"
+								/>
+							</li>
+							<li class="forms__item forms__item-input">
+								<input
+									type="text"
+									name="newPassword"
+									id="newPassword"
+									class="forms__input forms__input-text input-reset"
+									placeholder="Новый пароль"
+								/>
+							</li>
+							<!-- <li class="forms__item forms__item-input">
+								<input
+									type="text"
+									name="newPasswordConf"
+									id="newPasswordConf"
+									class="forms__input forms__input-text input-reset"
+									placeholder="Повторите пароль"
+								/>
+							</li> -->
+						</ul>
+						<button
+							class="btn-reset button button__primary forms__button forms__button-enter"
+							type="submit"
+							id="newPasswordBtn"
+						>
+							изменить
+						</button>
+					</form>
 				</div>
 				<a href="./policy.html" class="forms__text forms__text-blue">
 					Политика конфиденциальности
