@@ -82,18 +82,24 @@
 
 		/***/ 586: /***/ () => {
 			const inputs = document.querySelectorAll(".catalog-hero__input");
-			inputs.forEach((input) => {
-				input.addEventListener("change", () => {
-					const boundedCategory = input.getAttribute(
-						"data-category-filter"
-					);
-					const boundCategoryElem =
-						document.getElementById(boundedCategory);
-					boundCategoryElem.classList.toggle(
-						"catalog-hero__container-category-hidden"
-					);
+			const boundCategoryElems = document.querySelectorAll(
+				".catalog-hero__container-category"
+			);
+			if (inputs !== null && boundCategoryElems !== null) {
+				inputs.forEach((input) => {
+					input.addEventListener("click", () => {
+						const boundedCategory = input.getAttribute(
+							"data-category-filter"
+						);
+						const boundCategoryElem =
+							document.getElementById(boundedCategory);
+						boundCategoryElems.forEach((elem) => {
+							elem.style.order = "2";
+						});
+						boundCategoryElem.style.order = "1";
+					});
 				});
-			});
+			}
 
 			/***/
 		},
@@ -119,12 +125,13 @@
 							category.getAttribute("data-category");
 						const boundCategoryElem =
 							document.getElementById(boundedCategory);
-						const boundFilterElem = document
-							.querySelector(
-								`[data-category-filter="${boundedCategory}"]`
-							)
-							.closest(".catalog-hero__item");
-						console.log(boundFilterElem);
+						const boundFilterInput = document.querySelector(
+							`[data-category-filter="${boundedCategory}"]`
+						);
+						const boundFilterElem = boundFilterInput.closest(
+							".catalog-hero__item"
+						);
+						boundFilterInput.setAttribute("checked", "checked");
 						boundCategoryElem.classList.add(
 							"catalog-hero__container-category-first"
 						);
@@ -142,18 +149,6 @@
 						let categoryBlocks = document.querySelectorAll(
 							".catalog-hero__container-category"
 						);
-						if (
-							categoryBlocks[categoryBlocks.length - 1] !==
-							boundCategoryElem
-						) {
-							categoryBlocks[
-								categoryBlocks.length - 1
-							].style.marginBottom = "0";
-						} else {
-							categoryBlocks[
-								categoryBlocks.length - 2
-							].style.marginBottom = "0";
-						}
 					});
 				});
 			}

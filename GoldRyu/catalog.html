@@ -338,10 +338,10 @@
 					<li class="catalog-hero__item">
 						<label class="catalog-hero__label">
 							<input
-								type="checkbox"
+								type="radio"
 								class="catalog-hero__input"
-								checked="checked"
 								data-category-filter="systems"
+								name="filters-input"
 							/>
 							<span class="catalog-hero__checkmark"></span>
 							<div class="catalog-hero__label-text">
@@ -352,10 +352,10 @@
 					<li class="catalog-hero__item">
 						<label class="catalog-hero__label">
 							<input
-								type="checkbox"
+								type="radio"
 								class="catalog-hero__input"
-								checked="checked"
 								data-category-filter="stuff"
+								name="filters-input"
 							/>
 							<span class="catalog-hero__checkmark"></span>
 							<div class="catalog-hero__label-text">
@@ -366,10 +366,10 @@
 					<li class="catalog-hero__item">
 						<label class="catalog-hero__label">
 							<input
-								type="checkbox"
+								type="radio"
 								class="catalog-hero__input"
-								checked="checked"
 								data-category-filter="headings"
+								name="filters-input"
 							/>
 							<span class="catalog-hero__checkmark"></span>
 							<div class="catalog-hero__label-text">Крышки</div>
@@ -378,10 +378,10 @@
 					<li class="catalog-hero__item">
 						<label class="catalog-hero__label">
 							<input
-								type="checkbox"
+								type="radio"
 								class="catalog-hero__input"
-								checked="checked"
 								data-category-filter="service"
+								name="filters-input"
 							/>
 							<span class="catalog-hero__checkmark"></span>
 							<div class="catalog-hero__label-text">Услуги</div>
@@ -390,7 +390,10 @@
 				</ul>
 			</div>
 			<div class="catalog-hero__content">
-				<div class="catalog-hero__container-category" id="systems">
+				<div
+					class="catalog-hero__container-category catalog-hero__container-category-filter"
+					id="systems"
+				>
 					<h3 class="catalog-hero__title-category title__h3">
 						Системы очистки стоков Голдрай
 					</h3>
@@ -1173,7 +1176,10 @@
 						</li>
 					</ul>
 				</div>
-				<div class="catalog-hero__container-category" id="stuff">
+				<div
+					class="catalog-hero__container-category catalog-hero__container-category-filter"
+					id="stuff"
+				>
 					<h3 class="catalog-hero__title-category title__h3">
 						Оборудование
 					</h3>
@@ -1495,7 +1501,10 @@
 						</li>
 					</ul>
 				</div>
-				<div class="catalog-hero__container-category" id="headings">
+				<div
+					class="catalog-hero__container-category catalog-hero__container-category-filter"
+					id="headings"
+				>
 					<h3 class="catalog-hero__title-category title__h3">
 						Крышки
 					</h3>
@@ -1828,7 +1837,10 @@
 						</li>
 					</ul>
 				</div>
-				<div class="catalog-hero__container-category" id="service">
+				<div
+					class="catalog-hero__container-category catalog-hero__container-category-filter"
+					id="service"
+				>
 					<h3 class="catalog-hero__title-category title__h3">
 						Услуги
 					</h3>
