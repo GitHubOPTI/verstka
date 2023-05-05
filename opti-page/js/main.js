@@ -92,18 +92,6 @@ if (hero !== null) {
 
 /***/ }),
 
-/***/ 732:
-/***/ (() => {
-
-const burger = document.querySelector(".burger");
-if (burger !== null) {
-  burger.addEventListener("click", () => {
-    burger.classList.toggle("burger-active");
-  });
-}
-
-/***/ }),
-
 /***/ 758:
 /***/ (() => {
 
@@ -10410,15 +10398,15 @@ if (document.querySelector(".feedback") !== null) {
 const policySection = document.querySelector(".policy");
 const policyButtons = document.querySelectorAll(".button__policy");
 const policyClose = document.querySelector(".policy__button-close");
-const polictyContainer = document.querySelector(".policy__container");
+const policyContainer = document.querySelector(".policy__container");
 if (policySection !== null && policyButtons !== null) {
   const policyTl = gsapWithCSS.timeline();
   policyTl.pause();
-  policyTl.to(".policy", {
+  policyTl.to(policySection, {
     opacity: 1,
     visibility: "visible",
     duration: 0.2
-  }).fromTo(".policy__container", {
+  }).fromTo(policyContainer, {
     opacity: 0,
     y: -125,
     visibility: "hidden"
@@ -10440,7 +10428,47 @@ if (policySection !== null && policyButtons !== null) {
   policySection.addEventListener("click", () => {
     policyTl.reverse();
   });
-  polictyContainer.addEventListener("click", e => {
+  policyContainer.addEventListener("click", e => {
+    e.stopPropagation();
+  });
+}
+
+// mobile menu
+const menuSection = document.querySelector(".menu");
+const menuContainer = document.querySelector(".menu__container");
+const menuClose = document.querySelector(".menu__button-close");
+const burger = document.querySelector(".burger");
+if (burger !== null && menuSection !== null) {
+  const menuTl = gsapWithCSS.timeline();
+  menuTl.pause();
+  menuTl.to(menuSection, {
+    opacity: 1,
+    visibility: "visible",
+    duration: 0.2
+  }).fromTo(menuContainer, {
+    opacity: 0,
+    y: 50,
+    visibility: "hidden"
+  }, {
+    opacity: 1,
+    y: 0,
+    visibility: "visible",
+    duration: 0.3
+  });
+  burger.addEventListener("click", () => {
+    menuTl.play();
+    burger.classList.toggle("burger-active");
+  });
+  menuClose.addEventListener("click", e => {
+    e.stopPropagation();
+    menuTl.reverse();
+    burger.classList.toggle("burger-active");
+  });
+  menuSection.addEventListener("click", () => {
+    menuTl.reverse();
+    burger.classList.toggle("burger-active");
+  });
+  menuContainer.addEventListener("click", e => {
     e.stopPropagation();
   });
 }
@@ -10458,12 +10486,9 @@ var accordion_faq = __webpack_require__(398);
 var input_file = __webpack_require__(758);
 // EXTERNAL MODULE: ./src/js/components/order-form.js
 var order_form = __webpack_require__(853);
-// EXTERNAL MODULE: ./src/js/components/burger.js
-var burger = __webpack_require__(732);
 // EXTERNAL MODULE: ./src/js/components/placeholders.js
 var placeholders = __webpack_require__(963);
 ;// CONCATENATED MODULE: ./src/js/_components.js
-
 
 
 
