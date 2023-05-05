@@ -980,7 +980,8 @@
 					<input class="feedback__input-checkbox" type="checkbox" name="conf" id="conf" />
 					<div class="feedback__input-checkbox-control"></div>
 					<span class="title__h6">
-						Нажимая на кнопку “Отправить” вы соглашаетесь с политикой конфиденциальности
+						Нажимая на кнопку “Отправить” вы соглашаетесь с
+						<button class="btn-reset button__policy">политикой конфиденциальности</button>
 					</span>
 				</label>
 			</form>
@@ -1044,7 +1045,8 @@
 				<input class="order__input-checkbox" type="checkbox" name="conf2" id="conf2" />
 				<div class="order__input-checkbox-control"></div>
 				<span class="title__h6">
-					Нажимая на кнопку “Отправить” вы соглашаетесь с политикой конфиденциальности
+					Нажимая на кнопку “Отправить” вы соглашаетесь с
+					<button class="btn-reset button__policy">политикой конфиденциальности</button>
 				</span>
 			</label>
 		</form>
@@ -1065,6 +1067,18 @@
 			</h5>
 			<button class="btn-reset button button__primary" id="backOrderForm">Назад</button>
 		</div>
+	</div>
+</section>
+ <section class="policy">
+	<div class="container policy__container">
+		<h3 class="title__h3 policy__title">Политика конфиденциальности</h3>
+		<h5 class="title__h5 policy__text">
+			Мы используем файлы Cookie для улучшения работы, персонализации и повышения удобства пользования нашим
+			сайтом. Продолжая посещать сайт, вы соглашаетесь на использование нами файлов Cookie.
+		</h5>
+		<button class="btn-reset policy__button-close">
+			<img loading="lazy" src="./img/form-close.svg" class="image" width="24" height="24" alt="Кнопка закрыть" />
+		</button>
 	</div>
 </section>
 
@@ -1113,7 +1127,9 @@
 		</div>
 		<div class="footer__container-bottom">
 			<h6 class="title__h6">© 2023 OPTI</h6>
-			<a href="#" class="footer__link-policy title__h6" download>Политика конфиденциальности</a>
+			<button class="footer__link-policy title__h6 button__policy button__policy-footer btn-reset">
+				Политика конфиденциальности
+			</button>
 			<a href="mailto:ivanoc199833@mail.ru" class="footer__link-mail title__h6">Написать дизайнеру сайта</a>
 			<span class="line line-horizontal-bottom footer__line-horizontal-bottom"></span>
 		</div>
