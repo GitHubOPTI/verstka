@@ -6632,3 +6632,31 @@ a {
 .results-hero__image {
 	border-radius: 12px;
 }
+@media (max-width: 480px) {
+	.results-hero__title {
+		font-size: 38px;
+	}
+}
+@media (max-width: 430px) {
+	.results-hero__item {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: reverse;
+		-ms-flex-direction: column-reverse;
+		flex-direction: column-reverse;
+		-webkit-column-gap: 0;
+		-moz-column-gap: 0;
+		column-gap: 0;
+		row-gap: 20px;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+	.results-hero__image {
+		width: 80%;
+	}
+}
+@media (max-width: 375px) {
+	.results-hero__image {
+		width: 100%;
+	}
+}
