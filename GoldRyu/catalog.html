@@ -63,7 +63,7 @@
 				height="10"
 				alt="Иконка локации"
 			/>
-			<span class="header__city">Москва</span>
+			<span class="header__city">Челябинск</span>
 		</div>
 		<div class="header__container-logo">
 			<a href="./main.html">
@@ -313,19 +313,36 @@
 	<div class="catalog-hero__container-hidden">
 		<div class="container">
 			<h2 class="catalog-hero__title title__h2">Каталог</h2>
-			<button
-				class="btn-reset catalog-hero__button catalog-hero__button-filter"
-			>
-				<img
-					loading="lazy"
-					src="./img/filters-arrow.svg"
-					class="image catalog-hero__icon-arrow"
-					width="24"
-					height="15"
-					alt="Стрелки вверх/вниз"
-				/>
-				<span class="catalog-hero__filter">по возрастанию цены</span>
-			</button>
+			<div class="catalog-hero__container-buttons">
+				<button
+					class="btn-reset catalog-hero__button catalog-hero__button-filter"
+				>
+					<img
+						loading="lazy"
+						src="./img/filters-arrow.svg"
+						class="image catalog-hero__icon-arrow"
+						width="24"
+						height="15"
+						alt="Стрелки вверх/вниз"
+					/>
+					<span class="catalog-hero__filter"
+						>по возрастанию цены</span
+					>
+				</button>
+				<button
+					class="btn-reset catalog-hero__button catalog-hero__button-filter"
+				>
+					<img
+						loading="lazy"
+						src="./img/filters-arrow.svg"
+						class="image catalog-hero__icon-arrow"
+						width="24"
+						height="15"
+						alt="Стрелки вверх/вниз"
+					/>
+					<span class="catalog-hero__filter">по убыванию цены</span>
+				</button>
+			</div>
 		</div>
 		<div class="container catalog-hero__container">
 			<div class="catalog-hero__filters">
@@ -398,7 +415,10 @@
 						Системы очистки стоков Голдрай
 					</h3>
 					<ul class="list-reset catalog-hero__list-category">
-						<li class="catalog-hero__item-category">
+						<li
+							class="catalog-hero__item-category"
+							data-href="https://google.com"
+						>
 							<div class="catalog-hero__container-inner">
 								<div class="catalog-hero__container-image">
 									<a href="./catalog-item.html"
@@ -485,17 +505,22 @@
 									</div>
 								</div>
 							</div>
-							<button
-								class="btn-reset button button__primary button__primary-icon catalog-hero__button-basket"
-							>
-								<svg class="button__primary-icon-svg">
-									<use
-										xlink:href="img/sprite.svg#catalog-button-icon"
-									></use>
-								</svg>
-							</button>
+							<form class="catalog-hero__form" action="">
+								<button
+									class="btn-reset button button__primary button__primary-icon catalog-hero__button-basket"
+								>
+									<svg class="button__primary-icon-svg">
+										<use
+											xlink:href="img/sprite.svg#catalog-button-icon"
+										></use>
+									</svg>
+								</button>
+							</form>
 						</li>
-						<li class="catalog-hero__item-category">
+						<li
+							class="catalog-hero__item-category"
+							data-href="https://google.com"
+						>
 							<div class="catalog-hero__container-inner">
 								<div class="catalog-hero__container-image">
 									<a href="./catalog-item.html"
@@ -594,7 +619,10 @@
 								</svg>
 							</button>
 						</li>
-						<li class="catalog-hero__item-category">
+						<li
+							class="catalog-hero__item-category"
+							data-href="https://google.com"
+						>
 							<div class="catalog-hero__container-inner">
 								<div class="catalog-hero__container-image">
 									<a href="./catalog-item.html"
@@ -693,7 +721,10 @@
 								</svg>
 							</button>
 						</li>
-						<li class="catalog-hero__item-category">
+						<li
+							class="catalog-hero__item-category"
+							data-href="https://google.com"
+						>
 							<div class="catalog-hero__container-inner">
 								<div class="catalog-hero__container-image">
 									<a href="./catalog-item.html"
@@ -788,7 +819,10 @@
 								</svg>
 							</button>
 						</li>
-						<li class="catalog-hero__item-category">
+						<li
+							class="catalog-hero__item-category"
+							data-href="https://google.com"
+						>
 							<div class="catalog-hero__container-inner">
 								<div class="catalog-hero__container-image">
 									<a href="./catalog-item.html"
@@ -883,7 +917,10 @@
 								</svg>
 							</button>
 						</li>
-						<li class="catalog-hero__item-category">
+						<li
+							class="catalog-hero__item-category"
+							data-href="https://google.com"
+						>
 							<div class="catalog-hero__container-inner">
 								<div class="catalog-hero__container-image">
 									<a href="./catalog-item.html"
@@ -978,7 +1015,10 @@
 								</svg>
 							</button>
 						</li>
-						<li class="catalog-hero__item-category">
+						<li
+							class="catalog-hero__item-category"
+							data-href="https://google.com"
+						>
 							<div class="catalog-hero__container-inner">
 								<div class="catalog-hero__container-image">
 									<a href="./catalog-item.html"
@@ -1075,7 +1115,10 @@
 								</svg>
 							</button>
 						</li>
-						<li class="catalog-hero__item-category">
+						<li
+							class="catalog-hero__item-category"
+							data-href="https://google.com"
+						>
 							<div class="catalog-hero__container-inner">
 								<div class="catalog-hero__container-image">
 									<a href="./catalog-item.html"
@@ -1184,7 +1227,10 @@
 						Оборудование
 					</h3>
 					<ul class="list-reset catalog-hero__list-category">
-						<li class="catalog-hero__item-category">
+						<li
+							class="catalog-hero__item-category"
+							data-href="https://google.com"
+						>
 							<div class="catalog-hero__container-inner">
 								<div class="catalog-hero__container-image">
 									<a href="./catalog-item.html"
@@ -1265,7 +1311,10 @@
 								</svg>
 							</button>
 						</li>
-						<li class="catalog-hero__item-category">
+						<li
+							class="catalog-hero__item-category"
+							data-href="https://google.com"
+						>
 							<div class="catalog-hero__container-inner">
 								<div class="catalog-hero__container-image">
 									<a href="./catalog-item.html"
@@ -1343,7 +1392,10 @@
 								</svg>
 							</button>
 						</li>
-						<li class="catalog-hero__item-category">
+						<li
+							class="catalog-hero__item-category"
+							data-href="https://google.com"
+						>
 							<div class="catalog-hero__container-inner">
 								<div class="catalog-hero__container-image">
 									<a href="./catalog-item.html"
@@ -1421,7 +1473,10 @@
 								</svg>
 							</button>
 						</li>
-						<li class="catalog-hero__item-category">
+						<li
+							class="catalog-hero__item-category"
+							data-href="https://google.com"
+						>
 							<div class="catalog-hero__container-inner">
 								<div class="catalog-hero__container-image">
 									<a href="./catalog-item.html"
@@ -1509,7 +1564,10 @@
 						Крышки
 					</h3>
 					<ul class="list-reset catalog-hero__list-category">
-						<li class="catalog-hero__item-category">
+						<li
+							class="catalog-hero__item-category"
+							data-href="https://google.com"
+						>
 							<div class="catalog-hero__container-inner">
 								<div class="catalog-hero__container-image">
 									<a href="./catalog-item.html"
@@ -1598,7 +1656,10 @@
 								</svg>
 							</button>
 						</li>
-						<li class="catalog-hero__item-category">
+						<li
+							class="catalog-hero__item-category"
+							data-href="https://google.com"
+						>
 							<div class="catalog-hero__container-inner">
 								<div class="catalog-hero__container-image">
 									<a href="./catalog-item.html"
@@ -1677,7 +1738,10 @@
 								</svg>
 							</button>
 						</li>
-						<li class="catalog-hero__item-category">
+						<li
+							class="catalog-hero__item-category"
+							data-href="https://google.com"
+						>
 							<div class="catalog-hero__container-inner">
 								<div class="catalog-hero__container-image">
 									<a href="./catalog-item.html"
@@ -1756,7 +1820,10 @@
 								</svg>
 							</button>
 						</li>
-						<li class="catalog-hero__item-category">
+						<li
+							class="catalog-hero__item-category"
+							data-href="https://google.com"
+						>
 							<div class="catalog-hero__container-inner">
 								<div class="catalog-hero__container-image">
 									<a href="./catalog-item.html"
@@ -1845,7 +1912,10 @@
 						Услуги
 					</h3>
 					<ul class="list-reset catalog-hero__list-category">
-						<li class="catalog-hero__item-category">
+						<li
+							class="catalog-hero__item-category"
+							data-href="https://google.com"
+						>
 							<div class="catalog-hero__container-inner">
 								<div
 									class="catalog-hero__container-image catalog-hero__container-image-full"
@@ -1909,7 +1979,10 @@
 								подробнее
 							</button>
 						</li>
-						<li class="catalog-hero__item-category">
+						<li
+							class="catalog-hero__item-category"
+							data-href="https://google.com"
+						>
 							<div class="catalog-hero__container-inner">
 								<div
 									class="catalog-hero__container-image catalog-hero__container-image-full"
@@ -1973,7 +2046,10 @@
 								подробнее
 							</button>
 						</li>
-						<li class="catalog-hero__item-category">
+						<li
+							class="catalog-hero__item-category"
+							data-href="https://google.com"
+						>
 							<div class="catalog-hero__container-inner">
 								<div
 									class="catalog-hero__container-image catalog-hero__container-image-full"
@@ -2047,7 +2123,10 @@
 								подробнее
 							</button>
 						</li>
-						<li class="catalog-hero__item-category">
+						<li
+							class="catalog-hero__item-category"
+							data-href="https://google.com"
+						>
 							<div class="catalog-hero__container-inner">
 								<div
 									class="catalog-hero__container-image catalog-hero__container-image-full"

@@ -41,8 +41,6 @@
 				label.addEventListener("click", () => {
 					input = document.getElementById(label.getAttribute("for"));
 					if (input.getAttribute("disabled") !== "disabled") {
-						// async запрос на изменение данных на бэк??
-						console.log(input.value);
 						input.setAttribute("disabled", "disabled");
 						label.classList.remove(
 							"cabinet-hero__label-change-active"
@@ -156,6 +154,26 @@
 			/***/
 		},
 
+		/***/ 691: /***/ () => {
+			const linkItems = document.querySelectorAll("[data-href]");
+			if (linkItems !== null) {
+				linkItems.forEach((link) => {
+					const innerButtons = link.querySelectorAll("button");
+					innerButtons.forEach((btn) => {
+						btn.addEventListener("click", (event) => {
+							event.stopPropagation();
+						});
+					});
+					link.addEventListener("click", () => {
+						const href = link.getAttribute("data-href");
+						document.location.href = href;
+					});
+				});
+			}
+
+			/***/
+		},
+
 		/***/ 27: /***/ () => {
 			ymaps.ready(init);
 			function init() {
@@ -228,7 +246,7 @@
 			const nav = document.querySelector(".nav");
 			if (main !== null && header !== null && nav !== null) {
 				// main offset
-				main.style.paddingTop = header.scrollHeight + "px";
+				main.style.paddingTop = header.offsetHeight + "px";
 
 				// nav animation
 				let lastScroll = 0;
@@ -391,6 +409,8 @@
 		};
 		// EXTERNAL MODULE: ./src/js/components/nav-anim.js
 		var nav_anim = __webpack_require__(240);
+		// EXTERNAL MODULE: ./src/js/components/links-simulation.js
+		var links_simulation = __webpack_require__(691);
 		// EXTERNAL MODULE: ./src/js/components/accordion.js
 		var accordion = __webpack_require__(595);
 		// EXTERNAL MODULE: ./src/js/components/radio-switch.js
@@ -11529,17 +11549,8 @@
 				thumbs: {
 					swiper: sliderThumbs,
 				},
-				// breakpoints: {
-				// 	0: {
-				// 		direction: "horizontal",
-				// 	},
-				// 	768: {
-				// 		direction: "vertical",
-				// 	},
-				// },
 			}
 		);
-
 		const quizSlider = new core(".quiz__slider", {
 			slidesPerView: 1,
 			speed: 500,
@@ -11558,6 +11569,7 @@
 			slidesPerView: 1,
 			spaceBetween: 15,
 			speed: 500,
+			allowSlideNext: false,
 			navigation: {
 				nextEl: ".quiz__button-next",
 				prevEl: ".quiz__button-prev",
@@ -11572,6 +11584,54 @@
 		if (quizInnerAll !== null) {
 			quizInnerAll.innerHTML = quizInnerSlider.slides.length;
 		}
+		function quizInnerNextSlide() {
+			quizInnerSlider.allowSlideNext = true;
+			quizInnerSlider.slideNext();
+			quizInnerSlider.allowSlideNext = false;
+		}
+		const nextBtn = document.querySelector(".quiz__button-next");
+		const defaultCheckedInputs = document.querySelectorAll("input:checked");
+		if (nextBtn !== null && defaultCheckedInputs !== null) {
+			nextBtn.addEventListener("click", () => {
+				let checkedInputs = document.querySelectorAll("input:checked");
+				if (
+					checkedInputs.length - defaultCheckedInputs.length >=
+						quizInnerSlider.activeIndex + 1 &&
+					quizInnerSlider.activeIndex < 2
+				) {
+					quizInnerNextSlide();
+					return;
+				}
+				if (
+					checkedInputs.length - defaultCheckedInputs.length >=
+						quizInnerSlider.activeIndex &&
+					quizInnerSlider.activeIndex == 2
+				) {
+					quizInnerNextSlide();
+					return;
+				}
+				if (
+					checkedInputs.length - defaultCheckedInputs.length >=
+						quizInnerSlider.activeIndex &&
+					quizInnerSlider.activeIndex == 3
+				) {
+					quizInnerNextSlide();
+					return;
+				}
+				if (
+					checkedInputs.length - defaultCheckedInputs.length + 1 >=
+						quizInnerSlider.activeIndex &&
+					quizInnerSlider.activeIndex == 4
+				) {
+					quizInnerNextSlide();
+					return;
+				}
+				if (quizInnerSlider.activeIndex == 5) {
+					quizInnerNextSlide();
+					return;
+				}
+			});
+		}
 		quizInnerSlider.on("activeIndexChange", () => {
 			quizInnerCurrent.innerHTML = quizInnerSlider.activeIndex + 1;
 		});
@@ -11580,9 +11640,17 @@
 			setTimeout(() => {
 				nextBtn.removeAttribute("disabled");
 				nextBtn.addEventListener("click", () => {
-					quizSlider.allowSlideNext = true;
-					quizSlider.slideNext();
-					quizSlider.allowSlideNext = false;
+					let checkedInputs =
+						document.querySelectorAll("input:checked");
+					if (
+						checkedInputs.length - defaultCheckedInputs.length >=
+							quizInnerSlider.activeIndex - 2 &&
+						quizInnerSlider.activeIndex == 6
+					) {
+						quizSlider.allowSlideNext = true;
+						quizSlider.slideNext();
+						quizSlider.allowSlideNext = false;
+					}
 				});
 			}, 0);
 		});
@@ -11605,19 +11673,21 @@
 				const checkedInputs = designForm.querySelectorAll(
 					".main-design__label-active .main-design__input"
 				);
-				const checkedInput = designForm.querySelector(
-					".main-design__label-active"
-				);
-				const checkedInputImage = checkedInput.querySelector(
-					".main-design__image"
-				);
-				const checkedInputImagePath =
-					checkedInputImage.getAttribute("src");
-				const checkedInputOldPrice =
-					checkedInputImage.getAttribute("data-old-price");
-				const checkedInputPrice =
-					checkedInputImage.getAttribute("data-price");
-				if (checkedInputs !== null) {
+
+				// проверка, заполнены ли инпуты, для показа результатов
+				if (checkedInputs.length >= 2) {
+					const checkedInput = designForm.querySelector(
+						".main-design__label-active"
+					);
+					const checkedInputImage = checkedInput.querySelector(
+						".main-design__image"
+					);
+					const checkedInputImagePath =
+						checkedInputImage.getAttribute("src");
+					const checkedInputOldPrice =
+						checkedInputImage.getAttribute("data-old-price");
+					const checkedInputPrice =
+						checkedInputImage.getAttribute("data-price");
 					const formData = {
 						img: checkedInputImagePath,
 						oldPrice: checkedInputOldPrice,
