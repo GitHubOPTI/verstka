@@ -7,6 +7,7 @@
   --black-color: #1e1e1e;
   --dark-black-color: #000;
   --dark-blue-color: #1c2027;
+  --lighter-dark-blue-color: #1c2027dc;
   --dark-grey-color: #8d8da1;
   --light-grey-color: #d9d9d9;
   --body-bg-color: #f8f8fc;
@@ -156,7 +157,23 @@ a {
   display: -ms-flexbox;
   display: flex
 }
-.header__activity,
+.header__activity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 21px
+}
+.header__item {
+  opacity: .8;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s
+}
+.header__item:hover {
+  opacity: 1
+}
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -176,8 +193,9 @@ a {
   font-size: 18px;
   line-height: 22px;
   color: var(--white-color);
-  -webkit-transition: color .3s;
-  transition: color .3s;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+  opacity: .8;
   text-align: center
 }
 .nav__link::after {
@@ -192,7 +210,7 @@ a {
   transition: width .3s
 }
 .nav__link:hover {
-  color: var(--dark-grey-color)
+  opacity: 1
 }
 .nav__link:hover::after {
   width: 100%
@@ -229,7 +247,7 @@ a {
   color: var(--black-color)
 }
 .hero {
-  padding-bottom: 70px
+  min-height: 610px
 }
 .hero__container {
   display: -webkit-box;
@@ -238,10 +256,12 @@ a {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  gap: 30px
+  gap: 30px;
+  height: 100%
 }
 .hero__container-popup {
-  position: relative
+  position: relative;
+  border-radius: 5px
 }
 .hero__container-expanding {
   padding: 20px 35px 24px 20px;
@@ -251,15 +271,30 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 37px;
-  -moz-column-gap: 37px;
-  column-gap: 37px;
+  -webkit-column-gap: 28px;
+  -moz-column-gap: 28px;
+  column-gap: 28px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s
+}
+.hero__container-expanding-hover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid transparent;
+  -webkit-box-shadow: 0 0 4px 0;
+  box-shadow: 0 0 4px 0;
+  border-radius: 5px;
+  opacity: 0;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+  pointer-events: none
+}
+.hero__container-expanding-hover:hover::after {
+  opacity: 1
 }
 .hero__container-expanded {
   position: absolute;
@@ -316,12 +351,15 @@ a {
   padding: 0 25px
 }
 .hero__row-slider {
+  will-change: max-height;
   -webkit-transition: max-height .3s;
   transition: max-height .3s
 }
-.hero__row:not(:last-child),
-.hero__title-row {
+.hero__row:not(:last-child) {
   margin-bottom: 26px
+}
+.hero__title-row {
+  margin-bottom: 20px
 }
 .hero__title-row-docs {
   -webkit-transition: -webkit-transform .3s;
@@ -364,12 +402,10 @@ a {
 .hero__button-text {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg)
+  display: flex
 }
 .hero__button-connect {
+  position: relative;
   padding: 10px;
   width: 100%;
   background: var(--white-color);
@@ -377,7 +413,27 @@ a {
   color: var(--black-color);
   font-size: 24px;
   line-height: 120%;
-  font-weight: 500
+  font-weight: 500;
+  -webkit-transition: background .3s,color .3s;
+  transition: background .3s,color .3s
+}
+.hero__button-connect::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid var(--white-color);
+  border-radius: 5px;
+  opacity: 0;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+  pointer-events: none
+}
+.hero__button-connect:hover {
+  color: var(--white-color);
+  background: var(--black-color)
+}
+.hero__button-connect:hover::after {
+  opacity: 1
 }
 .hero__list {
   display: -webkit-box;
@@ -413,7 +469,7 @@ a {
 }
 .hero__item-more {
   position: relative;
-  background: var(--dark-blue-color);
+  background: var(--lighter-dark-blue-color);
   cursor: pointer;
   width: 100%;
   max-width: 98px;
@@ -429,6 +485,9 @@ a {
 .hero__item-more span {
   -webkit-transition: opacity .3s;
   transition: opacity .3s
+}
+.hero__item-more:hover {
+  background: var(--dark-blue-color)
 }
 .hero__item-hidden {
   opacity: 0;
@@ -627,7 +686,7 @@ a {
   padding-right: 25px
 }
 .activity__slider-4 {
-  padding-right: 25px
+  padding-right: 29px
 }
 .activity__title {
   margin-bottom: 32px
@@ -661,7 +720,9 @@ a {
   margin-bottom: 14px
 }
 .activity__list-cases {
-  max-height: 775px
+  max-height: 775px;
+  padding-bottom: 8px;
+  padding-left: 4px
 }
 .activity__scrollbar {
   width: 100%!important;
@@ -678,7 +739,9 @@ a {
 }
 .activity__scrollbar-vertical {
   width: 3px!important;
-  height: 100%!important
+  height: 100%!important;
+  top: 0!important;
+  right: 0!important
 }
 .activity__item-article {
   position: relative;
@@ -700,13 +763,12 @@ a {
   min-height: 150px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-transition: -webkit-filter .2s;
-  transition: filter .2s;
-  transition: filter .2s,-webkit-filter .2s
+  opacity: .8;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s
 }
 .activity__item-article:hover {
-  -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, .4));
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, .4))
+  opacity: 1
 }
 .activity__item-case {
   max-height: 225px;
