@@ -1,21 +1,59 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ 286:
+/***/ (() => {
+
+const columns = document.querySelectorAll(".activity__column");
+columns.forEach(column => {
+  if (column.classList.contains("activity__column-cases")) {
+    column.setAttribute("data-count", column.querySelectorAll(".activity__slide-actual").length);
+    return;
+  }
+  column.setAttribute("data-count", column.querySelectorAll(".swiper-slide").length);
+});
+
+/***/ }),
+
 /***/ 686:
 /***/ (() => {
 
 const itemsList = document.querySelector(".hero__list");
 const items = document.querySelectorAll(".hero__item");
-const fullItemsListHeight = itemsList.offsetHeight;
 const cssAnimationDuration = 300;
 
 // обработка исходного количества айтемов
-const maxiItemsCount = 6;
-if (items.length > 0) {
-  for (let i = 0; i < maxiItemsCount; i++) {
-    items[i].classList.remove("hero__item-hidden");
-  }
+const mediaQuery1150 = window.matchMedia("(max-width: 1150px)");
+const mediaQuery920 = window.matchMedia("(max-width: 920px)");
+const mediaQuery635 = window.matchMedia("(max-width: 635px)");
+const mediaQuery400 = window.matchMedia("(max-width: 400px)");
+let maxiItemsCount = 6;
+if (mediaQuery635.matches) {
+  maxiItemsCount = 6;
+} else if (mediaQuery920.matches) {
+  maxiItemsCount = 3;
+} else if (mediaQuery1150.matches) {
+  maxiItemsCount = 5;
 }
+
+// определение числа видимых рядов
+let maximimVisibleRowsCount = 2;
+if (mediaQuery920.matches && !mediaQuery635.matches) {
+  maximimVisibleRowsCount = 1;
+}
+// определение gap у списка и высоты одного ряда
+let listRowGap = 15;
+if (mediaQuery400.matches) {
+  listRowGap = 10;
+}
+const listRowHeight = items[0].offsetHeight + listRowGap;
+const visibleRowsHeight = maximimVisibleRowsCount * listRowHeight - listRowGap;
+// if (items.length > 0) {
+// 	for (let i = 0; i < maxiItemsCount - 2; i++) {
+// 		items[i].classList.remove("hero__item-hidden");
+// 	}
+// }
+
 if (items.length > maxiItemsCount - 1) {
   // создание кнопки "еще" в начале списка
   const moreElement = document.createElement("li");
@@ -31,6 +69,12 @@ if (items.length > maxiItemsCount - 1) {
 			alt="Стрелка вниз"
 		/>
 	`;
+  while (items[maxiItemsCount].offsetTop >= visibleRowsHeight) {
+    maxiItemsCount--;
+  }
+  for (let i = 0; i < maxiItemsCount; i++) {
+    items[i].classList.remove("hero__item-hidden");
+  }
   items[maxiItemsCount].insertAdjacentElement("beforebegin", moreElement);
 
   // создание кнопки "еще" в конце списка
@@ -51,17 +95,15 @@ if (items.length > maxiItemsCount - 1) {
   itemsList.insertAdjacentElement("beforeend", lastElement);
 
   // вычисление количества рядов в списке элементов
-  const maximimVisibleRowsCount = 2;
-  const listRowGap = 15;
-  const listRowHeight = items[0].offsetHeight + listRowGap;
-  const rowsCount = (itemsList.offsetHeight + listRowGap) / listRowHeight;
-  const newRowsCount = rowsCount - maximimVisibleRowsCount;
+  const fullItemsListHeight = itemsList.offsetHeight;
+  let rowsCount = (fullItemsListHeight + listRowGap) / listRowHeight;
+  if (lastElement.offsetTop >= visibleRowsHeight) {
+    rowsCount++;
+  }
   const heroRowSlider = document.getElementById("heroRowSlider");
   const heroRowWrapper = document.getElementById("heroRowWrapper");
   const heroTitleRow = document.querySelector(".hero__title-row-docs");
   const heroScrollbar = document.querySelector(".hero__scrollbar");
-  // const shortedRowHeight = fullRowHeight - (newRowsCount * listRowHeight - (newRowsCount - 1 * listRowGap));
-
   const fullRowHeight = heroRowSlider.offsetHeight;
   const shortedRowHeight = fullRowHeight - fullItemsListHeight - listRowGap;
   if (rowsCount > maximimVisibleRowsCount) {
@@ -69,7 +111,7 @@ if (items.length > maxiItemsCount - 1) {
   }
   function showSlider() {
     let firstUsage = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
-    itemsList.style.maxHeight = maximimVisibleRowsCount * listRowHeight - listRowGap + "px";
+    itemsList.style.maxHeight = visibleRowsHeight + "px";
     if (heroRowWrapper !== null && firstUsage == false) {
       heroRowSlider.style.maxHeight = fullRowHeight + "px";
       heroTitleRow.style.transform = `translateY(0)`;
@@ -82,10 +124,9 @@ if (items.length > maxiItemsCount - 1) {
   }
   function hideSlider() {
     heroRowWrapper.style.opacity = `0`;
-    // heroTitleRow.style.transform = `translateY(${heroRowWrapper.offsetHeight - heightDifference}px)`;
     heroScrollbar.style.transform = `translateY(-${heroRowWrapper.offsetHeight - listRowGap / 2}px)`;
     heroScrollbar.style.pointerEvents = "none";
-    heroRowSlider.style.maxHeight = shortedRowHeight + itemsList.offsetHeight + "px";
+    heroRowSlider.style.maxHeight = shortedRowHeight + fullItemsListHeight + "px";
   }
 
   // механика плавного изменения текста
@@ -106,9 +147,11 @@ if (items.length > maxiItemsCount - 1) {
         moreItem.classList.add("hero__item-more-active");
         moreItem.style.maxWidth = moreItemText.offsetWidth + 30 + "px";
         moreItemText.style.opacity = "1";
-        hiddenItems.forEach(item => {
-          item.classList.toggle("hero__item-hidden");
-        });
+        setTimeout(() => {
+          hiddenItems.forEach(item => {
+            item.classList.toggle("hero__item-hidden");
+          });
+        }, cssAnimationDuration * 2);
       }, cssAnimationDuration * 2);
     });
     lastItem.addEventListener("click", () => {
@@ -119,7 +162,11 @@ if (items.length > maxiItemsCount - 1) {
       setTimeout(() => {
         moreItem.classList.remove("hero__item-more-active");
         moreItemText.innerHTML = "Еще";
-        moreItem.style.maxWidth = "98px";
+        if (mediaQuery400.matches) {
+          moreItem.style.maxWidth = "56px";
+        } else {
+          moreItem.style.maxWidth = "98px";
+        }
         items[maxiItemsCount].style.display = "unset";
         moreItemImage.style.opacity = "1";
         moreItemText.style.opacity = "1";
@@ -131,6 +178,18 @@ if (items.length > maxiItemsCount - 1) {
 
 /***/ }),
 
+/***/ 578:
+/***/ (() => {
+
+const menu = document.querySelector(".menu");
+const burger = document.querySelector(".burger");
+burger.addEventListener("click", () => {
+  menu.classList.toggle("menu-active");
+  burger.classList.toggle("burger--active");
+});
+
+/***/ }),
+
 /***/ 903:
 /***/ (() => {
 
@@ -139,6 +198,7 @@ const textButton = document.querySelector(".hero__container-expanding");
 const textElem = document.querySelector(".hero__text");
 const textElemExpanded = document.querySelector(".hero__text-expanded");
 const textContainerExpanded = document.querySelector(".hero__container-expanded");
+const body = document.querySelector(".page__body");
 textButton.style.cursor = "pointer";
 if (textButton !== null && overlay !== null && textElem !== null && textElemExpanded !== null && textContainerExpanded !== null) {
   textButton.addEventListener("click", () => {
@@ -146,12 +206,16 @@ if (textButton !== null && overlay !== null && textElem !== null && textElemExpa
     textContainerExpanded.classList.toggle("hero__container-expanded-active");
     textButton.style.cursor = "default";
     textButton.style.opacity = "0";
+    body.style.paddingRight = window.innerWidth - body.offsetWidth + "px";
+    body.style.overflowY = "hidden";
   });
   overlay.addEventListener("click", () => {
     overlay.classList.toggle("overlay-active");
     textContainerExpanded.classList.toggle("hero__container-expanded-active");
     textButton.style.cursor = "pointer";
     textButton.style.opacity = "1";
+    body.style.overflowY = "unset";
+    body.style.paddingRight = "0";
   });
   textElemExpanded.innerHTML = textElem.innerHTML;
 }
@@ -9966,123 +10030,6 @@ function freeMode({
     }
   });
 }
-;// CONCATENATED MODULE: ./node_modules/swiper/modules/grid/grid.js
-function Grid({
-  swiper,
-  extendParams
-}) {
-  extendParams({
-    grid: {
-      rows: 1,
-      fill: 'column'
-    }
-  });
-  let slidesNumberEvenToRows;
-  let slidesPerRow;
-  let numFullColumns;
-
-  const initSlides = slidesLength => {
-    const {
-      slidesPerView
-    } = swiper.params;
-    const {
-      rows,
-      fill
-    } = swiper.params.grid;
-    slidesPerRow = slidesNumberEvenToRows / rows;
-    numFullColumns = Math.floor(slidesLength / rows);
-
-    if (Math.floor(slidesLength / rows) === slidesLength / rows) {
-      slidesNumberEvenToRows = slidesLength;
-    } else {
-      slidesNumberEvenToRows = Math.ceil(slidesLength / rows) * rows;
-    }
-
-    if (slidesPerView !== 'auto' && fill === 'row') {
-      slidesNumberEvenToRows = Math.max(slidesNumberEvenToRows, slidesPerView * rows);
-    }
-  };
-
-  const updateSlide = (i, slide, slidesLength, getDirectionLabel) => {
-    const {
-      slidesPerGroup,
-      spaceBetween
-    } = swiper.params;
-    const {
-      rows,
-      fill
-    } = swiper.params.grid; // Set slides order
-
-    let newSlideOrderIndex;
-    let column;
-    let row;
-
-    if (fill === 'row' && slidesPerGroup > 1) {
-      const groupIndex = Math.floor(i / (slidesPerGroup * rows));
-      const slideIndexInGroup = i - rows * slidesPerGroup * groupIndex;
-      const columnsInGroup = groupIndex === 0 ? slidesPerGroup : Math.min(Math.ceil((slidesLength - groupIndex * rows * slidesPerGroup) / rows), slidesPerGroup);
-      row = Math.floor(slideIndexInGroup / columnsInGroup);
-      column = slideIndexInGroup - row * columnsInGroup + groupIndex * slidesPerGroup;
-      newSlideOrderIndex = column + row * slidesNumberEvenToRows / rows;
-      slide.css({
-        '-webkit-order': newSlideOrderIndex,
-        order: newSlideOrderIndex
-      });
-    } else if (fill === 'column') {
-      column = Math.floor(i / rows);
-      row = i - column * rows;
-
-      if (column > numFullColumns || column === numFullColumns && row === rows - 1) {
-        row += 1;
-
-        if (row >= rows) {
-          row = 0;
-          column += 1;
-        }
-      }
-    } else {
-      row = Math.floor(i / slidesPerRow);
-      column = i - row * slidesPerRow;
-    }
-
-    slide.css(getDirectionLabel('margin-top'), row !== 0 ? spaceBetween && `${spaceBetween}px` : '');
-  };
-
-  const updateWrapperSize = (slideSize, snapGrid, getDirectionLabel) => {
-    const {
-      spaceBetween,
-      centeredSlides,
-      roundLengths
-    } = swiper.params;
-    const {
-      rows
-    } = swiper.params.grid;
-    swiper.virtualSize = (slideSize + spaceBetween) * slidesNumberEvenToRows;
-    swiper.virtualSize = Math.ceil(swiper.virtualSize / rows) - spaceBetween;
-    swiper.$wrapperEl.css({
-      [getDirectionLabel('width')]: `${swiper.virtualSize + spaceBetween}px`
-    });
-
-    if (centeredSlides) {
-      snapGrid.splice(0, snapGrid.length);
-      const newSlidesGrid = [];
-
-      for (let i = 0; i < snapGrid.length; i += 1) {
-        let slidesGridItem = snapGrid[i];
-        if (roundLengths) slidesGridItem = Math.floor(slidesGridItem);
-        if (snapGrid[i] < swiper.virtualSize + snapGrid[0]) newSlidesGrid.push(slidesGridItem);
-      }
-
-      snapGrid.push(...newSlidesGrid);
-    }
-  };
-
-  swiper.grid = {
-    initSlides,
-    updateSlide,
-    updateWrapperSize
-  };
-}
 ;// CONCATENATED MODULE: ./node_modules/swiper/modules/effect-cube/effect-cube.js
 
 
@@ -10806,9 +10753,8 @@ function EffectCards({
 
 ;// CONCATENATED MODULE: ./src/js/components/custom-scroll.js
 
-core.use([Scrollbar, Mousewheel, Grid]);
+core.use([Scrollbar, Mousewheel]);
 const swiper = new core(document.querySelector(".hero__slider"), {
-  slidesPerView: 5,
   spaceBetween: 13,
   watchSlidesProgress: true,
   slideVisibleClass: "hero__slide-visible",
@@ -10816,48 +10762,141 @@ const swiper = new core(document.querySelector(".hero__slider"), {
   scrollbar: {
     el: ".hero__scrollbar",
     draggable: true
+  },
+  breakpoints: {
+    1151: {
+      slidesPerView: 5
+    },
+    769: {
+      slidesPerView: 4
+    },
+    636: {
+      slidesPerView: 6
+    },
+    481: {
+      slidesPerView: 4,
+      spaceBetween: 20
+    },
+    319: {
+      slidesPerView: 3,
+      spaceBetween: 25
+    }
   }
 });
 const swiper1 = new core(document.querySelector(".activity__slider-1"), {
-  slidesPerView: 7,
   spaceBetween: 50,
   mousewheel: true,
   scrollbar: {
     el: ".activity__scrollbar-1",
     draggable: true
+  },
+  breakpoints: {
+    1151: {
+      slidesPerView: 7
+    },
+    921: {
+      slidesPerView: 6
+    },
+    752: {
+      slidesPerView: 5
+    },
+    400: {
+      slidesPerView: 4,
+      spaceBetween: 25
+    },
+    319: {
+      spaceBetween: 15,
+      slidesPerView: 3
+    }
   }
 });
 const swiper2 = new core(document.querySelector(".activity__slider-2"), {
-  slidesPerView: 2,
   spaceBetween: 25,
   mousewheel: true,
-  direction: "vertical",
   scrollbar: {
     el: ".activity__scrollbar-2",
     draggable: true
+  },
+  breakpoints: {
+    921: {
+      slidesPerView: 2,
+      direction: "vertical"
+    },
+    521: {
+      slidesPerView: 2
+    },
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 38,
+      direction: "horizontal"
+    }
   }
 });
 const swiper3 = new core(document.querySelector(".activity__slider-3"), {
-  slidesPerView: 2,
   spaceBetween: 25,
   mousewheel: true,
-  direction: "vertical",
   scrollbar: {
     el: ".activity__scrollbar-3",
     draggable: true
+  },
+  breakpoints: {
+    921: {
+      slidesPerView: 2,
+      direction: "vertical"
+    },
+    521: {
+      slidesPerView: 2
+    },
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 38,
+      direction: "horizontal"
+    }
   }
 });
 const swiper4 = new core(document.querySelector(".activity__slider-4"), {
-  slidesPerView: 3,
   spaceBetween: 50,
-  direction: "vertical",
   mousewheel: true,
   scrollbar: {
     el: ".activity__scrollbar-4",
     draggable: true
+  },
+  on: {
+    beforeInit: () => {
+      const mediaQuery520 = window.matchMedia("(max-width: 520px)");
+      if (mediaQuery520.matches) {
+        const wrongSlides = document.querySelectorAll(".activity__item-case");
+        const swiperWrapper = document.querySelector(".activity__list-cases");
+        swiperWrapper.innerHTML = "";
+        wrongSlides.forEach(wrongSlide => {
+          swiperWrapper.innerHTML = swiperWrapper.innerHTML + wrongSlide.innerHTML;
+        });
+        const actualSlides = document.querySelectorAll(".activity__slide-actual");
+        actualSlides.forEach(slide => {
+          slide.classList.add("swiper-slide");
+        });
+      }
+    }
+  },
+  breakpoints: {
+    521: {
+      direction: "vertical",
+      slidesPerView: 3
+    },
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 15,
+      direction: "horizontal"
+    }
   }
 });
+// EXTERNAL MODULE: ./src/js/components/articles-count.js
+var articles_count = __webpack_require__(286);
+// EXTERNAL MODULE: ./src/js/components/menu-movement.js
+var menu_movement = __webpack_require__(578);
 ;// CONCATENATED MODULE: ./src/js/_components.js
+
+
 
 
 

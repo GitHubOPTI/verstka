@@ -19,7 +19,7 @@
 		<a href="#" class="header__link">
 			<img src="./img/logo.svg" class="image header__logo" width="151" height="58" alt="Логотип" />
 		</a>
-		<nav class="nav" title="Навигационная панель">
+		<nav class="nav header__nav" title="Навигационная панель">
 			<ul class="list-reset nav__list">
 				<li class="nav__item"><a href="#" class="nav__link">О платформе</a></li>
 				<li class="nav__item"><a href="#" class="nav__link">Новости</a></li>
@@ -53,6 +53,9 @@
 				</button>
 			</li>
 		</ul>
+		<button class="burger header__burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+			<span class="burger__line"></span>
+		</button>
 	</div>
 </header>
 
@@ -262,7 +265,7 @@
 		</div>
 		<div class="hero__column-profile">
 			<div class="hero__container-header">
-				<picture>
+				<picture class="hero__picture">
 					<source srcset="./img/expert-photo.webp" type="image/webp" />
 					<img
 						loading="lazy"
@@ -478,7 +481,7 @@
 			<div class="swiper-scrollbar activity__scrollbar activity__scrollbar-1"></div>
 		</div>
 		<div class="activity__container-columns">
-			<div class="activity__column activity__column-articles">
+			<div class="activity__column activity__column-articles" data-count="2">
 				<div class="activity__row">
 					<h2 class="title title__h2 activity__title">Статьи эксперта</h2>
 					<div class="swiper activity__slider-2">
@@ -656,12 +659,12 @@
 					</div>
 				</div>
 			</div>
-			<div class="activity__column activity__column-cases">
+			<div class="activity__column activity__column-cases" data-count="3">
 				<h2 class="title title__h2 activity__title">Кейсы</h2>
 				<div class="swiper activity__slider-4">
-					<ul class="list-reset swiper-wrapper activity__list-cases">
-						<li class="swiper-slide activity__item-case">
-							<div>
+					<div class="swiper-wrapper activity__list-cases">
+						<div class="swiper-slide activity__item-case">
+							<div class="activity__slide-actual">
 								<div>
 									<h6 class="title title__h6 activity__title-job">Руководитель маркетинга</h6>
 									<h5 class="title activity__title-article activity__title-article-black">
@@ -684,7 +687,7 @@
 									</div>
 								</div>
 							</div>
-							<div>
+							<div class="activity__slide-actual">
 								<div>
 									<h6 class="title title__h6 activity__title-job">Копирайтер</h6>
 									<h5 class="title activity__title-article activity__title-article-black">
@@ -707,9 +710,9 @@
 									</div>
 								</div>
 							</div>
-						</li>
-						<li class="swiper-slide activity__item-case">
-							<div>
+						</div>
+						<div class="swiper-slide activity__item-case">
+							<div class="activity__slide-actual">
 								<div>
 									<h6 class="title title__h6 activity__title-job">Маркетолог</h6>
 									<h5 class="title activity__title-article activity__title-article-black">
@@ -732,7 +735,7 @@
 									</div>
 								</div>
 							</div>
-							<div>
+							<div class="activity__slide-actual">
 								<div>
 									<h6 class="title title__h6 activity__title-job">Графический дизайнер</h6>
 									<h5 class="title activity__title-article activity__title-article-black">
@@ -755,9 +758,9 @@
 									</div>
 								</div>
 							</div>
-						</li>
-						<li class="swiper-slide activity__item-case">
-							<div>
+						</div>
+						<div class="swiper-slide activity__item-case">
+							<div class="activity__slide-actual">
 								<div>
 									<h6 class="title title__h6 activity__title-job">Таргетолог</h6>
 									<h5 class="title activity__title-article activity__title-article-black">
@@ -780,7 +783,7 @@
 									</div>
 								</div>
 							</div>
-							<div>
+							<div class="activity__slide-actual">
 								<div>
 									<h6 class="title title__h6 activity__title-job">SMM-специалист</h6>
 									<h5 class="title activity__title-article activity__title-article-black">
@@ -803,9 +806,9 @@
 									</div>
 								</div>
 							</div>
-						</li>
-						<li class="swiper-slide activity__item-case">
-							<div>
+						</div>
+						<div class="swiper-slide activity__item-case">
+							<div class="activity__slide-actual">
 								<div>
 									<h6 class="title title__h6 activity__title-job">Таргетолог</h6>
 									<h5 class="title activity__title-article activity__title-article-black">
@@ -828,7 +831,7 @@
 									</div>
 								</div>
 							</div>
-							<div>
+							<div class="activity__slide-actual">
 								<div>
 									<h6 class="title title__h6 activity__title-job">SMM-специалист</h6>
 									<h5 class="title activity__title-article activity__title-article-black">
@@ -851,8 +854,8 @@
 									</div>
 								</div>
 							</div>
-						</li>
-					</ul>
+						</div>
+					</div>
 					<div
 						class="swiper-scrollbar activity__scrollbar activity__scrollbar-4 activity__scrollbar-vertical"
 					></div>
@@ -860,6 +863,19 @@
 			</div>
 		</div>
 	</div>
+</section>
+
+				<section class="menu">
+	<nav class="nav menu__nav" title="Навигационная панель">
+		<ul class="list-reset nav__list menu__list">
+			<li class="nav__item menu__item"><a href="#" class="nav__link menu__link">О платформе</a></li>
+			<li class="nav__item menu__item"><a href="#" class="nav__link menu__link">Новости</a></li>
+			<li class="nav__item menu__item"><a href="#" class="nav__link menu__link">Календарь</a></li>
+			<li class="nav__item menu__item"><a href="#" class="nav__link menu__link">Найти эксперта</a></li>
+			<li class="nav__item menu__item"><a href="#" class="nav__link menu__link">Найти проект</a></li>
+			<li class="nav__item menu__item"><a href="#" class="nav__link menu__link">Кейсы</a></li>
+		</ul>
+	</nav>
 </section>
 
 			</main>
