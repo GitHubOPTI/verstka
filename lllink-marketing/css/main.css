@@ -1516,6 +1516,16 @@ a {
   .activity__slide-actual {
     width: 100%
   }
+  .activity__column-cases::before {
+    right: 16px
+  }
+}
+@media (max-width:360px) {
+  .activity__title {
+    font-size: 28px;
+    line-height: 120%;
+    margin-bottom: 34px
+  }
 }
 .burger {
   --burger-width: 30px;
