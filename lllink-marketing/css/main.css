@@ -1648,3 +1648,6 @@ a {
   font-size: 21px;
   line-height: 120%
 }
+.menu__link::after {
+  bottom: -5px
+}
