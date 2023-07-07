@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+	<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<meta name="theme-color" content="#111111" />
+	<title>Dashboard-doctor-ost</title>
+	<link rel="stylesheet" href="css/vendor.css" />
+	<link rel="stylesheet" href="css/main.css" />
+	<script defer src="js/main.js"></script>
+</head>
+
+	<body class="page__body">
+		<div class="site-container">
+			<main class="main">
+				<section class="hero">
+	<div class="container">
+		<div class="hero__container">
+			<div class="hero__column">
+				<h2 class="title title__h2 hero__title">Конверсия лидов</h2>
+				<ul class="list-reset hero__list"></ul>
+			</div>
+			<div class="hero__column hero__column-graph">
+				<div class="hero__container-switch">
+					<label class="switch">
+						<input type="checkbox" id="switch-input" />
+						<span class="slider round">
+							<span class="switch__text title__h4">1С</span>
+							<span class="switch__text title__h4">Б24</span>
+						</span>
+					</label>
+				</div>
+				<div class="hero__container-graph">
+					<canvas id="myChart" width="400" height="400"></canvas>
+					<div class="hero__container-tooltip">
+						<div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+ <section class="stats">
+	<div class="container stats__container">
+		<div class="stats__block stats__block-contacts">
+			<div class="stats__container-flex">
+				<h3 class="title title__h3 stats__title">Контакты <span class="stats__title-fluid">1С</span></h3>
+				<ul class="list-reset stats__list">
+					<li class="stats__item">
+						<div class="stats__container-icon-text">
+							<svg class="stats__icon-ellipse">
+								<use xlink:href="img/sprite.svg#ellipse"></use>
+							</svg>
+							<span class="stats__text stats__text-label title__h4"></span>
+						</div>
+						<span class="stats__text stats__text-persent title__h4"></span>
+						<span class="stats__text stats__text-count title__h4"></span>
+					</li>
+					<li class="stats__item">
+						<div class="stats__container-icon-text">
+							<svg class="stats__icon-ellipse stats__icon-ellipse-all">
+								<use xlink:href="img/sprite.svg#empty-ellipse"></use>
+							</svg>
+							<span class="stats__text stats__text-label title__h4">Все</span>
+						</div>
+						<span class="stats__text stats__text-persent stats__text-persent-all title__h4"></span>
+						<span class="stats__text stats__text-count stats__text-count-all title__h4"></span>
+					</li>
+				</ul>
+			</div>
+			<div class="stats__container-canvas-bar">
+				<canvas
+					id="statsBarChart-1c"
+					class="stats__canvas-bar stats__canvas-bar-1c stats__canvas-bar-visible"
+					width="95"
+					height="160"
+				></canvas>
+				<canvas
+					id="statsBarChart-bitrix"
+					class="stats__canvas-bar stats__canvas-bar-bitrix"
+					width="95"
+					height="160"
+				></canvas>
+			</div>
+		</div>
+		<div class="stats__block stats__block-cases">
+			<div class="stats__container-flex stats__block-cases-flex">
+				<h3 class="title title__h3 stats__title">Общая сумма сделок</h3>
+				<ul class="list-reset stats__list">
+					<li class="stats__item">
+						<div class="stats__container-icon-text stats__container-icon-text-static">
+							<svg class="stats__icon-ellipse stats__icon-ellipse-static-orange">
+								<use xlink:href="img/sprite.svg#ellipse"></use>
+							</svg>
+							<span class="stats__text stats__text-label title__h4">1C</span>
+						</div>
+						<span class="stats__text stats__text-persent stats__text-persentage-static-1c title__h4"></span>
+						<span class="stats__text stats__text-count stats__text-static-1c title__h4"></span>
+					</li>
+					<li class="stats__item">
+						<div class="stats__container-icon-text stats__container-icon-text-static">
+							<svg class="stats__icon-ellipse stats__icon-ellipse-static-blue">
+								<use xlink:href="img/sprite.svg#ellipse"></use>
+							</svg>
+							<span class="stats__text stats__text-label title__h4">Б24</span>
+						</div>
+						<span
+							class="stats__text stats__text-persent stats__text-persentage-static-bitrix title__h4"
+						></span>
+						<span class="stats__text stats__text-count stats__text-static-bitrix title__h4"></span>
+					</li>
+				</ul>
+			</div>
+			<div class="stats__container-canvas-radial">
+				<canvas id="statsRadialChart" class="" width="150" height="150"></canvas>
+				<div class="hero__container-tooltip stats__container-tooltip">
+					<div></div>
+				</div>
+			</div>
+		</div>
+		<div class="stats__block stats__block-buttons-container">
+			<div class="stats__block-buttons stats__block-buttons-visible">
+				<button class="stats__button stats__button-download btn-reset">Загрузить</button>
+				<button class="stats__button stats__button-generate btn-reset">Сформировать</button>
+				<button class="stats__button stats__button-history btn-reset">История</button>
+			</div>
+			<div class="stats__block-buttons">
+				<button class="stats__button stats__button-download btn-reset" id="firstDateBtn">Начальная дата</button>
+				<button class="stats__button stats__button-generate btn-reset" id="secondDateBtn">Конечная дата</button>
+				<button class="stats__button stats__button-history btn-reset">История</button>
+			</div>
+		</div>
+	</div>
+</section>
+ <section class="contacts">
+	<div class="container">
+		<div class="contacts__container">
+			<h2 class="title title__h2 contacts__title">
+				Контакты, которые есть в <span class="contacts__label-1с">1С</span>, но нет в
+				<span class="contacts__label-bitrix">Б24</span>
+			</h2>
+			<div class="contacts__wrapper-main">
+				<div class="contacts__container-sliders">
+					<div
+						class="contacts__container-slider contacts__container-slider-visible contacts__container-slider-1c swiper"
+					>
+						<div class="contacts__heading title title__h4">
+							<span class="contacts__name contacts__name-heading">ФИО</span>
+							<span class="contacts__phone contacts__phone-heading">Телефон</span>
+							<span class="contacts__deals contacts__deals-heading">Кол-во успешных сделок</span>
+						</div>
+						<div class="contacts__list contacts__list-1c swiper-wrapper"></div>
+						<div class="contacts__container-controls">
+							<button class="btn-reset contacts__button contacts__button-prev">
+								<img
+									loading="lazy"
+									src="./img/left-arrow.svg"
+									class="image contacts__icon-arrow-left"
+									width="10"
+									height="18"
+									alt="Стрелка влево"
+								/>
+							</button>
+							<div class="contacts__pagination contacts__pagination-1c"></div>
+							<button class="btn-reset contacts__button contacts__button-next">
+								<img
+									loading="lazy"
+									src="./img/left-arrow.svg"
+									class="image contacts__icon-arrow-left"
+									width="10"
+									height="18"
+									alt="Стрелка влево"
+								/>
+							</button>
+						</div>
+					</div>
+					<div class="contacts__container-slider contacts__container-slider-bitrix swiper">
+						<div class="contacts__heading title title__h4">
+							<span class="contacts__name contacts__name-heading">ФИО</span>
+							<span class="contacts__phone contacts__phone-heading">Телефон</span>
+							<span class="contacts__deals contacts__deals-heading">Кол-во успешных сделок</span>
+						</div>
+						<div class="contacts__list contacts__list-bitrix swiper-wrapper"></div>
+						<div class="contacts__container-controls">
+							<button class="btn-reset contacts__button contacts__button-prev">
+								<img
+									loading="lazy"
+									src="./img/left-arrow.svg"
+									class="image contacts__icon-arrow-left"
+									width="10"
+									height="18"
+									alt="Стрелка влево"
+								/>
+							</button>
+							<div class="contacts__pagination contacts__pagination-bitrix"></div>
+							<button class="btn-reset contacts__button contacts__button-next">
+								<img
+									loading="lazy"
+									src="./img/left-arrow.svg"
+									class="image contacts__icon-arrow-left"
+									width="10"
+									height="18"
+									alt="Стрелка влево"
+								/>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+			</main>
+		</div>
+	</body>
+</html>
