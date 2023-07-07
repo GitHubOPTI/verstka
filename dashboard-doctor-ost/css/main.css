@@ -437,6 +437,7 @@ input:checked + .slider:before {
   pointer-events: all
 }
 .stats__block {
+  position: relative;
   width: 100%;
   border: 1px solid var(--orange-color);
   border-radius: 10px;
@@ -466,6 +467,7 @@ input:checked + .slider:before {
   padding-top: 25px
 }
 .stats__block-buttons {
+  width: 100%;
   border: none;
   padding: 0;
   max-width: 171px;
