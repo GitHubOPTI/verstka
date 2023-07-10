@@ -108,6 +108,16 @@ canvas {
 section:not(:last-child) {
   margin-bottom: 25px
 }
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0)
+}
 .title {
   margin: 0;
   color: var(--black-color)
@@ -520,7 +530,8 @@ input:checked + .slider:before {
   transition: border .3s,color .3s,background .3s
 }
 .stats__button-download {
-  border: 1px solid #e15335
+  border: 1px solid #e15335;
+  outline: 0
 }
 .stats__button-download:hover {
   background: #e15335;
@@ -528,7 +539,8 @@ input:checked + .slider:before {
   border-color: transparent
 }
 .stats__button-generate {
-  border: 1px solid #299b9c
+  border: 1px solid #299b9c;
+  outline: 0
 }
 .stats__button-generate:hover {
   background: #299b9c;
@@ -613,6 +625,35 @@ input:checked + .slider:before {
 .stats__text-persentage-static-1c,
 .stats__text-persentage-static-bitrix {
   max-width: 31px
+}
+input[type=date] {
+  position: relative
+}
+input[type=date]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  color: transparent;
+  background: 0 0
+}
+input[type=date]::-webkit-clear-button,
+input[type=date]::-webkit-inner-spin-button {
+  z-index: -10
+}
+input[type=date]::-webkit-input-placeholder {
+  z-index: 99
+}
+input[type=date]:placeholder {
+  z-index: 99
+}
+input[type=date]:not(.has-value):before {
+  content: attr(placeholder);
+  text-align: center;
+  width: 100%
 }
 .contacts__wrapper-main {
   overflow: hidden

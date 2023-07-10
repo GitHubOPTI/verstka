@@ -122,15 +122,28 @@
 		</div>
 		<div class="stats__block stats__block-buttons-container">
 			<div class="stats__block-buttons stats__block-buttons-visible">
-				<button class="stats__button stats__button-download btn-reset">Загрузить</button>
+				<button class="stats__button stats__button-download btn-reset" id="fileInputButton">Загрузить</button>
 				<button class="stats__button stats__button-generate btn-reset">Сформировать</button>
 				<button class="stats__button stats__button-history btn-reset">История</button>
 			</div>
 			<div class="stats__block-buttons">
-				<button class="stats__button stats__button-download btn-reset" id="firstDateBtn">Начальная дата</button>
-				<button class="stats__button stats__button-generate btn-reset" id="secondDateBtn">Конечная дата</button>
+				<input
+					class="stats__button stats__button-download btn-reset"
+					type="date"
+					id="firstDateInput"
+					name="firstDateInput"
+					placeholder="Начальная дата"
+				/>
+				<input
+					class="stats__button stats__button-generate btn-reset"
+					type="date"
+					id="endDateInput"
+					name="endDateInput"
+					placeholder="Конечная дата"
+				/>
 				<button class="stats__button stats__button-history btn-reset">История</button>
 			</div>
+			<input class="visually-hidden" type="file" name="fileInput" id="fileInput" />
 		</div>
 	</div>
 </section>

@@ -1,6 +1,52 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ 12:
+/***/ (() => {
+
+const statsButtons = document.querySelectorAll(".stats__button");
+const buttonsContainer = document.querySelector(".stats__block-buttons-visible");
+const innerButtonsContainer = buttonsContainer.querySelectorAll(".stats__button");
+const containerGap = 25;
+const buttonHeight = (buttonsContainer.offsetHeight - (innerButtonsContainer.length - 1) * containerGap) / 3;
+statsButtons.forEach(button => {
+  button.style.maxHeight = buttonHeight + "px";
+});
+
+/***/ }),
+
+/***/ 681:
+/***/ (() => {
+
+const startDateInput = document.getElementById("firstDateInput");
+const endDateInput = document.getElementById("endDateInput");
+if (startDateInput !== null && endDateInput !== null) {
+  startDateInput.addEventListener("change", () => {
+    console.log(startDateInput.value);
+  });
+  endDateInput.addEventListener("change", () => {
+    console.log(endDateInput.value);
+  });
+}
+
+/***/ }),
+
+/***/ 742:
+/***/ (() => {
+
+const fileInputButton = document.getElementById("fileInputButton");
+const fileInput = document.getElementById("fileInput");
+if (fileInputButton !== null && fileInput !== null) {
+  fileInputButton.addEventListener("click", () => {
+    fileInput.click();
+  });
+  fileInput.addEventListener("change", () => {
+    console.log(fileInput.files);
+  });
+}
+
+/***/ }),
+
 /***/ 316:
 /***/ (() => {
 
@@ -43328,7 +43374,16 @@ function formatByMask(mask, value) {
 }
 makeSlider(bitrixData, "bitrix");
 makeSlider(data1c, "1c");
+// EXTERNAL MODULE: ./src/js/components/file-input.js
+var file_input = __webpack_require__(742);
+// EXTERNAL MODULE: ./src/js/components/data-buttons.js
+var data_buttons = __webpack_require__(681);
+// EXTERNAL MODULE: ./src/js/components/buttons-height.js
+var buttons_height = __webpack_require__(12);
 ;// CONCATENATED MODULE: ./src/js/_components.js
+
+
+
 
 
 
