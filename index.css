@@ -1,4 +1,12 @@
 .index__container {
+    display: inline-flex;
+    justify-content:center;
+    column-gap: 50px;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.index__container__column{
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -7,7 +15,6 @@
     margin: 0 auto;
     padding-top: 20px;
 }
-
 .index__link {
     text-align: center;
     color: #1e1e1e;
