@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="theme-color" content="#111111" />
+        <title>Opti-main-page</title>
+        <link rel="preload" href="fonts/Golos-Text-Regular.woff2" as="font" type="font/woff2" crossorigin />
+        <link rel="preload" href="fonts/Golos-Text-Medium.woff2" as="font" type="font/woff2" crossorigin />
+        <link rel="preload" href="fonts/Golos-Text-DemiBold.woff2" as="font" type="font/woff2" crossorigin />
+        <link rel="stylesheet" href="css/vendor.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <script defer src="js/main.js"></script>
+    </head>
+
+    <body class="page__body">
+        <div class="site-container">
+            <header class="header">
+                <div class="container header__container">
+                    <a href="/" class="header__link-logo">
+                        <img src="./img/logo.svg" class="image header__logo" width="79" height="55" alt="логотип компании" />
+                    </a>
+                    <nav class="nav" title="Навигационная панель">
+                        <ul class="nav__list list-reset">
+                            <li class="nav__item"><a href="#" class="nav__link">Компания</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Лицензии</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Наши проекты</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__social">
+                        <div class="header__container-tel">
+                            <a href="tel:88002016216" class="header__link">
+                                <img src="./img/phone.svg" class="image header__icon-tel" width="15" height="15" alt="Иконка телефона" />
+                                8 800 2016 216
+                            </a>
+                        </div>
+                        <button class="btn-reset header__button-text">Заказать звонок</button>
+                        <a href="#" class="btn-reset header__button-icon header__button-icon-tg">
+                            <img src="./img/tg.svg" class="image header__icon-tg" width="26" height="21" alt="Иконка telegramm" />
+                        </a>
+                        <a href="#" class="btn-reset header__button-icon header__button-icon-whatsapp">
+                            <img src="./img/whatsapp.svg" class="image header__icon-whatsapp" width="21" height="22" alt="Иконка whatsapp" />
+                        </a>
+                        <a href="#" class="btn-reset header__button-icon header__button-icon-user">
+                            <img src="./img/user.svg" class="image header__icon-user" width="25" height="25" alt="Иконка пользователя" />
+                        </a>
+                        <button class="burger header__burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+                            <span class="burger__line"></span>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <main class="main">
+                <section class="navigation">
+                    <div class="container navigation__container">
+                        <ul class="list-reset navigation__list">
+                            <li class="navigation__item">
+                                <a href="#" class="navigation__link">
+                                    <img loading="lazy" src="./img/bitrix.svg" class="image navigation__icon navigation__icon-bitrix" width="46" height="25" alt="Иконка битрикс" />
+                                    <span class="navigation__text">Битрикс 24</span>
+                                </a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#" class="navigation__link">
+                                    <img loading="lazy" src="./img/robot.svg" class="image navigation__icon navigation__icon-robot" width="34" height="35" alt="Иконка автоматизации" />
+                                    <span class="navigation__text">Автоматизация бизнес-процессов</span>
+                                </a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#" class="navigation__link">
+                                    <img loading="lazy" src="./img/web.svg" class="image navigation__icon navigation__icon-web" width="36" height="33" alt="Иконка web-разработка" />
+                                    <span class="navigation__text">WEB – разработка</span>
+                                </a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#" class="navigation__link">
+                                    <img loading="lazy" src="./img/keyboard.svg" class="image navigation__icon navigation__icon-keyboard" width="49" height="25" alt="Иконка техподдержки" />
+                                    <span class="navigation__text">Техническая поддержка</span>
+                                </a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#" class="navigation__link">
+                                    <img loading="lazy" src="./img/screen.svg" class="image navigation__icon navigation__icon-screen" width="36" height="33" alt="Иконка аналитики" />
+                                    <span class="navigation__text">Сквозная аналитика</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="hero">
+                    <div class="container hero__container">
+                        <div class="swiper hero__slider">
+                            <div class="swiper-wrapper hero__wrapper">
+                                <div class="swiper-slide hero__slide hero__slide-first">
+                                    <div class="hero__container-side">
+                                        <h3 class="hero__subtitle">ГРУППА КОМПАНИЙ</h3>
+                                        <div class="hero__container-text">
+                                            <h2 class="hero__title">OPTI</h2>
+                                            <p class="hero__text">Комплексный подход в упаковке, автоматизации и продвижении вашего бизнеса.</p>
+                                        </div>
+                                        <a href="#" class="btn-reset hero__button hero__button-primary">Подробнее</a>
+                                    </div>
+                                    <img loading="lazy" src="./img/slide-image-1.svg" class="image hero__image hero__image-slide-1" width="486" height="402" alt="Изображние слайда" />
+                                    <div class="hero__container-navigation">
+                                        <button class="btn-reset hero__button-prev">
+                                            <img loading="lazy" src="./img/prev-arrow.svg" class="image hero__icon-arrow" width="14" height="25" alt="Стрелка назад" />
+                                        </button>
+                                        <button class="btn-reset hero__button-next">
+                                            <img loading="lazy" src="./img/prev-arrow.svg" class="image hero__icon-next" width="14" height="25" alt="Стрелка вперед" />
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide hero__slide hero__slide-second">
+                                    <div class="hero__container-side">
+                                        <h3 class="hero__subtitle">Разработка сайтов</h3>
+                                        <div class="hero__container-text">
+                                            <p class="hero__text hero__text-alone">Комплексная разработка сайтов под ключ, а так же работа с действующими сайтами</p>
+                                        </div>
+                                        <a href="#" class="btn-reset hero__button hero__button-secondary">Подробнее</a>
+                                    </div>
+                                    <img loading="lazy" src="./img/slide-image-2.svg" class="image hero__image hero__image-slide-2" width="396" height="400" alt="Изображние слайда" />
+                                    <div class="hero__container-navigation">
+                                        <button class="btn-reset hero__button-prev">
+                                            <img loading="lazy" src="./img/prev-arrow.svg" class="image hero__icon-arrow" width="14" height="25" alt="Стрелка назад" />
+                                        </button>
+                                        <button class="btn-reset hero__button-next">
+                                            <img loading="lazy" src="./img/prev-arrow.svg" class="image hero__icon-next" width="14" height="25" alt="Стрелка вперед" />
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide hero__slide hero__slide-third">
+                                    <div class="hero__container-side">
+                                        <h3 class="hero__subtitle">Внедрение Битрикс24</h3>
+                                        <div class="hero__container-text">
+                                            <p class="hero__text hero__text-alone">Стройте работу в команде, управляйте продажами и компанией с помощью одной из самых популярных CRM-систем. Помогаем выбрать версию, настроить интеграцию с внешними сервисамии автоматизировать бизнес-процессы.</p>
+                                        </div>
+                                        <a href="#" class="btn-reset hero__button hero__button-thirdly">Подробнее</a>
+                                    </div>
+                                    <img loading="lazy" src="./img/slide-image-3.svg" class="image hero__image hero__image-slide-3" width="406" height="400" alt="Изображние слайда" />
+                                    <div class="hero__container-navigation">
+                                        <button class="btn-reset hero__button-prev">
+                                            <img loading="lazy" src="./img/prev-arrow.svg" class="image hero__icon-arrow" width="14" height="25" alt="Стрелка назад" />
+                                        </button>
+                                        <button class="btn-reset hero__button-next">
+                                            <img loading="lazy" src="./img/prev-arrow.svg" class="image hero__icon-next" width="14" height="25" alt="Стрелка вперед" />
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide hero__slide hero__slide-fourth">
+                                    <div class="hero__container-side">
+                                        <h3 class="hero__subtitle">Техническая поддержка</h3>
+                                        <div class="hero__container-text">
+                                            <p class="hero__text hero__text-alone">Решаем технические вопросы и консультируем по инструментам и работе платформ, сайтов и CRM систем</p>
+                                        </div>
+                                        <a href="#" class="btn-reset hero__button hero__button-fourthly">Подробнее</a>
+                                    </div>
+                                    <img loading="lazy" src="./img/slide-image-4.svg" class="image hero__image hero__image-slide-4" width="432" height="400" alt="Изображние слайда" />
+                                    <div class="hero__container-navigation">
+                                        <button class="btn-reset hero__button-prev">
+                                            <img loading="lazy" src="./img/prev-arrow.svg" class="image hero__icon-arrow" width="14" height="25" alt="Стрелка назад" />
+                                        </button>
+                                        <button class="btn-reset hero__button-next">
+                                            <img loading="lazy" src="./img/prev-arrow.svg" class="image hero__icon-next" width="14" height="25" alt="Стрелка вперед" />
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="service">
+                    <div class="container service__container">
+                        <ul class="service__list list-reset">
+                            <li class="service__item service__item-main">
+                                <h4 class="service__title service__title-main">Создаем интернет-магазины</h4>
+                                <div class="service__container-text-icon">
+                                    <a href="#" class="service__text service__text-main">Узнать подробнее</a>
+                                    <img src="./img/main-item-icon.svg" class="image service__icon-main" width="160" height="95" alt="Девушка с монитором" />
+                                </div>
+                            </li>
+                            <li class="service__container-double">
+                                <div class="service__item service__item-double">
+                                    <h4 class="service__title service__title-audit">Проводим аудит сайтов</h4>
+                                    <img src="./img/double-item-icon-1.svg" class="image service__icon-audit" width="62" height="40" alt="Иконка аудит" />
+                                </div>
+                                <div class="service__item service__item-double">
+                                    <h4 class="service__title">
+                                        Работаем <br />
+                                        с SEO
+                                    </h4>
+                                    <img src="./img/double-item-icon-2.svg" class="image service__icon-seo" width="70" height="60" alt="Иконка SEO" />
+                                </div>
+                            </li>
+                            <li class="service__container-triple">
+                                <div class="service__item service__item-triple">
+                                    <h4 class="service__title">Обучение</h4>
+                                    <img src="./img/triple-item-icon-1.svg" class="image service__icon-learning" width="56" height="34" alt="Иконка обучение" />
+                                </div>
+                                <div class="service__item service__item-triple">
+                                    <h4 class="service__title service__title-CRM">Проводим аудит CRM</h4>
+                                    <img src="./img/triple-item-icon-2.svg" class="image service__icon-CRM" width="85" height="80" alt="Иконка CRM" />
+                                </div>
+                            </li>
+                            <li class="service__container-triple-reverse">
+                                <div class="service__item service__item-triple-reverse service__item-triple-reverse-first">
+                                    <div class="service__container-text">
+                                        <h4 class="service__title service__title-reverse">Маркетинг продаж</h4>
+                                        <a href="#" class="service__text service__text-main">Узнать подробнее</a>
+                                    </div>
+                                    <img src="./img/triple-reverse-item-icon-1.svg" class="image service__icon-marketing" width="245" height="85" alt="Иконка маркетинга" />
+                                </div>
+                                <div class="service__item service__item-triple-reverse service__item-triple-reverse-smaller">
+                                    <h4 class="service__title service__title-ip">Настраиваем IP телефонию</h4>
+                                    <img src="./img/triple-reverse-item-icon-2.svg" class="image service__icon-recording" width="72" height="25" alt="Иконка записи" />
+                                </div>
+                                <a href="#" class="btn-reset service__button">Все услуги</a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="menu">
+                    <div class="menu__container">
+                        <nav class="nav menu__nav" title="Навигационная панель">
+                            <ul class="nav__list menu__list list-reset">
+                                <li class="nav__item menu__item"><a href="#" class="menu__link nav__link">Компания</a></li>
+                                <li class="nav__item menu__item"><a href="#" class="menu__link nav__link">Лицензии</a></li>
+                                <li class="nav__item menu__item"><a href="#" class="menu__link nav__link">Наши проекты</a></li>
+                                <li class="nav__item menu__item"><a href="#" class="menu__link nav__link">Контакты</a></li>
+                            </ul>
+                        </nav>
+                        <div class="menu__social header__social">
+                            <div class="header__container-tel">
+                                <a href="tel:88002016216" class="header__link menu__link">
+                                    <img src="./img/phone.svg" class="image header__icon-tel" width="15" height="15" alt="Иконка телефона" />
+                                    8 800 2016 216
+                                </a>
+                            </div>
+                            <button class="btn-reset header__button-text">Заказать звонок</button>
+                            <div class="menu__container-btns">
+                                <a href="#" class="btn-reset header__button-icon header__button-icon-tg">
+                                    <img src="./img/tg.svg" class="image header__icon-tg" width="26" height="21" alt="Иконка telegramm" />
+                                </a>
+                                <a href="#" class="btn-reset header__button-icon header__button-icon-whatsapp">
+                                    <img src="./img/whatsapp.svg" class="image header__icon-whatsapp" width="21" height="22" alt="Иконка whatsapp" />
+                                </a>
+                                <a href="#" class="btn-reset header__button-icon header__button-icon-user">
+                                    <img src="./img/user.svg" class="image header__icon-user" width="25" height="25" alt="Иконка пользователя" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>
