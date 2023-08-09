@@ -18,6 +18,17 @@
 	--item-bg-color: #e9faff;
 	--service-title-color: #142647;
 }
+.custom-checkbox__field:checked + .custom-checkbox__content::after {
+	opacity: 1;
+}
+.custom-checkbox__field:focus + .custom-checkbox__content::before {
+	outline: red solid 2px;
+	outline-offset: 2px;
+}
+.custom-checkbox__field:disabled + .custom-checkbox__content {
+	opacity: 0.4;
+	pointer-events: none;
+}
 @font-face {
 	font-family: "Golos Text";
 	src: url(../fonts/Golos-Text-Regular.woff2) format("woff2");

@@ -10595,6 +10595,7 @@
 			speed: 700,
 			spaceBetween: 30,
 			grabCursor: true,
+			loop: true,
 			navigation: {
 				prevEl: ".hero__button-prev",
 				nextEl: ".hero__button-next",
