@@ -9,7 +9,8 @@
   --light-blue-color: #0bbbef;
   --second-light-blue-color: #126797;
   --dark-blue-color: #142647;
-  --grey-color: #cae0ee
+  --grey-color: #cae0ee;
+  --bonus-sect-bg: #A4D9EE;
 }
 .custom-checkbox__field:checked + .custom-checkbox__content::after {
   opacity: 1
@@ -48,7 +49,7 @@
   src: url(../fonts/Golos-Text_Bold.woff2) format("woff2");
   font-weight: 700;
   font-display: swap;
-  font-style: bold
+  font-style: bold;
 }
 html {
   -webkit-box-sizing: border-box;
@@ -1022,7 +1023,7 @@ html {
     }
   }
 }
-@media (max-width:540px) {
+@media (max-width:665px) {
   .cashback {
     padding-top: 24px;
     padding-bottom: 59px
@@ -1444,6 +1445,20 @@ html {
   .footer__container {
     padding-left: 28px;
     padding-right: 28px
+  }
+}
+@media (max-width: 728px) and (min-width: 665px){
+  .cashback__button {
+    font-size: 15px;
+    line-height: 16px;
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 810px) and (min-width: 768px){
+  .info__button {
+    font-size: 16px;
+    line-height: 18px;
   }
 }
 .vidget {
