@@ -371,14 +371,17 @@ html {
 }
 .info {
   min-height: 600px;
-  background: var(--grey-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background: url(../img/bg-ellipse.png) right/50% 100% no-repeat
+  background: var(--grey-color);
+  background: url(../img/bg-ellipse.png) right/50% 100% no-repeat;
+}
+.info-wrapper{
+  background: var(--grey-color);
 }
 .info__container {
   width: 100%;
@@ -388,7 +391,7 @@ html {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  gap: 30px
+  gap: 30px;
 }
 .info__title {
   margin-bottom: 100px;
