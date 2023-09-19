@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="theme-color" content="#111111" />
+		<title>Salary-page</title>
+		<!-- <link rel="preload" href="fonts/MontserratAlternates-Bold.woff2" as="font" type="font/woff2" crossorigin /> -->
+		<link rel="stylesheet" href="css/vendor.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<script defer src="js/main.js"></script>
+	</head>
+
+	<body class="page__body">
+		<div class="site-container">
+			<header class="header">
+				<div class="container header__container"></div>
+			</header>
+
+			<main class="main">
+				<section class="hero">
+					<div class="container hero__container">
+						<div class="hero__table">
+							<div class="hero__header">
+								<div class="hero__row">
+									<div class="hero__cell hero__cell-header hero__col-employee">Сотрудник</div>
+									<div class="hero__cell hero__cell-header hero__col-salary">Оклад</div>
+									<div class="hero__cell hero__cell-header hero__col-salary-official">
+										<div class="hero__container-cell-inner">
+											Оклад <span class="hero__text-upper">оф.</span>
+										</div>
+									</div>
+									<div class="hero__cell hero__cell-header hero__col-stopped">Удержано</div>
+									<div class="hero__cell hero__cell-header hero__col-prepaid">Аванс</div>
+									<div class="hero__cell hero__cell-header hero__col-toBePaid">К выплате</div>
+									<div class="hero__cell hero__cell-header hero__col-bonus">Премия</div>
+									<div class="hero__cell hero__cell-header hero__col-summ">Сумма</div>
+									<div class="hero__cell hero__cell-header hero__col-medical">
+										<img
+											src="./img/ill.svg"
+											class="image hero__icon-ill"
+											width="30"
+											height="30"
+											alt="Иконка больного"
+										/>
+									</div>
+									<div class="hero__cell hero__cell-header hero__col-vacation">
+										<img
+											src="./img/palm.svg"
+											class="image hero__icon-palm"
+											width="30"
+											height="35"
+											alt="Иконка пальмы"
+										/>
+									</div>
+									<div class="hero__cell hero__cell-header hero__cell-header-date hero__col-date">
+										<button class="btn-reset hero__button-arrow hero__button-prev-header">
+											<img
+												src="./img/button.svg"
+												class="image hero__icon-arrow hero__icon-arrow-reverse"
+												width="25"
+												height="25"
+												alt="Стрелка влево"
+											/>
+										</button>
+										<span class="hero__text-date">сентябрь 2023</span>
+										<button class="btn-reset hero__button-arrow hero__button-next-header">
+											<img
+												src="./img/button.svg"
+												class="image hero__icon-arrow"
+												width="25"
+												height="25"
+												alt="Стрелка вправо"
+											/>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="swiper hero__slider">
+								<div class="swiper-wrapper hero__wrapper"></div>
+							</div>
+							<div class="hero__footer">
+								<button class="btn-reset hero__button-reestr">Сформировать реестр</button>
+								<div class="hero__text-pages hero__text-footer">
+									<span class="hero__text-page">
+										Страницы:
+										<span class="hero__text-page hero__text-page-1 hero__text-page-hidden">1</span>
+									</span>
+									<button class="btn-reset hero__button-control hero__button-prev">Пред</button>
+									<div class="hero__container-slider-bullets swiper">
+										<div class="swiper-wrapper hero__pagination"></div>
+									</div>
+									<button class="btn-reset hero__button-control hero__button-next">След.</button>
+									<button class="btn-reset hero__button-control hero__button-last">Последняя</button>
+								</div>
+								<p class="hero__text-onpage hero__text-footer">
+									На странице:
+									<select class="hero__select select"></select>
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="loader">
+					<span class="loader__spinner"></span>
+					<h3 class="loader__title">Данные загружаются...</h3>
+					<button class="btn-reset loader__button loader__button-hidden">Закрыть</button>
+				</section>
+			</main>
+		</div>
+	</body>
+</html>
