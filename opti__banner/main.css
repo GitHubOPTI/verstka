@@ -1,0 +1,109 @@
+.banner_accreditation__content{
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    width: 100%;
+}
+.firstBlock{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background: linear-gradient(180deg, #D0FEF4 0%, #B4DFFE 100%);
+}
+.firstBlock__header{
+    display: flex;
+    justify-content: center;
+    padding: 22px 20px;
+    margin-bottom: 22px;
+}
+.header__desc{
+    color: #142647;
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    max-width: 96px;  
+    width: 100%;
+    margin-left: 15px;
+}
+.firstBlock__info{
+    color: #66727F;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 182px;
+    margin-bottom: 27px;
+    padding-left: 10px;
+}
+.element{
+    width: 200px;
+    height: 105px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px; 
+}
+.element--green{
+    background-color: #62CD81;
+}
+.element--purple{
+    background-color: #7F91CF;
+}
+.element__header{
+    padding: 10px 0;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.element__header--green{
+    background: #52AD6C;
+    border-radius: 10px 10px 0 0;
+}
+.element__header--purple{
+    background: #5E77D0;
+    border-radius: 10px 10px 0 0;
+    padding: 10px 19px;
+}
+.secondBlock{
+    margin-bottom: 46px;
+}
+.secondBlock__numbers{
+    margin-top: 15px;
+}
+.mainNumber{
+    color: #FFF;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.secondBlock__numbers .mainNumber__date{
+    color: #FFF;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+}
+.thirdBlock__numbers .mainNumber__date{
+    color: #B4C5E4;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+}
