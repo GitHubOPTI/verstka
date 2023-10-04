@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="theme-color" content="#111111" />
+		<title>Opti-dashboard</title>
+		<link rel="stylesheet" href="css/vendor.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<script defer src="js/main.js"></script>
+	</head>
+
+	<body class="page__body">
+		<div class="site-container">
+			<main class="main">
+				<section class="plan">
+					<div class="container plan__container">
+						<div class="plan__content">
+							<div class="plan__row plan__row-first">
+								<h3 class="title plan__title-h3">План продаж</h3>
+							</div>
+							<div class="plan__row plan__row-second">
+								<h4 class="title plan__title-h4">
+									Общая цель <span class="plan__text-dash">&ndash;</span>
+									<span class="plan__text-value"></span><span class="plan__text-currency">руб.</span>
+								</h4>
+								<div class="plan__column">
+									<h4 class="title plan__title-h4">
+										План на период <span class="plan__text-dash">&ndash;</span>
+									</h4>
+									<span class="plan__text-period"
+										>III квартал <span class="plan__text-period-year"></span
+									></span>
+								</div>
+							</div>
+							<div class="plan__graphs"></div>
+						</div>
+					</div>
+				</section>
+				<section class="board">
+					<div class="container board__container">
+						<div class="board__grid">
+							<div class="board__item board__item-6 board__item-mainDealsData"></div>
+							<div class="board__item board__item-6 board__item-6-column">
+								<div class="board__item board__item-6"></div>
+								<div class="board__item board__item-6"></div>
+								<div class="board__item board__item-6"></div>
+							</div>
+							<div class="board__item board__item-6 board__item-6-single">
+								<div class="board__item-inner board__item-inner-yellow board__item-inner-12">
+									<div class="board__item-inner-header">
+										<h3 class="title board__title-header">
+											Количество компаний полученных из лидов
+										</h3>
+									</div>
+									<div class="board__item-inner-body">
+										<h2 class="title board__title-body board__title-companiesFromLeads"></h2>
+									</div>
+								</div>
+							</div>
+							<div class="board__item board__item-6 board__item-6-gapped board__item-6-4"></div>
+							<div class="board__item board__item-4 board__item-4-gapped"></div>
+							<div class="board__item-chart">
+								<canvas width="884" height="396" class="board__chart" id="lineChart"></canvas>
+							</div>
+							<div class="board__item-devs">
+								<h4 class="title board__title-devs">Команда разработки</h4>
+								<h4 class="title board__title-devs board__title-devs-month">Октябрь</h4>
+								<div class="board__table">
+									<div class="board__row board__row-header">
+										<div class="board__cell board__cell-header board__cell-name"></div>
+										<div class="board__cell board__cell-header board__cell-tasks">Задачи</div>
+										<div class="board__cell board__cell-header board__cell-expired">Просрочено</div>
+										<div class="board__cell board__cell-header board__cell-hours">
+											Часы разработки
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+		</div>
+	</body>
+</html>
