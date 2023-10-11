@@ -183,6 +183,24 @@
 			/***/
 		},
 
+		/***/ 5302: /***/ () => {
+			const resultRows = document.querySelectorAll(".res__row");
+			if (resultRows.length > 0) {
+				let activeRow = document.querySelector(".res__row-self");
+				resultRows.forEach((row) => {
+					row.addEventListener("click", () => {
+						if (activeRow !== null) {
+							activeRow.classList.remove("res__row-self");
+						}
+						row.classList.add("res__row-self");
+						activeRow = row;
+					});
+				});
+			}
+
+			/***/
+		},
+
 		/***/ 1278: /***/ () => {
 			const filterBtns = document.querySelectorAll(".team__filter");
 			filterBtns.forEach((button) => {
@@ -23397,7 +23415,9 @@
 
 		window.ResizeObserver = ResizeObserver_es;
 		// EXTERNAL MODULE: ./src/js/components/team-filter.js
-		var team_filter = __webpack_require__(1278); // CONCATENATED MODULE: ./node_modules/vanillajs-datepicker/js/lib/utils.js
+		var team_filter = __webpack_require__(1278);
+		// EXTERNAL MODULE: ./src/js/components/results-row.js
+		var results_row = __webpack_require__(5302); // CONCATENATED MODULE: ./node_modules/vanillajs-datepicker/js/lib/utils.js
 		function lastItemOf(arr) {
 			return arr[arr.length - 1];
 		}
