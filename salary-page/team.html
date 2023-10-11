@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="theme-color" content="#111111" />
+		<title>Salary-page</title>
+		<!-- <link rel="preload" href="fonts/MontserratAlternates-Bold.woff2" as="font" type="font/woff2" crossorigin /> -->
+		<link rel="stylesheet" href="css/vendor.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<script defer src="js/main.js"></script>
+	</head>
+
+	<body class="page__body">
+		<div class="site-container">
+			<header class="header">
+				<div class="container header__container"></div>
+			</header>
+
+			<main class="main">
+				<section class="stats stats-team">
+					<div class="container stats__container">
+						<ul class="list-reset stats__list">
+							<li class="stats__item stats__item-darkestblue">
+								<div class="stats__header">
+									<h4 class="stats__heading stats__subtitle stats__subtitle-header">
+										Часы разработки
+									</h4>
+									<div class="stats__container-icon">
+										<img
+											src="./img/gear.svg"
+											class="image"
+											width="30"
+											height="30"
+											alt="Иконка пользователя"
+										/>
+									</div>
+								</div>
+								<div class="stats__body">
+									<h3 class="stats__heading stats__title">
+										<span class="stats__value">450</span>
+									</h3>
+								</div>
+								<a href="#" class="stats__footer">
+									<h5 class="stats__heading stats__subtitle stats__subtitle-footer">Текущий месяц</h5>
+									<img
+										src="./img/right-arrow.svg"
+										class="image stats__icon-arrow"
+										width="10"
+										height="15"
+										alt="Иконка стрелки"
+									/>
+								</a>
+							</li>
+							<li class="stats__item stats__item-pink">
+								<div class="stats__header">
+									<h4 class="stats__heading stats__subtitle stats__subtitle-header">Незавершенные</h4>
+									<div class="stats__container-icon">
+										<img
+											src="./img/gear.svg"
+											class="image"
+											width="30"
+											height="30"
+											alt="Иконка пользователя"
+										/>
+									</div>
+								</div>
+								<div class="stats__body">
+									<h3 class="stats__heading stats__title">
+										<span class="stats__value">39.17</span>
+									</h3>
+								</div>
+								<a href="#" class="stats__footer">
+									<h5 class="stats__heading stats__subtitle stats__subtitle-footer">
+										Просроченные задачи
+									</h5>
+									<img
+										src="./img/right-arrow.svg"
+										class="image stats__icon-arrow"
+										width="10"
+										height="15"
+										alt="Иконка стрелки"
+									/>
+								</a>
+							</li>
+							<li class="stats__item stats__item-orange">
+								<div class="stats__header">
+									<h4 class="stats__heading stats__subtitle stats__subtitle-header">Переговоры</h4>
+									<div class="stats__container-icon">
+										<img
+											src="./img/gear.svg"
+											class="image"
+											width="30"
+											height="30"
+											alt="Иконка группы людей"
+										/>
+									</div>
+								</div>
+								<div class="stats__body">
+									<h3 class="stats__heading stats__title">
+										<span class="stats__value">0 ч.</span> <span class="stats__value"> 0 м.</span>
+									</h3>
+								</div>
+								<a href="#" class="stats__footer">
+									<h5 class="stats__heading stats__subtitle stats__subtitle-footer">Текущий месяц</h5>
+									<img
+										src="./img/right-arrow.svg"
+										class="image stats__icon-arrow"
+										width="10"
+										height="15"
+										alt="Иконка стрелки"
+									/>
+								</a>
+							</li>
+							<li class="stats__item stats__item-green">
+								<div class="stats__header">
+									<h4 class="stats__heading stats__subtitle stats__subtitle-header">
+										Выполненные задачи
+									</h4>
+									<div class="stats__container-icon">
+										<img
+											src="./img/gear.svg"
+											class="image"
+											width="30"
+											height="30"
+											alt="Иконка шестеренки"
+										/>
+									</div>
+								</div>
+								<div class="stats__body">
+									<h3 class="stats__heading stats__title">
+										<span class="stats__value">11</span>
+									</h3>
+								</div>
+								<a href="#" class="stats__footer">
+									<h5 class="stats__heading stats__subtitle stats__subtitle-footer">Текущий месяц</h5>
+									<img
+										src="./img/right-arrow.svg"
+										class="image stats__icon-arrow"
+										width="10"
+										height="15"
+										alt="Иконка стрелки"
+									/>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="team">
+					<div class="container team__container">
+						<ul class="list-reset team__list">
+							<li class="team__item team__item-blue">
+								<div class="team__container-scroll" data-simplebar data-simplebar-auto-hide="false">
+									<h3 class="title team__title">
+										<svg
+											class="team__filter"
+											width="35"
+											height="27"
+											viewBox="0 0 35 27"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<rect width="35" height="27" rx="5" fill="#ECF1F4" />
+											<rect width="35" height="27" rx="5" fill="#ECF1F4" />
+											<path
+												d="M9.99963 15.1136C10.5088 15.1136 10.928 15.4875 10.9852 15.9697L10.9919 16.0828L11.2642 20.7648C11.2642 21.4474 10.6985 22 9.99963 22C9.34447 22 8.80517 21.5143 8.74031 20.8912L8.73377 20.7648L9.00734 16.0828C9.00734 15.5472 9.45126 15.1136 9.99963 15.1136ZM10.0062 5C10.3208 5 10.6367 5.09473 10.8928 5.2842C11.0032 5.36087 11.1558 5.49968 11.2547 5.59302L11.3541 5.68864C12.4596 6.68577 14.1246 9.16583 14.6593 10.4241C14.6695 10.4241 14.9368 11.0527 14.9909 11.4316L15 11.5281V11.5755C15 12.1208 14.6829 12.6309 14.1731 12.892C13.8933 13.0353 13.0801 13.1653 13.0676 13.1774C12.339 13.2843 11.2211 13.3547 9.99378 13.3547C8.70555 13.3547 7.53917 13.2843 6.82169 13.1531C6.80925 13.1531 6.15394 13.0232 5.93509 12.9394C5.61925 12.8094 5.3519 12.5714 5.18155 12.275C5.05969 12.0382 5 11.788 5 11.5281C5.01119 11.2548 5.19398 10.7447 5.27854 10.5431C5.81323 9.2132 7.5628 6.67362 8.63218 5.70078C8.80254 5.53439 9.00895 5.35586 9.05745 5.30849C9.32479 5.10688 9.65307 5 10.0062 5Z"
+												fill="#4F687C"
+												class="team__arrow team__arrow-top"
+											/>
+											<path
+												d="M25.0062 13.6451C26.2945 13.6451 27.4608 13.7155 28.1783 13.8467C28.1895 13.8467 28.8461 13.9767 29.0649 14.0605C29.3808 14.1916 29.6481 14.4285 29.8185 14.7248C29.9403 14.9617 30 15.2119 30 15.473C29.9888 15.745 29.806 16.2564 29.7202 16.458C29.1868 17.7867 27.436 20.3263 26.3678 21.3004C26.1975 21.4656 25.991 21.6441 25.9426 21.6915C25.674 21.8931 25.3469 22 24.995 22C24.6779 22 24.3621 21.9053 24.1072 21.7146C23.9748 21.6235 23.7815 21.4422 23.6931 21.3573L23.6459 21.3113C22.5392 20.3154 20.8754 17.8341 20.3407 16.5758C20.3293 16.5758 20.063 15.9482 20.0091 15.5694L20 15.473V15.4256C20 14.8791 20.3158 14.369 20.8269 14.1078C21.1067 13.9657 21.9199 13.8345 21.9324 13.8224C22.661 13.7155 23.7789 13.6451 25.0062 13.6451ZM25.0006 5C25.6558 5 26.194 5.4857 26.2587 6.10884L26.2652 6.2352L25.9929 10.9173C25.9929 11.4529 25.549 11.8865 25.0006 11.8865C24.4914 11.8865 24.0723 11.5127 24.015 11.0304L24.0083 10.9173L23.7348 6.2352C23.7348 5.55262 24.3018 5 25.0006 5Z"
+												fill="black"
+												class="team__arrow team__arrow-bottom"
+											/>
+										</svg>
+										Самостоятельность
+									</h3>
+									<ul class="list-reset team__rows">
+										<li class="team__row">
+											<img
+												src="./img/avatar.png"
+												class="image team__avatar"
+												width="45"
+												height="45"
+												alt="Аватар"
+											/>
+											<div class="team__container-row">
+												<h4 class="title team__name">Саночкин Олег / вн 249</h4>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="206"
+													height="5"
+													viewBox="0 0 206 5"
+													fill="none"
+												>
+													<rect width="206" height="5" rx="2" fill="#D9D9D9" />
+													<rect width="186.224" height="5" rx="2" fill="#2B3EE7" />
+												</svg>
+											</div>
+											<h2 class="title team__persent">80 %</h2>
+										</li>
+										<li class="team__row">
+											<img
+												src="./img/avatar.png"
+												class="image team__avatar"
+												width="45"
+												height="45"
+												alt="Аватар"
+											/>
+											<div class="team__container-row">
+												<h4 class="title team__name">Саночкин Олег / вн 249</h4>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="206"
+													height="5"
+													viewBox="0 0 206 5"
+													fill="none"
+												>
+													<rect width="206" height="5" rx="2" fill="#D9D9D9" />
+													<rect width="186.224" height="5" rx="2" fill="#2B3EE7" />
+												</svg>
+											</div>
+											<h2 class="title team__persent">80 %</h2>
+										</li>
+										<li class="team__row">
+											<img
+												src="./img/avatar.png"
+												class="image team__avatar"
+												width="45"
+												height="45"
+												alt="Аватар"
+											/>
+											<div class="team__container-row">
+												<h4 class="title team__name">Саночкин Олег / вн 249</h4>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="206"
+													height="5"
+													viewBox="0 0 206 5"
+													fill="none"
+												>
+													<rect width="206" height="5" rx="2" fill="#D9D9D9" />
+													<rect width="186.224" height="5" rx="2" fill="#2B3EE7" />
+												</svg>
+											</div>
+											<h2 class="title team__persent">80 %</h2>
+										</li>
+										<li class="team__row">
+											<img
+												src="./img/avatar.png"
+												class="image team__avatar"
+												width="45"
+												height="45"
+												alt="Аватар"
+											/>
+											<div class="team__container-row">
+												<h4 class="title team__name">Саночкин Олег / вн 249</h4>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="206"
+													height="5"
+													viewBox="0 0 206 5"
+													fill="none"
+												>
+													<rect width="206" height="5" rx="2" fill="#D9D9D9" />
+													<rect width="186.224" height="5" rx="2" fill="#2B3EE7" />
+												</svg>
+											</div>
+											<h2 class="title team__persent">80 %</h2>
+										</li>
+										<li class="team__row">
+											<img
+												src="./img/avatar.png"
+												class="image team__avatar"
+												width="45"
+												height="45"
+												alt="Аватар"
+											/>
+											<div class="team__container-row">
+												<h4 class="title team__name">Саночкин Олег / вн 249</h4>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="206"
+													height="5"
+													viewBox="0 0 206 5"
+													fill="none"
+												>
+													<rect width="206" height="5" rx="2" fill="#D9D9D9" />
+													<rect width="186.224" height="5" rx="2" fill="#2B3EE7" />
+												</svg>
+											</div>
+											<h2 class="title team__persent">80 %</h2>
+										</li>
+										<li class="team__row">
+											<img
+												src="./img/avatar.png"
+												class="image team__avatar"
+												width="45"
+												height="45"
+												alt="Аватар"
+											/>
+											<div class="team__container-row">
+												<h4 class="title team__name">Саночкин Олег / вн 249</h4>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="206"
+													height="5"
+													viewBox="0 0 206 5"
+													fill="none"
+												>
+													<rect width="206" height="5" rx="2" fill="#D9D9D9" />
+													<rect width="186.224" height="5" rx="2" fill="#2B3EE7" />
+												</svg>
+											</div>
+											<h2 class="title team__persent">80 %</h2>
+										</li>
+										<li class="team__row">
+											<img
+												src="./img/avatar.png"
+												class="image team__avatar"
+												width="45"
+												height="45"
+												alt="Аватар"
+											/>
+											<div class="team__container-row">
+												<h4 class="title team__name">Саночкин Олег / вн 249</h4>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="206"
+													height="5"
+													viewBox="0 0 206 5"
+													fill="none"
+												>
+													<rect width="206" height="5" rx="2" fill="#D9D9D9" />
+													<rect width="186.224" height="5" rx="2" fill="#2B3EE7" />
+												</svg>
+											</div>
+											<h2 class="title team__persent">80 %</h2>
+										</li>
+										<li class="team__row">
+											<img
+												src="./img/avatar.png"
+												class="image team__avatar"
+												width="45"
+												height="45"
+												alt="Аватар"
+											/>
+											<div class="team__container-row">
+												<h4 class="title team__name">Саночкин Олег / вн 249</h4>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="206"
+													height="5"
+													viewBox="0 0 206 5"
+													fill="none"
+												>
+													<rect width="206" height="5" rx="2" fill="#D9D9D9" />
+													<rect width="186.224" height="5" rx="2" fill="#2B3EE7" />
+												</svg>
+											</div>
+											<h2 class="title team__persent">80 %</h2>
+										</li>
+										<li class="team__row">
+											<img
+												src="./img/avatar.png"
+												class="image team__avatar"
+												width="45"
+												height="45"
+												alt="Аватар"
+											/>
+											<div class="team__container-row">
+												<h4 class="title team__name">Саночкин Олег / вн 249</h4>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="206"
+													height="5"
+													viewBox="0 0 206 5"
+													fill="none"
+												>
+													<rect width="206" height="5" rx="2" fill="#D9D9D9" />
+													<rect width="186.224" height="5" rx="2" fill="#2B3EE7" />
+												</svg>
+											</div>
+											<h2 class="title team__persent">80 %</h2>
+										</li>
+										<li class="team__row">
+											<img
+												src="./img/avatar.png"
+												class="image team__avatar"
+												width="45"
+												height="45"
+												alt="Аватар"
+											/>
+											<div class="team__container-row">
+												<h4 class="title team__name">Саночкин Олег / вн 249</h4>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="206"
+													height="5"
+													viewBox="0 0 206 5"
+													fill="none"
+												>
+													<rect width="206" height="5" rx="2" fill="#D9D9D9" />
+													<rect width="186.224" height="5" rx="2" fill="#2B3EE7" />
+												</svg>
+											</div>
+											<h2 class="title team__persent">80 %</h2>
+										</li>
+										<li class="team__row">
+											<img
+												src="./img/avatar.png"
+												class="image team__avatar"
+												width="45"
+												height="45"
+												alt="Аватар"
+											/>
+											<div class="team__container-row">
+												<h4 class="title team__name">Саночкин Олег / вн 249</h4>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="206"
+													height="5"
+													viewBox="0 0 206 5"
+													fill="none"
+												>
+													<rect width="206" height="5" rx="2" fill="#D9D9D9" />
+													<rect width="186.224" height="5" rx="2" fill="#2B3EE7" />
+												</svg>
+											</div>
+											<h2 class="title team__persent">80 %</h2>
+										</li>
+										<li class="team__row">
+											<img
+												src="./img/avatar.png"
+												class="image team__avatar"
+												width="45"
+												height="45"
+												alt="Аватар"
+											/>
+											<div class="team__container-row">
+												<h4 class="title team__name">Саночкин Олег / вн 249</h4>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="206"
+													height="5"
+													viewBox="0 0 206 5"
+													fill="none"
+												>
+													<rect width="206" height="5" rx="2" fill="#D9D9D9" />
+													<rect width="186.224" height="5" rx="2" fill="#2B3EE7" />
+												</svg>
+											</div>
+											<h2 class="title team__persent">80 %</h2>
+										</li>
+										<li class="team__row">
+											<img
+												src="./img/avatar.png"
+												class="image team__avatar"
+												width="45"
+												height="45"
+												alt="Аватар"
+											/>
+											<div class="team__container-row">
+												<h4 class="title team__name">Саночкин Олег / вн 249</h4>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="206"
+													height="5"
+													viewBox="0 0 206 5"
+													fill="none"
+												>
+													<rect width="206" height="5" rx="2" fill="#D9D9D9" />
+													<rect width="186.224" height="5" rx="2" fill="#2B3EE7" />
+												</svg>
+											</div>
+											<h2 class="title team__persent">80 %</h2>
+										</li>
+										<li class="team__row">
+											<img
+												src="./img/avatar.png"
+												class="image team__avatar"
+												width="45"
+												height="45"
+												alt="Аватар"
+											/>
+											<div class="team__container-row">
+												<h4 class="title team__name">Саночкин Олег / вн 249</h4>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="206"
+													height="5"
+													viewBox="0 0 206 5"
+													fill="none"
+												>
+													<rect width="206" height="5" rx="2" fill="#D9D9D9" />
+													<rect width="186.224" height="5" rx="2" fill="#2B3EE7" />
+												</svg>
+											</div>
+											<h2 class="title team__persent">80 %</h2>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="team__item team__item-purple">
+								<div class="team__container-scroll" data-simplebar data-simplebar-auto-hide="false">
+									<h3 class="title team__title">
+										<svg
+											class="team__filter"
+											width="35"
+											height="27"
+											viewBox="0 0 35 27"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<rect width="35" height="27" rx="5" fill="#ECF1F4" />
+											<rect width="35" height="27" rx="5" fill="#ECF1F4" />
+											<path
+												d="M9.99963 15.1136C10.5088 15.1136 10.928 15.4875 10.9852 15.9697L10.9919 16.0828L11.2642 20.7648C11.2642 21.4474 10.6985 22 9.99963 22C9.34447 22 8.80517 21.5143 8.74031 20.8912L8.73377 20.7648L9.00734 16.0828C9.00734 15.5472 9.45126 15.1136 9.99963 15.1136ZM10.0062 5C10.3208 5 10.6367 5.09473 10.8928 5.2842C11.0032 5.36087 11.1558 5.49968 11.2547 5.59302L11.3541 5.68864C12.4596 6.68577 14.1246 9.16583 14.6593 10.4241C14.6695 10.4241 14.9368 11.0527 14.9909 11.4316L15 11.5281V11.5755C15 12.1208 14.6829 12.6309 14.1731 12.892C13.8933 13.0353 13.0801 13.1653 13.0676 13.1774C12.339 13.2843 11.2211 13.3547 9.99378 13.3547C8.70555 13.3547 7.53917 13.2843 6.82169 13.1531C6.80925 13.1531 6.15394 13.0232 5.93509 12.9394C5.61925 12.8094 5.3519 12.5714 5.18155 12.275C5.05969 12.0382 5 11.788 5 11.5281C5.01119 11.2548 5.19398 10.7447 5.27854 10.5431C5.81323 9.2132 7.5628 6.67362 8.63218 5.70078C8.80254 5.53439 9.00895 5.35586 9.05745 5.30849C9.32479 5.10688 9.65307 5 10.0062 5Z"
+												fill="#4F687C"
+												class="team__arrow team__arrow-top"
+											/>
+											<path
+												d="M25.0062 13.6451C26.2945 13.6451 27.4608 13.7155 28.1783 13.8467C28.1895 13.8467 28.8461 13.9767 29.0649 14.0605C29.3808 14.1916 29.6481 14.4285 29.8185 14.7248C29.9403 14.9617 30 15.2119 30 15.473C29.9888 15.745 29.806 16.2564 29.7202 16.458C29.1868 17.7867 27.436 20.3263 26.3678 21.3004C26.1975 21.4656 25.991 21.6441 25.9426 21.6915C25.674 21.8931 25.3469 22 24.995 22C24.6779 22 24.3621 21.9053 24.1072 21.7146C23.9748 21.6235 23.7815 21.4422 23.6931 21.3573L23.6459 21.3113C22.5392 20.3154 20.8754 17.8341 20.3407 16.5758C20.3293 16.5758 20.063 15.9482 20.0091 15.5694L20 15.473V15.4256C20 14.8791 20.3158 14.369 20.8269 14.1078C21.1067 13.9657 21.9199 13.8345 21.9324 13.8224C22.661 13.7155 23.7789 13.6451 25.0062 13.6451ZM25.0006 5C25.6558 5 26.194 5.4857 26.2587 6.10884L26.2652 6.2352L25.9929 10.9173C25.9929 11.4529 25.549 11.8865 25.0006 11.8865C24.4914 11.8865 24.0723 11.5127 24.015 11.0304L24.0083 10.9173L23.7348 6.2352C23.7348 5.55262 24.3018 5 25.0006 5Z"
+												fill="black"
+												class="team__arrow team__arrow-bottom"
+											/>
+										</svg>
+										Полезность
+									</h3>
+									<ul class="list-reset team__rows">
+										<li class="team__row">
+											<img
+												src="./img/avatar.png"
+												class="image team__avatar"
+												width="45"
+												height="45"
+												alt="Аватар"
+											/>
+											<div class="team__container-row">
+												<h4 class="title team__name">Саночкин Олег / вн 249</h4>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="206"
+													height="5"
+													viewBox="0 0 206 5"
+													fill="none"
+												>
+													<rect width="206" height="5" rx="2" fill="#D9D9D9" />
+													<rect width="186.224" height="5" rx="2" fill="#982CB2" />
+												</svg>
+											</div>
+											<h2 class="title team__persent">80 %</h2>
+										</li>
+										<li class="team__row">
+											<img
+												src="./img/avatar.png"
+												class="image team__avatar"
+												width="45"
+												height="45"
+												alt="Аватар"
+											/>
+											<div class="team__container-row">
+												<h4 class="title team__name">Саночкин Олег / вн 249</h4>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="206"
+													height="5"
+													viewBox="0 0 206 5"
+													fill="none"
+												>
+													<rect width="206" height="5" rx="2" fill="#D9D9D9" />
+													<rect width="186.224" height="5" rx="2" fill="#982CB2" />
+												</svg>
+											</div>
+											<h2 class="title team__persent">80 %</h2>
+										</li>
+										<li class="team__row">
+											<img
+												src="./img/avatar.png"
+												class="image team__avatar"
+												width="45"
+												height="45"
+												alt="Аватар"
+											/>
+											<div class="team__container-row">
+												<h4 class="title team__name">Саночкин Олег / вн 249</h4>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="206"
+													height="5"
+													viewBox="0 0 206 5"
+													fill="none"
+												>
+													<rect width="206" height="5" rx="2" fill="#D9D9D9" />
+													<rect width="186.224" height="5" rx="2" fill="#982CB2" />
+												</svg>
+											</div>
+											<h2 class="title team__persent">80 %</h2>
+										</li>
+										<li class="team__row">
+											<img
+												src="./img/avatar.png"
+												class="image team__avatar"
+												width="45"
+												height="45"
+												alt="Аватар"
+											/>
+											<div class="team__container-row">
+												<h4 class="title team__name">Саночкин Олег / вн 249</h4>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="206"
+													height="5"
+													viewBox="0 0 206 5"
+													fill="none"
+												>
+													<rect width="206" height="5" rx="2" fill="#D9D9D9" />
+													<rect width="186.224" height="5" rx="2" fill="#982CB2" />
+												</svg>
+											</div>
+											<h2 class="title team__persent">80 %</h2>
+										</li>
+										<li class="team__row">
+											<img
+												src="./img/avatar.png"
+												class="image team__avatar"
+												width="45"
+												height="45"
+												alt="Аватар"
+											/>
+											<div class="team__container-row">
+												<h4 class="title team__name">Саночкин Олег / вн 249</h4>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="206"
+													height="5"
+													viewBox="0 0 206 5"
+													fill="none"
+												>
+													<rect width="206" height="5" rx="2" fill="#D9D9D9" />
+													<rect width="186.224" height="5" rx="2" fill="#982CB2" />
+												</svg>
+											</div>
+											<h2 class="title team__persent">80 %</h2>
+										</li>
+										<li class="team__row">
+											<img
+												src="./img/avatar.png"
+												class="image team__avatar"
+												width="45"
+												height="45"
+												alt="Аватар"
+											/>
+											<div class="team__container-row">
+												<h4 class="title team__name">Саночкин Олег / вн 249</h4>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="206"
+													height="5"
+													viewBox="0 0 206 5"
+													fill="none"
+												>
+													<rect width="206" height="5" rx="2" fill="#D9D9D9" />
+													<rect width="186.224" height="5" rx="2" fill="#982CB2" />
+												</svg>
+											</div>
+											<h2 class="title team__persent">80 %</h2>
+										</li>
+										<li class="team__row">
+											<img
+												src="./img/avatar.png"
+												class="image team__avatar"
+												width="45"
+												height="45"
+												alt="Аватар"
+											/>
+											<div class="team__container-row">
+												<h4 class="title team__name">Саночкин Олег / вн 249</h4>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="206"
+													height="5"
+													viewBox="0 0 206 5"
+													fill="none"
+												>
+													<rect width="206" height="5" rx="2" fill="#D9D9D9" />
+													<rect width="186.224" height="5" rx="2" fill="#982CB2" />
+												</svg>
+											</div>
+											<h2 class="title team__persent">80 %</h2>
+										</li>
+										<li class="team__row">
+											<img
+												src="./img/avatar.png"
+												class="image team__avatar"
+												width="45"
+												height="45"
+												alt="Аватар"
+											/>
+											<div class="team__container-row">
+												<h4 class="title team__name">Саночкин Олег / вн 249</h4>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="206"
+													height="5"
+													viewBox="0 0 206 5"
+													fill="none"
+												>
+													<rect width="206" height="5" rx="2" fill="#D9D9D9" />
+													<rect width="186.224" height="5" rx="2" fill="#982CB2" />
+												</svg>
+											</div>
+											<h2 class="title team__persent">80 %</h2>
+										</li>
+										<li class="team__row">
+											<img
+												src="./img/avatar.png"
+												class="image team__avatar"
+												width="45"
+												height="45"
+												alt="Аватар"
+											/>
+											<div class="team__container-row">
+												<h4 class="title team__name">Саночкин Олег / вн 249</h4>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="206"
+													height="5"
+													viewBox="0 0 206 5"
+													fill="none"
+												>
+													<rect width="206" height="5" rx="2" fill="#D9D9D9" />
+													<rect width="186.224" height="5" rx="2" fill="#982CB2" />
+												</svg>
+											</div>
+											<h2 class="title team__persent">80 %</h2>
+										</li>
+										<li class="team__row">
+											<img
+												src="./img/avatar.png"
+												class="image team__avatar"
+												width="45"
+												height="45"
+												alt="Аватар"
+											/>
+											<div class="team__container-row">
+												<h4 class="title team__name">Саночкин Олег / вн 249</h4>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="206"
+													height="5"
+													viewBox="0 0 206 5"
+													fill="none"
+												>
+													<rect width="206" height="5" rx="2" fill="#D9D9D9" />
+													<rect width="186.224" height="5" rx="2" fill="#982CB2" />
+												</svg>
+											</div>
+											<h2 class="title team__persent">80 %</h2>
+										</li>
+										<li class="team__row">
+											<img
+												src="./img/avatar.png"
+												class="image team__avatar"
+												width="45"
+												height="45"
+												alt="Аватар"
+											/>
+											<div class="team__container-row">
+												<h4 class="title team__name">Саночкин Олег / вн 249</h4>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="206"
+													height="5"
+													viewBox="0 0 206 5"
+													fill="none"
+												>
+													<rect width="206" height="5" rx="2" fill="#D9D9D9" />
+													<rect width="186.224" height="5" rx="2" fill="#982CB2" />
+												</svg>
+											</div>
+											<h2 class="title team__persent">80 %</h2>
+										</li>
+										<li class="team__row">
+											<img
+												src="./img/avatar.png"
+												class="image team__avatar"
+												width="45"
+												height="45"
+												alt="Аватар"
+											/>
+											<div class="team__container-row">
+												<h4 class="title team__name">Саночкин Олег / вн 249</h4>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="206"
+													height="5"
+													viewBox="0 0 206 5"
+													fill="none"
+												>
+													<rect width="206" height="5" rx="2" fill="#D9D9D9" />
+													<rect width="186.224" height="5" rx="2" fill="#982CB2" />
+												</svg>
+											</div>
+											<h2 class="title team__persent">80 %</h2>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="team__item team__item-orange">
+								<div class="team__container-scroll" data-simplebar data-simplebar-auto-hide="false">
+									<h3 class="title team__title">
+										<svg
+											class="team__filter"
+											width="35"
+											height="27"
+											viewBox="0 0 35 27"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<rect width="35" height="27" rx="5" fill="#ECF1F4" />
+											<rect width="35" height="27" rx="5" fill="#ECF1F4" />
+											<path
+												d="M9.99963 15.1136C10.5088 15.1136 10.928 15.4875 10.9852 15.9697L10.9919 16.0828L11.2642 20.7648C11.2642 21.4474 10.6985 22 9.99963 22C9.34447 22 8.80517 21.5143 8.74031 20.8912L8.73377 20.7648L9.00734 16.0828C9.00734 15.5472 9.45126 15.1136 9.99963 15.1136ZM10.0062 5C10.3208 5 10.6367 5.09473 10.8928 5.2842C11.0032 5.36087 11.1558 5.49968 11.2547 5.59302L11.3541 5.68864C12.4596 6.68577 14.1246 9.16583 14.6593 10.4241C14.6695 10.4241 14.9368 11.0527 14.9909 11.4316L15 11.5281V11.5755C15 12.1208 14.6829 12.6309 14.1731 12.892C13.8933 13.0353 13.0801 13.1653 13.0676 13.1774C12.339 13.2843 11.2211 13.3547 9.99378 13.3547C8.70555 13.3547 7.53917 13.2843 6.82169 13.1531C6.80925 13.1531 6.15394 13.0232 5.93509 12.9394C5.61925 12.8094 5.3519 12.5714 5.18155 12.275C5.05969 12.0382 5 11.788 5 11.5281C5.01119 11.2548 5.19398 10.7447 5.27854 10.5431C5.81323 9.2132 7.5628 6.67362 8.63218 5.70078C8.80254 5.53439 9.00895 5.35586 9.05745 5.30849C9.32479 5.10688 9.65307 5 10.0062 5Z"
+												fill="#4F687C"
+												class="team__arrow team__arrow-top"
+											/>
+											<path
+												d="M25.0062 13.6451C26.2945 13.6451 27.4608 13.7155 28.1783 13.8467C28.1895 13.8467 28.8461 13.9767 29.0649 14.0605C29.3808 14.1916 29.6481 14.4285 29.8185 14.7248C29.9403 14.9617 30 15.2119 30 15.473C29.9888 15.745 29.806 16.2564 29.7202 16.458C29.1868 17.7867 27.436 20.3263 26.3678 21.3004C26.1975 21.4656 25.991 21.6441 25.9426 21.6915C25.674 21.8931 25.3469 22 24.995 22C24.6779 22 24.3621 21.9053 24.1072 21.7146C23.9748 21.6235 23.7815 21.4422 23.6931 21.3573L23.6459 21.3113C22.5392 20.3154 20.8754 17.8341 20.3407 16.5758C20.3293 16.5758 20.063 15.9482 20.0091 15.5694L20 15.473V15.4256C20 14.8791 20.3158 14.369 20.8269 14.1078C21.1067 13.9657 21.9199 13.8345 21.9324 13.8224C22.661 13.7155 23.7789 13.6451 25.0062 13.6451ZM25.0006 5C25.6558 5 26.194 5.4857 26.2587 6.10884L26.2652 6.2352L25.9929 10.9173C25.9929 11.4529 25.549 11.8865 25.0006 11.8865C24.4914 11.8865 24.0723 11.5127 24.015 11.0304L24.0083 10.9173L23.7348 6.2352C23.7348 5.55262 24.3018 5 25.0006 5Z"
+												fill="black"
+												class="team__arrow team__arrow-bottom"
+											/>
+										</svg>
+										Обучаемость
+									</h3>
+									<ul class="list-reset team__rows">
+										<li class="team__row">
+											<img
+												src="./img/avatar.png"
+												class="image team__avatar"
+												width="45"
+												height="45"
+												alt="Аватар"
+											/>
+											<div class="team__container-row">
+												<h4 class="title team__name">Саночкин Олег / вн 249</h4>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="206"
+													height="5"
+													viewBox="0 0 206 5"
+													fill="none"
+												>
+													<rect width="206" height="5" rx="2" fill="#D9D9D9" />
+													<rect width="186.224" height="5" rx="2" fill="#F26E0F" />
+												</svg>
+											</div>
+											<h2 class="title team__persent">80 %</h2>
+										</li>
+										<li class="team__row">
+											<img
+												src="./img/avatar.png"
+												class="image team__avatar"
+												width="45"
+												height="45"
+												alt="Аватар"
+											/>
+											<div class="team__container-row">
+												<h4 class="title team__name">Саночкин Олег / вн 249</h4>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="206"
+													height="5"
+													viewBox="0 0 206 5"
+													fill="none"
+												>
+													<rect width="206" height="5" rx="2" fill="#D9D9D9" />
+													<rect width="186.224" height="5" rx="2" fill="#F26E0F" />
+												</svg>
+											</div>
+											<h2 class="title team__persent">80 %</h2>
+										</li>
+										<li class="team__row">
+											<img
+												src="./img/avatar.png"
+												class="image team__avatar"
+												width="45"
+												height="45"
+												alt="Аватар"
+											/>
+											<div class="team__container-row">
+												<h4 class="title team__name">Саночкин Олег / вн 249</h4>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="206"
+													height="5"
+													viewBox="0 0 206 5"
+													fill="none"
+												>
+													<rect width="206" height="5" rx="2" fill="#D9D9D9" />
+													<rect width="186.224" height="5" rx="2" fill="#F26E0F" />
+												</svg>
+											</div>
+											<h2 class="title team__persent">80 %</h2>
+										</li>
+										<li class="team__row">
+											<img
+												src="./img/avatar.png"
+												class="image team__avatar"
+												width="45"
+												height="45"
+												alt="Аватар"
+											/>
+											<div class="team__container-row">
+												<h4 class="title team__name">Саночкин Олег / вн 249</h4>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="206"
+													height="5"
+													viewBox="0 0 206 5"
+													fill="none"
+												>
+													<rect width="206" height="5" rx="2" fill="#D9D9D9" />
+													<rect width="186.224" height="5" rx="2" fill="#F26E0F" />
+												</svg>
+											</div>
+											<h2 class="title team__persent">80 %</h2>
+										</li>
+										<li class="team__row">
+											<img
+												src="./img/avatar.png"
+												class="image team__avatar"
+												width="45"
+												height="45"
+												alt="Аватар"
+											/>
+											<div class="team__container-row">
+												<h4 class="title team__name">Саночкин Олег / вн 249</h4>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="206"
+													height="5"
+													viewBox="0 0 206 5"
+													fill="none"
+												>
+													<rect width="206" height="5" rx="2" fill="#D9D9D9" />
+													<rect width="186.224" height="5" rx="2" fill="#F26E0F" />
+												</svg>
+											</div>
+											<h2 class="title team__persent">80 %</h2>
+										</li>
+										<li class="team__row">
+											<img
+												src="./img/avatar.png"
+												class="image team__avatar"
+												width="45"
+												height="45"
+												alt="Аватар"
+											/>
+											<div class="team__container-row">
+												<h4 class="title team__name">Саночкин Олег / вн 249</h4>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="206"
+													height="5"
+													viewBox="0 0 206 5"
+													fill="none"
+												>
+													<rect width="206" height="5" rx="2" fill="#D9D9D9" />
+													<rect width="186.224" height="5" rx="2" fill="#F26E0F" />
+												</svg>
+											</div>
+											<h2 class="title team__persent">80 %</h2>
+										</li>
+										<li class="team__row">
+											<img
+												src="./img/avatar.png"
+												class="image team__avatar"
+												width="45"
+												height="45"
+												alt="Аватар"
+											/>
+											<div class="team__container-row">
+												<h4 class="title team__name">Саночкин Олег / вн 249</h4>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="206"
+													height="5"
+													viewBox="0 0 206 5"
+													fill="none"
+												>
+													<rect width="206" height="5" rx="2" fill="#D9D9D9" />
+													<rect width="186.224" height="5" rx="2" fill="#F26E0F" />
+												</svg>
+											</div>
+											<h2 class="title team__persent">80 %</h2>
+										</li>
+										<li class="team__row">
+											<img
+												src="./img/avatar.png"
+												class="image team__avatar"
+												width="45"
+												height="45"
+												alt="Аватар"
+											/>
+											<div class="team__container-row">
+												<h4 class="title team__name">Саночкин Олег / вн 249</h4>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="206"
+													height="5"
+													viewBox="0 0 206 5"
+													fill="none"
+												>
+													<rect width="206" height="5" rx="2" fill="#D9D9D9" />
+													<rect width="186.224" height="5" rx="2" fill="#F26E0F" />
+												</svg>
+											</div>
+											<h2 class="title team__persent">80 %</h2>
+										</li>
+										<li class="team__row">
+											<img
+												src="./img/avatar.png"
+												class="image team__avatar"
+												width="45"
+												height="45"
+												alt="Аватар"
+											/>
+											<div class="team__container-row">
+												<h4 class="title team__name">Саночкин Олег / вн 249</h4>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="206"
+													height="5"
+													viewBox="0 0 206 5"
+													fill="none"
+												>
+													<rect width="206" height="5" rx="2" fill="#D9D9D9" />
+													<rect width="186.224" height="5" rx="2" fill="#F26E0F" />
+												</svg>
+											</div>
+											<h2 class="title team__persent">80 %</h2>
+										</li>
+										<li class="team__row">
+											<img
+												src="./img/avatar.png"
+												class="image team__avatar"
+												width="45"
+												height="45"
+												alt="Аватар"
+											/>
+											<div class="team__container-row">
+												<h4 class="title team__name">Саночкин Олег / вн 249</h4>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="206"
+													height="5"
+													viewBox="0 0 206 5"
+													fill="none"
+												>
+													<rect width="206" height="5" rx="2" fill="#D9D9D9" />
+													<rect width="186.224" height="5" rx="2" fill="#F26E0F" />
+												</svg>
+											</div>
+											<h2 class="title team__persent">80 %</h2>
+										</li>
+										<li class="team__row">
+											<img
+												src="./img/avatar.png"
+												class="image team__avatar"
+												width="45"
+												height="45"
+												alt="Аватар"
+											/>
+											<div class="team__container-row">
+												<h4 class="title team__name">Саночкин Олег / вн 249</h4>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="206"
+													height="5"
+													viewBox="0 0 206 5"
+													fill="none"
+												>
+													<rect width="206" height="5" rx="2" fill="#D9D9D9" />
+													<rect width="186.224" height="5" rx="2" fill="#F26E0F" />
+												</svg>
+											</div>
+											<h2 class="title team__persent">80 %</h2>
+										</li>
+										<li class="team__row">
+											<img
+												src="./img/avatar.png"
+												class="image team__avatar"
+												width="45"
+												height="45"
+												alt="Аватар"
+											/>
+											<div class="team__container-row">
+												<h4 class="title team__name">Саночкин Олег / вн 249</h4>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="206"
+													height="5"
+													viewBox="0 0 206 5"
+													fill="none"
+												>
+													<rect width="206" height="5" rx="2" fill="#D9D9D9" />
+													<rect width="186.224" height="5" rx="2" fill="#F26E0F" />
+												</svg>
+											</div>
+											<h2 class="title team__persent">80 %</h2>
+										</li>
+										<li class="team__row">
+											<img
+												src="./img/avatar.png"
+												class="image team__avatar"
+												width="45"
+												height="45"
+												alt="Аватар"
+											/>
+											<div class="team__container-row">
+												<h4 class="title team__name">Саночкин Олег / вн 249</h4>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="206"
+													height="5"
+													viewBox="0 0 206 5"
+													fill="none"
+												>
+													<rect width="206" height="5" rx="2" fill="#D9D9D9" />
+													<rect width="186.224" height="5" rx="2" fill="#F26E0F" />
+												</svg>
+											</div>
+											<h2 class="title team__persent">80 %</h2>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="menu">
+					<div class="container menu__container">
+						<div class="menu__buttons">
+							<div class="menu__button menu__button-date">
+								<img
+									src="./img/calendar.svg"
+									class="image menu__icon-calendar"
+									width="18"
+									height="20"
+									alt="Иконка календарь"
+								/>
+								<input class="menu__input-date" type="text" name="date" readonly />
+							</div>
+							<div class="menu__button menu__button-nav">
+								<img
+									src="./img/nav.svg"
+									class="image menu__icon-nav"
+									width="20"
+									height="20"
+									alt="Иконка навигации"
+								/>
+								<ul class="menu__list list-reset">
+									<li class="menu__item menu__item-active">
+										<a class="menu__link" href="./employee.html">Сотрудник</a>
+									</li>
+									<li class="menu__item"><a class="menu__link" href="./team.html">Команда</a></li>
+									<li class="menu__item">
+										<a class="menu__link" href="./result.html">Результаты</a>
+									</li>
+									<li class="menu__item"><a class="menu__link" href="./">Начисления</a></li>
+									<li class="menu__item"><a class="menu__link" href="#">Проекты</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+		</div>
+	</body>
+</html>
