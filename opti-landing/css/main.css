@@ -182,6 +182,7 @@ html {
 	-webkit-transition: color 0.3s;
 	transition: color 0.3s;
 	text-decoration: none;
+	cursor: pointer;
 }
 .nav__link:hover {
 	color: var(--light-blue-color);
