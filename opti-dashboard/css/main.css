@@ -69,7 +69,7 @@ html {
 	padding: 0 var(--container-offset);
 	max-width: var(--container-width);
 }
-@media (max-width: 390px) {
+@media (max-width: 445px) {
 	.container_main {
 		padding-left: 10px;
 		padding-right: 10px;
@@ -426,7 +426,7 @@ html {
 		line-height: normal;
 	}
 }
-@media (max-width: 390px) {
+@media (max-width: 445px) {
 	.plan__graphs {
 		padding: 0;
 	}
@@ -855,7 +855,7 @@ html {
 		padding-left: 14px;
 	}
 }
-@media (max-width: 390px) {
+@media (max-width: 445px) {
 	.board__title-body-main {
 		font-size: 26px;
 	}
