@@ -15265,7 +15265,13 @@
 					hours: 289,
 				},
 				{
-					name: "Вакансия",
+					name: "Асель Кулибаева",
+					tasks: 127,
+					expired: 127,
+					hours: 289,
+				},
+				{
+					name: "Анна Киприянова",
 					tasks: 0,
 					expired: 0,
 					hours: 0,
@@ -15657,7 +15663,13 @@
 		companiesFromLeadsEl.innerHTML = dashboardData.gridData.companiesFromLeads;
 		drawChart(dashboardData.gridData.lineChartData);
 	}
-	init(dashboardData); // CONCATENATED MODULE: ./src/js/_components.js // CONCATENATED MODULE: ./src/js/main.js
+	init(dashboardData);
+
+	// axios
+	// 	.get("dashboardDataUrl")
+	// 	.catch((e) => {
+	// 		console.log(e);
+	// 	}); // CONCATENATED MODULE: ./src/js/_components.js // CONCATENATED MODULE: ./src/js/main.js
 
 	/******/
 })();
