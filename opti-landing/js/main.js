@@ -9635,21 +9635,42 @@ export function pointToScreen(svgElement, point) {
 
 		const img = document.querySelector(".hero__image-kit");
 		const btn = document.querySelector(".hero__button");
+		const mediaQuery1024 = window.matchMedia("(max-width: 1024px)");
 		const mediaQuery768 = window.matchMedia("(max-width: 768px)");
 		const mediaQuery480 = window.matchMedia("(max-width: 480px)");
 		gsapWithCSS.registerPlugin(MotionPathPlugin);
 		if (!mediaQuery480.matches) {
 			gsapWithCSS.set(img, {
-				xPercent: -50,
-				yPercent: -50,
-				transformOrigin: "50% 50%",
+				xPercent: -200,
+				yPercent: -25,
+				transformOrigin: "0 50%",
 			});
 			if (mediaQuery768.matches) {
+				gsapWithCSS.set(img, {
+					xPercent: -200,
+					yPercent: 0,
+					transformOrigin: "0 50%",
+				});
 				gsapWithCSS.to(img, {
 					x: 0,
-					duration: 5,
+					duration: 7,
 					motionPath: {
-						path: "#path-tablet",
+						path: "M2320.5 285C2320.5 285 1594 18.9998 1064 1.49981C563.473 -15.027 0.999955 378.5 0.999955 378.5",
+						autoRotate: 150,
+					},
+					repeat: -1,
+				});
+			} else if (mediaQuery1024.matches) {
+				gsapWithCSS.set(img, {
+					xPercent: -200,
+					yPercent: 0,
+					transformOrigin: "0 50%",
+				});
+				gsapWithCSS.to(img, {
+					x: 0,
+					duration: 7,
+					motionPath: {
+						path: "M2320.5 285C2320.5 285 1594 18.9998 1064 1.49981C563.473 -15.027 0.999955 378.5 0.999955 378.5",
 						autoRotate: 150,
 					},
 					repeat: -1,
@@ -9657,9 +9678,9 @@ export function pointToScreen(svgElement, point) {
 			} else {
 				gsapWithCSS.to(img, {
 					x: 0,
-					duration: 6,
+					duration: 7,
 					motionPath: {
-						path: "#path",
+						path: "M2320.5 285C2320.5 285 1594 18.9998 1064 1.49981C563.473 -15.027 0.999955 378.5 0.999955 378.5",
 						autoRotate: 150,
 					},
 					repeat: -1,
