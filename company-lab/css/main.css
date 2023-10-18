@@ -4134,7 +4134,7 @@ main section:not(:last-child) {
 }
 .line__title {
 	color: var(--white-color);
-	width: 693px;
+	width: 703px;
 	text-align: center;
 	font-size: 32px;
 	font-weight: 700;
